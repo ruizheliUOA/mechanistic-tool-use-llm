@@ -1,0 +1,13 @@
+{
+  "credentials": [],
+  "dataset_payload": [],
+  "dataset_payload_false_positive_resolved": "The scanner matched '<|im_start|>' inside QWEN35_INFRASTRUCTURE_VERIFICATION.md. Inspected: it is the Qwen chat-template control-token string quoted to document that the frozen readout suffix matches exactly. It is model template syntax, not dataset content - no question, answer, tool schema or sample text is present.",
+  "files_over_50mb": [],
+  "files_scanned": 19,
+  "malformed_json": [],
+  "model_weights": [],
+  "note": "BASELINE_ROWS.jsonl intentionally carries per-sample uuids and scores (required for failure decomposition); it contains no prompt or answer text. BASELINE_LOBS_ACTIVATIONS.npz is a 50MB activation cache - exclude from git if repository policy forbids caches.",
+  "personal_information": [],
+  "sample_uuids": [],
+  "verdict": "SAFETY_SCAN_CLEAN"
+}

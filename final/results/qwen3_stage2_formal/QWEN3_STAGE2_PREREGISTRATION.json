@@ -1,0 +1,202 @@
+{
+  "K": {
+    "candidates": {
+      "39": {
+        "cells": 4647.576086956522,
+        "hours": 1.640645176639093,
+        "hours_with_15pct_contingency": 1.8867419531349567,
+        "within_3h": true
+      },
+      "59": {
+        "cells": 6335.257246376811,
+        "hours": 2.236415079509211,
+        "hours_with_15pct_contingency": 2.5718773414355924,
+        "within_3h": true
+      },
+      "79": {
+        "cells": 8022.938405797101,
+        "hours": 2.832184982379329,
+        "hours_with_15pct_contingency": 3.257012729736228,
+        "within_3h": false
+      }
+    },
+    "decision_basis": "engineering cost only; independent of DEV rankings, effect sizes, anticipated p-value, random geometry or any evaluation information",
+    "selected": 59
+  },
+  "arm_battery": [
+    "baseline",
+    "zero",
+    "real TRAIN-only d_grad",
+    "K fresh matched-random directions",
+    "frozen original L26 DiffMean",
+    "reverse -d_grad",
+    "wrong-layer d_grad",
+    "ungated d_grad",
+    "frozen score-space target/source comparator"
+  ],
+  "bootstrap": {
+    "draws": 10000,
+    "frozen_before_execution": true,
+    "seed_derivation": "uint64 of first 8 bytes of SHA256(seed_salt)",
+    "seed_salt": "SAKIKO_QWEN3_CA_TC_STAGE2_BOOTSTRAP_V1"
+  },
+  "excluded_arms": [
+    "same-layer L21 DiffMean",
+    "another channel's d_grad",
+    "orthogonalized mismatch",
+    "pooled or shared direction",
+    "PCA or rank-2 direction",
+    "any new estimator",
+    "any additional dose"
+  ],
+  "execution_order": [
+    "environment and hash verification",
+    "model load",
+    "evaluation baseline",
+    "zero arm",
+    "exact zero-equality gate",
+    "real d_grad",
+    "frozen DiffMean",
+    "reverse",
+    "wrong-layer",
+    "ungated",
+    "K formal randoms in seed order",
+    "score comparator",
+    "endpoint computation",
+    "formal report generation"
+  ],
+  "formal_channel": {
+    "channel": "cannot_answer__to__tool_call",
+    "gold": "cannot_answer",
+    "single_channel": true,
+    "source": "tool_call"
+  },
+  "formal_question": "On the untouched evaluation population, does the frozen TRAIN-only d_grad direction produce destination-correct behaviour that exceeds a prospectively generated matched-random null?",
+  "frozen_configuration": {
+    "L_inj": 21,
+    "L_obs": 26,
+    "absolute_perturbation_norm": 41.56598488897048,
+    "attention_implementation": "eager",
+    "b_c": 1.673107087612152,
+    "batch_size": 1,
+    "channel": "cannot_answer__to__tool_call",
+    "dtype": "bfloat16",
+    "gold": "cannot_answer",
+    "intervention_positions": "all sequence positions, matching the frozen full-effect aggregation",
+    "model": "Qwen/Qwen3-8B",
+    "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "q": 1.0,
+    "s_c": 41.56598488897048,
+    "site": "model.model.layers[L].mlp forward output, after MLP internals and before decoder residual addition",
+    "source": "tool_call",
+    "tau": 0.4
+  },
+  "interpretation_rules": {
+    "d_grad_significantly_exceeds_comparator": "Report only as a secondary result supporting a non-reducible destination pattern under the frozen comparator.",
+    "diffmean_ineffective": "Report estimator dependence; do not claim DiffMean is universally invalid.",
+    "full_conjunction_passes": "Evidence supports destination-correct and safety-bounded SAKIKO correction for one prospectively evaluated Qwen3 channel following disclosed development-stage channel, estimator and dose selection.",
+    "no_generalization": "Do not generalize from one channel to all Qwen3 channels, all models or all tool-use tasks.",
+    "positive_behaviour_but_not_beating_random": "Behavioural movement occurred, but direction specificity is not confirmed.",
+    "real_beats_random_but_target_hit_or_collateral_fails": "Direction-specific steering is supported, but target-correctable deployment is not supported.",
+    "score_comparator_matches_or_exceeds": "Do not claim that activation intervention provides behaviour unavailable to a simple frozen score-space shift."
+  },
+  "is_not": [
+    "a cross-channel predictor validation",
+    "an untouched choice among all possible channels",
+    "a claim that gradient-based steering is novel in general",
+    "a confirmation that all SAKIKO channels are correctable"
+  ],
+  "multiplicity": "none required: one formal primary channel and one primary null comparison",
+  "populations": {
+    "baseline": "single baseline over all 548 evaluation rows computed first",
+    "channel_error": "gold = cannot_answer AND baseline prediction = tool_call",
+    "never_redefined_by_intervention_results": true,
+    "safety_denominator": "baseline prediction = gold"
+  },
+  "primary": {
+    "conjunction": [
+      "evaluation channel-error support n_channel_error >= 30",
+      "real target_gain_rate point estimate > 0",
+      "bootstrap 95% lower bound for real target_gain_rate > 0",
+      "p_add_one <= 0.05 against the K fresh randoms",
+      "real target_hit point estimate > 0.50",
+      "bootstrap 95% lower bound for real target_hit > 0.50",
+      "clean_collateral_rate point estimate <= 0.05",
+      "bootstrap 95% upper bound for clean_collateral_rate <= 0.05",
+      "zero-control equality passes exactly",
+      "no structural or provenance failure occurs"
+    ],
+    "is_intersection_claim": true,
+    "no_subset_substitution_after_execution": true,
+    "null": "K fresh matched-random directions at the identical absolute perturbation norm and Router gate",
+    "p_value": "p_add_one = (1 + count[target_gain_rate_random >= target_gain_rate_real]) / (K + 1)",
+    "statistic": "target_gain_rate = (gold_arrivals - wrong_to_wrong) / n_channel_error"
+  },
+  "protocol_version": "QWEN3_STAGE2_FORMAL_V1",
+  "raw_record_schema": [
+    "immutable ID",
+    "gold",
+    "baseline four-mode scores",
+    "baseline prediction",
+    "Router probability and decision",
+    "arm identity",
+    "direction seed/hash",
+    "dose and achieved perturbation norm",
+    "intervention four-mode scores",
+    "intervention prediction",
+    "destination transition",
+    "batch index",
+    "global execution order"
+  ],
+  "schema_version": 1,
+  "sealed_evaluation": {
+    "count": 548,
+    "identity_inherited_by_reference": true,
+    "opened": false
+  },
+  "secondary": {
+    "must_not_rescue_failed_primary": true,
+    "non_promotable": true,
+    "ordered": [
+      "d_grad versus frozen L26 DiffMean: paired difference in target_gain_rate",
+      "d_grad versus frozen score-space comparator: paired difference in target_gain_rate and wrong_to_wrong rate",
+      "target_hit",
+      "source_exits",
+      "gold_arrivals",
+      "wrong_to_wrong",
+      "Fixed / Broke / Net",
+      "continuous target-source margin change",
+      "reverse contrast",
+      "wrong-layer contrast",
+      "ungated collateral"
+    ]
+  },
+  "status": "FROZEN_BEFORE_FORMAL_EXECUTION",
+  "support_rule": {
+    "if_n_channel_error_lt_30": "FORMAL_SUPPORT_INSUFFICIENT_NO_CONFIRMATORY_CLAIM",
+    "must_not_be_reinterpreted_as_intervention_failure": true,
+    "report_descriptives": true,
+    "run_remains_valid": true
+  },
+  "tier": "FORMAL PROTOCOL PREPARATION / NO SEALED-EVALUATION ACCESS",
+  "void_rules": [
+    "model/tokenizer/hash mismatch",
+    "evaluation population mismatch",
+    "zero-control failure",
+    "arm missing or reordered",
+    "direction/vector mismatch",
+    "Router mismatch",
+    "dose mismatch",
+    "batch-size change",
+    "scientific runner modification",
+    "automatic retry or resume",
+    "endpoint modification",
+    "random-vector replacement",
+    "incomplete all-arm execution"
+  ],
+  "void_semantics": {
+    "crash_after_evaluation_access": "VOID; must not be automatically retried",
+    "crash_before_evaluation_access": "repairable only through a new versioned freeze and separate approval",
+    "natural_scientific_outcomes_are_not_void": true
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "artifact_audit_outcome": "CPU_SUFFICIENT",
+  "attention_backend_audit_sha256": "639773549adb195d576842c883c437be7b2209283dba583b22133d9924da419c",
+  "attention_backend_disposition": "ATTENTION_BACKEND_ACCEPTED",
+  "attention_guard_runtime": {
+    "below_threshold_path": "unmodified upstream eager_attention_forward",
+    "head_chunk": 8,
+    "installed": true,
+    "scientific_definitions_changed": false,
+    "threshold_tokens": 4096
+  },
+  "full_model_loaded": false,
+  "geometry_computed": false,
+  "head": "e0fced6fd0cf6ab104c95c1e8668cefdae9e090b",
+  "inherited_non_test_population": {
+    "activation_site_metadata": "mlp_output_last_prompt_token",
+    "activation_sites_present": [
+      "activations_L21",
+      "activations_L26"
+    ],
+    "activations_sha256": "0c0ef438e6f3c4837f28a8ec6540d5566d4111f76bb943cde5406e0b1c709efc",
+    "baseline_sha256": "83c0836f4fd1b52df7d44e81e44254a4e3599bad97eb6239e8744571729a02c3",
+    "rows": 3104,
+    "unique_sample_ids": 3104
+  },
+  "model_identity": {
+    "files": {
+      "config.json": {
+        "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+        "size": 728
+      },
+      "generation_config.json": {
+        "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+        "size": 239
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "size": 1671853
+      },
+      "model-00001-of-00005.safetensors": {
+        "sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+        "size": 3996250744
+      },
+      "model-00002-of-00005.safetensors": {
+        "sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+        "size": 3993160032
+      },
+      "model-00003-of-00005.safetensors": {
+        "sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+        "size": 3959604768
+      },
+      "model-00004-of-00005.safetensors": {
+        "sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+        "size": 3187841392
+      },
+      "model-00005-of-00005.safetensors": {
+        "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+        "size": 1244659840
+      },
+      "model.safetensors.index.json": {
+        "sha256": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+        "size": 32878
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "size": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+        "size": 9732
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "size": 2776833
+      }
+    },
+    "repository": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  "protocol_version": "QWEN3_8B_STAGE0_1_V2",
+  "schema_version": 1,
+  "sealed_evaluation": {
+    "count": 548,
+    "hash_recomputed_from_payload": false,
+    "identity_inherited_by_reference": true,
+    "manifest_opened": false,
+    "source_manifest": "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json"
+  },
+  "split_computed": false,
+  "stage2_authorized": false,
+  "status": "PASS",
+  "support_counts_computed": false,
+  "test_data_loaded": false,
+  "utc": "2026-07-30T08:16:10Z",
+  "v1_runner_sha256": "b1830b4be291c1adfe7e843e8de7fdea0ee1e4e1b6c10c25c6fc40465073f4ac",
+  "v2_hash_manifest_sha256": "ca7f49061d95c3c3493e2652e9be7be7faff89ffe9913ab949de2de3d8292b14",
+  "v2_output_namespace_empty": true,
+  "v2_runner_sha256": "9eebf8d80b49c76a2281a5e0046c525b8f8c498abdcf0d26b70a9cbd624c157b"
+}

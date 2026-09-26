@@ -1,0 +1,7 @@
+setting,evidence,broken_all,n_baseline_correct,historical_rate,broken_exposed,n_exposed_correct,exposure_conditional_rate,one_sided_95_upper_exposed,certifiable_at_alpha_0.05
+Qwen3-8B ca->tc,SEALED formal,0,211,0.0,0,6,0.0,0.39303776899708265,NO
+Qwen3-4B ca->tc,SEALED formal,1,214,0.004672897196261682,1,50,0.02,0.09139813071969738,NO
+Gemma ca->tc,SEALED formal,1,223,0.004484304932735426,1,11,0.09090909090909091,0.3643594892472425,NO
+Gemma ca->direct,DEV,0,471,0.0,0,0,,,VACUOUS
+Qwen3-4B ca->direct,DEV,0,,,0,0,,,VACUOUS
+Phi-3.5 cascade,historical locked,52,264,0.19696969696969696,52,93,0.5591397849462365,0.6467960635421377,NO

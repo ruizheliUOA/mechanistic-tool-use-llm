@@ -1,0 +1,4 @@
+arm,arm_order,net,kind,annotation
+real,3,79,real,
+"random, mean of 10",2,25.2,control,largest of the ten: +50
+reversed,1,16,control,

@@ -1,0 +1,21 @@
+{
+  "evaluation_access_class": "EvaluationAccess",
+  "import_time_side_effects": "none",
+  "modes": [
+    "--preflight",
+    "--dev-engineering-check",
+    "--run-formal"
+  ],
+  "previous_runner": "scripts/qwen3_stage2_formal.py",
+  "previous_runner_sha256": "03a43215f9377069864884dd6eb2ea426710c7dd84a68f45f76be0dd29fb6c3e",
+  "previous_runner_sha256_in_original_freeze": "03a43215f9377069864884dd6eb2ea426710c7dd84a68f45f76be0dd29fb6c3e",
+  "previous_runner_unmodified": true,
+  "reused_modules": [
+    "scripts/qwen3_8b_stage0_1.py",
+    "scripts/qwen3_8b_stage0_1_v2.py",
+    "scripts/qwen3_stage2a_v2_dev_calibration.py"
+  ],
+  "runner": "scripts/qwen3_stage2_formal_v2.py",
+  "runner_sha256": "2ac56937a9ddd24b05e695edf82ef9163058c01f9e5f8d802dbc7b627d646a79",
+  "schema_version": 1
+}

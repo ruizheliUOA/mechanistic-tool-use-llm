@@ -1,0 +1,134 @@
+[
+  {
+    "channel": "tool_call__to__direct",
+    "gold": "tool_call",
+    "source": "direct",
+    "train_error_support": 7,
+    "train_correct_reference_support": 882,
+    "dev_error_support": 2,
+    "dev_correct_reference_support": 199,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;DEV_ERROR_LT_30"
+  },
+  {
+    "channel": "tool_call__to__request_for_info",
+    "gold": "tool_call",
+    "source": "request_for_info",
+    "train_error_support": 5,
+    "train_correct_reference_support": 882,
+    "dev_error_support": 1,
+    "dev_correct_reference_support": 199,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;DEV_ERROR_LT_30"
+  },
+  {
+    "channel": "tool_call__to__cannot_answer",
+    "gold": "tool_call",
+    "source": "cannot_answer",
+    "train_error_support": 2,
+    "train_correct_reference_support": 882,
+    "dev_error_support": 1,
+    "dev_correct_reference_support": 199,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;DEV_ERROR_LT_30"
+  },
+  {
+    "channel": "direct__to__tool_call",
+    "gold": "direct",
+    "source": "tool_call",
+    "train_error_support": 0,
+    "train_correct_reference_support": 0,
+    "dev_error_support": 0,
+    "dev_correct_reference_support": 0,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;TRAIN_CORRECT_REFERENCE_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "direct__to__request_for_info",
+    "gold": "direct",
+    "source": "request_for_info",
+    "train_error_support": 0,
+    "train_correct_reference_support": 0,
+    "dev_error_support": 0,
+    "dev_correct_reference_support": 0,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;TRAIN_CORRECT_REFERENCE_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "direct__to__cannot_answer",
+    "gold": "direct",
+    "source": "cannot_answer",
+    "train_error_support": 0,
+    "train_correct_reference_support": 0,
+    "dev_error_support": 0,
+    "dev_correct_reference_support": 0,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;TRAIN_CORRECT_REFERENCE_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "request_for_info__to__tool_call",
+    "gold": "request_for_info",
+    "source": "tool_call",
+    "train_error_support": 634,
+    "train_correct_reference_support": 91,
+    "dev_error_support": 126,
+    "dev_correct_reference_support": 28,
+    "support_eligible": false,
+    "support_exclusion_reasons": "DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "request_for_info__to__direct",
+    "gold": "request_for_info",
+    "source": "direct",
+    "train_error_support": 12,
+    "train_correct_reference_support": 91,
+    "dev_error_support": 6,
+    "dev_correct_reference_support": 28,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "request_for_info__to__cannot_answer",
+    "gold": "request_for_info",
+    "source": "cannot_answer",
+    "train_error_support": 6,
+    "train_correct_reference_support": 91,
+    "dev_error_support": 1,
+    "dev_correct_reference_support": 28,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "cannot_answer__to__tool_call",
+    "gold": "cannot_answer",
+    "source": "tool_call",
+    "train_error_support": 519,
+    "train_correct_reference_support": 103,
+    "dev_error_support": 106,
+    "dev_correct_reference_support": 12,
+    "support_eligible": false,
+    "support_exclusion_reasons": "DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "cannot_answer__to__direct",
+    "gold": "cannot_answer",
+    "source": "direct",
+    "train_error_support": 250,
+    "train_correct_reference_support": 103,
+    "dev_error_support": 62,
+    "dev_correct_reference_support": 12,
+    "support_eligible": false,
+    "support_exclusion_reasons": "DEV_CORRECT_REFERENCE_LT_30"
+  },
+  {
+    "channel": "cannot_answer__to__request_for_info",
+    "gold": "cannot_answer",
+    "source": "request_for_info",
+    "train_error_support": 39,
+    "train_correct_reference_support": 103,
+    "dev_error_support": 4,
+    "dev_correct_reference_support": 12,
+    "support_eligible": false,
+    "support_exclusion_reasons": "TRAIN_ERROR_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30"
+  }
+]

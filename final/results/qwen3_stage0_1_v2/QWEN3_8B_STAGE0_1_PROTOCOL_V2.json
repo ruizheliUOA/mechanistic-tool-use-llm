@@ -1,0 +1,550 @@
+{
+  "amendment_scope": {
+    "changed": [
+      "allocation of the already authorized 3104 non-test rows",
+      "V2 split index and split hashes",
+      "V2 population manifests",
+      "formal adoption of the audited long-sequence attention backend"
+    ],
+    "direction_estimator_changed": false,
+    "evaluation_access": false,
+    "manual_channel_selection": false,
+    "support_thresholds_lowered": false,
+    "unchanged": "every other scientific definition, copied verbatim from V1"
+  },
+  "artifact_reuse": {
+    "activations": "final/results/qwen3_stage0_1/QWEN3_STAGE1_ACTIVATIONS.safetensors",
+    "activations_sha256": "0c0ef438e6f3c4837f28a8ec6540d5566d4111f76bb943cde5406e0b1c709efc",
+    "baseline_rows": "final/results/qwen3_stage0_1/QWEN3_STAGE1_BASELINE_ROWS.jsonl",
+    "baseline_sha256": "83c0836f4fd1b52df7d44e81e44254a4e3599bad97eb6239e8744571729a02c3",
+    "note": "baseline values are a pure function of the sample and do not depend on allocation",
+    "outcome": "CPU_SUFFICIENT"
+  },
+  "atomic_output_rule": {
+    "after_promotion": "no recomputation, no reseeding, no resizing, no alternative split",
+    "namespace_must_be_empty_before_first_v2_computation": true,
+    "promotion": "temporary file then atomic os.replace",
+    "retry_allowed_before_promotion": true,
+    "split_file_must_not_exist": true,
+    "state_file_must_not_exist": true,
+    "support_ledger_must_not_exist": true
+  },
+  "attention_backend": {
+    "implementation": "eager",
+    "long_sequence_guard": {
+      "adopted": true,
+      "audit_artifact": "final/results/qwen3_stage0_1_v2/QWEN3_V2_ATTENTION_BACKEND_AUDIT.json",
+      "below_threshold": "unmodified upstream eager_attention_forward",
+      "bitwise_identical_at_all_lengths": false,
+      "disposition": "ATTENTION_BACKEND_ACCEPTED",
+      "evidence": "864/864 all-layer comparisons bitwise identical across the 24 V1-affected sequences; not universal across lengths",
+      "head_chunk": 8,
+      "threshold_tokens": 4096
+    }
+  },
+  "channel_discovery": {
+    "candidate_transition_count": 12,
+    "geometry_filtering": false,
+    "historical_channel_imposition": false,
+    "merge_or_split": false,
+    "retain_every_support_eligible": true,
+    "source": "Qwen3 TRAIN baseline gold-to-prediction errors only",
+    "support_gate": {
+      "dev_correct_reference_min": 30,
+      "dev_error_min": 30,
+      "train_correct_reference_min": 60,
+      "train_error_min": 60
+    }
+  },
+  "claim_boundary": {
+    "future_framing": "prospective evaluation following one disclosed development-stage allocation amendment",
+    "inherited_v1_claim_boundary": {
+      "allowed": [
+        "prospective held-out-model validation",
+        "within-Qwen3 channel ordering",
+        "target alignment as candidate predictor",
+        "readability and target alignment as distinct properties"
+      ],
+      "forbidden": [
+        "new data-held-out confirmation without a new untouched population",
+        "universal predictor validation with K<5",
+        "geometry-based channel selection",
+        "dev first-order destinations as behavior"
+      ],
+      "model_line_limit": "The future Qwen3 evaluation may reuse rows seen by older models; at most PROSPECTIVE HELD-OUT-MODEL VALIDATION."
+    },
+    "not_allowed": "pristine no-amendment confirmation"
+  },
+  "data": {
+    "access": "direct seek and parse only emitted train/dev byte ranges",
+    "config": "test",
+    "dev_index_sha256": "2d2f078a47ae7702b5ccceb23a86d9d4cf223d7b7cc0de4eb8090e809afa3610",
+    "evaluation_manifest_opened": false,
+    "evaluation_payload_access_authorized": false,
+    "non_test_population": 3104,
+    "original_rows": 3652,
+    "repository": "nvidia/When2Call",
+    "revision": "0582f7749df63a96fdc3070932e83e72396ace53",
+    "sealed_evaluation_identity": {
+      "count": 548,
+      "inherited_by_reference": true,
+      "note": "identity carried forward as a committed hash only; the evaluation manifest is not opened and its hash is not recomputed",
+      "raw_source_sha256": "8c3694e583eeeb8dbc297e6cd90da70efc68efa4b6adb7227523e828c6b7b14c",
+      "recomputed_from_payload": false,
+      "source_manifest": "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json"
+    },
+    "selective_index": "final/results/qwen3_stage0_1/QWEN3_8B_TRAIN_DEV_BYTE_INDEX.csv",
+    "selective_index_sha256": "a97dadf2c6be34f800496fb142635cc1ee02e89daf6bfce68e29c94cf3017520",
+    "shuffle": "numpy.random.default_rng(42).permutation(3652), numpy 1.26.3",
+    "split": "mcq",
+    "train_index_sha256": "7b843b43080e946595eb48ffbad800b5b7223cc693ccc2c9c49da47c2393b1fc",
+    "v1_project_split": {
+      "dev": 548,
+      "sealed_evaluation": 548,
+      "train": 2556
+    },
+    "v2_project_split": {
+      "dev": 1104,
+      "sealed_evaluation": 548,
+      "train": 2000
+    }
+  },
+  "determinism": {
+    "batch_size": 1,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "model_eval": true,
+    "seed": 42,
+    "tf32": false,
+    "torch_deterministic_algorithms": true,
+    "use_cache": false
+  },
+  "direction": {
+    "error_population": "TRAIN gold=g and baseline prediction=p",
+    "estimator": "DiffMean",
+    "formula": "mean(reference activations)-mean(error activations)",
+    "norm_atol": 1e-05,
+    "normalize_l2": true,
+    "numeric_format": "one float32 safetensors file per channel through Git LFS",
+    "raw_norm_stored": true,
+    "reference_population": "TRAIN gold=g and baseline prediction=g",
+    "sign": "positive intended to increase gold relative to source"
+  },
+  "disclosure": {
+    "alternative_v2_split_tried": false,
+    "channel_manually_included": false,
+    "evaluation_split_sealed_and_unaccessed": true,
+    "required_label": "prospective evaluation following one disclosed development-stage allocation amendment",
+    "support_threshold_lowered": false,
+    "v1_allocation": {
+      "dev": 548,
+      "sealed_evaluation": 548,
+      "train": 2556
+    },
+    "v1_failure_cause": "outcome-conditioned reference-support bottleneck",
+    "v1_result": "NO_SUPPORT_ELIGIBLE_CHANNELS",
+    "v2_changes": "non-test development allocation and the audited attention backend only"
+  },
+  "forbidden": [
+    "evaluation rows/IDs/labels/predictions/scores/support counts/aggregates/channel membership",
+    "Stage2 preparation or execution",
+    "channel selection by geometry",
+    "direction/layer/Router/dose retuning",
+    "Qwen2.5/Llama/Phase10.x modification"
+  ],
+  "geometry": {
+    "a_contrast": "signed_contrast^2",
+    "a_dec": "squared direction projection into observed centered-gradient subspace",
+    "a_offaxis": "a_dec-a_contrast",
+    "additional": [
+      "protected per-sample q",
+      "resultant length",
+      "pairwise cosine distribution and 40-bin histogram",
+      "10000-draw exact rotational Markov random-axis null",
+      "rank-1 a_contrast null",
+      "rank-matched a_dec null",
+      "per-mode gradient norms",
+      "ranks and singular values",
+      "full/common ordering"
+    ],
+    "common_prompt": "sum prompt positions only when four prompt states match within 1e-6",
+    "contrast_axis": "unit(G_gold-G_source)",
+    "contrast_norm_tolerance": 1e-08,
+    "denominator_tolerance": 1e-12,
+    "dev_first_order_destination": "not computed because Stage2 dose is not frozen",
+    "full_effect": "sum prompt plus candidate positions",
+    "gradient": "sum over frozen positions of d mean-candidate-logprob / d L_inj MLP output",
+    "null_draws": 10000,
+    "null_seed": 20260731,
+    "offaxis_tolerance": 1e-07,
+    "primary": "Q_sum_channel=sum(a_offaxis)/sum(a_dec)",
+    "raw_tensor": "float32 [4,4096] in frozen mode order through Git LFS",
+    "secondary": "negative_sign_fraction",
+    "signed_contrast": "dot(d_hat,contrast_axis)",
+    "split": "DEV channel errors only",
+    "svd": "center four mode gradients; observed rank 1-3",
+    "svd_rank_tolerance": "max(1e-8, largest_singular_value*1e-6)"
+  },
+  "inherited_from": {
+    "note": "all inherited keys above were copied programmatically from the committed V1 protocol JSON",
+    "v1_protocol_sha256": "83a66bcefb8d3dcc69d7631a4380d3804fc3c393724fa885d74f4e7d21575b7c",
+    "v1_starting_head": "7d11f588326ef94af00aff8823a212c826e6fbf7"
+  },
+  "layer_mapping": {
+    "formula": "round(old_layer/(old_num_layers-1)*(new_num_layers-1))",
+    "historical_common_rule": "pre-existing Qwen2.5 modal configuration: common L_obs=20 and common L_inj=16",
+    "new_L_inj": 21,
+    "new_L_obs": 26,
+    "new_model_layers": 36,
+    "old_L_inj": 16,
+    "old_L_obs": 20,
+    "old_model_layers": 28,
+    "site": "model.model.layers[L].mlp forward output, after MLP internals and before decoder residual addition",
+    "sweep": false,
+    "tie_break": "nearest integer; exact .5 rounds to the even integer as Python round; neither frozen mapping is a tie",
+    "token_positions": "last prompt token for feature/direction; all positions for full-effect gradient",
+    "zero_based": true
+  },
+  "model": {
+    "architecture": "Qwen3ForCausalLM",
+    "attention_implementation": "eager",
+    "chat_template_sha256_utf8": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "dtype": "bfloat16",
+    "file_sha256": {
+      "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+      "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+      "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+      "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+      "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+      "model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "floating_main": false,
+    "hidden_size": 4096,
+    "local_exact_revision_cache": ".cache/qwen3_stage0_1/b968826d9c46dd6066d109eabc6255188de91218",
+    "model_type": "qwen3",
+    "num_hidden_layers": 36,
+    "official_checkpoint": true,
+    "repository": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "tokenizer_config_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "tokenizers": "0.21.1",
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0",
+    "weight_file_sizes": {
+      "model-00001-of-00005.safetensors": 3996250744,
+      "model-00002-of-00005.safetensors": 3993160032,
+      "model-00003-of-00005.safetensors": 3959604768,
+      "model-00004-of-00005.safetensors": 3187841392,
+      "model-00005-of-00005.safetensors": 1244659840
+    }
+  },
+  "output_schemas": {
+    "activation_cache": {
+      "format": "safetensors through Git LFS",
+      "metadata": [
+        "schema_version",
+        "scope",
+        "layers",
+        "site",
+        "sample_order_json",
+        "contains_dataset_text",
+        "dtype",
+        "tensor_shapes"
+      ],
+      "path": "QWEN3_STAGE1_ACTIVATIONS.safetensors",
+      "tensors": {
+        "activations_L21": "float32 [3104,4096] in baseline row order",
+        "activations_L26": "float32 [3104,4096] in baseline row order"
+      }
+    },
+    "baseline": {
+      "format": "JSONL; one deterministic row per authorized TRAIN/DEV sample",
+      "path": "QWEN3_STAGE1_BASELINE_ROWS.jsonl",
+      "row_fields": [
+        "schema_version",
+        "project_index",
+        "sample_id",
+        "split",
+        "gold",
+        "scores",
+        "prediction",
+        "runner_up",
+        "candidate_lengths",
+        "prompt_tokens",
+        "margin_vector"
+      ],
+      "schema_hash": "SHA256 of canonical sorted compact JSON schema",
+      "vector_hash": "SHA256 of newline-delimited sample_id<TAB>prediction in row order"
+    },
+    "channel_ledger": {
+      "fields": [
+        "channel",
+        "gold",
+        "source",
+        "four support counts",
+        "support status/reasons",
+        "direction status",
+        "Router status",
+        "geometry status",
+        "Stage2 status/reasons"
+      ],
+      "format": "CSV with all 12 directed transitions",
+      "path": "QWEN3_STAGE1_COMPLETE_CHANNEL_LEDGER.csv"
+    },
+    "direction": {
+      "format": "one safetensors file per support-eligible channel through Git LFS",
+      "metadata": "channel/layer/dimension/dtype/raw_norm/unit SHA/sign/population hashes and counts",
+      "tensor": "direction float32 [4096]"
+    },
+    "environment": {
+      "fields": "software/GPU/driver/CUDA/cuDNN/dtype/attention/determinism/model identity/load time",
+      "format": "JSON",
+      "path": "QWEN3_STAGE1_ENVIRONMENT.json"
+    },
+    "failure": {
+      "fields": "utc/mode/error type/error/scientific definitions changed/evaluation accessed",
+      "format": "JSON",
+      "path": "QWEN3_STAGE1_FAILURE.json"
+    },
+    "hash_manifests": "canonical path-to-SHA256 maps; each manifest excludes itself",
+    "raw_gradient": {
+      "format": "safetensors through Git LFS",
+      "metadata": "schema/scope/mode order/dimension/records JSON/no dataset text",
+      "tensor_key": "gradient__<channel>__<variant>__<ordinal>",
+      "tensor_shape": "float32 [4,4096] in frozen mode order"
+    },
+    "retry_ledger": {
+      "fields": "utc/mode/command/exit code/reason/invalidated outputs/script commit/script SHA256",
+      "format": "JSON"
+    },
+    "router": {
+      "format": "one safetensors file per support-eligible channel through Git LFS",
+      "metadata": "schema/channel/classifier/C/solver/seed/tau/no dataset text",
+      "tensors": "scaler mean/scale and classifier coefficient/intercept as float32"
+    },
+    "runtime_and_log": {
+      "log": "QWEN3_STAGE1_LOG.jsonl; schema_version/utc/event plus event-specific fields",
+      "runtime": "QWEN3_STAGE1_RUNTIME.json; status and phase timings, peak memory, counts, K and branch"
+    }
+  },
+  "protocol_version": "QWEN3_8B_STAGE0_1_V2",
+  "readout": {
+    "add_special_tokens": false,
+    "bos_added": false,
+    "candidate_source": "sample.answers[mode]",
+    "candidate_specific_multi_token": true,
+    "eos_added": false,
+    "forwards_per_sample": 4,
+    "free_generation": false,
+    "logit_positions": "prompt_len-1 through prompt_len+candidate_len-2",
+    "mode_order": [
+      "tool_call",
+      "direct",
+      "request_for_info",
+      "cannot_answer"
+    ],
+    "padding": "none",
+    "prompt": "Qwen3 official chat template; system instruction plus user question; parsed tools passed to the official tools argument",
+    "prompt_tokens_in_average": false,
+    "score": "mean log probability over complete candidate tokens",
+    "single_token_proxy": false,
+    "teacher_forced": true,
+    "truncation": "none; any sequence >8192 is blocking rather than skipped",
+    "validity": {
+      "all_scores_finite": true,
+      "pilot_repetitions": 2,
+      "pilot_rows": 8,
+      "pilot_selection": "ascending immutable TRAIN UUID",
+      "prediction_and_runner_up_identical": true,
+      "score_replay_atol": 1e-05,
+      "score_tie_tolerance": 1e-08,
+      "skipped_rows": 0,
+      "unresolved_ties": 0
+    }
+  },
+  "retry_failure": {
+    "engineering_retries": true,
+    "failures": [
+      "READOUT_INVALID_THINKING_MODE",
+      "LAYER_MAPPING_BLOCKED",
+      "QWEN3_STAGE1_COST_BLOCKED",
+      "QWEN3_STAGE0_1_BLOCKED"
+    ],
+    "retry_fields": [
+      "script commit",
+      "reason",
+      "command",
+      "exit code",
+      "invalidated outputs"
+    ],
+    "scientific_change_requires_new_protocol_version": true
+  },
+  "router": {
+    "classifier": "LogisticRegression(C=1.0,penalty=L2,solver=liblinear,max_iter=2000,tol=1e-4,random_state=42,class_weight=None,fit_intercept=True)",
+    "dev_comparable_metrics": "channel errors versus all correct dev rows",
+    "eligibility": "support + direction + valid full-effect dev geometry + dev ROC-AUC >=0.75 + selected-tau precision >=0.50",
+    "feature": "float32 L_obs=26 MLP output at final prompt token",
+    "fit_split": "TRAIN only",
+    "negative": "all correctly predicted TRAIN rows",
+    "positive": "channel TRAIN errors",
+    "standardization": "StandardScaler fit on train design",
+    "tau_grid": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "tau_population": "dev rows with baseline prediction equal to channel source",
+    "tau_rule": "smallest tau with precision >=0.50"
+  },
+  "schema_version": 1,
+  "stage2_branches": {
+    "K_0": {
+      "branch": "D",
+      "outcome": "NO_ELIGIBLE_CHANNELS",
+      "stage2_justified": false
+    },
+    "K_1_to_3": {
+      "branch": "C",
+      "future_primary": "real direction versus prospectively generated matched-random directions on destination selectivity for every eligible channel",
+      "predictor_claim": "withdrawn"
+    },
+    "K_eq_4": {
+      "branch": "B_LOW_POWER",
+      "future_primary": "same exact one-sided Kendall test; success only for extremely strong ordering"
+    },
+    "K_ge_5": {
+      "branch": "A",
+      "future_primary": "exact one-sided Kendall tau: lower dev Q_sum predicts higher evaluation destination selectivity"
+    },
+    "future_behavioral_endpoint": "gold arrivals / moved routed source-error samples",
+    "future_secondary_endpoint": "gold arrivals / all routed source-error samples",
+    "qwen25_transfer_thresholds": "exploratory only"
+  },
+  "status": "FROZEN_BEFORE_V2_SPLIT_AND_BEFORE_ANY_V2_CHANNEL_COUNT",
+  "supersedes": "QWEN3_8B_STAGE0_1_V1",
+  "thinking_mode": {
+    "ambiguity_failure": "READOUT_INVALID_THINKING_MODE",
+    "apply_chat_template": {
+      "add_generation_prompt": true,
+      "enable_thinking": false,
+      "tokenize": false,
+      "tools": "parsed sample tools passed separately"
+    },
+    "boundary": "official deterministic empty <think>\\n\\n</think> block followed immediately by candidate",
+    "generated_reasoning_before_candidate": false,
+    "template_choice_sweep": false
+  },
+  "tier": {
+    "block_3": "FROZEN once committed and pushed",
+    "block_4": "ONE DETERMINISTIC SCIENTIFIC COMPUTATION; no reseeding, no resizing, no alternative allocation",
+    "block_5": "DEVELOPMENTAL TRAIN/DEV COMPUTATION; engineering retries allowed; scientific definitions fixed",
+    "blocks_0_2": "DESCRIPTIVE / AUDIT / RETRYABLE",
+    "stage2_authorized": false
+  },
+  "v2_allocation_rule": {
+    "assignment": "first quota rows of each stratum to DEV; every remaining non-test row to TRAIN",
+    "dev_quotas": {
+      "cannot_answer": 390,
+      "request_for_info": 322,
+      "tool_call": 392
+    },
+    "guard_rows_special_treatment": false,
+    "may_depend_on": [
+      "immutable UUID",
+      "gold label",
+      "fixed literal salt",
+      "total target sizes"
+    ],
+    "must_not_depend_on": [
+      "baseline prediction",
+      "correct/error status",
+      "channel identity",
+      "candidate score",
+      "margin",
+      "sequence length",
+      "attention-guard status",
+      "Router result",
+      "geometry"
+    ],
+    "one_allocation_only": true,
+    "ordering": "within each gold stratum: split_hash ascending, immutable_uuid ascending as tie breaker",
+    "population": "the fixed 3104 non-test immutable UUIDs inherited from V1",
+    "quota_method": "largest remainder on gold-class sizes, quotas summing exactly to the dev target",
+    "salt": "SAKIKO_QWEN3_V2_ALLOC_V1|",
+    "split_hash": "SHA256(\"SAKIKO_QWEN3_V2_ALLOC_V1|\" + immutable_uuid), hex",
+    "stratification": "gold label only",
+    "targets": {
+      "dev": 1104,
+      "train": 2000
+    },
+    "train_quotas": {
+      "cannot_answer": 707,
+      "request_for_info": 584,
+      "tool_call": 709
+    }
+  },
+  "v2_sizing_justification": {
+    "dev_fraction": 0.3556701030927835,
+    "guarantee_disclaimer": "This does not guarantee any particular K or any particular channel identity.",
+    "inputs_not_used": [
+      "any candidate V2 partition",
+      "per-channel V2 membership",
+      "any alternative seed",
+      "any alternative size"
+    ],
+    "inputs_used": [
+      "total gold-class counts over the 3104 non-test rows",
+      "total correct-reference counts over the same rows",
+      "hypergeometric expectation and standard deviation",
+      "frozen support thresholds"
+    ],
+    "per_gold_feasibility": {
+      "cannot_answer": {
+        "correct_reference_total": 118,
+        "dev_correct_reference_expected": 41.95077484047402,
+        "dev_correct_reference_sd": 4.914308942473605,
+        "dev_margin_sd_above_threshold": 2.4318322230792893,
+        "dev_quota": 390,
+        "gold_total": 1097,
+        "train_correct_reference_expected": 76.04922515952597,
+        "train_correct_reference_sd": 4.914308942473605,
+        "train_margin_sd_above_threshold": 3.265815264647899,
+        "train_quota": 707
+      },
+      "request_for_info": {
+        "correct_reference_total": 154,
+        "dev_correct_reference_expected": 54.73289183222958,
+        "dev_correct_reference_sd": 5.414410170880889,
+        "dev_margin_sd_above_threshold": 4.567975282930163,
+        "dev_quota": 322,
+        "gold_total": 906,
+        "train_correct_reference_expected": 99.26710816777042,
+        "train_correct_reference_sd": 5.414410170880889,
+        "train_margin_sd_above_threshold": 7.252333482038712,
+        "train_quota": 584
+      },
+      "tool_call": {
+        "correct_reference_total": 1039,
+        "dev_correct_reference_expected": 369.92552225249773,
+        "dev_correct_reference_sd": 3.664258534752719,
+        "dev_margin_sd_above_threshold": 92.76788715331122,
+        "dev_quota": 392,
+        "gold_total": 1101,
+        "train_correct_reference_expected": 669.0744777475022,
+        "train_correct_reference_sd": 3.664258534752719,
+        "train_margin_sd_above_threshold": 166.22038864640467,
+        "train_quota": 709
+      }
+    },
+    "statement": "Aggregate feasibility calculations indicate that this allocation places the dominant reference classes inside the intended support window."
+  }
+}

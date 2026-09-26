@@ -1,0 +1,36 @@
+{
+  "cannot_answer__to__tool_call": {
+    "b_c": 0.4273469999999999,
+    "q": 0.125,
+    "n_channel_error": 193,
+    "source_exits": 68,
+    "gold_arrivals": 36,
+    "wrong_to_wrong": 32,
+    "target_hit": 0.5294117647058824,
+    "target_gain_rate": 0.02072538860103627,
+    "broke": 2,
+    "exposed_correct": 23,
+    "collateral_all": 0.004246284501061571,
+    "collateral_all_ci95": [
+      0.0005146590719794441,
+      0.015254198815983576
+    ]
+  },
+  "cannot_answer__to__direct": {
+    "b_c": 0.61198,
+    "q": 0.25,
+    "n_channel_error": 86,
+    "source_exits": 51,
+    "gold_arrivals": 22,
+    "wrong_to_wrong": 29,
+    "target_hit": 0.43137254901960786,
+    "target_gain_rate": -0.08139534883720931,
+    "broke": 0,
+    "exposed_correct": 0,
+    "collateral_all": 0.0,
+    "collateral_all_ci95": [
+      0.0,
+      0.007801425503586229
+    ]
+  }
+}

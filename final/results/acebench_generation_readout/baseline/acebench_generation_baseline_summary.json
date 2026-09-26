@@ -1,0 +1,134 @@
+{
+  "env": {
+    "torch": "2.1.2+cu121",
+    "transformers": "4.49.0",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "dtype": "bfloat16",
+    "gen_params": {
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 256
+    },
+    "model_path": ".cache/modelscope/Qwen/Qwen2___5-7B-Instruct",
+    "parser_version": "1.0"
+  },
+  "n": 800,
+  "accuracy": 0.75625,
+  "balanced_accuracy": 0.6205,
+  "macro_f1": 0.68682,
+  "majority_gold_share": 0.625,
+  "per_class": {
+    "tool_call": {
+      "precision": 0.8259,
+      "recall": 0.892,
+      "f1": 0.8577,
+      "support": 500
+    },
+    "ask_user": {
+      "precision": 0.5455,
+      "recall": 0.42,
+      "f1": 0.4746,
+      "support": 100
+    },
+    "flag_param_error": {
+      "precision": 0.875,
+      "recall": 0.42,
+      "f1": 0.5676,
+      "support": 100
+    },
+    "cannot_comply": {
+      "precision": 0.974,
+      "recall": 0.75,
+      "f1": 0.8475,
+      "support": 100
+    }
+  },
+  "per_class_recall": {
+    "tool_call": 0.892,
+    "ask_user": 0.42,
+    "flag_param_error": 0.42,
+    "cannot_comply": 0.75
+  },
+  "prediction_distribution": {
+    "tool_call": 540,
+    "flag_param_error": 48,
+    "ask_user": 77,
+    "UNKNOWN": 58,
+    "cannot_comply": 77
+  },
+  "max_pred_share": 0.675,
+  "unknown_rate": 0.0725,
+  "ambiguous_rate": 0.0112,
+  "conflict_rate": 0.0025,
+  "skipped": 0,
+  "empty_rate": 0.0,
+  "eos_rate": 0.9587,
+  "gen_len": {
+    "mean": 75.9,
+    "p50": 49,
+    "p90": 189,
+    "p99": 256,
+    "max": 256
+  },
+  "confusion_gold_by_pred": {
+    "tool_call": {
+      "tool_call": 446,
+      "ask_user": 7,
+      "flag_param_error": 5,
+      "cannot_comply": 1,
+      "UNKNOWN": 41
+    },
+    "ask_user": {
+      "tool_call": 40,
+      "ask_user": 42,
+      "flag_param_error": 1,
+      "cannot_comply": 1,
+      "UNKNOWN": 16
+    },
+    "flag_param_error": {
+      "tool_call": 52,
+      "ask_user": 6,
+      "flag_param_error": 42,
+      "cannot_comply": 0,
+      "UNKNOWN": 0
+    },
+    "cannot_comply": {
+      "tool_call": 2,
+      "ask_user": 22,
+      "flag_param_error": 0,
+      "cannot_comply": 75,
+      "UNKNOWN": 1
+    }
+  },
+  "parser_version": "1.0",
+  "per_lang": {
+    "en": {
+      "n": 400,
+      "acc": 0.805,
+      "unknown_rate": 0.035
+    },
+    "zh": {
+      "n": 400,
+      "acc": 0.7075,
+      "unknown_rate": 0.11
+    }
+  },
+  "per_split": {
+    "test": {
+      "n": 116,
+      "acc": 0.8017,
+      "unknown_rate": 0.0603
+    },
+    "train": {
+      "n": 560,
+      "acc": 0.7554,
+      "unknown_rate": 0.0661
+    },
+    "val": {
+      "n": 124,
+      "acc": 0.7177,
+      "unknown_rate": 0.1129
+    }
+  }
+}

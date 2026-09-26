@@ -1,0 +1,176 @@
+setting,verdict,lambda_wrong,lambda_broken,utility_per_channel,utility_positive
+Qwen3-8B ca->tc,ADMIT,0.25,0.5,0.3966,True
+Qwen3-8B ca->tc,ADMIT,0.25,1,0.3966,True
+Qwen3-8B ca->tc,ADMIT,0.25,2,0.3966,True
+Qwen3-8B ca->tc,ADMIT,0.25,5,0.3966,True
+Qwen3-8B ca->tc,ADMIT,0.25,10,0.3966,True
+Qwen3-8B ca->tc,ADMIT,0.5,0.5,0.3563,True
+Qwen3-8B ca->tc,ADMIT,0.5,1,0.3563,True
+Qwen3-8B ca->tc,ADMIT,0.5,2,0.3563,True
+Qwen3-8B ca->tc,ADMIT,0.5,5,0.3563,True
+Qwen3-8B ca->tc,ADMIT,0.5,10,0.3563,True
+Qwen3-8B ca->tc,ADMIT,1,0.5,0.2759,True
+Qwen3-8B ca->tc,ADMIT,1,1,0.2759,True
+Qwen3-8B ca->tc,ADMIT,1,2,0.2759,True
+Qwen3-8B ca->tc,ADMIT,1,5,0.2759,True
+Qwen3-8B ca->tc,ADMIT,1,10,0.2759,True
+Qwen3-8B ca->tc,ADMIT,2,0.5,0.1149,True
+Qwen3-8B ca->tc,ADMIT,2,1,0.1149,True
+Qwen3-8B ca->tc,ADMIT,2,2,0.1149,True
+Qwen3-8B ca->tc,ADMIT,2,5,0.1149,True
+Qwen3-8B ca->tc,ADMIT,2,10,0.1149,True
+Qwen3-8B ca->tc,ADMIT,4,0.5,-0.2069,False
+Qwen3-8B ca->tc,ADMIT,4,1,-0.2069,False
+Qwen3-8B ca->tc,ADMIT,4,2,-0.2069,False
+Qwen3-8B ca->tc,ADMIT,4,5,-0.2069,False
+Qwen3-8B ca->tc,ADMIT,4,10,-0.2069,False
+Qwen3-4B ca->tc,DECLINE,0.25,0.5,0.2399,True
+Qwen3-4B ca->tc,DECLINE,0.25,1,0.2359,True
+Qwen3-4B ca->tc,DECLINE,0.25,2,0.2278,True
+Qwen3-4B ca->tc,DECLINE,0.25,5,0.2036,True
+Qwen3-4B ca->tc,DECLINE,0.25,10,0.1633,True
+Qwen3-4B ca->tc,DECLINE,0.5,0.5,0.1855,True
+Qwen3-4B ca->tc,DECLINE,0.5,1,0.1815,True
+Qwen3-4B ca->tc,DECLINE,0.5,2,0.1734,True
+Qwen3-4B ca->tc,DECLINE,0.5,5,0.1492,True
+Qwen3-4B ca->tc,DECLINE,0.5,10,0.1089,True
+Qwen3-4B ca->tc,DECLINE,1,0.5,0.0766,True
+Qwen3-4B ca->tc,DECLINE,1,1,0.0726,True
+Qwen3-4B ca->tc,DECLINE,1,2,0.0645,True
+Qwen3-4B ca->tc,DECLINE,1,5,0.0403,True
+Qwen3-4B ca->tc,DECLINE,1,10,0.0,False
+Qwen3-4B ca->tc,DECLINE,2,0.5,-0.1411,False
+Qwen3-4B ca->tc,DECLINE,2,1,-0.1452,False
+Qwen3-4B ca->tc,DECLINE,2,2,-0.1532,False
+Qwen3-4B ca->tc,DECLINE,2,5,-0.1774,False
+Qwen3-4B ca->tc,DECLINE,2,10,-0.2177,False
+Qwen3-4B ca->tc,DECLINE,4,0.5,-0.5766,False
+Qwen3-4B ca->tc,DECLINE,4,1,-0.5806,False
+Qwen3-4B ca->tc,DECLINE,4,2,-0.5887,False
+Qwen3-4B ca->tc,DECLINE,4,5,-0.6129,False
+Qwen3-4B ca->tc,DECLINE,4,10,-0.6532,False
+Gemma ca->tc,DECLINE,0.25,0.5,0.1458,True
+Gemma ca->tc,DECLINE,0.25,1,0.1406,True
+Gemma ca->tc,DECLINE,0.25,2,0.1302,True
+Gemma ca->tc,DECLINE,0.25,5,0.099,True
+Gemma ca->tc,DECLINE,0.25,10,0.0469,True
+Gemma ca->tc,DECLINE,0.5,0.5,0.1198,True
+Gemma ca->tc,DECLINE,0.5,1,0.1146,True
+Gemma ca->tc,DECLINE,0.5,2,0.1042,True
+Gemma ca->tc,DECLINE,0.5,5,0.0729,True
+Gemma ca->tc,DECLINE,0.5,10,0.0208,True
+Gemma ca->tc,DECLINE,1,0.5,0.0677,True
+Gemma ca->tc,DECLINE,1,1,0.0625,True
+Gemma ca->tc,DECLINE,1,2,0.0521,True
+Gemma ca->tc,DECLINE,1,5,0.0208,True
+Gemma ca->tc,DECLINE,1,10,-0.0312,False
+Gemma ca->tc,DECLINE,2,0.5,-0.0365,False
+Gemma ca->tc,DECLINE,2,1,-0.0417,False
+Gemma ca->tc,DECLINE,2,2,-0.0521,False
+Gemma ca->tc,DECLINE,2,5,-0.0833,False
+Gemma ca->tc,DECLINE,2,10,-0.1354,False
+Gemma ca->tc,DECLINE,4,0.5,-0.2448,False
+Gemma ca->tc,DECLINE,4,1,-0.25,False
+Gemma ca->tc,DECLINE,4,2,-0.2604,False
+Gemma ca->tc,DECLINE,4,5,-0.2917,False
+Gemma ca->tc,DECLINE,4,10,-0.3438,False
+Gemma ca->direct DEV,DECLINE,0.25,0.5,0.2122,True
+Gemma ca->direct DEV,DECLINE,0.25,1,0.2122,True
+Gemma ca->direct DEV,DECLINE,0.25,2,0.2122,True
+Gemma ca->direct DEV,DECLINE,0.25,5,0.2122,True
+Gemma ca->direct DEV,DECLINE,0.25,10,0.2122,True
+Gemma ca->direct DEV,DECLINE,0.5,0.5,0.2035,True
+Gemma ca->direct DEV,DECLINE,0.5,1,0.2035,True
+Gemma ca->direct DEV,DECLINE,0.5,2,0.2035,True
+Gemma ca->direct DEV,DECLINE,0.5,5,0.2035,True
+Gemma ca->direct DEV,DECLINE,0.5,10,0.2035,True
+Gemma ca->direct DEV,DECLINE,1,0.5,0.186,True
+Gemma ca->direct DEV,DECLINE,1,1,0.186,True
+Gemma ca->direct DEV,DECLINE,1,2,0.186,True
+Gemma ca->direct DEV,DECLINE,1,5,0.186,True
+Gemma ca->direct DEV,DECLINE,1,10,0.186,True
+Gemma ca->direct DEV,DECLINE,2,0.5,0.1512,True
+Gemma ca->direct DEV,DECLINE,2,1,0.1512,True
+Gemma ca->direct DEV,DECLINE,2,2,0.1512,True
+Gemma ca->direct DEV,DECLINE,2,5,0.1512,True
+Gemma ca->direct DEV,DECLINE,2,10,0.1512,True
+Gemma ca->direct DEV,DECLINE,4,0.5,0.0814,True
+Gemma ca->direct DEV,DECLINE,4,1,0.0814,True
+Gemma ca->direct DEV,DECLINE,4,2,0.0814,True
+Gemma ca->direct DEV,DECLINE,4,5,0.0814,True
+Gemma ca->direct DEV,DECLINE,4,10,0.0814,True
+Phi-3.5,WOULD_DECLINE,0.25,0.5,0.4452,True
+Phi-3.5,WOULD_DECLINE,0.25,1,0.2774,True
+Phi-3.5,WOULD_DECLINE,0.25,2,-0.0581,False
+Phi-3.5,WOULD_DECLINE,0.25,5,-1.0645,False
+Phi-3.5,WOULD_DECLINE,0.25,10,-2.7419,False
+Phi-3.5,WOULD_DECLINE,0.5,0.5,0.3677,True
+Phi-3.5,WOULD_DECLINE,0.5,1,0.2,True
+Phi-3.5,WOULD_DECLINE,0.5,2,-0.1355,False
+Phi-3.5,WOULD_DECLINE,0.5,5,-1.1419,False
+Phi-3.5,WOULD_DECLINE,0.5,10,-2.8194,False
+Phi-3.5,WOULD_DECLINE,1,0.5,0.2129,True
+Phi-3.5,WOULD_DECLINE,1,1,0.0452,True
+Phi-3.5,WOULD_DECLINE,1,2,-0.2903,False
+Phi-3.5,WOULD_DECLINE,1,5,-1.2968,False
+Phi-3.5,WOULD_DECLINE,1,10,-2.9742,False
+Phi-3.5,WOULD_DECLINE,2,0.5,-0.0968,False
+Phi-3.5,WOULD_DECLINE,2,1,-0.2645,False
+Phi-3.5,WOULD_DECLINE,2,2,-0.6,False
+Phi-3.5,WOULD_DECLINE,2,5,-1.6065,False
+Phi-3.5,WOULD_DECLINE,2,10,-3.2839,False
+Phi-3.5,WOULD_DECLINE,4,0.5,-0.7161,False
+Phi-3.5,WOULD_DECLINE,4,1,-0.8839,False
+Phi-3.5,WOULD_DECLINE,4,2,-1.2194,False
+Phi-3.5,WOULD_DECLINE,4,5,-2.2258,False
+Phi-3.5,WOULD_DECLINE,4,10,-3.9032,False
+Llama ca_tc TEST,REJECT,0.25,0.5,0.1032,True
+Llama ca_tc TEST,REJECT,0.25,1,0.0794,True
+Llama ca_tc TEST,REJECT,0.25,2,0.0317,True
+Llama ca_tc TEST,REJECT,0.25,5,-0.1111,False
+Llama ca_tc TEST,REJECT,0.25,10,-0.3492,False
+Llama ca_tc TEST,REJECT,0.5,0.5,-0.0714,False
+Llama ca_tc TEST,REJECT,0.5,1,-0.0952,False
+Llama ca_tc TEST,REJECT,0.5,2,-0.1429,False
+Llama ca_tc TEST,REJECT,0.5,5,-0.2857,False
+Llama ca_tc TEST,REJECT,0.5,10,-0.5238,False
+Llama ca_tc TEST,REJECT,1,0.5,-0.4206,False
+Llama ca_tc TEST,REJECT,1,1,-0.4444,False
+Llama ca_tc TEST,REJECT,1,2,-0.4921,False
+Llama ca_tc TEST,REJECT,1,5,-0.6349,False
+Llama ca_tc TEST,REJECT,1,10,-0.873,False
+Llama ca_tc TEST,REJECT,2,0.5,-1.119,False
+Llama ca_tc TEST,REJECT,2,1,-1.1429,False
+Llama ca_tc TEST,REJECT,2,2,-1.1905,False
+Llama ca_tc TEST,REJECT,2,5,-1.3333,False
+Llama ca_tc TEST,REJECT,2,10,-1.5714,False
+Llama ca_tc TEST,REJECT,4,0.5,-2.5159,False
+Llama ca_tc TEST,REJECT,4,1,-2.5397,False
+Llama ca_tc TEST,REJECT,4,2,-2.5873,False
+Llama ca_tc TEST,REJECT,4,5,-2.7302,False
+Llama ca_tc TEST,REJECT,4,10,-2.9683,False
+Llama ca_direct TEST,REJECT,0.25,0.5,0.4531,True
+Llama ca_direct TEST,REJECT,0.25,1,0.4531,True
+Llama ca_direct TEST,REJECT,0.25,2,0.4531,True
+Llama ca_direct TEST,REJECT,0.25,5,0.4531,True
+Llama ca_direct TEST,REJECT,0.25,10,0.4531,True
+Llama ca_direct TEST,REJECT,0.5,0.5,0.3438,True
+Llama ca_direct TEST,REJECT,0.5,1,0.3438,True
+Llama ca_direct TEST,REJECT,0.5,2,0.3438,True
+Llama ca_direct TEST,REJECT,0.5,5,0.3438,True
+Llama ca_direct TEST,REJECT,0.5,10,0.3438,True
+Llama ca_direct TEST,REJECT,1,0.5,0.125,True
+Llama ca_direct TEST,REJECT,1,1,0.125,True
+Llama ca_direct TEST,REJECT,1,2,0.125,True
+Llama ca_direct TEST,REJECT,1,5,0.125,True
+Llama ca_direct TEST,REJECT,1,10,0.125,True
+Llama ca_direct TEST,REJECT,2,0.5,-0.3125,False
+Llama ca_direct TEST,REJECT,2,1,-0.3125,False
+Llama ca_direct TEST,REJECT,2,2,-0.3125,False
+Llama ca_direct TEST,REJECT,2,5,-0.3125,False
+Llama ca_direct TEST,REJECT,2,10,-0.3125,False
+Llama ca_direct TEST,REJECT,4,0.5,-1.1875,False
+Llama ca_direct TEST,REJECT,4,1,-1.1875,False
+Llama ca_direct TEST,REJECT,4,2,-1.1875,False
+Llama ca_direct TEST,REJECT,4,5,-1.1875,False
+Llama ca_direct TEST,REJECT,4,10,-1.1875,False

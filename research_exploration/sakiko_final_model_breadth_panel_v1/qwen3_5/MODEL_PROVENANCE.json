@@ -1,0 +1,14 @@
+{
+  "frozen_revision_prefix": "c20223623576",
+  "gemma_terminal_outcome_at_resume": "GEMMA_FORMAL_DECLINE",
+  "inclusion_conditioned_on_gemma_result": false,
+  "local_dir": "/root/autodl-tmp/models/qwen3.5-9b-c2022362",
+  "not_a_replacement_for_gemma": true,
+  "panel": "exactly two slots (Gemma + Qwen3.5); model expansion terminates after both are adjudicated",
+  "prior_sakiko_exposure": "none before this panel; config/tokenizer metadata only",
+  "provenance_limitation": "Qwen3.5 was prospectively specified before Gemma inference, but FINAL_MODEL_PANEL_FREEZE.md and the later Gemma artifacts first entered Git in the same commit c6e6b62. Temporal precedence rests on document self-consistency (the same file records Gemma weights as NOT OBTAINED) and filesystem timestamps, NOT on an earlier Git commit. This is NOT cryptographic pre-registration and must never be described as such.",
+  "repo_id": "Qwen/Qwen3.5-9B",
+  "resolved_full_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "role": "secondary cross-generation / architecture stress",
+  "slot": "MODEL_Q"
+}

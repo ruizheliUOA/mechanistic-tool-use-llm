@@ -1,0 +1,120 @@
+{
+  "arm_inventory": {
+    "named_forward": 6,
+    "randoms": 59,
+    "score_space": "derived, not an arm",
+    "total_formal_arms": 65
+  },
+  "channel": "cannot_answer__to__tool_call",
+  "controls": {
+    "diffmean": "mean(TRAIN correct gold ref) - mean(TRAIN channel error), L30 cross-layer and L24 same-layer",
+    "reverse": "-d_grad at L24, same absolute norm",
+    "score_space": "bias +/- b_c/2 in score space",
+    "ungated": "d_grad at L24 over all pred==source rows",
+    "wrong_layer": "d_grad at L30, same absolute norm, NOT renormalised",
+    "zero": "delta=None, must reproduce baseline exactly"
+  },
+  "direction": {
+    "estimator": "d_grad = unit(mean_i unit(G_i,gold - G_i,source)) 4-mode full-effect at L_inj",
+    "n_train_errors": 401,
+    "sha256": "e939665b4da3e8e29080ee15d388e1e0b81f4883ad3d64fa4c931a52afabd800",
+    "train_only": true
+  },
+  "dose": {
+    "absolute_delta_norm": 0.15951178515982883,
+    "grid": [
+      0.0,
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "q": 0.125,
+    "rule": "min(admissible)",
+    "s_c": 1.2760942812786307
+  },
+  "formal_conjunction": {
+    "clean_collateral_max": 0.05,
+    "collateral_ci_upper_max": 0.05,
+    "rule": "10/10; 9/10 = DECLINE",
+    "specificity": "add-one empirical p over K=59 fresh matched randoms",
+    "support_min": 30,
+    "target_gain_ci_lower_gt": 0,
+    "target_gain_gt": 0,
+    "target_hit_ci_lower_gt": 0.5,
+    "target_hit_gt": 0.5,
+    "zero_reproduces_baseline_exactly": true
+  },
+  "formal_randoms": {
+    "K": 59,
+    "dimension": 3584,
+    "matrix_sha256": "7aebaa6b74426e7a18f47ae5d326a1ad32854f7587f26e74bc3a766c8d416ddc",
+    "salt": "SAKIKO_GEMMA_2_9B_CA_TC_STAGE2_RANDOM_V1|",
+    "status": "GENERATED_AND_FROZEN"
+  },
+  "gold": "cannot_answer",
+  "model": {
+    "repo": "google/gemma-2-9b-it",
+    "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819"
+  },
+  "population": {
+    "allocation": "canonical modern V2",
+    "dev": 1101,
+    "sealed_count": 548,
+    "sealed_identity": "inherited by reference; manifest NOT opened",
+    "train": 1997
+  },
+  "repository_head": "f5ba3a47f63f373df234013ed568ac6f43b2f8c9",
+  "representation": {
+    "L_inj": 24,
+    "L_obs": 30,
+    "hidden_size": 3584,
+    "site": "model.model.layers[L].mlp forward output"
+  },
+  "router": {
+    "C": 1.0,
+    "family": "StandardScaler+LogisticRegression",
+    "max_iter": 2000,
+    "penalty": "l2",
+    "seed": 42,
+    "solver": "liblinear",
+    "tau": 0.4,
+    "tol": 0.0001
+  },
+  "score_space": {
+    "b_c": 0.4273469999999999
+  },
+  "software": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "attn_implementation": "eager",
+    "cuda": "12.1",
+    "dtype": "bfloat16",
+    "gpu": "RTX 4090 D 24564MiB",
+    "gradient_checkpointing": {
+      "enabled": true,
+      "equivalence_evidence": "score diff 0.0, grad relative-L2 0.0, max-abs 0.0 vs non-checkpointed reference",
+      "train_mode_justification": "all dropout probabilities are exactly zero (attention_dropout 0.0, no nn.Dropout p!=0)",
+      "use_reentrant": false
+    },
+    "seed": 42,
+    "tokenizers": "0.21.1",
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0"
+  },
+  "source": "tool_call",
+  "statistics": {
+    "both_collateral_denominators_must_be_reported": true,
+    "collateral_denominators": [
+      "all baseline-correct (frozen endpoint)",
+      "Router-fired n baseline-correct (exposed-at-risk)"
+    ],
+    "destination": "SOURCE_RETAINED | GOLD_ARRIVAL | OTHER_WRONG",
+    "intervals": "percentile bootstrap 10000 draws (Target Gain, target-hit); Clopper-Pearson exact (collateral)",
+    "prohibition": "passing the frozen all-correct collateral endpoint must never be described as deployment safety",
+    "specificity": "add-one empirical p = (1 + #{random >= real})/(K+1)",
+    "target_gain": "(gold - wrong_to_wrong)/n_channel_error",
+    "target_hit": "gold/source_exits"
+  }
+}

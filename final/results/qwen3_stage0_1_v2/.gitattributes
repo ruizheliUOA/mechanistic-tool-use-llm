@@ -1,0 +1,6 @@
+# Per-directory LFS rules for Qwen3 V2 numerical outputs.
+# The repository-root .gitattributes is a frozen V1 Block 0 artifact and is
+# deliberately NOT modified; git applies this file to this subtree only.
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+directions/*.safetensors filter=lfs diff=lfs merge=lfs -text
+routers/*.safetensors filter=lfs diff=lfs merge=lfs -text

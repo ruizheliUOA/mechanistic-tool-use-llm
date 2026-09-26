@@ -1,0 +1,6 @@
+arm,arm_order,corrected,broken,net,component
+real,5,107,52,55,real
+random direction,4,71,57,14,direction
+reversed,3,71,57,14,sign
+wrong layer,2,66,63,3,site
+mismatched channel,1,38,55,-17,channel

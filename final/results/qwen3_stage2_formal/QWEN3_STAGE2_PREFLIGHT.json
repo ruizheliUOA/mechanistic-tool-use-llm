@@ -1,0 +1,58 @@
+{
+  "K": 59,
+  "L_inj": 21,
+  "L_obs": 26,
+  "absolute_perturbation_norm": 41.56598488897048,
+  "b_c": 1.673107087612152,
+  "channel": "cannot_answer__to__tool_call",
+  "checks": {
+    "bootstrap": {
+      "derived_seed": 3760584632839820046,
+      "draws": 10000,
+      "seed_salt": "SAKIKO_QWEN3_CA_TC_STAGE2_BOOTSTRAP_V1"
+    },
+    "configuration_matches_preregistration": true,
+    "directions_valid": true,
+    "disk_free_bytes": 54538903552,
+    "execution_freeze": {
+      "arm_order_ok": true,
+      "batch_size": 1,
+      "no_resume_between_arms": true,
+      "single_model_load": true,
+      "single_process": true
+    },
+    "formal_namespace_empty": true,
+    "formal_randoms": {
+      "K": 59,
+      "all_hashes_match": true,
+      "all_unit_norm": true,
+      "seed_disjoint": true
+    },
+    "frozen_artifacts": 15,
+    "model_files": 12,
+    "sealed_evaluation": {
+      "count": 548,
+      "identity_inherited_by_reference": true,
+      "ids_enumerated": false,
+      "payload_opened": false,
+      "source_manifest": "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json"
+    },
+    "software": {
+      "numpy": "1.26.3",
+      "tokenizers": "0.21.1",
+      "torch": "2.1.2+cu121",
+      "transformers": "4.51.0"
+    }
+  },
+  "endpoints_computed": false,
+  "evaluation_payload_opened": false,
+  "evaluation_predictions_computed": false,
+  "full_model_loaded": false,
+  "mode": "preflight",
+  "q": 1.0,
+  "s_c": 41.56598488897048,
+  "schema_version": 1,
+  "status": "PASS",
+  "tau": 0.4,
+  "utc": "2026-08-03T14:54:18Z"
+}

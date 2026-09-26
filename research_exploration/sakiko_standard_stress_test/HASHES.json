@@ -1,0 +1,24 @@
+{
+  "artifacts": {
+    "DECISION_UTILITY_SENSITIVITY.csv": "626006c7372102f5b08b01e0f2d9a797620ff5b932b0339b398466d29109a2d0",
+    "FILE_INVENTORY.json": "53cc8218c1c4b4a7251e35172ec9d2dadd77f76fd1bb890a50de14c980213beb",
+    "FINAL_GO_NO_GO.md": "2446dcab0ed2a1c1c2a8fe6bf6787ea56b0f63cf77f6525c54f78adb93c2fa0f",
+    "ICLR_HOSTILE_REVIEW_PANEL.md": "31c1f12ad25dcbb1fdf75a29786f866a3b54105bed8d955cc842db88ad9bb779",
+    "ICLR_META_REVIEW.md": "97d5090d826dcaf233a05b133e1f6e86b501c6df4ef841375d6d94d4e501be15",
+    "LICENCE_MINIMALITY_AUDIT.md": "ca0c09c6fe9687736d4f882f714299ce022fb759f278292b19d7e1cf12e31085",
+    "LICENCE_PATHOLOGY_COVERAGE.md": "48cbb3a162ab654e656671236d0cd55e41482680a8294154e6e7f59780733481",
+    "LICENCE_PATHOLOGY_COVERAGE_MATRIX.csv": "d3c7580683279c14aecedc07ec569102a1bbd3b06c2a5c1f34433c34ecf2df2e",
+    "LICENCE_VS_SIMPLE_RULES.csv": "79b73ddabbf15ca1d845332fabd2cd4be2d361f4f105e746710d5218b87149e6",
+    "SINGLE_BENCHMARK_CLAIM_SCOPE.md": "e69ca295dccc9e9cbf123cbc88f488a3fc896700f456b2582353c0a4b57da85e",
+    "STANDARD_INCREMENTAL_VALUE_AUDIT.md": "62409cae272ecc0acecfac677ab11544bbf1a52bfa035c68aed89e09f1778eca",
+    "WITHOUT_SAKIKO_COUNTERFACTUAL.md": "dc41dca85bd49ec47acb376ed385846a52cce90d7f1217227f9c7d41a8a98d63"
+  },
+  "decision": "B. SUBMIT, BUT NARROW THE CLAIM SUBSTANTIALLY",
+  "gpu_used": false,
+  "historical_verdicts_modified": false,
+  "licence_modified": false,
+  "package": "research_exploration/sakiko_standard_stress_test",
+  "phase": "adversarial standard stress test",
+  "repository_head": "49dc39031c535135fac3c952d687790fd6eb3a0c",
+  "sealed_accessed": false
+}

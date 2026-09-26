@@ -1,0 +1,10 @@
+channel,gold,pred,count_all,count_train,count_val,count_test,pct_err,status,bootstrap,ref_pool,own_val_err,scope_pass,ref_pass,power_pass,stage1_eligible,reason
+rfi_tc,request_for_info,tool_call,678,471,101,106,33.17,stable,1.0,202,101,True,True,True,True,"eligible"
+ca_tc,cannot_answer,tool_call,535,383,79,73,26.17,stable,1.0,146,79,True,True,True,True,"eligible"
+ca_direct,cannot_answer,direct,463,316,73,74,22.65,stable,1.0,146,73,True,True,True,True,"eligible"
+ca_rfi,cannot_answer,request_for_info,99,68,10,21,4.84,weak,0.06,146,10,True,True,False,False,"own_val_err=10<30"
+tc_direct,tool_call,direct,91,66,13,12,4.45,weak,0.09,776,13,True,True,False,False,"own_val_err=13<30"
+rfi_direct,request_for_info,direct,73,54,11,8,3.57,weak,0.0,202,11,True,True,False,False,"own_val_err=11<30"
+tc_rfi,tool_call,request_for_info,66,45,9,12,3.23,weak,0.0,776,9,True,True,False,False,"own_val_err=9<30"
+rfi_ca,request_for_info,cannot_answer,25,18,5,2,1.22,insufficient,0.0,202,5,False,True,False,False,"train<30; eval<8; status=insufficient; own_val_err=5<30"
+tc_ca,tool_call,cannot_answer,14,11,2,1,0.68,insufficient,0.0,776,2,False,True,False,False,"train<30; eval<8; status=insufficient; own_val_err=2<30"

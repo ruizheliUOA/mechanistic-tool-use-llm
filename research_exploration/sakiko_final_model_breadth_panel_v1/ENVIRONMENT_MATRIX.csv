@@ -1,0 +1,4 @@
+environment,status,python,torch,cuda,transformers,tokenizers,hub,attn_impl,dtype,deterministic,note
+qwen3_formal_historical,PRESERVED UNCHANGED,3.x,2.1.2+cu121,12.1,4.51.0,0.21.1,0.36.2,as frozen,bfloat16,as frozen,"not modified by this task; prior formal Qwen3 environment remains reproducible"
+environment_gemma_final_panel,NOT CREATED,-,-,-,-,-,-,-,-,-,"not reached - MODEL_G blocked at gated-repo access before any environment work"
+env_qwen35_final_panel,CREATED THEN REMOVED,3.x (venv --system-site-packages),2.1.2+cu121 inherited,12.1,install failed,-,-,-,-,-,"transformers==4.57.6 install stalled on the 12.0 MB wheel with zero completion; venv deleted to avoid leaving a half-built environment"

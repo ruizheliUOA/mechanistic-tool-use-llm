@@ -1,0 +1,549 @@
+{
+  "cannot_answer__to__tool_call": {
+    "zero@0.0": {
+      "n_channel_error": 193,
+      "source_exits": 0,
+      "gold_arrivals": 0,
+      "wrong_to_wrong": 0,
+      "target_hit": null,
+      "target_gain_rate": 0.0,
+      "tgr_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed": 0,
+      "broke": 0,
+      "net": 0,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": 0.0,
+      "admissible": false
+    },
+    "d_grad@0.125": {
+      "n_channel_error": 193,
+      "source_exits": 51,
+      "gold_arrivals": 34,
+      "wrong_to_wrong": 17,
+      "target_hit": 0.6666666666666666,
+      "target_gain_rate": 0.08808290155440414,
+      "tgr_ci95": [
+        0.015544041450777202,
+        0.16062176165803108
+      ],
+      "fixed": 34,
+      "broke": 0,
+      "net": 34,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": 0.0,
+      "admissible": true
+    },
+    "d_grad@0.25": {
+      "n_channel_error": 193,
+      "source_exits": 95,
+      "gold_arrivals": 62,
+      "wrong_to_wrong": 33,
+      "target_hit": 0.6526315789473685,
+      "target_gain_rate": 0.15025906735751296,
+      "tgr_ci95": [
+        0.05181347150259067,
+        0.24870466321243523
+      ],
+      "fixed": 62,
+      "broke": 3,
+      "net": 59,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.006369426751592357,
+      "collateral_all_ci95": [
+        0.0013154599822600371,
+        0.01850050898921754
+      ],
+      "collateral_eligible": 0.13043478260869565,
+      "admissible": true
+    },
+    "d_grad@0.5": {
+      "n_channel_error": 193,
+      "source_exits": 132,
+      "gold_arrivals": 100,
+      "wrong_to_wrong": 32,
+      "target_hit": 0.7575757575757576,
+      "target_gain_rate": 0.35233160621761656,
+      "tgr_ci95": [
+        0.24870466321243523,
+        0.45595854922279794
+      ],
+      "fixed": 100,
+      "broke": 9,
+      "net": 91,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.01910828025477707,
+      "collateral_all_ci95": [
+        0.008773835497901006,
+        0.0359625585128618
+      ],
+      "collateral_eligible": 0.391304347826087,
+      "admissible": true
+    },
+    "d_grad@1.0": {
+      "n_channel_error": 193,
+      "source_exits": 152,
+      "gold_arrivals": 126,
+      "wrong_to_wrong": 26,
+      "target_hit": 0.8289473684210527,
+      "target_gain_rate": 0.5181347150259067,
+      "tgr_ci95": [
+        0.41450777202072536,
+        0.616580310880829
+      ],
+      "fixed": 126,
+      "broke": 11,
+      "net": 115,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.02335456475583864,
+      "collateral_all_ci95": [
+        0.011714842014091835,
+        0.041402905951393315
+      ],
+      "collateral_eligible": 0.4782608695652174,
+      "admissible": true
+    },
+    "d_grad@2.0": {
+      "n_channel_error": 193,
+      "source_exits": 158,
+      "gold_arrivals": 133,
+      "wrong_to_wrong": 25,
+      "target_hit": 0.8417721518987342,
+      "target_gain_rate": 0.5595854922279793,
+      "tgr_ci95": [
+        0.45595854922279794,
+        0.6580310880829016
+      ],
+      "fixed": 133,
+      "broke": 12,
+      "net": 121,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.025477707006369428,
+      "collateral_all_ci95": [
+        0.013232459225445302,
+        0.04408121494702342
+      ],
+      "collateral_eligible": 0.5217391304347826,
+      "admissible": true
+    },
+    "d_Lobs_diffmean@0.125": {
+      "n_channel_error": 193,
+      "source_exits": 2,
+      "gold_arrivals": 0,
+      "wrong_to_wrong": 2,
+      "target_hit": 0.0,
+      "target_gain_rate": -0.010362694300518135,
+      "tgr_ci95": [
+        -0.025906735751295335,
+        0.0
+      ],
+      "fixed": 0,
+      "broke": 0,
+      "net": 0,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": 0.0,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@0.25": {
+      "n_channel_error": 193,
+      "source_exits": 6,
+      "gold_arrivals": 0,
+      "wrong_to_wrong": 6,
+      "target_hit": 0.0,
+      "target_gain_rate": -0.031088082901554404,
+      "tgr_ci95": [
+        -0.05699481865284974,
+        -0.010362694300518135
+      ],
+      "fixed": 0,
+      "broke": 0,
+      "net": 0,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": 0.0,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@0.5": {
+      "n_channel_error": 193,
+      "source_exits": 12,
+      "gold_arrivals": 3,
+      "wrong_to_wrong": 9,
+      "target_hit": 0.25,
+      "target_gain_rate": -0.031088082901554404,
+      "tgr_ci95": [
+        -0.06735751295336788,
+        0.0051813471502590676
+      ],
+      "fixed": 3,
+      "broke": 0,
+      "net": 3,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": 0.0,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@1.0": {
+      "n_channel_error": 193,
+      "source_exits": 14,
+      "gold_arrivals": 4,
+      "wrong_to_wrong": 10,
+      "target_hit": 0.2857142857142857,
+      "target_gain_rate": -0.031088082901554404,
+      "tgr_ci95": [
+        -0.06735751295336788,
+        0.0051813471502590676
+      ],
+      "fixed": 4,
+      "broke": 0,
+      "net": 4,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": 0.0,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@2.0": {
+      "n_channel_error": 193,
+      "source_exits": 21,
+      "gold_arrivals": 7,
+      "wrong_to_wrong": 14,
+      "target_hit": 0.3333333333333333,
+      "target_gain_rate": -0.03626943005181347,
+      "tgr_ci95": [
+        -0.08290155440414508,
+        0.010362694300518135
+      ],
+      "fixed": 7,
+      "broke": 0,
+      "net": 7,
+      "exposed_correct": 23,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": 0.0,
+      "admissible": false
+    },
+    "admissible_doses": [
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "selected_q": 0.125
+  },
+  "cannot_answer__to__direct": {
+    "zero@0.0": {
+      "n_channel_error": 86,
+      "source_exits": 0,
+      "gold_arrivals": 0,
+      "wrong_to_wrong": 0,
+      "target_hit": null,
+      "target_gain_rate": 0.0,
+      "tgr_ci95": [
+        0.0,
+        0.0
+      ],
+      "fixed": 0,
+      "broke": 0,
+      "net": 0,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": false
+    },
+    "d_grad@0.125": {
+      "n_channel_error": 86,
+      "source_exits": 9,
+      "gold_arrivals": 7,
+      "wrong_to_wrong": 2,
+      "target_hit": 0.7777777777777778,
+      "target_gain_rate": 0.05813953488372093,
+      "tgr_ci95": [
+        -0.011627906976744186,
+        0.12790697674418605
+      ],
+      "fixed": 7,
+      "broke": 0,
+      "net": 7,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": false
+    },
+    "d_grad@0.25": {
+      "n_channel_error": 86,
+      "source_exits": 22,
+      "gold_arrivals": 19,
+      "wrong_to_wrong": 3,
+      "target_hit": 0.8636363636363636,
+      "target_gain_rate": 0.18604651162790697,
+      "tgr_ci95": [
+        0.09302325581395349,
+        0.29069767441860467
+      ],
+      "fixed": 19,
+      "broke": 0,
+      "net": 19,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": true
+    },
+    "d_grad@0.5": {
+      "n_channel_error": 86,
+      "source_exits": 45,
+      "gold_arrivals": 42,
+      "wrong_to_wrong": 3,
+      "target_hit": 0.9333333333333333,
+      "target_gain_rate": 0.45348837209302323,
+      "tgr_ci95": [
+        0.3372093023255814,
+        0.5697674418604651
+      ],
+      "fixed": 42,
+      "broke": 0,
+      "net": 42,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": true
+    },
+    "d_grad@1.0": {
+      "n_channel_error": 86,
+      "source_exits": 55,
+      "gold_arrivals": 49,
+      "wrong_to_wrong": 6,
+      "target_hit": 0.8909090909090909,
+      "target_gain_rate": 0.5,
+      "tgr_ci95": [
+        0.36046511627906974,
+        0.627906976744186
+      ],
+      "fixed": 49,
+      "broke": 0,
+      "net": 49,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": true
+    },
+    "d_grad@2.0": {
+      "n_channel_error": 86,
+      "source_exits": 57,
+      "gold_arrivals": 51,
+      "wrong_to_wrong": 6,
+      "target_hit": 0.8947368421052632,
+      "target_gain_rate": 0.5232558139534884,
+      "tgr_ci95": [
+        0.38372093023255816,
+        0.6511627906976745
+      ],
+      "fixed": 51,
+      "broke": 0,
+      "net": 51,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": true
+    },
+    "d_Lobs_diffmean@0.125": {
+      "n_channel_error": 86,
+      "source_exits": 1,
+      "gold_arrivals": 1,
+      "wrong_to_wrong": 0,
+      "target_hit": 1.0,
+      "target_gain_rate": 0.011627906976744186,
+      "tgr_ci95": [
+        0.0,
+        0.03488372093023256
+      ],
+      "fixed": 1,
+      "broke": 0,
+      "net": 1,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@0.25": {
+      "n_channel_error": 86,
+      "source_exits": 2,
+      "gold_arrivals": 1,
+      "wrong_to_wrong": 1,
+      "target_hit": 0.5,
+      "target_gain_rate": 0.0,
+      "tgr_ci95": [
+        -0.03488372093023256,
+        0.03488372093023256
+      ],
+      "fixed": 1,
+      "broke": 0,
+      "net": 1,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@0.5": {
+      "n_channel_error": 86,
+      "source_exits": 3,
+      "gold_arrivals": 1,
+      "wrong_to_wrong": 2,
+      "target_hit": 0.3333333333333333,
+      "target_gain_rate": -0.011627906976744186,
+      "tgr_ci95": [
+        -0.05813953488372093,
+        0.023255813953488372
+      ],
+      "fixed": 1,
+      "broke": 0,
+      "net": 1,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@1.0": {
+      "n_channel_error": 86,
+      "source_exits": 6,
+      "gold_arrivals": 1,
+      "wrong_to_wrong": 5,
+      "target_hit": 0.16666666666666666,
+      "target_gain_rate": -0.046511627906976744,
+      "tgr_ci95": [
+        -0.10465116279069768,
+        0.0
+      ],
+      "fixed": 1,
+      "broke": 0,
+      "net": 1,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": false
+    },
+    "d_Lobs_diffmean@2.0": {
+      "n_channel_error": 86,
+      "source_exits": 9,
+      "gold_arrivals": 2,
+      "wrong_to_wrong": 7,
+      "target_hit": 0.2222222222222222,
+      "target_gain_rate": -0.05813953488372093,
+      "tgr_ci95": [
+        -0.12790697674418605,
+        0.011627906976744186
+      ],
+      "fixed": 2,
+      "broke": 0,
+      "net": 2,
+      "exposed_correct": 0,
+      "all_correct_denom": 471,
+      "collateral_all": 0.0,
+      "collateral_all_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "collateral_eligible": null,
+      "admissible": false
+    },
+    "admissible_doses": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "selected_q": 0.25
+  }
+}

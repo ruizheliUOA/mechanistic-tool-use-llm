@@ -1,0 +1,173 @@
+{
+  "SEALED_ACCESS": "NOT AUTHORISED - no access marker created, no SEALED row read",
+  "artifact_sha256": {
+    "BASELINE_LOBS_ACTIVATIONS.npz": "539dae88390b6279838ecc273e735746c19793ecd7dad2884a2e231895420c01",
+    "BASELINE_ROWS.jsonl": "b91469538bd0db33d7d771991b544edb92900a850c05f67720b521301c45d288",
+    "CHANNEL_FREEZE.json": "54dd7189463dc3712323924712ec2ac5037b5e1936b1ec125482c94fb075cd05",
+    "CHANNEL_INVENTORY.json": "39d7ef5e24dc13265a3f00b6fa263ac8ea80c32566e4a52accf0542f0d9efef2",
+    "CHANNEL_INVENTORY_V2ALLOC.json": "abb07744d65c93ba7a039ecdc3097e432168e795c1299e1693c5e8a258692671",
+    "DEV_CONJUNCTION.json": "5dc32e1b04cb91f69639855aeb8aede09e85d3d3cc54c9605733ba8342c66f9a",
+    "DEV_CONTROL_RECORDS.jsonl": "4e57a48dd62da2c255be7c5decf35bb324d56dd6d7a183ad85a0bef749cd0037",
+    "DEV_INTERVENTION_RECORDS.jsonl": "3c1b36458692d188f5fdc10f5c80cf376741b7b618ead85f60b772313419c788",
+    "DIRECTION_RECORDS.jsonl": "63f932b3cf400f0bcadf7edc97a13e176407f96f3acebd4b6a59e864736bea76",
+    "DIRECTION_RESULTS.json": "ec778e094916a693e32b0d23297a57fbc588bfd41d512b223b6b1e1551dff3fd",
+    "DOSE_DECLARATION__cannot_answer__to__direct.json": "fa6355f592501d6ff3463678ede43c4d1b6697281e8047e8ce40f8a47a6d7fc5",
+    "DOSE_DECLARATION__cannot_answer__to__tool_call.json": "98fce137d1751ccdcd767db4ad32ea7ee046a414bea3cbee69433b615ef0e5ef",
+    "DOSE_SELECTION.json": "ebfffab87c2f1f5db1e125800df79060e3f57c95c507d66ca3bdd39d35993010",
+    "FEASIBLE_LENGTH_BOUNDARY.json": "4bb761880f72fe8b6c7e14359e72139082268acdeef693fd5a365a7127d06aa1",
+    "HARDWARE_EXCLUSION_BOUNDARY.json": "178cad9b4d4c744e300cd90b4132a3b9efa30ae6f7f787e6449f4022cb9714e1",
+    "LINJ_ACTIVATIONS.npz": "ccf1bab3b538a2c3abd3f564d31f5468a3361420352857a3274a2e43ec4ccc38",
+    "ROUTER_RESULTS.json": "e875c16dc53397dfeb32822a9677f55e4e2d072970845fbd96623dc6fd6da4bc",
+    "SCORE_SPACE_COMPARATOR.json": "d783d9138f584cb90f2e3e550f1c71027b7ccd5447e00528fa935fb231ee3a20",
+    "S_C.json": "40710190b6b8663d8335ce31758eea28d8e8653a64e9aca79579bac94e71e010",
+    "VRAM_SMOKE_TEST.json": "678b3f746cacb7354f8b940fe6dafc55615695a9d2d2e3c68fd64e1ecc94ecf1",
+    "VRAM_SMOKE_TEST_V2.json": "dc32f9aaeb119e4984fccadca287e9bb85f10797ef6a4b81e9ad4d99239890d1",
+    "VRAM_SMOKE_TEST_V3.json": "ff906f33a8ea2ec9b86b5e079ed567e851f2355040a95c9133121990be96334f",
+    "VRAM_SMOKE_TEST_V4.json": "6d4a6269caee71315c45746947c7ed5c475f93e90e07e5d30346d9e426e47e3a",
+    "d_diffmean_Linj__cannot_answer__to__direct.npy": "4efdb5568ee7f989440da09858f04b4a15f9b0ae91468da3ab04d5142826024c",
+    "d_diffmean_Linj__cannot_answer__to__tool_call.npy": "da28f1bceda22ea8c73737d89bd6f735026d8acfc165b5c0d2ee65b165ab58a7",
+    "d_diffmean_Lobs__cannot_answer__to__direct.npy": "69c3b811f8cb07cc2103c2f90f43a6010018519bfa003dd794968ca41a7e795a",
+    "d_diffmean_Lobs__cannot_answer__to__tool_call.npy": "3333b9f019122e5a0ccea34e585c928f418d2fe37404b105e8c41c9551a7d595",
+    "d_grad__cannot_answer__to__direct.npy": "59e3b0a2ddb2efd29d1c09ffa3c49cef7cff315bb666f80fde79df8a0f8b8d7e",
+    "d_grad__cannot_answer__to__tool_call.npy": "cd4f75260b8dab35da6ef271b36e2b569afd434cb2a227ec50c2f2d733a81ae4",
+    "feasible_length_boundary.py": "8ccde8a5eda6ad6e011a77ce2acc336b84c3fadb4dee863015290c077280ddf6",
+    "router_cannot_answer__to__direct.npz": "7dce9794ad58137318c7f7955621749f312b812a8b8f4e6be477661c4d367566",
+    "router_cannot_answer__to__tool_call.npz": "0c34252a02cb94ee4a8eb44e856ff0c15d7b9b23eee65f52dd357c1b717c8619",
+    "router_request_for_info__to__tool_call.npz": "7b139deb08973cf2a8bce97c0dbf0874ceda896b3f7544d2408ff6c0bc5a9482",
+    "run_baseline.py": "aabfe4b1a31597b0aad925d92fa41e33c5b83da17fb3cc712ef7e0a022a48f76",
+    "run_controls.py": "98a77ea14b82700aa861342e672a59e7407a6457f4d3437bc08479d96f4ffd21",
+    "run_dev_ladder.py": "d9b4204bb100940e08dfc89daff5800a91d7f74422b6b64bd912e75b4090a9a9",
+    "run_directions.py": "291632550cf43d9d36f21d0f338e8a50d6f05b12633e998b876e1815fc991f9e",
+    "run_router.py": "61ca6bfa571544b46036d29a29d8c46a6851ddbf6ff57065884ce83fa896c1c8",
+    "smoke_test_vram.py": "c88dbf7b7b3665f54634bdfc091a49f36b2bd14d51246504cf94f0c1c9116a34",
+    "smoke_test_vram_v2.py": "52825ed72828d77297d6525c2157e7c967dbec2428b91297539bf27570870d1c",
+    "smoke_test_vram_v3.py": "0bf36ae9433824860906181754d10c0952b01b91a6fe44f3aa7fb7e05e912d0a",
+    "smoke_test_vram_v4.py": "3768c162181179095d0e7a09784b8524af210255e5c8cacbad37fb55806092fa"
+  },
+  "comparators": {
+    "diffmean_Linj_sha256": "71268f917f1b068d16b947486b270674690bbb3bb995137c2791be7fd737035d",
+    "diffmean_Lobs_sha256": "3020b09a0815098823b6d91b1f9f72737756e9f3da600a2c2bd9ae70e7600132",
+    "reverse": "-d_grad at L_inj, same absolute norm",
+    "score_space_bias_b_c": 0.4273469999999999,
+    "ungated": "d_grad at L_inj over all pred==source rows",
+    "wrong_layer": "d_grad at L30, same absolute norm NOT renormalised",
+    "zero": "delta=None, must reproduce baseline exactly"
+  },
+  "dev_conditions_all_pass": true,
+  "dev_decision": "FORMAL_ADVANCEMENT_ELIGIBLE",
+  "direction": {
+    "chance_1_over_sqrt_n": 0.0499,
+    "estimator": "d_grad = unit(mean_i unit(G_i,gold - G_i,source)), 4-mode full-effect at L_inj",
+    "file_sha256": "cd4f75260b8dab35da6ef271b36e2b569afd434cb2a227ec50c2f2d733a81ae4",
+    "n_train_errors": 401,
+    "sha256": "e939665b4da3e8e29080ee15d388e1e0b81f4883ad3d64fa4c931a52afabd800",
+    "train_only": true,
+    "wbar_norm": 0.5528
+  },
+  "dose": {
+    "absolute_delta_norm": 0.15951178515982883,
+    "admissible_doses": [
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "grid": [
+      0.0,
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "q": 0.125,
+    "rule": "selected_q = min(admissible); NOT max Net",
+    "s_c": 1.2760942812786307
+  },
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "cuda": "12.1",
+    "gpu": "RTX 4090 D 24564MiB",
+    "seed": 42,
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0"
+  },
+  "formal_randoms": {
+    "K": 59,
+    "requirement": "fresh matched-random unit directions in R^3584, seeds disjoint from DEV seeds 20260811-20260818",
+    "status": "NOT YET GENERATED"
+  },
+  "formal_thresholds": {
+    "clean_collateral_max": 0.05,
+    "collateral_ci_upper_max": 0.05,
+    "conjunction": "10/10; 9/10 = DECLINE",
+    "real_exceeds_K59_random": true,
+    "support_min": 30,
+    "target_gain_ci_lower_gt": 0,
+    "target_gain_gt": 0,
+    "target_hit_ci_qualifies": true,
+    "target_hit_gt": 0.5,
+    "zero_reproduces_baseline_exactly": true
+  },
+  "gold": "cannot_answer",
+  "model": {
+    "attn_implementation": "eager",
+    "dtype": "bfloat16",
+    "gradient_checkpointing": "enabled, validated bit-identical (0.0/0.0/0.0)",
+    "repo": "google/gemma-2-9b-it",
+    "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+    "weight_shard_sha256": {
+      "model-00001-of-00004.safetensors": "a0d4eb4fcbddfe01b0dc7a58386a3980826ededaf0ecd67d1ef38995b89615ba",
+      "model-00002-of-00004.safetensors": "712a589c333f49f7b6f3870838a9e0ab4b3c0260abd5130e8c54316e6c99640b",
+      "model-00003-of-00004.safetensors": "5a9f84eb9846840802200c6502ccaaebf0a146ee89dcb8822fab795c392dd667",
+      "model-00004-of-00004.safetensors": "3349b4960bbc0bf7e47a624e5c520881adb06e2da4bda6ed14b51c7f647fe26c"
+    }
+  },
+  "one_shot_access_ledger": {
+    "access_marker_created": false,
+    "authorisation": "REQUIRES EXPLICIT HUMAN AUTHORISATION - the committed panel protocol does not grant one-shot execution without review",
+    "formal_run_count": 0,
+    "scientific_endpoint_observed": false
+  },
+  "population": {
+    "actual_dev": 1101,
+    "actual_train": 1997,
+    "exclusions": {
+      "dev": 3,
+      "sealed": 0,
+      "train": 3
+    },
+    "sealed_count": 548,
+    "sealed_untouched": true,
+    "v2_allocation": "TRAIN 2000 / DEV 1104"
+  },
+  "repository_head": "f5ba3a47f63f373df234013ed568ac6f43b2f8c9",
+  "router": {
+    "C": 1.0,
+    "dev_roc_auc": 0.926,
+    "dev_roc_auc_ci": [
+      0.9009,
+      0.9484
+    ],
+    "family": "StandardScaler+LogisticRegression",
+    "file_sha256": "0c34252a02cb94ee4a8eb44e856ff0c15d7b9b23eee65f52dd357c1b717c8619",
+    "max_iter": 2000,
+    "penalty": "l2",
+    "seed": 42,
+    "solver": "liblinear",
+    "tau": 0.4,
+    "tol": 0.0001
+  },
+  "selected_channel": "cannot_answer__to__tool_call",
+  "sites": {
+    "L_inj": 24,
+    "L_obs": 30,
+    "hidden_size": 3584,
+    "mapping_rule": "round(old/(old_n-1)*(new_n-1)) from Qwen2.5 28L obs20/inj16",
+    "site": "model.model.layers[L].mlp forward output",
+    "wrong_layer": 30
+  },
+  "source": "tool_call"
+}

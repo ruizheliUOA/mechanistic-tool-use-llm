@@ -1,0 +1,118 @@
+{
+  "cannot_answer__to__direct": {
+    "gated": {
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 0,
+      "Fixed": 19,
+      "GOLD_ARRIVAL": 19,
+      "Net": 19,
+      "OTHER_WRONG": 3,
+      "SOURCE_RETAINED": 64,
+      "all_correct_breaks": 0,
+      "all_correct_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.0,
+      "exposed_correct_breaks": 0,
+      "exposed_correct_ci95": [
+        null,
+        null
+      ],
+      "exposed_correct_denom": 0,
+      "exposed_correct_rate": null,
+      "routed_source_errors": 86,
+      "source_exits": 22,
+      "target_gain": 0.18604651162790697,
+      "target_hit": 0.8636363636363636
+    },
+    "ungated": {
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 0,
+      "Fixed": 27,
+      "GOLD_ARRIVAL": 27,
+      "Net": 27,
+      "OTHER_WRONG": 3,
+      "SOURCE_RETAINED": 80,
+      "all_correct_breaks": 0,
+      "all_correct_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.0,
+      "exposed_correct_breaks": 0,
+      "exposed_correct_ci95": [
+        null,
+        null
+      ],
+      "exposed_correct_denom": 0,
+      "exposed_correct_rate": null,
+      "routed_source_errors": 110,
+      "source_exits": 30,
+      "target_gain": 0.21818181818181817,
+      "target_hit": 0.9
+    }
+  },
+  "cannot_answer__to__tool_call": {
+    "gated": {
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 0,
+      "Fixed": 34,
+      "GOLD_ARRIVAL": 34,
+      "Net": 34,
+      "OTHER_WRONG": 17,
+      "SOURCE_RETAINED": 142,
+      "all_correct_breaks": 0,
+      "all_correct_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.0,
+      "exposed_correct_breaks": 0,
+      "exposed_correct_ci95": [
+        0.0,
+        0.14818512891522437
+      ],
+      "exposed_correct_denom": 23,
+      "exposed_correct_rate": 0.0,
+      "routed_source_errors": 193,
+      "source_exits": 51,
+      "target_gain": 0.08808290155440414,
+      "target_hit": 0.6666666666666666
+    },
+    "ungated": {
+      "BROKEN_TO_OTHER": 8,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 8,
+      "Fixed": 38,
+      "GOLD_ARRIVAL": 38,
+      "Net": 30,
+      "OTHER_WRONG": 21,
+      "SOURCE_RETAINED": 165,
+      "all_correct_breaks": 8,
+      "all_correct_ci95": [
+        0.007360774923097816,
+        0.033192122075857956
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.016985138004246284,
+      "exposed_correct_breaks": 8,
+      "exposed_correct_ci95": [
+        0.009012661587406727,
+        0.04053136016099792
+      ],
+      "exposed_correct_denom": 385,
+      "exposed_correct_rate": 0.02077922077922078,
+      "routed_source_errors": 224,
+      "source_exits": 59,
+      "target_gain": 0.07589285714285714,
+      "target_hit": 0.6440677966101694
+    }
+  }
+}

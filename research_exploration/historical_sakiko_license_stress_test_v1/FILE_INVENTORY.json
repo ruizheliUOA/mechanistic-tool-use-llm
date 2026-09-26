@@ -1,0 +1,107 @@
+{
+  "analysis_class": "RETROSPECTIVE_HISTORICAL_RE-ADJUDICATION",
+  "artifacts_modified": false,
+  "files": [
+    {
+      "bytes": 2247,
+      "file": "CLAIM_BOUNDARY.md",
+      "sha256": "e964e57e7cec3006f413f4a04725b51af485771fd0a2b795a6d90b58c9092cdb"
+    },
+    {
+      "bytes": 1825,
+      "file": "FINAL_EXPERIMENT_STOP_DECISION.md",
+      "sha256": "8c5b6d3415d0c78824c0d7deab7dc071356d4d0223ebd66a73ce8b3ef9eb9db1"
+    },
+    {
+      "bytes": 2521,
+      "file": "HISTORICAL_EVIDENCE_MANIFEST.json",
+      "sha256": "4cdeb380a21a6307ea2f836095003c2830a79dc3693c37ce04c5041d051b4b3c"
+    },
+    {
+      "bytes": 2489,
+      "file": "HISTORICAL_LICENSE_COMPARISON.csv",
+      "sha256": "b34bcbcdf46d983533b58885a5547a9bdd3401e30db6f3fa954f9fdea47e2294"
+    },
+    {
+      "bytes": 1618,
+      "file": "HUMAN_GIT_HANDOFF.md",
+      "sha256": "2fe8e009f929f5e1389ed63a35aed1361dda8c4bc8e49d0ce6bac5f772813499"
+    },
+    {
+      "bytes": 1930,
+      "file": "LLAMA_MISTRAL_BOUNDARY_NOTE.md",
+      "sha256": "cb488603217830a5283e2b5559a1ab976a7749f57f76e97190cab360063ad5ac"
+    },
+    {
+      "bytes": 1331,
+      "file": "METATOOL_RESCORABILITY_AUDIT.md",
+      "sha256": "4c363c9d67f1674fd212185d19f02a29d656988f4bf30f2f42d08d8723adda1a"
+    },
+    {
+      "bytes": 3523,
+      "file": "MODERN_CRITERION_REGISTRY.csv",
+      "sha256": "7ca14e9a596663db0497b0d5593e515ff71381c5bac2e6f81c7c494c00f1be28"
+    },
+    {
+      "bytes": 2792,
+      "file": "PAPER_IMPLICATIONS.md",
+      "sha256": "eb6ad23f07050c3b8920ee75405fd8757eaa348907366f648593fd75dcbfca35"
+    },
+    {
+      "bytes": 2701,
+      "file": "PHI_ARTIFACT_AUDIT.md",
+      "sha256": "b2ec896ef4af57a964fe0d9f551d7355562bc5f2daeac1db9145cfa86b8289ec"
+    },
+    {
+      "bytes": 528,
+      "file": "PHI_COLLATERAL_RECONSTRUCTION.csv",
+      "sha256": "6df7fe1d466b783919a76147f483943a7f9fe5acc1f14d6d4ae45213f268cf7d"
+    },
+    {
+      "bytes": 2202,
+      "file": "PHI_CONTROL_MAPPING.md",
+      "sha256": "d355104ef9fa25e784888a333113f17e064e26514a8ceaffeb52211aa1e16762"
+    },
+    {
+      "bytes": 399,
+      "file": "PHI_DESTINATION_RECONSTRUCTION.csv",
+      "sha256": "9fe8e55ff97ad28ff333d8543eec9a33534ecf7b6dc01a26af3bee47e71d9ac5"
+    },
+    {
+      "bytes": 4018,
+      "file": "PHI_LICENSE_STRESS_TEST.md",
+      "sha256": "7d8ae337b2a7abf104770d8fb6553c99c2a62d790b428d466a21d32a6179cbe3"
+    },
+    {
+      "bytes": 1889,
+      "file": "PHI_STATISTICAL_UNCERTAINTY.json",
+      "sha256": "4bb06fb0970d041c5c1c144918e13a54261bd70251da3d096461a222f1b60e84"
+    },
+    {
+      "bytes": 1310,
+      "file": "QWEN2_5_RESCORABILITY_AUDIT.md",
+      "sha256": "bac13867aa31354900e4b5940683dd01c316c2fccffb643a79ac65b96eea2ec8"
+    },
+    {
+      "bytes": 3083,
+      "file": "README_STATUS.md",
+      "sha256": "8c2abcbbd6c092b68a14aaee1b4538b8c13e7df97d36a04a72beb94892779830"
+    },
+    {
+      "bytes": 553,
+      "file": "SAFETY_SCAN.json",
+      "sha256": "0788930736b33d80d09875240f924b4c1abb5b817df5ecb73d5e4f412ade50c5"
+    },
+    {
+      "bytes": 2949,
+      "file": "THREE_CASE_CANONICAL_COMPARISON.md",
+      "sha256": "cb0845174f3e97fc7e8f328d8be723d2e68b8214b4fc80f39f719eeb7ffed886"
+    }
+  ],
+  "gpu_used": false,
+  "model_run": false,
+  "n_files": 19,
+  "package": "research_exploration/historical_sakiko_license_stress_test_v1",
+  "repository_head": "2834a6e5932232a4a4ab418e818c20bbffe87281",
+  "verdict": "HISTORICAL_LICENSE_STRESS_TEST_STRENGTHENS_PAPER"
+}

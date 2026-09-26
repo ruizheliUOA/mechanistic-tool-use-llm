@@ -1,0 +1,7 @@
+{
+  "qwen35_Lobs23_mlp_norm_median": 28.968993020890053,
+  "gemma_Lobs30_mlp_norm_median": 3.7527735881523814,
+  "qwen35_score_spread_median": 1.183768,
+  "gemma_score_spread_median": 1.580515,
+  "note": "cross-architecture raw norms are not directly comparable; recorded for normalisation only. No intervention was run on Qwen3.5, so intervention-scale ratios are undefined."
+}

@@ -1,0 +1,10 @@
+gold,pred,count_all,count_train,count_val,count_test
+request_for_info,tool_call,948,662,141,145
+cannot_answer,tool_call,773,541,117,115
+cannot_answer,direct,291,205,43,43
+cannot_answer,request_for_info,26,18,2,6
+request_for_info,direct,21,17,2,2
+request_for_info,cannot_answer,17,15,0,2
+tool_call,direct,15,9,4,2
+tool_call,cannot_answer,1,1,0,0
+tool_call,request_for_info,1,1,0,0

@@ -1,0 +1,567 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "gate": "Actionability Gate v2 (frozen; GATE_V2_LOCK_MANIFEST.json)",
+  "split_used": "validation only (test firewalled)",
+  "stage1_eligible": [
+    "rfi_tc",
+    "ca_tc",
+    "ca_direct"
+  ],
+  "geometry": {
+    "rfi_tc": {
+      "per_layer": {
+        "13": {
+          "dm_norm": 0.7453,
+          "med_obs": 4.3128,
+          "norm_ratio": 0.1728,
+          "router_val_auc": 0.893,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.661,
+              "recall": 0.792,
+              "fires": 121
+            },
+            "0.5": {
+              "precision": 0.696,
+              "recall": 0.772,
+              "fires": 112
+            },
+            "0.6": {
+              "precision": 0.688,
+              "recall": 0.743,
+              "fires": 109
+            },
+            "0.7": {
+              "precision": 0.692,
+              "recall": 0.713,
+              "fires": 104
+            },
+            "0.8": {
+              "precision": 0.713,
+              "recall": 0.663,
+              "fires": 94
+            }
+          },
+          "margin_gap": 0.989,
+          "fp_on_correct": 28,
+          "cos_dm_pc1": 0.7829,
+          "splithalf": 0.908
+        },
+        "18": {
+          "dm_norm": 0.861,
+          "med_obs": 4.6157,
+          "norm_ratio": 0.1865,
+          "router_val_auc": 0.8551,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.635,
+              "recall": 0.723,
+              "fires": 115
+            },
+            "0.5": {
+              "precision": 0.646,
+              "recall": 0.723,
+              "fires": 113
+            },
+            "0.6": {
+              "precision": 0.664,
+              "recall": 0.723,
+              "fires": 110
+            },
+            "0.7": {
+              "precision": 0.667,
+              "recall": 0.673,
+              "fires": 102
+            },
+            "0.8": {
+              "precision": 0.685,
+              "recall": 0.624,
+              "fires": 92
+            }
+          },
+          "margin_gap": 0.991,
+          "fp_on_correct": 34,
+          "cos_dm_pc1": 0.8056,
+          "splithalf": 0.908
+        },
+        "22": {
+          "dm_norm": 0.9546,
+          "med_obs": 4.8853,
+          "norm_ratio": 0.1954,
+          "router_val_auc": 0.8367,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.67,
+              "recall": 0.703,
+              "fires": 106
+            },
+            "0.5": {
+              "precision": 0.68,
+              "recall": 0.673,
+              "fires": 100
+            },
+            "0.6": {
+              "precision": 0.67,
+              "recall": 0.644,
+              "fires": 97
+            },
+            "0.7": {
+              "precision": 0.674,
+              "recall": 0.594,
+              "fires": 89
+            },
+            "0.8": {
+              "precision": 0.7,
+              "recall": 0.554,
+              "fires": 80
+            }
+          },
+          "margin_gap": 0.922,
+          "fp_on_correct": 25,
+          "cos_dm_pc1": 0.8279,
+          "splithalf": 0.898
+        },
+        "27": {
+          "dm_norm": 1.1992,
+          "med_obs": 7.2467,
+          "norm_ratio": 0.1655,
+          "router_val_auc": 0.8472,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.592,
+              "recall": 0.733,
+              "fires": 125
+            },
+            "0.5": {
+              "precision": 0.598,
+              "recall": 0.663,
+              "fires": 112
+            },
+            "0.6": {
+              "precision": 0.613,
+              "recall": 0.644,
+              "fires": 106
+            },
+            "0.7": {
+              "precision": 0.629,
+              "recall": 0.604,
+              "fires": 97
+            },
+            "0.8": {
+              "precision": 0.63,
+              "recall": 0.574,
+              "fires": 92
+            }
+          },
+          "margin_gap": 0.96,
+          "fp_on_correct": 40,
+          "cos_dm_pc1": 0.4528,
+          "splithalf": 0.863
+        }
+      },
+      "R1_obs": 22,
+      "stage2": {
+        "auc": 0.8367,
+        "auc_ok": true,
+        "precision_ok": true,
+        "leaky_router_flag": false
+      },
+      "stage3": {
+        "R1_obs": 22,
+        "norm_ratio": 0.1954,
+        "splithalf": 0.898,
+        "splithalf_ok": true,
+        "cos_dm_pc1": 0.8279
+      },
+      "methods": [
+        "diffmean"
+      ],
+      "inj_candidates": [
+        18,
+        20,
+        22
+      ]
+    },
+    "ca_tc": {
+      "per_layer": {
+        "13": {
+          "dm_norm": 0.8784,
+          "med_obs": 4.3128,
+          "norm_ratio": 0.2037,
+          "router_val_auc": 0.9772,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.935,
+              "recall": 0.911,
+              "fires": 77
+            },
+            "0.5": {
+              "precision": 0.933,
+              "recall": 0.886,
+              "fires": 75
+            },
+            "0.6": {
+              "precision": 0.932,
+              "recall": 0.873,
+              "fires": 74
+            },
+            "0.7": {
+              "precision": 0.932,
+              "recall": 0.873,
+              "fires": 74
+            },
+            "0.8": {
+              "precision": 0.93,
+              "recall": 0.835,
+              "fires": 71
+            }
+          },
+          "margin_gap": 1.0,
+          "fp_on_correct": 4,
+          "cos_dm_pc1": 0.8048,
+          "splithalf": 0.892
+        },
+        "18": {
+          "dm_norm": 1.1566,
+          "med_obs": 4.6157,
+          "norm_ratio": 0.2506,
+          "router_val_auc": 0.9741,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.893,
+              "recall": 0.848,
+              "fires": 75
+            },
+            "0.5": {
+              "precision": 0.905,
+              "recall": 0.848,
+              "fires": 74
+            },
+            "0.6": {
+              "precision": 0.915,
+              "recall": 0.823,
+              "fires": 71
+            },
+            "0.7": {
+              "precision": 0.914,
+              "recall": 0.81,
+              "fires": 70
+            },
+            "0.8": {
+              "precision": 0.926,
+              "recall": 0.797,
+              "fires": 68
+            }
+          },
+          "margin_gap": 1.0,
+          "fp_on_correct": 3,
+          "cos_dm_pc1": 0.6552,
+          "splithalf": 0.882
+        },
+        "22": {
+          "dm_norm": 1.4302,
+          "med_obs": 4.8853,
+          "norm_ratio": 0.2928,
+          "router_val_auc": 0.9585,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.919,
+              "recall": 0.861,
+              "fires": 74
+            },
+            "0.5": {
+              "precision": 0.918,
+              "recall": 0.848,
+              "fires": 73
+            },
+            "0.6": {
+              "precision": 0.93,
+              "recall": 0.835,
+              "fires": 71
+            },
+            "0.7": {
+              "precision": 0.926,
+              "recall": 0.797,
+              "fires": 68
+            },
+            "0.8": {
+              "precision": 0.955,
+              "recall": 0.797,
+              "fires": 66
+            }
+          },
+          "margin_gap": 1.0,
+          "fp_on_correct": 5,
+          "cos_dm_pc1": 0.7489,
+          "splithalf": 0.889
+        },
+        "27": {
+          "dm_norm": 1.558,
+          "med_obs": 7.2467,
+          "norm_ratio": 0.215,
+          "router_val_auc": 0.9625,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.896,
+              "recall": 0.873,
+              "fires": 77
+            },
+            "0.5": {
+              "precision": 0.895,
+              "recall": 0.861,
+              "fires": 76
+            },
+            "0.6": {
+              "precision": 0.905,
+              "recall": 0.848,
+              "fires": 74
+            },
+            "0.7": {
+              "precision": 0.904,
+              "recall": 0.835,
+              "fires": 73
+            },
+            "0.8": {
+              "precision": 0.914,
+              "recall": 0.81,
+              "fires": 70
+            }
+          },
+          "margin_gap": 1.0,
+          "fp_on_correct": 4,
+          "cos_dm_pc1": 0.7004,
+          "splithalf": 0.831
+        }
+      },
+      "R1_obs": 22,
+      "stage2": {
+        "auc": 0.9585,
+        "auc_ok": true,
+        "precision_ok": true,
+        "leaky_router_flag": false
+      },
+      "stage3": {
+        "R1_obs": 22,
+        "norm_ratio": 0.2928,
+        "splithalf": 0.889,
+        "splithalf_ok": true,
+        "cos_dm_pc1": 0.7489
+      },
+      "methods": [
+        "diffmean"
+      ],
+      "inj_candidates": [
+        18,
+        20,
+        22
+      ]
+    },
+    "ca_direct": {
+      "per_layer": {
+        "13": {
+          "dm_norm": 0.4754,
+          "med_obs": 4.3128,
+          "norm_ratio": 0.1102,
+          "router_val_auc": 0.9595,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.918,
+              "recall": 0.918,
+              "fires": 73
+            },
+            "0.5": {
+              "precision": 0.944,
+              "recall": 0.918,
+              "fires": 71
+            },
+            "0.6": {
+              "precision": 0.941,
+              "recall": 0.877,
+              "fires": 68
+            },
+            "0.7": {
+              "precision": 0.955,
+              "recall": 0.877,
+              "fires": 67
+            },
+            "0.8": {
+              "precision": 0.954,
+              "recall": 0.849,
+              "fires": 65
+            }
+          },
+          "margin_gap": 0.995,
+          "fp_on_correct": 0,
+          "cos_dm_pc1": 0.6246,
+          "splithalf": 0.613
+        },
+        "18": {
+          "dm_norm": 0.8383,
+          "med_obs": 4.6157,
+          "norm_ratio": 0.1816,
+          "router_val_auc": 0.9161,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.896,
+              "recall": 0.945,
+              "fires": 77
+            },
+            "0.5": {
+              "precision": 0.896,
+              "recall": 0.945,
+              "fires": 77
+            },
+            "0.6": {
+              "precision": 0.908,
+              "recall": 0.945,
+              "fires": 76
+            },
+            "0.7": {
+              "precision": 0.92,
+              "recall": 0.945,
+              "fires": 75
+            },
+            "0.8": {
+              "precision": 0.931,
+              "recall": 0.918,
+              "fires": 72
+            }
+          },
+          "margin_gap": 0.908,
+          "fp_on_correct": 0,
+          "cos_dm_pc1": 0.8322,
+          "splithalf": 0.75
+        },
+        "22": {
+          "dm_norm": 1.0332,
+          "med_obs": 4.8853,
+          "norm_ratio": 0.2115,
+          "router_val_auc": 0.9366,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.883,
+              "recall": 0.932,
+              "fires": 77
+            },
+            "0.5": {
+              "precision": 0.907,
+              "recall": 0.932,
+              "fires": 75
+            },
+            "0.6": {
+              "precision": 0.919,
+              "recall": 0.932,
+              "fires": 74
+            },
+            "0.7": {
+              "precision": 0.944,
+              "recall": 0.932,
+              "fires": 72
+            },
+            "0.8": {
+              "precision": 0.944,
+              "recall": 0.918,
+              "fires": 71
+            }
+          },
+          "margin_gap": 0.977,
+          "fp_on_correct": 0,
+          "cos_dm_pc1": 0.6682,
+          "splithalf": 0.755
+        },
+        "27": {
+          "dm_norm": 1.1445,
+          "med_obs": 7.2467,
+          "norm_ratio": 0.1579,
+          "router_val_auc": 0.8876,
+          "router_pr": {
+            "0.4": {
+              "precision": 0.873,
+              "recall": 0.945,
+              "fires": 79
+            },
+            "0.5": {
+              "precision": 0.882,
+              "recall": 0.918,
+              "fires": 76
+            },
+            "0.6": {
+              "precision": 0.893,
+              "recall": 0.918,
+              "fires": 75
+            },
+            "0.7": {
+              "precision": 0.904,
+              "recall": 0.904,
+              "fires": 73
+            },
+            "0.8": {
+              "precision": 0.915,
+              "recall": 0.89,
+              "fires": 71
+            }
+          },
+          "margin_gap": 0.986,
+          "fp_on_correct": 0,
+          "cos_dm_pc1": 0.7073,
+          "splithalf": 0.666
+        }
+      },
+      "R1_obs": 22,
+      "stage2": {
+        "auc": 0.9366,
+        "auc_ok": true,
+        "precision_ok": true,
+        "leaky_router_flag": false
+      },
+      "stage3": {
+        "R1_obs": 22,
+        "norm_ratio": 0.2115,
+        "splithalf": 0.755,
+        "splithalf_ok": true,
+        "cos_dm_pc1": 0.6682
+      },
+      "methods": [
+        "diffmean"
+      ],
+      "inj_candidates": [
+        18,
+        20,
+        22
+      ]
+    }
+  },
+  "decisions": {
+    "rfi_tc": {
+      "channel": "rfi_tc",
+      "gold": "request_for_info",
+      "from_pred": "tool_call",
+      "decision": "REJECT",
+      "reason": "stage45_no_passing_rho; shape=boundary-seeking; best net=18 @rho8.0 fails=broke_controlled,real_gt_reverse,z_ok,nonparam_ok,interior_rho",
+      "response_shape": "boundary-seeking",
+      "audit_candidate": true
+    },
+    "ca_tc": {
+      "channel": "ca_tc",
+      "gold": "cannot_answer",
+      "from_pred": "tool_call",
+      "decision": "REJECT",
+      "reason": "stage45_no_passing_rho; shape=boundary-seeking; best net=23 @rho8.0 fails=not_redirection,interior_rho",
+      "response_shape": "boundary-seeking",
+      "audit_candidate": false
+    },
+    "ca_direct": {
+      "channel": "ca_direct",
+      "gold": "cannot_answer",
+      "from_pred": "direct",
+      "decision": "REJECT",
+      "reason": "stage45_no_passing_rho; shape=boundary-seeking; best net=23 @rho8.0 fails=interior_rho",
+      "response_shape": "boundary-seeking",
+      "audit_candidate": false
+    }
+  },
+  "n_admit": 0,
+  "n_reject": 3,
+  "n_inconclusive": 0
+}

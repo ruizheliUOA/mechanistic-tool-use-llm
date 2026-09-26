@@ -1,0 +1,9 @@
+{
+  "note": "SHA256 of Phase-8 Part-0 pre-result files, written before any model output",
+  "repo_head": "1ff1f6f",
+  "hashes": {
+    "PHASE8_INTEGRITY_AUDIT.md": "3d35c3e353937abae7497f84caf86552b6202496f1ab072eb77ec9186d217927",
+    "PHASE8_EXECUTION_MANIFEST.md": "bff830d43afa36fce856014ac2fb8896389265e786172215b02d3a8ed8b2b8fd",
+    "PHASE8_PRE_RESULT_PREDICTIONS.json": "3d71ea059ca88e662ae598980f718d19f709671d0f346a0b6a734017e9156929"
+  }
+}

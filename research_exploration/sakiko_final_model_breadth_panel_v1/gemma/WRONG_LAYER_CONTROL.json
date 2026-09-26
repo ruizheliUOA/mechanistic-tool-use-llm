@@ -1,0 +1,70 @@
+{
+  "cannot_answer__to__direct": {
+    "arm": {
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 0,
+      "Fixed": 2,
+      "GOLD_ARRIVAL": 2,
+      "Net": 2,
+      "OTHER_WRONG": 0,
+      "SOURCE_RETAINED": 84,
+      "all_correct_breaks": 0,
+      "all_correct_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.0,
+      "exposed_correct_breaks": 0,
+      "exposed_correct_ci95": [
+        null,
+        null
+      ],
+      "exposed_correct_denom": 0,
+      "exposed_correct_rate": null,
+      "routed_source_errors": 86,
+      "source_exits": 2,
+      "target_gain": 0.023255813953488372,
+      "target_hit": 1.0
+    },
+    "condition_14": "PASS",
+    "real_target_gain": 0.18604651162790697,
+    "rule": "condition 14: wrong-layer target gain < real target gain",
+    "wrong_layer": 30
+  },
+  "cannot_answer__to__tool_call": {
+    "arm": {
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 0,
+      "Fixed": 5,
+      "GOLD_ARRIVAL": 5,
+      "Net": 5,
+      "OTHER_WRONG": 2,
+      "SOURCE_RETAINED": 186,
+      "all_correct_breaks": 0,
+      "all_correct_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.0,
+      "exposed_correct_breaks": 0,
+      "exposed_correct_ci95": [
+        0.0,
+        0.14818512891522437
+      ],
+      "exposed_correct_denom": 23,
+      "exposed_correct_rate": 0.0,
+      "routed_source_errors": 193,
+      "source_exits": 7,
+      "target_gain": 0.015544041450777202,
+      "target_hit": 0.7142857142857143
+    },
+    "condition_14": "PASS",
+    "real_target_gain": 0.08808290155440414,
+    "rule": "condition 14: wrong-layer target gain < real target gain",
+    "wrong_layer": 30
+  }
+}

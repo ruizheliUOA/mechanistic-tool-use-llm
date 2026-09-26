@@ -1,0 +1,185 @@
+{
+  "attempt": "v4 - v3 + train-mode activation of checkpointing, gated on all-dropout-zero and bit-identical validation",
+  "model_dir": "/root/autodl-tmp/models/gemma-2-9b-it-11c9b309",
+  "L_OBS": 30,
+  "L_INJ": 24,
+  "HIDDEN_SIZE": 3584,
+  "attn": "eager",
+  "dtype": "bfloat16",
+  "determinism": {
+    "deterministic_algorithms": true,
+    "note": "strict"
+  },
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "gpu_total_gb": 25.251,
+  "mem_before_load": {
+    "allocated_gb": 0.0,
+    "reserved_gb": 0.0,
+    "peak_allocated_gb": 0.0,
+    "peak_reserved_gb": 0.0
+  },
+  "load_seconds": 13.7,
+  "mem_after_load": {
+    "allocated_gb": 18.483,
+    "reserved_gb": 20.324,
+    "peak_allocated_gb": 20.318,
+    "peak_reserved_gb": 20.324
+  },
+  "env": {
+    "python": "3.10.8",
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0",
+    "cuda": "12.1"
+  },
+  "identity": {
+    "hidden_size": 3584,
+    "num_hidden_layers": 42,
+    "vocab_size": 256000,
+    "model_type": "gemma2",
+    "n_params_b": 9.242,
+    "all_params_requires_grad_false": true
+  },
+  "dropout_audit": {
+    "config_dropout_fields": {
+      "attention_dropout": 0.0
+    },
+    "nonzero_dropout_modules": [],
+    "train_mode_mechanically_equivalent": true
+  },
+  "gradient_checkpointing_validation": {
+    "enabled": true,
+    "use_reentrant": false,
+    "train_mode": true,
+    "validation_prompt_tokens": 532,
+    "score_off": -1.50927699,
+    "score_on": -1.50927699,
+    "score_abs_diff": 0.0,
+    "grad_relative_l2_diff": 0.0,
+    "grad_max_abs_diff": 0.0,
+    "peak_alloc_gb_off": 21.476,
+    "peak_alloc_gb_on": 18.869,
+    "numerically_equivalent": true
+  },
+  "gradient_checkpointing_enabled": true,
+  "prompt_len_stats": {
+    "n": 400,
+    "min": 130,
+    "p50": 604,
+    "p90": 1448,
+    "max": 4528
+  },
+  "trials": [
+    {
+      "label": "shortest",
+      "prompt_tokens": 130,
+      "max_seq": 157,
+      "status": "OK",
+      "grad_shape": [
+        4,
+        3584
+      ],
+      "all_finite": true,
+      "common_prompt_state_shared": false,
+      "grad_l2_full_effect": [
+        3.1818,
+        5.1641,
+        6.9282,
+        6.8099
+      ],
+      "scores": {
+        "tool_call": -0.98508,
+        "direct": -2.36117,
+        "request_for_info": -2.48656,
+        "cannot_answer": -1.8711
+      },
+      "seconds": 0.94,
+      "mem": {
+        "allocated_gb": 18.551,
+        "reserved_gb": 18.583,
+        "peak_allocated_gb": 18.687,
+        "peak_reserved_gb": 18.925
+      }
+    },
+    {
+      "label": "median",
+      "prompt_tokens": 604,
+      "max_seq": 642,
+      "status": "OK",
+      "grad_shape": [
+        4,
+        3584
+      ],
+      "all_finite": true,
+      "common_prompt_state_shared": false,
+      "grad_l2_full_effect": [
+        3.3659,
+        4.7959,
+        7.1608,
+        4.8018
+      ],
+      "scores": {
+        "tool_call": -1.50746,
+        "direct": -2.07515,
+        "request_for_info": -1.52195,
+        "cannot_answer": -1.8724
+      },
+      "seconds": 1.13,
+      "mem": {
+        "allocated_gb": 18.551,
+        "reserved_gb": 18.583,
+        "peak_allocated_gb": 18.937,
+        "peak_reserved_gb": 18.986
+      }
+    },
+    {
+      "label": "p90",
+      "prompt_tokens": 1448,
+      "max_seq": 1471,
+      "status": "OK",
+      "grad_shape": [
+        4,
+        3584
+      ],
+      "all_finite": true,
+      "common_prompt_state_shared": false,
+      "grad_l2_full_effect": [
+        4.7722,
+        10.1773,
+        4.9203,
+        7.4885
+      ],
+      "scores": {
+        "tool_call": -1.48762,
+        "direct": -2.85557,
+        "request_for_info": -2.63101,
+        "cannot_answer": -2.71406
+      },
+      "seconds": 2.75,
+      "mem": {
+        "allocated_gb": 18.551,
+        "reserved_gb": 18.583,
+        "peak_allocated_gb": 19.504,
+        "peak_reserved_gb": 19.738
+      }
+    },
+    {
+      "label": "longest",
+      "prompt_tokens": 4528,
+      "status": "CUDA_OOM",
+      "error": "CUDA out of memory. Tried to allocate 1.23 GiB. GPU 0 has a total capacty of 23.52 GiB of which 354.69 MiB is free. Including non-PyTorch memory, this process has 23.16 GiB memory in use. Of the alloc",
+      "mem": {
+        "allocated_gb": 20.11,
+        "reserved_gb": 24.371,
+        "peak_allocated_gb": 24.147,
+        "peak_reserved_gb": 24.371
+      }
+    }
+  ],
+  "mem_final": {
+    "allocated_gb": 18.551,
+    "reserved_gb": 20.303,
+    "peak_allocated_gb": 24.147,
+    "peak_reserved_gb": 24.371
+  },
+  "verdict": "MODEL_HARDWARE_NO_GO"
+}

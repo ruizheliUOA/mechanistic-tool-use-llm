@@ -1,0 +1,68 @@
+{
+  "cannot_answer__to__direct": {
+    "condition_5": "PASS",
+    "real_target_gain": 0.18604651162790697,
+    "reverse": {
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 0,
+      "Fixed": 0,
+      "GOLD_ARRIVAL": 0,
+      "Net": 0,
+      "OTHER_WRONG": 1,
+      "SOURCE_RETAINED": 85,
+      "all_correct_breaks": 0,
+      "all_correct_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.0,
+      "exposed_correct_breaks": 0,
+      "exposed_correct_ci95": [
+        null,
+        null
+      ],
+      "exposed_correct_denom": 0,
+      "exposed_correct_rate": null,
+      "routed_source_errors": 86,
+      "source_exits": 1,
+      "target_gain": -0.011627906976744186,
+      "target_hit": 0.0
+    },
+    "rule": "condition 5: reverse must not reproduce the real destination-correct effect (reverse TGR >= real TGR)"
+  },
+  "cannot_answer__to__tool_call": {
+    "condition_5": "PASS",
+    "real_target_gain": 0.08808290155440414,
+    "reverse": {
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "Broke": 0,
+      "Fixed": 0,
+      "GOLD_ARRIVAL": 0,
+      "Net": 0,
+      "OTHER_WRONG": 0,
+      "SOURCE_RETAINED": 193,
+      "all_correct_breaks": 0,
+      "all_correct_ci95": [
+        0.0,
+        0.007801425503586229
+      ],
+      "all_correct_denom": 471,
+      "all_correct_rate": 0.0,
+      "exposed_correct_breaks": 0,
+      "exposed_correct_ci95": [
+        0.0,
+        0.14818512891522437
+      ],
+      "exposed_correct_denom": 23,
+      "exposed_correct_rate": 0.0,
+      "routed_source_errors": 193,
+      "source_exits": 0,
+      "target_gain": 0.0,
+      "target_hit": null
+    },
+    "rule": "condition 5: reverse must not reproduce the real destination-correct effect (reverse TGR >= real TGR)"
+  }
+}

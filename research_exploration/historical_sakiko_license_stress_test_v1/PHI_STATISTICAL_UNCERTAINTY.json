@@ -1,0 +1,58 @@
+{
+  "independence_note": "rows are independent When2Call MCQ items with no dialogue grouping, so a group-aware sensitivity analysis is not applicable to this corpus",
+  "label": "retrospective; not preregistered, not sealed, not confirmatory",
+  "method": "Clopper-Pearson exact binomial on committed per-sample locked-test records",
+  "modern_threshold": {
+    "ci_upper": 0.05,
+    "point": 0.05,
+    "source": "final/results/qwen3_stage2_formal (conditions 7 and 8)"
+  },
+  "populations": [
+    {
+      "BROKEN": 52,
+      "BROKEN_TO_OTHER": 48,
+      "BROKEN_TO_SOURCE": 4,
+      "CORRECT_RETAINED": 212,
+      "ci_upper_passes": false,
+      "clopper_pearson_hi": 0.250139,
+      "clopper_pearson_lo": 0.150746,
+      "collateral_rate": 0.19697,
+      "denominator": 264,
+      "modern_threshold": 0.05,
+      "note": "modern FROZEN FORMAL metric denominator",
+      "point_passes": false,
+      "population": "A_all_baseline_correct"
+    },
+    {
+      "BROKEN": 52,
+      "BROKEN_TO_OTHER": 48,
+      "BROKEN_TO_SOURCE": 4,
+      "CORRECT_RETAINED": 41,
+      "ci_upper_passes": false,
+      "clopper_pearson_hi": 0.66203,
+      "clopper_pearson_lo": 0.452379,
+      "collateral_rate": 0.55914,
+      "denominator": 93,
+      "modern_threshold": 0.05,
+      "note": "modern ELIGIBLE-AT-RISK denominator",
+      "point_passes": false,
+      "population": "B_router_fired_baseline_correct"
+    },
+    {
+      "BROKEN": 0,
+      "BROKEN_TO_OTHER": 0,
+      "BROKEN_TO_SOURCE": 0,
+      "CORRECT_RETAINED": 171,
+      "ci_upper_passes": true,
+      "clopper_pearson_hi": 0.021341,
+      "clopper_pearson_lo": 0.0,
+      "collateral_rate": 0.0,
+      "denominator": 171,
+      "modern_threshold": 0.05,
+      "note": "never exposed; control",
+      "point_passes": true,
+      "population": "C_unrouted_baseline_correct"
+    }
+  ],
+  "scope": "RETROSPECTIVE_HISTORICAL_RE-ADJUDICATION"
+}

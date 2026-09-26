@@ -1,0 +1,33 @@
+{
+  "note": "Registered per-channel predictions written before activation extraction/intervention.",
+  "fragility_rule": "F1 = P(gold is runner-up) on TRAIN channel errors; F2 = median(top-gold) avg_logp/token. FRAGILE if F1 >= 0.35 (Phase-6 dev separation). Declared expected outcome uses the Phase-7 finding: fragile/high-F1 channels are predicted NON-actionable.",
+  "channels": {
+    "rfi_tc": {
+      "gold": "request_for_info",
+      "pred": "tool_call",
+      "F1_P_gold_runnerup": 0.652,
+      "F2_median_top_minus_gold": 0.6628,
+      "fragile_flag": true,
+      "declared_expected_outcome": "non-actionable",
+      "n_train_errors": 471
+    },
+    "ca_tc": {
+      "gold": "cannot_answer",
+      "pred": "tool_call",
+      "F1_P_gold_runnerup": 0.407,
+      "F2_median_top_minus_gold": 0.6357,
+      "fragile_flag": true,
+      "declared_expected_outcome": "non-actionable",
+      "n_train_errors": 383
+    },
+    "ca_direct": {
+      "gold": "cannot_answer",
+      "pred": "direct",
+      "F1_P_gold_runnerup": 0.44,
+      "F2_median_top_minus_gold": 0.6236,
+      "fragile_flag": true,
+      "declared_expected_outcome": "non-actionable",
+      "n_train_errors": 316
+    }
+  }
+}

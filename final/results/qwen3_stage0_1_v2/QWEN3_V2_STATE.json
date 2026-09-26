@@ -1,0 +1,22 @@
+{
+  "K_stage2_eligible": 3,
+  "K_support_eligible": 3,
+  "block4_promoted": true,
+  "block5_completed": true,
+  "final_branch": {
+    "K": 3,
+    "branch": "C",
+    "future_primary": "real direction versus prospectively generated matched-random directions on destination selectivity for every eligible channel",
+    "predictor_claim": "withdrawn"
+  },
+  "inherited_branch": {
+    "K": 3,
+    "branch": "C",
+    "future_primary": "real direction versus prospectively generated matched-random directions on destination selectivity for every eligible channel",
+    "predictor_claim": "withdrawn"
+  },
+  "schema_version": 1,
+  "split_index_sha256": "83a7584aa993d42708d2c718bd9b5ccf209f85b87d60afa2dfc599d2dde392e9",
+  "support_ledger_sha256": "58a9167a513be769caf71cd5265057d207a3b2022b7d142a7b497f864201591f",
+  "utc": "2026-07-30T08:17:00Z"
+}

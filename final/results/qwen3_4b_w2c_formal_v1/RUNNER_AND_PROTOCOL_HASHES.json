@@ -1,0 +1,28 @@
+{
+  "collateral_audit": {
+    "FILE_INVENTORY.json": "0e77b00c4abc43404bb221aaeb372593f0521b1e219ee9bbf03b031408e78346"
+  },
+  "formal_runner": {
+    "path": "scripts/qwen3_4b_w2c_formal.py",
+    "sha256": "c1a0241eacfc6ff775624e509f083ec5d4c2f2e0dcfa89b2e44e2045b96dcb2c"
+  },
+  "gate": {
+    "COLLATERAL_CLAIM_LOCK.md": "06a79067f6b854dce12230c3fbfce14275106da356ce0dcf512bc45926b430e7",
+    "GATE_ONLY_OUTPUT.json": "d16fc9d31f40e0232fb32a8b7eb405b1b812f2aabb721dee0db2e48dfe7c5635",
+    "ONE_SHOT_EXECUTION_LEDGER.json": "2a1e455e9460a6a472b00c9369ca5979859c28b0e476a3da0c7da7a7603daf04"
+  },
+  "packager": {
+    "path": "scripts/qwen3_4b_formal_package.py",
+    "sha256": "9d5a9ec9382cbb9c95f5f195ed2eebd584dc6f69c8d206a8d4a7fa0936238be1"
+  },
+  "protocol": {
+    "DIFFMEAN_DIRECTIONS.safetensors": "e47e07b7c16d2eedc01cf6537dc6c426152cd5cb158bb6cc60f82fe4faaa9b29",
+    "FORMAL_PREREGISTRATION.md": "8bc5c06f39dec3ce27a396000869cb39a5d5720ecab51294e92231ed8364fc95",
+    "FORMAL_PROTOCOL_FROZEN.json": "df85dac20e62ffc2cfa720786bb240906addab3b7116e3b5c50f8ccf357172a0",
+    "FORMAL_RANDOMS.safetensors": "ee258e63b7d5782005f60e89e4a0501823e4574bd76242968f5a4df6702f327e",
+    "PRIMARY_DIRECTIONS.safetensors": "2c543b71723afe3903d8ee509d6174ff53361f026efe5add23b96fccd3261441"
+  },
+  "records_sha256": "aed60b18f4dab6f6475426317755440b04ecae09e87e79631bb53a453fe6b84d",
+  "results_sha256": "220b48be00c9b7a23a236493d50188b9961281342cfe400005b47ea26f1616c9",
+  "scientific_definitions_changed": false
+}

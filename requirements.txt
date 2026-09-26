@@ -1,0 +1,23 @@
+# Optional experiment dependency inventory, not a reproduction lock.
+# The standard-library verification commands require none of these packages.
+# Follow package-local frozen runtime records: Qwen3/Gemma formal runs specify
+# torch 2.1.2+cu121 and transformers 4.51.0; earlier packages may specify 4.49.0.
+# Unknown historical versions remain unknown. No GPU environment was recreated.
+torch
+transformers
+
+numpy
+scipy
+scikit-learn
+safetensors
+tokenizers
+datasets
+huggingface_hub
+pandas
+tqdm
+PyYAML
+matplotlib
+
+# Optional legacy figure/diagram exporters
+lxml
+python-pptx

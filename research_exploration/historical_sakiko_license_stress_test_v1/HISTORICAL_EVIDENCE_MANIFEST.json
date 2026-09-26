@@ -1,0 +1,64 @@
+{
+  "analysis_class": "RETROSPECTIVE_HISTORICAL_RE-ADJUDICATION / HISTORICAL_LICENSE_STRESS_TEST",
+  "artifacts_read": {
+    "final/results/clean/p0_final_test_details.jsonl": {
+      "bytes": 91258,
+      "sha256": "c5478da97b0c6134b1b35e321c23957c13181dbf4769a346ecbd015b42ae3b58"
+    },
+    "final/results/clean/p0_final_test_eval.json": {
+      "bytes": 2743,
+      "sha256": "e749cd655158a6c2ab20ee341f0b3471ae1d998dce96e9b330c557128a0a677e"
+    },
+    "final/results/clean/p0_locked_config.json": {
+      "bytes": 514,
+      "sha256": "6ed8f689ee04b35086527a739794290c9e4efb2bfa6291aea21852e4dda207aa"
+    },
+    "final/results/clean/p0_split_info.json": {
+      "bytes": 1393,
+      "sha256": "e2d57cbd81fea176526b83282a2eefca0db38e6724d0c14c6db17818de1d2541"
+    },
+    "final/results/clean/p2_placebo_controls.json": {
+      "bytes": 3224,
+      "sha256": "55bf0dd818b86e1af43c1e58fa8400fd07a1ff1d120edf294d4e640a859cd6a2"
+    },
+    "final/results/metatool_qwen7b_sakiko_ca/metatool_qwen7b_sakiko_ca_summary.json": {
+      "bytes": 2402,
+      "sha256": "e76ba4cce1d4e71b204ee4427f19c05ff276cf2f50865399cc153b5493c2d4e4"
+    },
+    "final/results/qwen3_4b_w2c_formal_v1/QWEN3_4B_FORMAL_RESULTS.json": {
+      "bytes": 72412,
+      "sha256": "220b48be00c9b7a23a236493d50188b9961281342cfe400005b47ea26f1616c9"
+    },
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_FORMAL_RESULTS.json": {
+      "bytes": 32669,
+      "sha256": "016a230221a03f8d8f4f1d22f20807b8ebc7daed97fc90b83f0cb20d1d69eead"
+    }
+  },
+  "branch": "exp/sakiko-followup-archive",
+  "divergence": "0/0",
+  "explicitly_not": [
+    "preregistered",
+    "prospective",
+    "confirmatory",
+    "sealed",
+    "independent replication"
+  ],
+  "no_artifact_modified": true,
+  "no_gpu": true,
+  "no_model_run": true,
+  "reconciliation": {
+    "Broke": "52 == 52",
+    "Fixed": "107 recomputed == 107 committed",
+    "Net": "+55 == +55",
+    "clean_damage": "52/264 == 52/264",
+    "gating_integrity": "0 of 255 unrouted rows changed prediction",
+    "routed_per_channel": "137/83/73 == 137/83/73"
+  },
+  "repository_head": "2834a6e5932232a4a4ab418e818c20bbffe87281",
+  "unavailable": {
+    "final/results/7b_w2c_sakiko/qwen25_7b_locked_test_details.jsonl": "git-LFS pointer, not materialised",
+    "final/results/7b_w2c_sakiko/qwen25_7b_split_baseline_details.jsonl": "git-LFS pointer, not materialised",
+    "llama per-sample records": "not present",
+    "mistral per-sample intervened predictions": "baseline-only records; no int_pred field"
+  }
+}

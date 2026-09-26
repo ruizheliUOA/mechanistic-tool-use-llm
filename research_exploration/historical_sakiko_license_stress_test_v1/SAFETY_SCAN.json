@@ -1,0 +1,17 @@
+{
+  "activation_caches": [],
+  "credentials": [],
+  "files_over_50mb": [],
+  "files_scanned": 18,
+  "malformed_json": [],
+  "method": {
+    "content": "aggregate counts, rates, intervals and criterion verdicts only; no per-sample rows, no prompts, no dataset text, no weights",
+    "source_data": "committed SAKIKO artifacts only; nothing third-party is reproduced"
+  },
+  "model_weights": [],
+  "per_sample_row_content": [],
+  "personal_information": [],
+  "third_party_dataset_payload": [],
+  "unrelated_files": [],
+  "verdict": "SAFETY_SCAN_CLEAN"
+}

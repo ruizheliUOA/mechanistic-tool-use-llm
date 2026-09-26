@@ -1,0 +1,25 @@
+{
+  "artifacts": {
+    "CHANNEL_READABILITY_CROSS_MODEL_AUDIT.md": "8b13262be8f77a215991ffedcb675c38985308ada95d13ca8f140c5471f9b003",
+    "COLLATERAL_ESTIMAND_AUDIT.md": "fe17ff6b46032102ec2d8b2fe391cfbe1d6d8cf01e034307955800ee4f64d718",
+    "CONJUNCTION_BOTTLENECK_AUDIT.md": "e1debb9ad8d5c534401409d1aaa4b830958a4c8551d00860c5f6f336a758e4d2",
+    "CORRECTABILITY_OUTCOME_LEDGER.csv": "c327165a5e67a8879a1bb69be77442ccab58657e61fac0f3d8a5d81dfa75b9c6",
+    "FILE_INVENTORY.json": "8e676f6e437cfecbbe97afdcac48cd08d13ed1a0a709335fcdf6646f55f30ef8",
+    "FINAL_CAUSAL_SYNTHESIS.md": "8e84dd4a37dcdf682c8b386480e7d59144ac1e8c6c32721d540111752d3de286",
+    "LICENCE_CALIBRATION_LIMITS.md": "6238382a399e2567ee40143e0c132edbec71827a241a2bc1c766b35f7ceef52a",
+    "LICENCE_OPERATING_CHARACTERISTICS.csv": "7d4b4250547ef927e7097167a8627bb8c59e0b1baf022449eaafe5057ee25aa0",
+    "LICENCE_POWER_CURVES.md": "4bc8246f58c2584615e85361b5e62a66de10b85fd890f54815dcc1181f91dfc7",
+    "PAPER_CLAIM_MATRIX.md": "b2e9063c4b9b0137f380068ac09bac2e74d535a44839a6e3fed36ad6cc4b6794",
+    "POWER_COUNTERFACTUALS.json": "f59b2e74d0ecf4ba048892b1d363e0f96a1b005fb33137d7f10a830509a8c3ba",
+    "SAKIKO_LADDER_AUDIT.md": "4c6df8f59776cfe3378469b5d8ea88cdca7a8b3db440d066a7325b6364e126c7",
+    "simulate_licence.py": "ad3c362da9d6d4257fb638b5b74f1638a05c184af9dfdc2b5e039dbde72ee9fd"
+  },
+  "gpu_used": false,
+  "historical_artifacts_modified": false,
+  "new_model": false,
+  "package": "research_exploration/sakiko_final_root_cause_synthesis",
+  "phase": "CPU-only root-cause synthesis",
+  "recommendation": "NO FURTHER EXPERIMENT - FREEZE THE PAPER",
+  "repository_head": "49dc39031c535135fac3c952d687790fd6eb3a0c",
+  "sealed_accessed": false
+}

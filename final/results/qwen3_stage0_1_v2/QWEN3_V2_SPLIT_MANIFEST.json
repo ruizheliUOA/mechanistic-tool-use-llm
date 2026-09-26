@@ -1,0 +1,78 @@
+{
+  "K_support_eligible": 3,
+  "counts": {
+    "dev": 1104,
+    "total_non_test": 3104,
+    "train": 2000
+  },
+  "dev_sample_id_order_sha256": "dbdbce45b880d6454539fa35aca79e860fc7737c79ae5a55a4e2027febb6a5c4",
+  "elapsed_seconds": 0.04024045169353485,
+  "every_row_exactly_once": true,
+  "gold_distribution": {
+    "dev": {
+      "cannot_answer": 390,
+      "request_for_info": 322,
+      "tool_call": 392
+    },
+    "train": {
+      "cannot_answer": 707,
+      "request_for_info": 584,
+      "tool_call": 709
+    }
+  },
+  "intersection_empty": true,
+  "protocol_version": "QWEN3_8B_STAGE0_1_V2",
+  "rule": {
+    "assignment": "first quota rows of each stratum to DEV; every remaining non-test row to TRAIN",
+    "dev_quotas": {
+      "cannot_answer": 390,
+      "request_for_info": 322,
+      "tool_call": 392
+    },
+    "guard_rows_special_treatment": false,
+    "may_depend_on": [
+      "immutable UUID",
+      "gold label",
+      "fixed literal salt",
+      "total target sizes"
+    ],
+    "must_not_depend_on": [
+      "baseline prediction",
+      "correct/error status",
+      "channel identity",
+      "candidate score",
+      "margin",
+      "sequence length",
+      "attention-guard status",
+      "Router result",
+      "geometry"
+    ],
+    "one_allocation_only": true,
+    "ordering": "within each gold stratum: split_hash ascending, immutable_uuid ascending as tie breaker",
+    "population": "the fixed 3104 non-test immutable UUIDs inherited from V1",
+    "quota_method": "largest remainder on gold-class sizes, quotas summing exactly to the dev target",
+    "salt": "SAKIKO_QWEN3_V2_ALLOC_V1|",
+    "split_hash": "SHA256(\"SAKIKO_QWEN3_V2_ALLOC_V1|\" + immutable_uuid), hex",
+    "stratification": "gold label only",
+    "targets": {
+      "dev": 1104,
+      "train": 2000
+    },
+    "train_quotas": {
+      "cannot_answer": 707,
+      "request_for_info": 584,
+      "tool_call": 709
+    }
+  },
+  "schema_version": 1,
+  "sealed_evaluation": {
+    "count": 548,
+    "identity_inherited_unchanged_from_v1_frozen_manifest": true,
+    "opened": false
+  },
+  "split_assignment_sha256": "85ad3bc8b3e642d86cdaff58c8da3ac9e7de4eee6ada8198401effed9b1a3ce1",
+  "train_sample_id_order_sha256": "77ba22613c4e67f5049fb47bd5987e553729bf295cbc0285ebdf0f85726bc0d3",
+  "union_equals_inherited_population": true,
+  "unknown_rows": 0,
+  "utc": "2026-07-30T08:17:00Z"
+}

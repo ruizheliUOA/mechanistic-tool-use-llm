@@ -1,0 +1,7 @@
+name,value,meaning
+target_hit_criterion,0.5,"the only destination boundary, frozen before any sealed evaluation"
+collateral_bound_pct,5.0,"preservation bound, adjudicated on E1"
+add_one_p,0.017,add-one Monte Carlo p against 59 matched random directions
+phi_net,55,Phi-3.5 net gain
+phi_target_hit,0.6993,Phi-3.5 target-hit
+q8b_channel_errors,72,routed channel errors behind Figure 4(a)

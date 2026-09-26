@@ -1,0 +1,2801 @@
+{
+  "arms": {
+    "d_L26_diffmean": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_0": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_1": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_10": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_11": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_12": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_13": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 124
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 0,
+      "target_gain_count": 0,
+      "target_gain_rate": 0.0,
+      "target_gain_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "target_hit": null,
+      "target_hit_ci95": [
+        null,
+        null
+      ],
+      "wrong_to_wrong": 0
+    },
+    "formal_random_14": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_15": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_16": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_17": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_18": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 124
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 0,
+      "target_gain_count": 0,
+      "target_gain_rate": 0.0,
+      "target_gain_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "target_hit": null,
+      "target_hit_ci95": [
+        null,
+        null
+      ],
+      "wrong_to_wrong": 0
+    },
+    "formal_random_19": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 122
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 2,
+      "target_gain_count": 0,
+      "target_gain_rate": 0.0,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.024193548387096774
+      ],
+      "target_hit": 0.5,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_2": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_20": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_21": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 6,
+        "SOURCE_RETAINED": 117
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 7,
+      "target_gain_count": -5,
+      "target_gain_rate": -0.04032258064516129,
+      "target_gain_rate_ci95": [
+        -0.08064516129032258,
+        0.0
+      ],
+      "target_hit": 0.14285714285714285,
+      "target_hit_ci95": [
+        0.0,
+        0.5
+      ],
+      "wrong_to_wrong": 6
+    },
+    "formal_random_22": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_23": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_24": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 119
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 5,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        0.008064516129032258
+      ],
+      "target_hit": 0.2,
+      "target_hit_ci95": [
+        0.0,
+        0.6666666666666666
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_25": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_26": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_27": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 119
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 5,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        0.008064516129032258
+      ],
+      "target_hit": 0.2,
+      "target_hit_ci95": [
+        0.0,
+        0.6666666666666666
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_28": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_29": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 124
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 0,
+      "target_gain_count": 0,
+      "target_gain_rate": 0.0,
+      "target_gain_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "target_hit": null,
+      "target_hit_ci95": [
+        null,
+        null
+      ],
+      "wrong_to_wrong": 0
+    },
+    "formal_random_3": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.03225806451612903,
+        0.016129032258064516
+      ],
+      "target_hit": 0.3333333333333333,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_30": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_31": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.016129032258064516
+      ],
+      "target_hit": 0.3333333333333333,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_32": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_33": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 2,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 119
+      },
+      "eligible_collateral": 50,
+      "fixed": 3,
+      "gold_arrivals": 2,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 3,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 5,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.024193548387096774
+      ],
+      "target_hit": 0.4,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_34": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_35": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_36": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_37": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 2,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 2,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": 0,
+      "target_gain_rate": 0.0,
+      "target_gain_rate_ci95": [
+        -0.03225806451612903,
+        0.03225806451612903
+      ],
+      "target_hit": 0.5,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_38": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_39": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 122
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 2,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_4": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_40": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 5,
+        "SOURCE_RETAINED": 119
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 5,
+      "target_gain_count": -5,
+      "target_gain_rate": -0.04032258064516129,
+      "target_gain_rate_ci95": [
+        -0.08064516129032258,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 5
+    },
+    "formal_random_41": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_42": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_43": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_44": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 122
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 2,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_45": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.016129032258064516
+      ],
+      "target_hit": 0.3333333333333333,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_46": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_47": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_48": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_49": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "formal_random_5": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.03225806451612903,
+        0.016129032258064516
+      ],
+      "target_hit": 0.3333333333333333,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_50": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 122
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 2,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_51": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 4,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -4,
+      "target_gain_rate": -0.03225806451612903,
+      "target_gain_rate_ci95": [
+        -0.06451612903225806,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 4
+    },
+    "formal_random_52": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 122
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 2,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_53": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 5,
+        "SOURCE_RETAINED": 119
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 5,
+      "target_gain_count": -5,
+      "target_gain_rate": -0.04032258064516129,
+      "target_gain_rate_ci95": [
+        -0.08064516129032258,
+        -0.008064516129032258
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 5
+    },
+    "formal_random_54": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_55": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.016129032258064516
+      ],
+      "target_hit": 0.3333333333333333,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_56": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 1,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 1,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_57": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 6,
+        "SOURCE_RETAINED": 118
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 6,
+      "target_gain_count": -6,
+      "target_gain_rate": -0.04838709677419355,
+      "target_gain_rate_ci95": [
+        -0.08870967741935484,
+        -0.016129032258064516
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 6
+    },
+    "formal_random_58": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 122
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 2,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04032258064516129,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 2
+    },
+    "formal_random_6": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 1,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 120
+      },
+      "eligible_collateral": 50,
+      "fixed": 2,
+      "gold_arrivals": 1,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 2,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 4,
+      "target_gain_count": -2,
+      "target_gain_rate": -0.016129032258064516,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.016129032258064516
+      ],
+      "target_hit": 0.25,
+      "target_hit_ci95": [
+        0.0,
+        1.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_7": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_8": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 121
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 3,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 3
+    },
+    "formal_random_9": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 123
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 1,
+      "target_gain_count": -1,
+      "target_gain_rate": -0.008064516129032258,
+      "target_gain_rate_ci95": [
+        -0.024193548387096774,
+        0.0
+      ],
+      "target_hit": 0.0,
+      "target_hit_ci95": [
+        0.0,
+        0.0
+      ],
+      "wrong_to_wrong": 1
+    },
+    "real_d_grad": {
+      "baseline_correct_n": 214,
+      "broke": 1,
+      "clean_collateral_rate": 0.004672897196261682,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.014018691588785047
+      ],
+      "collateral_count": 1,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 1,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 213
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 37,
+        "OTHER_WRONG": 27,
+        "SOURCE_RETAINED": 60
+      },
+      "eligible_collateral": 50,
+      "fixed": 40,
+      "gold_arrivals": 37,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 39,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 64,
+      "target_gain_count": 10,
+      "target_gain_rate": 0.08064516129032258,
+      "target_gain_rate_ci95": [
+        -0.04838709677419355,
+        0.20161290322580644
+      ],
+      "target_hit": 0.578125,
+      "target_hit_ci95": [
+        0.45588235294117646,
+        0.696969696969697
+      ],
+      "wrong_to_wrong": 27
+    },
+    "reverse_d_grad": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 124
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 0,
+      "target_gain_count": 0,
+      "target_gain_rate": 0.0,
+      "target_gain_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "target_hit": null,
+      "target_hit_ci95": [
+        null,
+        null
+      ],
+      "wrong_to_wrong": 0
+    },
+    "score_space": {
+      "baseline_correct_n": 214,
+      "broke": 6,
+      "clean_collateral_rate": 0.028037383177570093,
+      "clean_collateral_rate_ci95": [
+        0.009345794392523364,
+        0.0514018691588785
+      ],
+      "collateral_count": 6,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 6,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 208
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 44,
+        "OTHER_WRONG": 31,
+        "SOURCE_RETAINED": 49
+      },
+      "eligible_collateral": 50,
+      "fixed": 45,
+      "gold_arrivals": 44,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 39,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 75,
+      "target_gain_count": 13,
+      "target_gain_rate": 0.10483870967741936,
+      "target_gain_rate_ci95": [
+        -0.03225806451612903,
+        0.24193548387096775
+      ],
+      "target_hit": 0.5866666666666667,
+      "target_hit_ci95": [
+        0.4722222222222222,
+        0.6956521739130435
+      ],
+      "wrong_to_wrong": 31
+    },
+    "ungated_d_grad": {
+      "baseline_correct_n": 214,
+      "broke": 6,
+      "clean_collateral_rate": 0.028037383177570093,
+      "clean_collateral_rate_ci95": [
+        0.009345794392523364,
+        0.0514018691588785
+      ],
+      "collateral_count": 6,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 6,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 208
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 37,
+        "OTHER_WRONG": 28,
+        "SOURCE_RETAINED": 59
+      },
+      "eligible_collateral": 186,
+      "fixed": 49,
+      "gold_arrivals": 37,
+      "n_channel_error": 124,
+      "n_intervened_records": 452,
+      "net": 43,
+      "router_fired_baseline_correct_exposure": 186,
+      "router_fired_channel_error_count": 124,
+      "source_exits": 65,
+      "target_gain_count": 9,
+      "target_gain_rate": 0.07258064516129033,
+      "target_gain_rate_ci95": [
+        -0.056451612903225805,
+        0.19374999999999706
+      ],
+      "target_hit": 0.5692307692307692,
+      "target_hit_ci95": [
+        0.44776119402985076,
+        0.6875
+      ],
+      "wrong_to_wrong": 28
+    },
+    "wrong_layer_d_grad": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 6,
+        "OTHER_WRONG": 9,
+        "SOURCE_RETAINED": 109
+      },
+      "eligible_collateral": 50,
+      "fixed": 7,
+      "gold_arrivals": 6,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 7,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 15,
+      "target_gain_count": -3,
+      "target_gain_rate": -0.024193548387096774,
+      "target_gain_rate_ci95": [
+        -0.08870967741935484,
+        0.03225806451612903
+      ],
+      "target_hit": 0.4,
+      "target_hit_ci95": [
+        0.15384615384615385,
+        0.6666666666666666
+      ],
+      "wrong_to_wrong": 9
+    },
+    "zero": {
+      "baseline_correct_n": 214,
+      "broke": 0,
+      "clean_collateral_rate": 0.0,
+      "clean_collateral_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "collateral_count": 0,
+      "collateral_destination_counts": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "CORRECT_RETAINED": 214
+      },
+      "destination_counts": {
+        "GOLD_ARRIVAL": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 124
+      },
+      "eligible_collateral": 50,
+      "fixed": 0,
+      "gold_arrivals": 0,
+      "n_channel_error": 124,
+      "n_intervened_records": 218,
+      "net": 0,
+      "router_fired_baseline_correct_exposure": 50,
+      "router_fired_channel_error_count": 118,
+      "source_exits": 0,
+      "target_gain_count": 0,
+      "target_gain_rate": 0.0,
+      "target_gain_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "target_hit": null,
+      "target_hit_ci95": [
+        null,
+        null
+      ],
+      "wrong_to_wrong": 0
+    }
+  },
+  "attention_guard": {
+    "below_threshold_path": "unmodified upstream eager_attention_forward",
+    "head_chunk": 8,
+    "installed": true,
+    "scientific_definitions_changed": false,
+    "threshold_tokens": 4096
+  },
+  "channel": "cannot_answer__to__tool_call",
+  "claim_lock": "Passing the frozen formal collateral endpoint must not be interpreted as demonstrated deployment safety.",
+  "conjunction": {
+    "10_no_structural_failure": true,
+    "1_support_ge_30": true,
+    "2_target_gain_rate_gt_0": true,
+    "3_target_gain_rate_ci_lower_gt_0": false,
+    "4_p_add_one_le_0.05": true,
+    "5_target_hit_gt_0.50": true,
+    "6_target_hit_ci_lower_gt_0.50": false,
+    "7_collateral_le_0.05": true,
+    "8_collateral_ci_upper_le_0.05": true,
+    "9_zero_control_exact": true
+  },
+  "eligible_at_risk_collateral": {
+    "denominator": 50,
+    "note": "required diagnostic disclosure; see COLLATERAL_CLAIM_LOCK.md",
+    "numerator": 1
+  },
+  "invocation_uuid": "e3d9d0b5-92f9-42da-86c2-d8ca2606466c",
+  "p_add_one": 0.016666666666666666,
+  "random_target_gain_rates": [
+    -0.008064516129032258,
+    -0.03225806451612903,
+    -0.024193548387096774,
+    -0.008064516129032258,
+    -0.03225806451612903,
+    -0.008064516129032258,
+    -0.016129032258064516,
+    -0.024193548387096774,
+    -0.024193548387096774,
+    -0.008064516129032258,
+    -0.016129032258064516,
+    -0.03225806451612903,
+    -0.03225806451612903,
+    0.0,
+    -0.008064516129032258,
+    -0.03225806451612903,
+    -0.016129032258064516,
+    -0.024193548387096774,
+    0.0,
+    0.0,
+    -0.008064516129032258,
+    -0.04032258064516129,
+    -0.008064516129032258,
+    -0.008064516129032258,
+    -0.024193548387096774,
+    -0.008064516129032258,
+    -0.016129032258064516,
+    -0.024193548387096774,
+    -0.024193548387096774,
+    0.0,
+    -0.016129032258064516,
+    -0.008064516129032258,
+    -0.024193548387096774,
+    -0.008064516129032258,
+    -0.008064516129032258,
+    -0.024193548387096774,
+    -0.03225806451612903,
+    0.0,
+    -0.008064516129032258,
+    -0.016129032258064516,
+    -0.04032258064516129,
+    -0.016129032258064516,
+    -0.024193548387096774,
+    -0.016129032258064516,
+    -0.016129032258064516,
+    -0.008064516129032258,
+    -0.024193548387096774,
+    -0.016129032258064516,
+    -0.03225806451612903,
+    -0.008064516129032258,
+    -0.016129032258064516,
+    -0.03225806451612903,
+    -0.016129032258064516,
+    -0.04032258064516129,
+    -0.024193548387096774,
+    -0.008064516129032258,
+    -0.024193548387096774,
+    -0.04838709677419355,
+    -0.016129032258064516
+  ],
+  "randoms_ge_real": 0,
+  "verdict": "QWEN3_4B_FORMAL_CONFIRMATORY_FAILURE"
+}

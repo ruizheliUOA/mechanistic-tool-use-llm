@@ -1,0 +1,30 @@
+{
+  "all_pass": false,
+  "evaluated_once": true,
+  "frozen_conditions": [
+    "evaluation channel-error support n_channel_error >= 30",
+    "real target_gain_rate point estimate > 0",
+    "bootstrap 95% lower bound for real target_gain_rate > 0",
+    "p_add_one <= 0.05 against the K fresh randoms",
+    "real target_hit point estimate > 0.50",
+    "bootstrap 95% lower bound for real target_hit > 0.50",
+    "clean_collateral_rate point estimate <= 0.05",
+    "bootstrap 95% upper bound for clean_collateral_rate <= 0.05",
+    "zero-control equality passes exactly",
+    "no structural or provenance failure occurs"
+  ],
+  "is_intersection_claim": true,
+  "observed": {
+    "10_no_structural_failure": true,
+    "1_support_ge_30": true,
+    "2_target_gain_rate_gt_0": true,
+    "3_target_gain_rate_ci_lower_gt_0": false,
+    "4_p_add_one_le_0.05": true,
+    "5_target_hit_gt_0.50": true,
+    "6_target_hit_ci_lower_gt_0.50": false,
+    "7_collateral_le_0.05": true,
+    "8_collateral_ci_upper_le_0.05": true,
+    "9_zero_control_exact": true
+  },
+  "verdict": "QWEN3_4B_FORMAL_CONFIRMATORY_FAILURE"
+}

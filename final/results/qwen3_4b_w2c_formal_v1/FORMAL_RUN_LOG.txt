@@ -1,0 +1,36 @@
+[2026-08-09T16:43:24Z] 1   repository HEAD authorised                     PASS  HEAD=277c3b123e94 branch=exp/sakiko-followup-archive divergence=0/0
+[2026-08-09T16:43:24Z] 2   worktree scientific files clean                PASS  tracked modifications=0 unexpected untracked=none
+[2026-08-09T16:43:24Z] 3   prerequisite packages hash-valid & committed   PASS  4 packages, 107 artifacts
+[2026-08-09T16:43:35Z] 4   model manifest exact                           PASS  Qwen/Qwen3-4B@1cfa9a720891, 10 files, mismatch=none
+[2026-08-09T16:43:35Z] 5   tokenizer & chat template hashes exact         PASS  tokenizer=True chat_template=True
+[2026-08-09T16:43:35Z] 6   dataset & split manifests exact                PASS  total=3652 train+dev=3104 sealed=548
+[2026-08-09T16:43:35Z] 7   SEALED manifest hash exact (ID-only)           PASS  548 IDs, ordered sha256 ecdde9f01650bc29
+[2026-08-09T16:43:35Z] 8   selected channel exact                         PASS  cannot_answer -> tool_call, single channel
+[2026-08-09T16:43:35Z] 9   Router artifact exact                          PASS  sha f45d6b7f7a15, coef(1, 2560) intercept=-1.3428241035
+[2026-08-09T16:43:35Z] 10  Router threshold exact                         PASS  tau=0.011564 (protocol == router block == Stage C audit)
+[2026-08-09T16:43:35Z] 11  observation layer exact                        PASS  L_obs=26
+[2026-08-09T16:43:35Z] 12  direction tensors exact                        PASS  d_grad sha 84c102946657 dim=2560 finite norm=0.999999999555
+[2026-08-09T16:43:35Z] 13  injection layer exact                          PASS  L_inj=21, wrong-layer control=26
+[2026-08-09T16:43:35Z] 14  dose q exact                                   PASS  q=0.25 on frozen grid [0.0, 0.125, 0.25, 0.5, 1.0, 2.0]
+[2026-08-09T16:43:35Z] 15  absolute perturbation norm exact               PASS  q*s_c = 6.1748905405 (s_c=24.6995621618)
+[2026-08-09T16:43:35Z] 16  formal random seeds exact & disjoint           PASS  K=59, regenerated seeds identical, disjoint from DEV(8), historical(4), Qwen3-8B(59)
+[2026-08-09T16:43:35Z] 17  random matrix hash exact (byte-identical regen) PASS  matrix sha 063bb9d23514, regen byte-identical=True, shape(59, 2560)
+[2026-08-09T16:43:35Z] 18  comparator definitions exact                   PASS  b_c=1.4013434649 frozen from DEV; L26 DiffMean comparator present
+[2026-08-09T16:43:35Z] 19  success conjunction exact                      PASS  10 conditions, intersection claim, no subset substitution
+[2026-08-09T16:43:35Z] 20  formal namespace clean                         PASS  final/results/qwen3_4b_w2c_formal_v1 present, 1 files (phase=formal-run, unexpected=none)
+[2026-08-09T16:43:38Z] 21  no previous SEALED scientific access           PASS  140 text artifacts scanned, 0 identifier hits, 0 sealed rows in record files; declared VOID evidence present and asserts no endpoint computed
+[2026-08-09T16:43:38Z] 22  no prior formal run                            PASS  access marker present (required present in phase=formal-run); ledger run_count=0 endpoint_observed=False
+[2026-08-09T16:43:38Z] 23  Qwen3.5 irrelevant to this experiment          PASS  protocol references only Qwen/Qwen3-4B; no Qwen3.5 artifact in the formal design
+[2026-08-09T16:43:38Z] 24  collateral claim-lock present & frozen         PASS  audit verdict=QWEN3_4B_ADVANCEMENT_CONFIRMED; lock anchors 3/3, audit anchors 3/3
+[2026-08-09T16:43:38Z] 25  runner hash frozen                             PASS  runner sha256=c1a0241eacfc6ff7
+[2026-08-09T16:43:39Z] SEALED population loaded: 548 rows
+[2026-08-09T16:48:50Z] baseline complete: 548 rows
+[2026-08-09T16:48:50Z] routed 218 of 452 source-predicted rows
+[2026-08-09T16:50:43Z] zero-control exact equality: PASS
+[2026-08-09T16:52:44Z] arm real_d_grad complete (n=218)
+[2026-08-09T16:54:44Z] arm d_L26_diffmean complete (n=218)
+[2026-08-09T16:56:34Z] arm reverse_d_grad complete (n=218)
+[2026-08-09T16:58:30Z] arm wrong_layer_d_grad complete (n=218)
+[2026-08-09T17:02:49Z] arm ungated_d_grad complete (n=452)
+[2026-08-09T18:54:07Z] K=59 formal random arms complete
+[2026-08-09T18:54:22Z] FORMAL VERDICT QWEN3_4B_FORMAL_CONFIRMATORY_FAILURE  p_add_one=0.016667

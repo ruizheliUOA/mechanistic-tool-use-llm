@@ -1,0 +1,19 @@
+{
+  "description": "Val-selected locked config for P0 final test",
+  "selection_method": "threshold and alpha selected on val set only",
+  "threshold_rfi": 0.4,
+  "threshold_ca_tc": 0.4,
+  "threshold_ca_direct": 0.4,
+  "ca_direct_alpha": 10.0,
+  "rfi_alpha": 5.0,
+  "ca_tc_alpha": 2.0,
+  "obs_layer": 18,
+  "rfi_inj_layer": 14,
+  "rfi_inj_mode": "mlp_all",
+  "ca_tc_inj_layer": 16,
+  "ca_tc_inj_mode": "mlp_prompt",
+  "ca_direct_inj_layer": 16,
+  "ca_direct_inj_mode": "mlp_prompt",
+  "n_comp": 64,
+  "n_pcs": 20
+}

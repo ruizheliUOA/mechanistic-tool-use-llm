@@ -1,0 +1,9 @@
+setting,setting_order,protocol,estimand,broken,n,rate,vacuous
+Phi-3.5,4,historical,E2,52,93,55.913978494623656,0
+Phi-3.5,4,historical,E1,52,264,19.696969696969695,0
+Qwen3-8B,3,sealed,E2,0,6,0.0,1
+Qwen3-8B,3,sealed,E1,0,211,0.0,0
+Qwen3-4B,2,sealed,E2,1,50,2.0,0
+Qwen3-4B,2,sealed,E1,1,214,0.4672897196261682,0
+Gemma-2-9B,1,sealed,E2,1,11,9.090909090909092,0
+Gemma-2-9B,1,sealed,E1,1,223,0.4484304932735426,0

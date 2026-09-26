@@ -1,0 +1,51 @@
+{
+  "note": "Natural scientific outcomes, including insufficient support, are NOT void.",
+  "properties": {
+    "automatic_retry_attempted": {
+      "const": false
+    },
+    "endpoints_computed": {
+      "const": false,
+      "description": "endpoints must not be computed once VOID is declared"
+    },
+    "evaluation_access_had_begun": {
+      "type": "boolean"
+    },
+    "void": {
+      "const": true
+    },
+    "void_reason_code": {
+      "enum": [
+        "MODEL_HASH_MISMATCH",
+        "EVAL_POPULATION_MISMATCH",
+        "ZERO_CONTROL_FAILURE",
+        "ARM_MISSING_OR_REORDERED",
+        "DIRECTION_MISMATCH",
+        "ROUTER_MISMATCH",
+        "DOSE_MISMATCH",
+        "BATCH_SIZE_CHANGE",
+        "RUNNER_MODIFIED",
+        "AUTOMATIC_RETRY_OR_RESUME",
+        "ENDPOINT_MODIFIED",
+        "RANDOM_VECTOR_REPLACED",
+        "INCOMPLETE_ALL_ARM_EXECUTION"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "utc",
+    "void",
+    "void_reason_code",
+    "void_reason",
+    "evaluation_access_had_begun",
+    "arms_completed",
+    "endpoints_computed",
+    "automatic_retry_attempted",
+    "runner_sha256",
+    "freeze_sha256"
+  ],
+  "schema_version": 1,
+  "title": "QWEN3_STAGE2_VOID",
+  "type": "object"
+}

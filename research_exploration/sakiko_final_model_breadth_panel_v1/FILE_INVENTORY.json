@@ -1,0 +1,670 @@
+{
+  "artifacts_modified": false,
+  "dataset_touched": false,
+  "files": [
+    {
+      "bytes": 1929,
+      "file": "ANTI_MODEL_SHOPPING_FIREWALL.md",
+      "sha256": "9d0fb02cdfe62e294d374eb4cbdb3d482cef6f2c1fe401037433c46a4ff39286"
+    },
+    {
+      "bytes": 3331,
+      "file": "ARCHITECTURE_MAPPING.md",
+      "sha256": "22cb8a43831febc6b7ac4f1aac4252cd1f9d07d765bb2291ea19a261ccab0cdb"
+    },
+    {
+      "bytes": 2447,
+      "file": "CLAIM_BOUNDARY.md",
+      "sha256": "29180ecefa222da65b0f1f005cf1742f01582dbbcca91b0a62df836536b73f0d"
+    },
+    {
+      "bytes": 2168,
+      "file": "CROSS_MODEL_INTERPRETATION.md",
+      "sha256": "0a3b412e1665565e7efd6587d1eb89cb4dfb88da198ffa9eb4eac62dc5b6366c"
+    },
+    {
+      "bytes": 1469,
+      "file": "DATASET_SCOPE_AND_LIMITS.md",
+      "sha256": "f87d0786480459fa2ab11cc823d8c4f277a7a1a7b080defefd130b9bd612e230"
+    },
+    {
+      "bytes": 704,
+      "file": "ENVIRONMENT_MATRIX.csv",
+      "sha256": "ed85358074138b46bc877ce7402dcec7e7c9a46759825ff607d44c6807f20f5c"
+    },
+    {
+      "bytes": 4602,
+      "file": "FINAL_MODEL_PANEL_FREEZE.md",
+      "sha256": "9af42ff0704b172edfc305eef648d746bebd40b642f3677766f7ddc01c3152aa"
+    },
+    {
+      "bytes": 2256,
+      "file": "HUMAN_GIT_HANDOFF.md",
+      "sha256": "ef816ce929e6c365ea1a8b4554ccd93eaebea2417fd6f9eee6d4ed4a3277b9f7"
+    },
+    {
+      "bytes": 6902,
+      "file": "MODEL_COMPATIBILITY_AUDIT.csv",
+      "sha256": "bf110e84d78a0959ca47bc276ce9ae67c9fe27ed24f3439c77a790604e83aeb6"
+    },
+    {
+      "bytes": 1509,
+      "file": "MODEL_OUTCOME_MATRIX.csv",
+      "sha256": "f27f5da61b69b167c9f54710e573039b1d3ecb52b434354ae56447c67a9a3f3d"
+    },
+    {
+      "bytes": 851,
+      "file": "MODEL_PROVENANCE.csv",
+      "sha256": "a58a9e2c8e837c729de59a1f706189340e24773cd78a402ca2f2e50f6d326704"
+    },
+    {
+      "bytes": 1993,
+      "file": "PAPER_IMPACT_DECISION.md",
+      "sha256": "ddf99710a14e6922190145ecbd9e3f32bc300c864747ebee9976300950f7dba8"
+    },
+    {
+      "bytes": 5320,
+      "file": "README_STATUS.md",
+      "sha256": "4dbc97b2b6ce405c65ef3636d1ccfe544a13202b0cef582f6ff18e8488650728"
+    },
+    {
+      "bytes": 409,
+      "file": "SAFETY_SCAN.json",
+      "sha256": "2b9983f7fd26dd99b5ee9f8d40765c817f6346cb78697c6a5007a1f34008ea81"
+    },
+    {
+      "bytes": 3714,
+      "file": "gemma/ARCHITECTURE_INTERFACE_AUDIT.md",
+      "sha256": "c89a4dcf3cecd5406f280b675c7f5997cb44cfe4c43bdc320323e3cd2922e9ce"
+    },
+    {
+      "bytes": 20815417,
+      "file": "gemma/BASELINE_LOBS_ACTIVATIONS.npz",
+      "sha256": "539dae88390b6279838ecc273e735746c19793ecd7dad2884a2e231895420c01"
+    },
+    {
+      "bytes": 834,
+      "file": "gemma/BASELINE_METRICS.md",
+      "sha256": "5ad4da43946cc74f170005544b0da06aa9604fc709bc86ee24b0d2e3ee05ce00"
+    },
+    {
+      "bytes": 942518,
+      "file": "gemma/BASELINE_ROWS.jsonl",
+      "sha256": "b91469538bd0db33d7d771991b544edb92900a850c05f67720b521301c45d288"
+    },
+    {
+      "bytes": 831,
+      "file": "gemma/BASELINE_ROWS.md",
+      "sha256": "0179edb8c4d0d2552e1babf2284d38e0d0148bf8f75ab2efef30c34fceb2bcf5"
+    },
+    {
+      "bytes": 2810,
+      "file": "gemma/CHANNEL_DISCOVERY.md",
+      "sha256": "2e48894cba8b949ad9a11341b3f7f6283a83727361470d169c1dfffec89b940c"
+    },
+    {
+      "bytes": 1363,
+      "file": "gemma/CHANNEL_FREEZE.json",
+      "sha256": "54dd7189463dc3712323924712ec2ac5037b5e1936b1ec125482c94fb075cd05"
+    },
+    {
+      "bytes": 4506,
+      "file": "gemma/CHANNEL_INVENTORY.json",
+      "sha256": "39d7ef5e24dc13265a3f00b6fa263ac8ea80c32566e4a52accf0542f0d9efef2"
+    },
+    {
+      "bytes": 835,
+      "file": "gemma/CHANNEL_INVENTORY.md",
+      "sha256": "9ccc354751e5e824185b636ccbb19f74ee953f3c5477e4131e858456d3f08099"
+    },
+    {
+      "bytes": 4337,
+      "file": "gemma/CHANNEL_INVENTORY_V2ALLOC.json",
+      "sha256": "abb07744d65c93ba7a039ecdc3097e432168e795c1299e1693c5e8a258692671"
+    },
+    {
+      "bytes": 833,
+      "file": "gemma/CONTROL_RESULTS.md",
+      "sha256": "24f80fe06c8a3355aaeacf825f2a0176af2196a0095b8f0c828b7c80b55fc7df"
+    },
+    {
+      "bytes": 23893,
+      "file": "gemma/CONTROL_SUMMARY.json",
+      "sha256": "01e90c6cc6e90736977002ed45dba461c5e94cc2e8f97b082c152d3c95fa8867"
+    },
+    {
+      "bytes": 1830,
+      "file": "gemma/DEV_CHANNEL_VERDICTS.json",
+      "sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780"
+    },
+    {
+      "bytes": 1830,
+      "file": "gemma/DEV_CONJUNCTION.json",
+      "sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780"
+    },
+    {
+      "bytes": 1894998,
+      "file": "gemma/DEV_CONTROL_RECORDS.jsonl",
+      "sha256": "4e57a48dd62da2c255be7c5decf35bb324d56dd6d7a183ad85a0bef749cd0037"
+    },
+    {
+      "bytes": 841,
+      "file": "gemma/DEV_INTERVENTION_MATRIX.md",
+      "sha256": "59f09ef72a2c90acc8dd03d8b3f0010466d4f06f66b1cb24b1ae592f7d6823c9"
+    },
+    {
+      "bytes": 1887981,
+      "file": "gemma/DEV_INTERVENTION_RECORDS.jsonl",
+      "sha256": "3c1b36458692d188f5fdc10f5c80cf376741b7b618ead85f60b772313419c788"
+    },
+    {
+      "bytes": 3549,
+      "file": "gemma/DIFFMEAN_CONTROL.json",
+      "sha256": "c005517e25021d668282a827b2e3852af8e09662738011c67806900df0ae7ff5"
+    },
+    {
+      "bytes": 834,
+      "file": "gemma/DIRECTION_HASHES.md",
+      "sha256": "5a347c26af013bb1b97cbee938dbdd8233b038b29aa62b48524bd11db6814c02"
+    },
+    {
+      "bytes": 246671,
+      "file": "gemma/DIRECTION_RECORDS.jsonl",
+      "sha256": "63f932b3cf400f0bcadf7edc97a13e176407f96f3acebd4b6a59e864736bea76"
+    },
+    {
+      "bytes": 1138,
+      "file": "gemma/DIRECTION_RESULTS.json",
+      "sha256": "ec778e094916a693e32b0d23297a57fbc588bfd41d512b223b6b1e1551dff3fd"
+    },
+    {
+      "bytes": 590,
+      "file": "gemma/DOSE_DECLARATION__cannot_answer__to__direct.json",
+      "sha256": "fa6355f592501d6ff3463678ede43c4d1b6697281e8047e8ce40f8a47a6d7fc5"
+    },
+    {
+      "bytes": 596,
+      "file": "gemma/DOSE_DECLARATION__cannot_answer__to__tool_call.json",
+      "sha256": "98fce137d1751ccdcd767db4ad32ea7ee046a414bea3cbee69433b615ef0e5ef"
+    },
+    {
+      "bytes": 13396,
+      "file": "gemma/DOSE_SELECTION.json",
+      "sha256": "ebfffab87c2f1f5db1e125800df79060e3f57c95c507d66ca3bdd39d35993010"
+    },
+    {
+      "bytes": 838,
+      "file": "gemma/ENVIRONMENT_MANIFEST.md",
+      "sha256": "e6ad774e8fab43e9dcc96670ee91d462dddf08682727b69411755065b03eea29"
+    },
+    {
+      "bytes": 1468,
+      "file": "gemma/FEASIBLE_LENGTH_BOUNDARY.json",
+      "sha256": "4bb761880f72fe8b6c7e14359e72139082268acdeef693fd5a365a7127d06aa1"
+    },
+    {
+      "bytes": 831,
+      "file": "gemma/FINAL_VERDICT.md",
+      "sha256": "11414e7b824c26dc6469da253e573803457021ea2665ef965fcd518f9024d3f3"
+    },
+    {
+      "bytes": 8661,
+      "file": "gemma/FORMAL_FREEZE.json",
+      "sha256": "5bb73d37be35112dfa0ecc0ee7674ee5e237bd74850032358134b958acd09479"
+    },
+    {
+      "bytes": 829,
+      "file": "gemma/FORMAL_GATE.md",
+      "sha256": "00f4a71edabc2288e0e87f550199a8f6aa6a7f923e130403891cd7c86be228ae"
+    },
+    {
+      "bytes": 832,
+      "file": "gemma/FORMAL_RECORDS.md",
+      "sha256": "7862095aaa923b04ea7874f5f29c31ceff322cbbacebf9abedcf3b7d1d984726"
+    },
+    {
+      "bytes": 2056,
+      "file": "gemma/GEMMA_DEV_TERMINAL_VERDICT.md",
+      "sha256": "e403b0ce197d265a201ef2917965e229d5a3245c247b7ee6a744d7a1727b2160"
+    },
+    {
+      "bytes": 243,
+      "file": "gemma/HARDWARE_EXCLUSION_BOUNDARY.json",
+      "sha256": "178cad9b4d4c744e300cd90b4132a3b9efa30ae6f7f787e6449f4022cb9714e1"
+    },
+    {
+      "bytes": 3082,
+      "file": "gemma/HARDWARE_STRUCTURAL_EXCLUSION.md",
+      "sha256": "7d7fa733ecc2383941272fc6c78e7591918ab5221b17edefc4e6675b9f0fa444"
+    },
+    {
+      "bytes": 824,
+      "file": "gemma/HASHES.md",
+      "sha256": "b75b2d9d79cee0d73595b416a4ae5bfcbd721f079b32c38a2d4bb753a89d1ef8"
+    },
+    {
+      "bytes": 20797882,
+      "file": "gemma/LINJ_ACTIVATIONS.npz",
+      "sha256": "ccf1bab3b538a2c3abd3f564d31f5468a3361420352857a3274a2e43ec4ccc38"
+    },
+    {
+      "bytes": 832,
+      "file": "gemma/MODEL_MANIFEST.md",
+      "sha256": "6f20f4d9d3ce2636cc0b5579b7e4fb1f59f12d9446e0f02e41784562b147bfe4"
+    },
+    {
+      "bytes": 837,
+      "file": "gemma/RANDOM_NULL_RESULTS.md",
+      "sha256": "06f30ebab36f3f820bb6430664d437f2cb03626af8f079aa7a0dccab5443a797"
+    },
+    {
+      "bytes": 2029,
+      "file": "gemma/RANDOM_SPECIFICITY.json",
+      "sha256": "ff8da7d90af9a9b2a34f79c357e52918f155a70b56fc317bb2b129af0a152031"
+    },
+    {
+      "bytes": 832,
+      "file": "gemma/REPLAY_RESULTS.md",
+      "sha256": "e926ca691ac64cca8f62e9ea7fc730f9abd346d4b9c380abecd2ffb17657c84b"
+    },
+    {
+      "bytes": 1824,
+      "file": "gemma/REVERSE_CONTROL.json",
+      "sha256": "2f5ba21e9ee945b4d50cb1a68943016b9954737b008cc2fabb4b34ca10be96e7"
+    },
+    {
+      "bytes": 5024,
+      "file": "gemma/ROUTER_RESULTS.json",
+      "sha256": "e875c16dc53397dfeb32822a9677f55e4e2d072970845fbd96623dc6fd6da4bc"
+    },
+    {
+      "bytes": 2476,
+      "file": "gemma/ROUTER_RESULTS.md",
+      "sha256": "0f0fde513a1468588ca8c2b281bb67d2934cf9238a975b9fc7c94bfda353a863"
+    },
+    {
+      "bytes": 829,
+      "file": "gemma/SAFETY_SCAN.md",
+      "sha256": "c1c0a776951024feb624e9b19c2e85e185fd4abe7ab8c9ac6d76f18e5c122c6c"
+    },
+    {
+      "bytes": 856,
+      "file": "gemma/SCORE_SPACE_COMPARATOR.json",
+      "sha256": "d783d9138f584cb90f2e3e550f1c71027b7ccd5447e00528fa935fb231ee3a20"
+    },
+    {
+      "bytes": 106,
+      "file": "gemma/S_C.json",
+      "sha256": "40710190b6b8663d8335ce31758eea28d8e8653a64e9aca79579bac94e71e010"
+    },
+    {
+      "bytes": 2967,
+      "file": "gemma/UNGATED_CONTROL.json",
+      "sha256": "39abf32d15985ac5afc589992d3beba526957e4bbfd9fd293f6ff24c5e5e98f1"
+    },
+    {
+      "bytes": 3523,
+      "file": "gemma/VRAM_SMOKE_TEST.json",
+      "sha256": "678b3f746cacb7354f8b940fe6dafc55615695a9d2d2e3c68fd64e1ecc94ecf1"
+    },
+    {
+      "bytes": 2771,
+      "file": "gemma/VRAM_SMOKE_TEST.md",
+      "sha256": "686783629501d5e2a739612412c78cfc705002f85a824712bc3ba8f86903e707"
+    },
+    {
+      "bytes": 3622,
+      "file": "gemma/VRAM_SMOKE_TEST_V2.json",
+      "sha256": "dc32f9aaeb119e4984fccadca287e9bb85f10797ef6a4b81e9ad4d99239890d1"
+    },
+    {
+      "bytes": 4045,
+      "file": "gemma/VRAM_SMOKE_TEST_V3.json",
+      "sha256": "ff906f33a8ea2ec9b86b5e079ed567e851f2355040a95c9133121990be96334f"
+    },
+    {
+      "bytes": 4478,
+      "file": "gemma/VRAM_SMOKE_TEST_V4.json",
+      "sha256": "6d4a6269caee71315c45746947c7ed5c475f93e90e07e5d30346d9e426e47e3a"
+    },
+    {
+      "bytes": 1804,
+      "file": "gemma/WRONG_LAYER_CONTROL.json",
+      "sha256": "6f92b89e0b1d28fd259bc73ca0da1e601269fd9eed1d6d2d60962fdcae5ba443"
+    },
+    {
+      "bytes": 12531,
+      "file": "gemma/__pycache__/smoke_test_vram_v4.cpython-310.pyc",
+      "sha256": "075281ad5493b6efb66f94112115b3f17cb15c2aa30506d48147761d3dd5d469"
+    },
+    {
+      "bytes": 14464,
+      "file": "gemma/d_diffmean_Linj__cannot_answer__to__direct.npy",
+      "sha256": "4efdb5568ee7f989440da09858f04b4a15f9b0ae91468da3ab04d5142826024c"
+    },
+    {
+      "bytes": 14464,
+      "file": "gemma/d_diffmean_Linj__cannot_answer__to__tool_call.npy",
+      "sha256": "da28f1bceda22ea8c73737d89bd6f735026d8acfc165b5c0d2ee65b165ab58a7"
+    },
+    {
+      "bytes": 14464,
+      "file": "gemma/d_diffmean_Lobs__cannot_answer__to__direct.npy",
+      "sha256": "69c3b811f8cb07cc2103c2f90f43a6010018519bfa003dd794968ca41a7e795a"
+    },
+    {
+      "bytes": 14464,
+      "file": "gemma/d_diffmean_Lobs__cannot_answer__to__tool_call.npy",
+      "sha256": "3333b9f019122e5a0ccea34e585c928f418d2fe37404b105e8c41c9551a7d595"
+    },
+    {
+      "bytes": 14464,
+      "file": "gemma/d_grad__cannot_answer__to__direct.npy",
+      "sha256": "59e3b0a2ddb2efd29d1c09ffa3c49cef7cff315bb666f80fde79df8a0f8b8d7e"
+    },
+    {
+      "bytes": 14464,
+      "file": "gemma/d_grad__cannot_answer__to__tool_call.npy",
+      "sha256": "cd4f75260b8dab35da6ef271b36e2b569afd434cb2a227ec50c2f2d733a81ae4"
+    },
+    {
+      "bytes": 4088,
+      "file": "gemma/feasible_length_boundary.py",
+      "sha256": "8ccde8a5eda6ad6e011a77ce2acc336b84c3fadb4dee863015290c077280ddf6"
+    },
+    {
+      "bytes": 1266,
+      "file": "gemma/formal_freeze/FORMAL_ACCESS_POLICY.md",
+      "sha256": "7c5b7852053f90f78bc87fe6d0859b431fb16dba72cc9d693e0c86ecf2a64d9e"
+    },
+    {
+      "bytes": 313,
+      "file": "gemma/formal_freeze/FORMAL_ACCESS_STARTED.json",
+      "sha256": "7f3aa998d519c11cdd097d904d7c64933993effa7cd947a01431308b3a5eef5e"
+    },
+    {
+      "bytes": 2468,
+      "file": "gemma/formal_freeze/FORMAL_ARM_INVENTORY.json",
+      "sha256": "48b87752b438e17b6f86abded601252e2652a75528c87c5d6d0096c9b3b6294a"
+    },
+    {
+      "bytes": 1469,
+      "file": "gemma/formal_freeze/FORMAL_ARM_INVENTORY.md",
+      "sha256": "b2692c29c47cc98a7859dab309916cdbfccd1be7abeb5dceb55651d4e2c90666"
+    },
+    {
+      "bytes": 3936,
+      "file": "gemma/formal_freeze/FORMAL_CONFIG.json",
+      "sha256": "ed2d7898b3bd12b955a6bbd60c539ccd512add945cdda999d74c7f808bc5015e"
+    },
+    {
+      "bytes": 592,
+      "file": "gemma/formal_freeze/FORMAL_EXCLUSION_MANIFEST.json",
+      "sha256": "3f219dda06de373251ef72ef66f9c9b82fa505cee825afc57f590270c32b4782"
+    },
+    {
+      "bytes": 971,
+      "file": "gemma/formal_freeze/FORMAL_FREEZE.md",
+      "sha256": "acb2cfd51b82cfe58d68ef2b4ee85b3f089a9cac21b25129a2c70d773e5afb27"
+    },
+    {
+      "bytes": 9641,
+      "file": "gemma/formal_freeze/FORMAL_HASHES.json",
+      "sha256": "0a8b1cf4de8cad498265caaa0f238c29c39f49bde8eceffc437626861466b777"
+    },
+    {
+      "bytes": 1762,
+      "file": "gemma/formal_freeze/FORMAL_PRINCIPAL_VERDICT.json",
+      "sha256": "8c71ff89c489fb49d142959af73188d49e41db74ab2ec3631a932b6132b8c03a"
+    },
+    {
+      "bytes": 21,
+      "file": "gemma/formal_freeze/FORMAL_PRINCIPAL_VERDICT.txt",
+      "sha256": "08447beb5ee6832da27d513e9b39183b885e553545420f07baa31c7a16f50bb6"
+    },
+    {
+      "bytes": 3787,
+      "file": "gemma/formal_freeze/FORMAL_RANDOM_NULL.json",
+      "sha256": "0881e3e2e9cbf273e85ad14d035ebe4c7ccfb0c3b8265b7819dbd128f984d1cb"
+    },
+    {
+      "bytes": 1436,
+      "file": "gemma/formal_freeze/FORMAL_READY_CHECKLIST.md",
+      "sha256": "69bcd70081c083963b204ff5249c414048032874709251b12f48594f04f9ead3"
+    },
+    {
+      "bytes": 5989063,
+      "file": "gemma/formal_freeze/FORMAL_RECORDS.jsonl",
+      "sha256": "f05b75f471da5c8a503fb79fb62b958905e0dcfb25ef0261ba95765c263cfb1e"
+    },
+    {
+      "bytes": 3005,
+      "file": "gemma/formal_freeze/FORMAL_RESULTS.json",
+      "sha256": "7a79fac8cdd263cdbf0b761af3cd867e3ef858235b48eac6b51412395765fb69"
+    },
+    {
+      "bytes": 1253,
+      "file": "gemma/formal_freeze/FORMAL_RUNNER_HASHES.json",
+      "sha256": "e768ebbbb90e353cc9d17f91d8cbbb47216a58a111c6c1187c122b05df343bbf"
+    },
+    {
+      "bytes": 288,
+      "file": "gemma/formal_freeze/ONE_SHOT_LEDGER.json",
+      "sha256": "09e26eaf5fc40919ca4b53947db6988bcb5f692a315cce71c5a6e25017e1f911"
+    },
+    {
+      "bytes": 177048,
+      "file": "gemma/formal_freeze/SEALED_BASELINE.json",
+      "sha256": "9bdda553f710b11580f984d733180f88b33f5bda890325c3bd624043ff283ba6"
+    },
+    {
+      "bytes": 845952,
+      "file": "gemma/formal_freeze/formal_randoms_K59.npy",
+      "sha256": "a3a6a4b0b07ce08eb2fc9c05c39a9a268bc6c3b7fb49fad49954528426285b02"
+    },
+    {
+      "bytes": 1674,
+      "file": "gemma/formal_freeze/mechanical_incident_1/INCIDENT.md",
+      "sha256": "55d6ad91037de07332d4c0462c95ebaab8a7dc4eafed2cc0a13c37115a2bbbb5"
+    },
+    {
+      "bytes": 5504,
+      "file": "gemma/formal_freeze/mechanical_incident_1/run_gemma_formal.BEFORE.py",
+      "sha256": "1aa81b6eddb721651151e7ee50b51e07f2bf81924ccfedb6365d2067034c4d38"
+    },
+    {
+      "bytes": 12665,
+      "file": "gemma/formal_freeze/run_gemma_formal.py",
+      "sha256": "66d81956fb54fa85082a38a16987ce26c67dcf343c9844b7a3285ae18e798588"
+    },
+    {
+      "bytes": 87018,
+      "file": "gemma/router_cannot_answer__to__direct.npz",
+      "sha256": "7dce9794ad58137318c7f7955621749f312b812a8b8f4e6be477661c4d367566"
+    },
+    {
+      "bytes": 87018,
+      "file": "gemma/router_cannot_answer__to__tool_call.npz",
+      "sha256": "0c34252a02cb94ee4a8eb44e856ff0c15d7b9b23eee65f52dd357c1b717c8619"
+    },
+    {
+      "bytes": 87018,
+      "file": "gemma/router_request_for_info__to__tool_call.npz",
+      "sha256": "7b139deb08973cf2a8bce97c0dbf0874ceda896b3f7544d2408ff6c0bc5a9482"
+    },
+    {
+      "bytes": 4190,
+      "file": "gemma/run_baseline.py",
+      "sha256": "aabfe4b1a31597b0aad925d92fa41e33c5b83da17fb3cc712ef7e0a022a48f76"
+    },
+    {
+      "bytes": 5011,
+      "file": "gemma/run_controls.py",
+      "sha256": "98a77ea14b82700aa861342e672a59e7407a6457f4d3437bc08479d96f4ffd21"
+    },
+    {
+      "bytes": 8044,
+      "file": "gemma/run_dev_ladder.py",
+      "sha256": "d9b4204bb100940e08dfc89daff5800a91d7f74422b6b64bd912e75b4090a9a9"
+    },
+    {
+      "bytes": 4777,
+      "file": "gemma/run_directions.py",
+      "sha256": "291632550cf43d9d36f21d0f338e8a50d6f05b12633e998b876e1815fc991f9e"
+    },
+    {
+      "bytes": 5062,
+      "file": "gemma/run_router.py",
+      "sha256": "61ca6bfa571544b46036d29a29d8c46a6851ddbf6ff57065884ce83fa896c1c8"
+    },
+    {
+      "bytes": 10163,
+      "file": "gemma/smoke_test_vram.py",
+      "sha256": "c88dbf7b7b3665f54634bdfc091a49f36b2bd14d51246504cf94f0c1c9116a34"
+    },
+    {
+      "bytes": 10481,
+      "file": "gemma/smoke_test_vram_v2.py",
+      "sha256": "52825ed72828d77297d6525c2157e7c967dbec2428b91297539bf27570870d1c"
+    },
+    {
+      "bytes": 12564,
+      "file": "gemma/smoke_test_vram_v3.py",
+      "sha256": "0bf36ae9433824860906181754d10c0952b01b91a6fe44f3aa7fb7e05e912d0a"
+    },
+    {
+      "bytes": 13495,
+      "file": "gemma/smoke_test_vram_v4.py",
+      "sha256": "3768c162181179095d0e7a09784b8524af210255e5c8cacbad37fb55806092fa"
+    },
+    {
+      "bytes": 946,
+      "file": "qwen3_5/ARCHITECTURE_AUDIT.json",
+      "sha256": "6e4849042fcb008d606ad6337c8df3215df916cffc8064ebbdb0191fba595093"
+    },
+    {
+      "bytes": 2387,
+      "file": "qwen3_5/ARCHITECTURE_INTERFACE_DECISION.json",
+      "sha256": "be4e083fbb9e5abc5510d9cdf9624bcbc2833777722700a747eed1ac80eb0ea6"
+    },
+    {
+      "bytes": 1035,
+      "file": "qwen3_5/BASELINE_METRICS.md",
+      "sha256": "7430a8a602ac20c9fc232320319d684af6bf62a669b054ec61c69d7430984af2"
+    },
+    {
+      "bytes": 1032,
+      "file": "qwen3_5/BASELINE_ROWS.md",
+      "sha256": "a5d0e77b10b58757ac75de6b344df012a54c32bcf7629fe37a058353dd7fe66a"
+    },
+    {
+      "bytes": 1036,
+      "file": "qwen3_5/CHANNEL_INVENTORY.md",
+      "sha256": "43d771e3f5312c4174da76e8a10f7b9eecd172096148c0e8b58454706b6eb465"
+    },
+    {
+      "bytes": 1034,
+      "file": "qwen3_5/CONTROL_RESULTS.md",
+      "sha256": "04302b97061169bd6efe2295707bae080df20640b92dfb06fb8d5cf1ca5b0f10"
+    },
+    {
+      "bytes": 1042,
+      "file": "qwen3_5/DEV_INTERVENTION_MATRIX.md",
+      "sha256": "fe8a06105bc962d5982aa11474b19fc4195f35da307a110085344621afb43174"
+    },
+    {
+      "bytes": 1035,
+      "file": "qwen3_5/DIRECTION_HASHES.md",
+      "sha256": "a32182e0f84fbf181b0f4c8b68aa4d5e6f29f1c5c785ff17ded6b42ecb8dca0e"
+    },
+    {
+      "bytes": 690,
+      "file": "qwen3_5/ENVIRONMENT_FREEZE.json",
+      "sha256": "d7b7556463ee963a2d3d398f153c2d95d3909da2de77895072896987cdf0b9c1"
+    },
+    {
+      "bytes": 1039,
+      "file": "qwen3_5/ENVIRONMENT_MANIFEST.md",
+      "sha256": "835630640d57b91da548a1478071de95199bb811067c87c72a9b593a12687149"
+    },
+    {
+      "bytes": 1032,
+      "file": "qwen3_5/FINAL_VERDICT.md",
+      "sha256": "4515b64c4accec61e22ae44a5dc3db683b9593338d794c3f6af3641b3cc36207"
+    },
+    {
+      "bytes": 1030,
+      "file": "qwen3_5/FORMAL_GATE.md",
+      "sha256": "5c9de983a3bfe66d91af011b21c9afdb0eb18632b98adcf73c189986a21ace16"
+    },
+    {
+      "bytes": 1033,
+      "file": "qwen3_5/FORMAL_RECORDS.md",
+      "sha256": "7ec323c70a09b32b7e0117dff4ca29898095f438a9d81ff72e69107b2497b86a"
+    },
+    {
+      "bytes": 1025,
+      "file": "qwen3_5/HASHES.md",
+      "sha256": "3d554a797151ae9b5973fdf926a185bd388c9f7baf1239c72ef9821fdb119cf6"
+    },
+    {
+      "bytes": 623,
+      "file": "qwen3_5/LAYER_MAPPING.json",
+      "sha256": "7cc87418005f2f70c7850759522a4b6e8924422a42d0358d5c0823fe0f97fb24"
+    },
+    {
+      "bytes": 1033,
+      "file": "qwen3_5/MODEL_MANIFEST.md",
+      "sha256": "86504c5479a75cbaba53d151ae175f1fe59d63c9c288fb6439be39f64af731a9"
+    },
+    {
+      "bytes": 1080,
+      "file": "qwen3_5/MODEL_PROVENANCE.json",
+      "sha256": "8df7723d8708f99c28af982b634beb04e27cfeb42733f708134c9b5c244c905a"
+    },
+    {
+      "bytes": 2198,
+      "file": "qwen3_5/QWEN35_STAGE_STATUS.md",
+      "sha256": "d45b78df5cfefbd19689553c20c550caea2f977745c1a9225038f818fe246ee0"
+    },
+    {
+      "bytes": 1038,
+      "file": "qwen3_5/RANDOM_NULL_RESULTS.md",
+      "sha256": "24e889504cbb5d7e7809ac3170f9e4733c937913a57df37c5739342c8e43898f"
+    },
+    {
+      "bytes": 1033,
+      "file": "qwen3_5/REPLAY_RESULTS.md",
+      "sha256": "d176a18d5b8a553170ed3c7b4307f8e45abd4ecaa9017501477c353f87d0e9a4"
+    },
+    {
+      "bytes": 1033,
+      "file": "qwen3_5/ROUTER_RESULTS.md",
+      "sha256": "17d62b2349f3602639fc12575ba3bd11e9c01576b386f407bf3f1a2c63f2e09d"
+    },
+    {
+      "bytes": 1030,
+      "file": "qwen3_5/SAFETY_SCAN.md",
+      "sha256": "8f6f0161dd60164ce732220771d7d50cc0ff172b61218840a6acffdbe6a0c855"
+    },
+    {
+      "bytes": 650,
+      "file": "qwen3_5/V2_SPLIT_VERIFICATION.json",
+      "sha256": "11dac2886d69d4088199c4bbd9d2f219112acadea2e1dc852aa09ac5544b19ab"
+    }
+  ],
+  "gemma_access_gate": "PASS",
+  "gemma_architecture_audit": "COMPLETE",
+  "gemma_layer_mapping": "L_obs 30, L_inj 24",
+  "gpu_used": false,
+  "interim_panel_status": "FINAL_MODEL_PANEL_MECHANICALLY_BLOCKED",
+  "model_downloaded": false,
+  "model_loaded": false,
+  "n_files": 49,
+  "package": "research_exploration/sakiko_final_model_breadth_panel_v1",
+  "per_model_verdicts": "none returnable - no model scientifically adjudicated",
+  "repository_head": "f5ba3a47f63f373df234013ed568ac6f43b2f8c9",
+  "rounds_attempted": 3,
+  "sealed_accessed": false,
+  "sole_remaining_blocker": "network bandwidth"
+}

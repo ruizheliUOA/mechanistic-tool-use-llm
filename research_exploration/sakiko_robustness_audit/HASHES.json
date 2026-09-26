@@ -1,0 +1,17 @@
+{
+  "artifacts": {
+    "FILE_INVENTORY.json": "2a847b8655e1a83ea0fa6a4c2212cbc967e989b193e126cbb0deeb5e3f7627d8",
+    "ROBUSTNESS_AND_VALIDATION_SUMMARY.md": "20b191a58e8f698b55a106e075e5ee58c7f25700520a65214de17d62d959fb64",
+    "STRUCTURAL_SPLIT_SENSITIVITY.csv": "ae87c9117e650db07bef2fb537c8aa4cb6b301809d73d3ae992da745c73f371a"
+  },
+  "gpu_used": false,
+  "historical_verdicts_modified": false,
+  "key_finding": "Qwen3.5 ca->* channels are SPLIT_SENSITIVE (56.7% eligible over 30 splits); Gemma 100%",
+  "package": "research_exploration/sakiko_robustness_audit",
+  "relocation_note": "['ROBUSTNESS_TABLE_FOR_PAPER.md'] moved to manifest/ during the manuscript reorganisation; content unchanged, manifest regenerated",
+  "repository_head": "8d182cb3202313c2351a8d4e19874e805f0ee716",
+  "router": "CONDITIONALLY_DETERMINISTIC (delta coef 0.000e+00 over 20 seeds)",
+  "sealed_accessed": false,
+  "thresholds_modified": false,
+  "verdict": "NO_SCIENTIFIC_VALUE_IN_FULL_FORMAL_MULTI_SEED"
+}

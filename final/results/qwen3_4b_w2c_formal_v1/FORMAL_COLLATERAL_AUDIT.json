@@ -1,0 +1,45 @@
+{
+  "claim_lock": "Passing the frozen formal collateral endpoint must not be interpreted as demonstrated deployment safety.",
+  "claim_lock_source": "research_exploration/qwen3_4b_formal_gate_v1/COLLATERAL_CLAIM_LOCK.md",
+  "collateral_destinations": {
+    "BROKEN_TO_OTHER": 1,
+    "BROKEN_TO_SOURCE": 0,
+    "CORRECT_RETAINED": 213
+  },
+  "dilution": {
+    "fraction_never_perturbed": 0.7663551401869159,
+    "untouched_rows_in_frozen_denominator": 164
+  },
+  "eligible_at_risk_diagnostic": {
+    "definition": "collateral events / (Router-fired AND baseline-correct) rows",
+    "denominator": 50,
+    "numerator": 1,
+    "rate": 0.02,
+    "status": "REQUIRED DIAGNOSTIC DISCLOSURE -- not the frozen gate metric"
+  },
+  "frozen_formal_metric": {
+    "ci95": [
+      0.0,
+      0.014018691588785047
+    ],
+    "ci_upper_pass": true,
+    "definition": "baseline-correct rows made incorrect / baseline-correct rows",
+    "denominator": 214,
+    "numerator": 1,
+    "point_pass": true,
+    "rate": 0.004672897196261682,
+    "threshold": 0.05
+  },
+  "prohibited_claims": [
+    "safe deployment",
+    "proven low-risk intervention",
+    "zero-risk",
+    "deployment-safe"
+  ],
+  "ungated_comparison": {
+    "all_correct_rate": 0.028037383177570093,
+    "collateral_count": 6,
+    "eligible_at_risk_n": 186,
+    "eligible_at_risk_rate": 0.03225806451612903
+  }
+}

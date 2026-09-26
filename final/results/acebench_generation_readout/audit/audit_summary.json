@@ -1,0 +1,23 @@
+{
+  "n_audited": 102,
+  "rule_compliance_rate": 1.0,
+  "parser_mislabel_strict": 1,
+  "parser_mislabel_rate_strict": 0.0098,
+  "flagged_conflicts_borderline": 2,
+  "parser_mislabel_conservative_incl_conflicts": 3,
+  "parser_mislabel_rate_conservative": 0.0294,
+  "judgment_breakdown": {
+    "abstain": 45,
+    "faithful_native_read": 48,
+    "fallback_correct": 6,
+    "conflict_flagged": 2,
+    "fallback_misfire": 1
+  },
+  "mislabel_ids": [
+    "acebench_decision_0499"
+  ],
+  "conflict_ids": [
+    "acebench_decision_0431",
+    "acebench_decision_0755"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "artifacts": {
+    ".gitignore": "d1cb147efe6583625d72c25e33fe266154d732beb939d967d1dd8b27414a71e5",
+    "BASELINE_EXCLUSIONS.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "BASELINE_LOBS_ACTIVATIONS.npz": "4c6a88b0d396f2b0c4591de9ef62dc2abda43c4f83b8f8abb0bad3e6729a790d",
+    "BASELINE_ROWS.jsonl": "011068fbc939bff0ad8478623e5f78438b92d72ce0037028bac6580821d3a09a",
+    "BENCHMARK_EVIDENCE_SIDE_ANALYSIS.md": "94aee40dffc99d7bb04fad84c9f77580554a86886adc85942e81f0297b8969b4",
+    "FILE_INVENTORY.json": "03228640473d471f68102fe970dc3e6bece60cc735a8622c35006e55537002b2",
+    "QWEN35_BASELINE_SUMMARY.json": "542346e0962124faf33f38f792158a4b1fa1a3c99b5bef1bbe9b52b5f7523936",
+    "QWEN35_BF16_SMOKE.json": "62f03deb65af5976d8bea8b83009a87e8a26635d822168cbc3961dbe05fdfb39",
+    "QWEN35_CHANNEL_DISCOVERY.json": "8faa8ddaedf06c8ae4d5fd939a062a91f7cf83f536885a330a996e243fca3377",
+    "QWEN35_INFRASTRUCTURE_VERIFICATION.md": "6ca3ed1c26f54525a9fb86ecbcd107bd521710b7432a4bf87e661651ed85fd4e",
+    "QWEN35_LOCAL_MODEL_HASHES.json": "17c6a3b9283528b19792092f7eff48f9cf030ef9233f7ca76cd893a77ed74bf8",
+    "QWEN35_ROUTER_METRICS.json": "3144985ac6da74bb1326747d9d73117c566ea14bbdd7255f3220181420b6a282",
+    "QWEN35_SCALE_AUDIT_PARTIAL.json": "42b1fc6d0996a66a11ab754a5712b66d7666beca3ecd0e17df64cd9b8ded463e",
+    "QWEN35_SCIENTIFIC_INTERPRETATION.md": "c3fdcda68c09bfe5c206a47698c48c954c2a7b42bbec9b2fa219ccde90d8e762",
+    "QWEN35_TERMINAL_VERDICT.md": "1aeff610799cf9489503a73d0e9f0328d9741528a563e021c5ac23638ff9fb9a",
+    "QWEN35_VS_QWEN3_4B_8B_COMPARISON.md": "ebf1082dcda18ff0e07b5e2b5539092dd209950a9b0655504f6a9d3872414fa1",
+    "SAFETY_SCAN.json": "7a9e7b5b3dc38398b5528172a36eb769c94caa36fb957c5c8db8b342367ca59c",
+    "SAKIKO_FULL_FAILURE_TAXONOMY.md": "0b562ce50fcc3875c7d78c694ec3e780509667cd609bfa226c5d6348fbc905cf",
+    "router_request_for_info__to__tool_call.npz": "634a1b3e38575ada45a79630f32ff084a3b9b31b29ba3e1275a2ffc1fe5fb64b",
+    "run_baseline.py": "d602322b3ec8e371a5af9742c83f61e148a34711b9317c8c7e473e5942fe8fa1",
+    "run_router.py": "9ff383fa277b07ba5cd98480b26f8bc6b5772ddba6c184edfd33a0ce78d583e5",
+    "smoke_bf16.py": "aaa68caafe9f5e39b72aaf40c36763da3b966b83f8355aef045528ee4cf94421"
+  },
+  "first_failing_rung": [
+    "SUPPORT (cannot_answer channels)",
+    "READABILITY (request_for_info->tool_call)"
+  ],
+  "formal_freeze_constructed": false,
+  "intervention_run": false,
+  "package": "research_exploration/qwen35_sakiko",
+  "repository_head": "49dc39031c535135fac3c952d687790fd6eb3a0c",
+  "sealed_accessed": false,
+  "terminal_verdict": "QWEN35_NO_ACTIONABLE_CHANNEL"
+}

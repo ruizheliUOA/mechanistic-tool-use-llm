@@ -1,0 +1,4 @@
+population,note,CORRECT_RETAINED,BROKEN,denominator,collateral_rate,clopper_pearson_lo,clopper_pearson_hi,BROKEN_TO_SOURCE,BROKEN_TO_OTHER,modern_threshold,point_passes,ci_upper_passes
+A_all_baseline_correct,modern FROZEN FORMAL metric denominator,212,52,264,0.19697,0.150746,0.250139,4,48,0.05,False,False
+B_router_fired_baseline_correct,modern ELIGIBLE-AT-RISK denominator,41,52,93,0.55914,0.452379,0.66203,4,48,0.05,False,False
+C_unrouted_baseline_correct,never exposed; control,171,0,171,0.0,0.0,0.021341,0,0,0.05,True,True

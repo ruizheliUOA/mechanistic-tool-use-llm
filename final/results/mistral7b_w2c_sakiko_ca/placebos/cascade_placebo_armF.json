@@ -1,0 +1,91 @@
+{
+  "real": {
+    "fixed": 88,
+    "broke": 6,
+    "net": 82,
+    "acc": 0.57482,
+    "n_touched": 270,
+    "damage_on_correct": 6,
+    "nt_after": {
+      "rfi_tc": 116,
+      "ca_tc": 12,
+      "ca_direct": 46
+    },
+    "routed": {
+      "ca_tc": 106,
+      "rfi_tc": 126,
+      "ca_direct": 38
+    }
+  },
+  "reverse": {
+    "fixed": 80,
+    "broke": 8,
+    "net": 72,
+    "acc": 0.55657,
+    "n_touched": 270,
+    "damage_on_correct": 8,
+    "nt_after": {
+      "rfi_tc": 113,
+      "ca_tc": 13,
+      "ca_direct": 60
+    },
+    "routed": {
+      "ca_tc": 106,
+      "rfi_tc": 126,
+      "ca_direct": 38
+    }
+  },
+  "random": {
+    "n": 10,
+    "nets": [
+      59,
+      45,
+      79,
+      81,
+      67,
+      49,
+      75,
+      69,
+      58,
+      119
+    ],
+    "mean": 70.1,
+    "std": 19.922098283062454,
+    "max": 119,
+    "min": 45,
+    "real_net": 82,
+    "real_ge_all_random": false,
+    "n_random_ge_real": 1,
+    "percentile_of_real": 90.0,
+    "marginal_over_random_mean": 11.900000000000006
+  },
+  "ungated": {
+    "fixed": 109,
+    "broke": 130,
+    "net": -21,
+    "acc": 0.38686,
+    "n_touched": 473,
+    "damage_on_correct": 130,
+    "nt_after": {
+      "rfi_tc": 84,
+      "ca_tc": 3,
+      "ca_direct": 56
+    },
+    "routed": {
+      "ca_tc": 167,
+      "ca_direct": 167,
+      "rfi_tc": 139
+    }
+  },
+  "_meta": {
+    "arm": "F_manual_diag",
+    "members": [
+      "ca_tc",
+      "rfi_tc",
+      "ca_direct"
+    ],
+    "n_test": 548,
+    "note": "cascade-level placebo matched to archived Qwen protocol (n_random=10)",
+    "elapsed_min": 35.4
+  }
+}

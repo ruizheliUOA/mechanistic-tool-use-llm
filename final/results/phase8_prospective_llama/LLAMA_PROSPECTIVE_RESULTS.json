@@ -1,0 +1,283 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "decisions_sha256": "45a3f8a78139ab1cb9a53f82e0fd5bdeaac933c9ff5e5cf7f75ed04af42a5119",
+  "arms": {
+    "ca_tc": {
+      "arm": "REJECT_AUDIT",
+      "channel": "ca_tc",
+      "locked_config": {
+        "method": "diffmean",
+        "obs": 22,
+        "inj": 18,
+        "thr": 0.4,
+        "rho": 8.0,
+        "med_inj": 4.6157
+      },
+      "n_routed": 69,
+      "real": {
+        "fixed": 19,
+        "broke": 3,
+        "net": 16,
+        "acc": 0.46533,
+        "own_before": 73,
+        "own_after": 10,
+        "own_to_gold": 19,
+        "own_to_other_wrong": 44,
+        "n_touched": 69,
+        "damage_on_correct": 3,
+        "other_after": {
+          "rfi_tc": 103,
+          "ca_direct": 116
+        }
+      },
+      "reverse": {
+        "fixed": 1,
+        "broke": 3,
+        "net": -2,
+        "acc": 0.43248,
+        "own_before": 73,
+        "own_after": 10,
+        "own_to_gold": 1,
+        "own_to_other_wrong": 62,
+        "n_touched": 69,
+        "damage_on_correct": 3,
+        "other_after": {
+          "rfi_tc": 103,
+          "ca_direct": 117
+        }
+      },
+      "random": {
+        "nets": [
+          23,
+          0,
+          -3,
+          15,
+          -1,
+          19,
+          -1,
+          3,
+          19,
+          8,
+          1,
+          -1,
+          1,
+          -1,
+          0,
+          -1,
+          3,
+          16,
+          36,
+          -1
+        ],
+        "rand_mean": 6.75,
+        "rand_std": 10.526,
+        "rand_max": 36,
+        "n_ge_real": 5,
+        "n_random": 20
+      },
+      "ungated": {
+        "fixed": 26,
+        "broke": 166,
+        "net": -140,
+        "acc": 0.18066,
+        "own_before": 73,
+        "own_after": 0,
+        "own_to_gold": 23,
+        "own_to_other_wrong": 50,
+        "n_touched": 348,
+        "damage_on_correct": 166,
+        "other_after": {
+          "rfi_tc": 0,
+          "ca_direct": 120
+        }
+      },
+      "wrong_layer": {
+        "fixed": 2,
+        "broke": 0,
+        "net": 2,
+        "acc": 0.43978,
+        "own_before": 73,
+        "own_after": 70,
+        "own_to_gold": 2,
+        "own_to_other_wrong": 1,
+        "n_touched": 69,
+        "damage_on_correct": 0,
+        "other_after": {
+          "rfi_tc": 105,
+          "ca_direct": 75
+        }
+      },
+      "spec_z": 0.879,
+      "confirmation": {
+        "z": 0.879,
+        "rand_mean": 6.75,
+        "rand_std": 10.526,
+        "rand_max": 36,
+        "n_ge_real": 5,
+        "n_random": 20,
+        "criteria": {
+          "z_ok": false,
+          "nonparam_ok": false,
+          "real_gt_reverse": true,
+          "broke_controlled": true,
+          "residual_down": true
+        },
+        "CONFIRMED": false
+      },
+      "CONFIRMED": false
+    },
+    "ca_direct": {
+      "arm": "REJECT_AUDIT",
+      "channel": "ca_direct",
+      "locked_config": {
+        "method": "diffmean",
+        "obs": 22,
+        "inj": 18,
+        "thr": 0.4,
+        "rho": 8.0,
+        "med_inj": 4.6157
+      },
+      "n_routed": 67,
+      "real": {
+        "fixed": 19,
+        "broke": 0,
+        "net": 19,
+        "acc": 0.4708,
+        "own_before": 74,
+        "own_after": 42,
+        "own_to_gold": 18,
+        "own_to_other_wrong": 14,
+        "n_touched": 67,
+        "damage_on_correct": 0,
+        "other_after": {
+          "rfi_tc": 106,
+          "ca_tc": 85
+        }
+      },
+      "reverse": {
+        "fixed": 0,
+        "broke": 0,
+        "net": 0,
+        "acc": 0.43613,
+        "own_before": 74,
+        "own_after": 51,
+        "own_to_gold": 0,
+        "own_to_other_wrong": 23,
+        "n_touched": 67,
+        "damage_on_correct": 0,
+        "other_after": {
+          "rfi_tc": 106,
+          "ca_tc": 74
+        }
+      },
+      "random": {
+        "nets": [
+          20,
+          4,
+          1,
+          14,
+          2,
+          15,
+          1,
+          4,
+          22,
+          13,
+          10,
+          4,
+          5,
+          2,
+          2,
+          1,
+          6,
+          16,
+          30,
+          1
+        ],
+        "rand_mean": 8.65,
+        "rand_std": 8.242,
+        "rand_max": 30,
+        "n_ge_real": 3,
+        "n_random": 20
+      },
+      "ungated": {
+        "fixed": 25,
+        "broke": 0,
+        "net": 25,
+        "acc": 0.48175,
+        "own_before": 74,
+        "own_after": 36,
+        "own_to_gold": 20,
+        "own_to_other_wrong": 18,
+        "n_touched": 94,
+        "damage_on_correct": 0,
+        "other_after": {
+          "rfi_tc": 108,
+          "ca_tc": 89
+        }
+      },
+      "wrong_layer": {
+        "fixed": 61,
+        "broke": 0,
+        "net": 61,
+        "acc": 0.54745,
+        "own_before": 74,
+        "own_after": 11,
+        "own_to_gold": 61,
+        "own_to_other_wrong": 2,
+        "n_touched": 67,
+        "damage_on_correct": 0,
+        "other_after": {
+          "rfi_tc": 106,
+          "ca_tc": 74
+        }
+      },
+      "spec_z": 1.256,
+      "confirmation": {
+        "z": 1.256,
+        "rand_mean": 8.65,
+        "rand_std": 8.242,
+        "rand_max": 30,
+        "n_ge_real": 3,
+        "n_random": 20,
+        "criteria": {
+          "z_ok": false,
+          "nonparam_ok": false,
+          "real_gt_reverse": true,
+          "broke_controlled": true,
+          "residual_down": true
+        },
+        "CONFIRMED": false
+      },
+      "CONFIRMED": false
+    }
+  },
+  "scoring": [
+    {
+      "channel": "ca_tc",
+      "gate_decision": "REJECT",
+      "test_confirmed": false,
+      "outcome": "TN_reject_denied",
+      "net": 16,
+      "z": 0.879
+    },
+    {
+      "channel": "ca_direct",
+      "gate_decision": "REJECT",
+      "test_confirmed": false,
+      "outcome": "TN_reject_denied",
+      "net": 19,
+      "z": 1.256
+    }
+  ],
+  "confusion": {
+    "TP": 0,
+    "FP_over_admission": 0,
+    "TN": 2,
+    "FN_over_rejection": 0
+  },
+  "admission_precision": null,
+  "rejection_precision": 1.0,
+  "F1_over_admission_events": 0,
+  "F2_over_rejection_events": 0
+}

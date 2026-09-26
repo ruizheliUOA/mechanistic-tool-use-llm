@@ -1,0 +1,36 @@
+slot,check,result,detail,blocking
+MODEL_G,repo reachable,PASS,HfApi.model_info returned sha 11c9b309abf7,no
+MODEL_G,license/access,FAIL,"GatedRepoError 401 - stored HF token has not accepted the Gemma license",YES
+MODEL_G,fallback access,FAIL,"google/gemma-7b-it also GatedRepoError 401; fallback cannot rescue an access block and per firewall is only triggerable by a hardware/compatibility gate",YES
+MODEL_G,weights download,NOT ATTEMPTED,blocked upstream by access,YES
+MODEL_G,vram headroom,UNTESTED,"18.48 GB BF16 weights on a 24.0 GB card leaves ~5 GB for the four-mode full-effect gradient stack; Gemma-2 256k vocab makes the logit tensor large; genuine HARDWARE_NO_GO risk, unresolved",pending
+MODEL_G,architecture support,PASS,transformers 4.51.0 supports model_type gemma2,no
+MODEL_Q,repo reachable,PASS,HfApi.model_info returned sha c20223623576,no
+MODEL_Q,license/access,PASS,not gated; config and tokenizer retrieved,no
+MODEL_Q,architecture support,FAIL,"transformers 4.51.0 has no qwen3_5 / qwen3_next in CONFIG_MAPPING_NAMES; checkpoint declares transformers_version 4.57.0.dev0",YES
+MODEL_Q,isolated env build,FAIL,"pip install transformers==4.57.6 stalled indefinitely on the 12.0 MB wheel; no bytes completed",YES
+MODEL_Q,weights download,FAIL,"snapshot_download moved 4.22 MB total then flatlined at 0 B/s for >3 min",YES
+MODEL_Q,vram headroom,UNTESTED,"19.31 GB BF16 weights on a 24.0 GB card leaves ~4.7 GB; float32 SSM state (mamba_ssm_dtype) adds pressure; unresolved",pending
+PANEL,network throughput,FAIL,"best sustained rate on a real weight file 18179 B/s direct and 9151 B/s via hf-mirror; HF metadata API 5126 B/s; pypi mirror 16916 B/s",YES
+PANEL,download feasibility,FAIL,"19.31 GB = 12.3 days and 18.48 GB = 11.8 days at the best observed rate; 24.1 days for both, against 38 days to the ICLR abstract deadline",YES
+PANEL,disk capacity,FAIL,"32 GB free; 19.31 + 18.48 = 37.79 GB. Both checkpoints cannot be resident simultaneously; sequential download-hash-evict would be required",YES
+MODEL_G,license/access RETRY,FAIL,"re-tested after first block: google/gemma-2-9b-it and google/gemma-7b-it both still GatedRepoError 401; unchanged",YES
+MODEL_Q,weights download RETRY,FAIL,"restarted with max_workers=8; bursty transfer of ~12 MB every ~150s then stall; 12.6 MB moved in 300s = 42000 B/s sustained -> 127.2 hours (5.3 days) for the remaining 19.3 GB",YES
+MODEL_Q,isolated env build RETRY,FAIL,"pip install transformers==4.57.6 restarted with the correct interpreter (/root/miniconda3/bin/python3); still incomplete after ~7 minutes on a single 12.0 MB wheel; target dir never created. Independently fatal: transformers 4.51.0 cannot load qwen3_5 even if weights arrived",YES
+PANEL,network throughput RETRY,FAIL,"peak single-connection burst 146315 B/s, but 5-minute sustained aggregate 42000 B/s; parallelism (8 workers) did not raise aggregate, so the ceiling is total bandwidth not per-connection",YES
+MODEL_G,license/access CORRECTED,PASS,"SUPERSEDES the earlier 401 rows. Operator accepted the gated license and verified from this machine. Independently re-verified here: HTTP 302 to CDN then 200 on model-00001-of-00004.safetensors at revision 11c9b309abf73637e4b6f9a3fa1e92e615547819; config.json retrieved into the project cache",no
+MODEL_G,ROOT CAUSE of earlier 401,AUDIT ERROR,"the earlier GatedRepoError was self-inflicted: setting HF_HOME=/root/autodl-tmp/hf_cache moves HF_TOKEN_PATH to $HF_HOME/token which does not exist, so every Gemma request was unauthenticated. get_token() returns False under that HF_HOME and True under the default. The earlier 401 is NOT evidence about license state either way. Fixed by passing HF_TOKEN explicitly alongside HF_HOME",no
+MODEL_G,architecture support,PASS,"transformers 4.51.0 supports gemma2; config retrieved: 42 layers, hidden 3584, vocab 256000, sliding_window 4096, attn/final logit softcapping 50.0/30.0",no
+MODEL_G,architecture/interface audit,PASS,"COMPLETE - see gemma/ARCHITECTURE_INTERFACE_AUDIT.md. Frozen site has a direct analogue; derived L_obs 30, L_inj 24 from the unchanged mapping rule. No ARCHITECTURE_INTERFACE_NO_GO",no
+MODEL_G,disk destination,PASS,"root fs has only 11 GB free so the default HF cache cannot hold 18.48 GB; download redirected to /root/autodl-tmp/hf_cache with 32 GB free",no
+MODEL_G,vram smoke test,NOT RUN,"requires weights. Static prediction: 18.48 GB BF16 weights leave 7.28 GB headroom on 25.76 GB; feasible but tight, contingent on last-token logit slicing and requires_grad=False on all params. MODEL_HARDWARE_NO_GO remains live",pending
+MODEL_G,weights download,FAIL,"authenticated and transferring, but 0 bytes moved in 440s of monitoring; direct curl on the shard sustained 7283 B/s -> 29 days for 18.48 GB",YES
+PANEL,network throughput 3rd measurement,FAIL,"degraded further: 7283 B/s on a Gemma shard; an 857-byte config.json took 17s (50 B/s). Bandwidth is now the sole remaining blocker for both slots",YES
+MODEL_G,weights obtained,PASS,"operator downloaded to /root/autodl-tmp/models/gemma-2-9b-it-11c9b309; 18483466448 bytes across 4 shards",no
+MODEL_G,weight provenance,PASS,"all 4 shard sha256 MATCH HuggingFace authoritative values at revision 11c9b309abf73637e4b6f9a3fa1e92e615547819",no
+MODEL_G,vram smoke test,PASS,"see gemma/VRAM_SMOKE_TEST.md. Frozen BF16 + eager attention retained; escalated only through section-12 permitted remedies (allocator, cache release, gradient checkpointing validated bit-identical: score/grad diff exactly 0.0). Peak 18.94 GB. Runs for 3646/3652 rows",no
+MODEL_G,hardware structural exclusion,DECLARED,"6 rows (0.1643%) exceed capacity under frozen eager attention; natural gap in the distribution (last feasible 3169, first infeasible 4572, none between) so the threshold is not tuned; ALL 6 fall in TRAIN, zero in DEV, zero in SEALED; frozen before any baseline",disclosed
+MODEL_G,baseline readout,IN PROGRESS,"four-mode scoring over TRAIN+DEV (3104 rows) at ~0.69 s/row; SEALED not touched",no
+MODEL_G,baseline readout,PASS,"3098 rows scored (TRAIN+DEV, SEALED untouched) in 34.7 min. Accuracy 0.4245 vs the committed Qwen3-8B ADMIT baseline 0.4224 on the same population; 0 exact-tie margins; 0 unparsed; all 3 population gold classes represented; no class collapse (max predicted share 0.796 vs Qwen3-8B 0.713)",no
+MODEL_G,channel discovery V1 allocation,SUPERSEDED,"returned NO_SUPPORT_ELIGIBLE_CHANNELS binding on dev_correct_reference_min=30. This used the SUPERSEDED V1 split (2556/548) and is NOT a scientific result - V1 returned the same outcome for Qwen3-8B itself",no
+MODEL_G,channel discovery V2 allocation,PASS,"3 support-eligible channels under the frozen V2 allocation (TRAIN 2000/DEV 1104, UUID-hash stratified, model-independent): request_for_info->tool_call, cannot_answer->tool_call, cannot_answer->direct. Same three as the Qwen3-8B ADMIT setting. No threshold altered, no channel preselected",no

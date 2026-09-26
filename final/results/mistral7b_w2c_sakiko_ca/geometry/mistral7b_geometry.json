@@ -1,0 +1,170 @@
+{
+  "geometry": {
+    "rfi_tc": {
+      "etype": "request_for_info__tool_call",
+      "gold": "request_for_info",
+      "from_pred": "tool_call",
+      "n_train_err": 662,
+      "per_layer": {
+        "13": {
+          "dm_norm": 0.257,
+          "median_norm": 1.647,
+          "norm_ratio": 0.1561,
+          "router_val_auc": 0.8808,
+          "cos_dm_pc1": 0.6391,
+          "n_err": 662,
+          "n_ref": 51
+        },
+        "18": {
+          "dm_norm": 0.813,
+          "median_norm": 3.491,
+          "norm_ratio": 0.2328,
+          "router_val_auc": 0.8612,
+          "cos_dm_pc1": 0.7902,
+          "n_err": 662,
+          "n_ref": 51
+        },
+        "22": {
+          "dm_norm": 0.723,
+          "median_norm": 2.928,
+          "norm_ratio": 0.247,
+          "router_val_auc": 0.8777,
+          "cos_dm_pc1": 0.7877,
+          "n_err": 662,
+          "n_ref": 51
+        },
+        "27": {
+          "dm_norm": 0.96,
+          "median_norm": 4.517,
+          "norm_ratio": 0.2125,
+          "router_val_auc": 0.8835,
+          "cos_dm_pc1": 0.6218,
+          "n_err": 662,
+          "n_ref": 51
+        }
+      },
+      "R1_obs": 22,
+      "R2_method_candidates": [
+        "diffmean"
+      ],
+      "inj_candidates": [
+        18,
+        20,
+        22
+      ],
+      "scope_pass": true,
+      "is_manual": true
+    },
+    "ca_tc": {
+      "etype": "cannot_answer__tool_call",
+      "gold": "cannot_answer",
+      "from_pred": "tool_call",
+      "n_train_err": 541,
+      "per_layer": {
+        "13": {
+          "dm_norm": 0.338,
+          "median_norm": 1.647,
+          "norm_ratio": 0.2052,
+          "router_val_auc": 0.9559,
+          "cos_dm_pc1": 0.881,
+          "n_err": 541,
+          "n_ref": 149
+        },
+        "18": {
+          "dm_norm": 0.903,
+          "median_norm": 3.491,
+          "norm_ratio": 0.2586,
+          "router_val_auc": 0.9639,
+          "cos_dm_pc1": 0.7811,
+          "n_err": 541,
+          "n_ref": 149
+        },
+        "22": {
+          "dm_norm": 0.794,
+          "median_norm": 2.928,
+          "norm_ratio": 0.2712,
+          "router_val_auc": 0.9636,
+          "cos_dm_pc1": 0.7351,
+          "n_err": 541,
+          "n_ref": 149
+        },
+        "27": {
+          "dm_norm": 1.142,
+          "median_norm": 4.517,
+          "norm_ratio": 0.2529,
+          "router_val_auc": 0.9602,
+          "cos_dm_pc1": 0.7937,
+          "n_err": 541,
+          "n_ref": 149
+        }
+      },
+      "R1_obs": 22,
+      "R2_method_candidates": [
+        "diffmean"
+      ],
+      "inj_candidates": [
+        18,
+        20,
+        22
+      ],
+      "scope_pass": true,
+      "is_manual": true
+    },
+    "ca_direct": {
+      "etype": "cannot_answer__direct",
+      "gold": "cannot_answer",
+      "from_pred": "direct",
+      "n_train_err": 205,
+      "per_layer": {
+        "13": {
+          "dm_norm": 0.238,
+          "median_norm": 1.647,
+          "norm_ratio": 0.1444,
+          "router_val_auc": 0.8411,
+          "cos_dm_pc1": 0.5911,
+          "n_err": 205,
+          "n_ref": 149
+        },
+        "18": {
+          "dm_norm": 0.596,
+          "median_norm": 3.491,
+          "norm_ratio": 0.1707,
+          "router_val_auc": 0.9612,
+          "cos_dm_pc1": 0.685,
+          "n_err": 205,
+          "n_ref": 149
+        },
+        "22": {
+          "dm_norm": 0.515,
+          "median_norm": 2.928,
+          "norm_ratio": 0.1759,
+          "router_val_auc": 0.938,
+          "cos_dm_pc1": 0.5601,
+          "n_err": 205,
+          "n_ref": 149
+        },
+        "27": {
+          "dm_norm": 0.693,
+          "median_norm": 4.517,
+          "norm_ratio": 0.1534,
+          "router_val_auc": 0.9496,
+          "cos_dm_pc1": 0.2711,
+          "n_err": 205,
+          "n_ref": 149
+        }
+      },
+      "R1_obs": 22,
+      "R2_method_candidates": [
+        "diffmean",
+        "pca1"
+      ],
+      "inj_candidates": [
+        18,
+        20,
+        22
+      ],
+      "scope_pass": true,
+      "is_manual": true
+    }
+  }
+}

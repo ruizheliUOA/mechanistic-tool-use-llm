@@ -1,0 +1,16 @@
+[
+  {
+    "current_path": "research_exploration/sakiko_final_model_breadth_panel_v1/gemma/formal_freeze/ONE_SHOT_LEDGER.json",
+    "historical_snapshot_path": "provenance_snapshots/research_exploration/sakiko_final_model_breadth_panel_v1/gemma/formal_freeze/ONE_SHOT_LEDGER.json",
+    "historical_sha256": "0ba88cfff6006e2f271b3b61c0d5226b3b0084c9cd23bb8a90184bb45afe6fd5",
+    "current_sha256": "09e26eaf5fc40919ca4b53947db6988bcb5f692a315cce71c5a6e25017e1f911",
+    "rule": "Original pre-execution bytes recovered from history; separate path, no changes to original manifests."
+  },
+  {
+    "current_path": "final/results/phase8_prospective_llama/PHASE8_EXECUTION_MANIFEST.md",
+    "historical_snapshot_path": "provenance_snapshots/final/results/phase8_prospective_llama/PHASE8_EXECUTION_MANIFEST.md",
+    "historical_sha256": "bff830d43afa36fce856014ac2fb8896389265e786172215b02d3a8ed8b2b8fd",
+    "current_sha256": "41da6443a22fc42f50b0dab27f3353c25a19dcca5e3f95b54b9831966a5287f9",
+    "rule": "Original pre-execution bytes recovered from history; separate path, no changes to original manifests."
+  }
+]

@@ -1,0 +1,88 @@
+{
+  "evaluation_payload_opened": false,
+  "gate": {
+    "arm_completeness": [
+      "baseline",
+      "zero",
+      "d_grad",
+      "d_L26_diffmean",
+      "reverse_d_grad",
+      "wrong_layer_d_grad",
+      "ungated_d_grad",
+      "formal_randoms",
+      "score_space_comparator"
+    ],
+    "arm_order_fixed": true,
+    "artifact_hashes": 15,
+    "bootstrap": {
+      "derived_seed": 3760584632839820046,
+      "draws": 10000,
+      "seed_salt": "SAKIKO_QWEN3_CA_TC_STAGE2_BOOTSTRAP_V1"
+    },
+    "channel": "cannot_answer__to__tool_call",
+    "configuration": {
+      "L_inj": 21,
+      "L_obs": 26,
+      "absolute_perturbation_norm": 41.56598488897048,
+      "b_c": 1.673107087612152,
+      "batch_size": 1,
+      "q": 1.0,
+      "s_c": 41.56598488897048,
+      "tau": 0.4
+    },
+    "direction_hashes": {
+      "d_L26_diffmean": "1ec06c367d00c5aba6016d6c78f7721e5c7688401e584cefea4aedd58b0ab172",
+      "d_grad": "0c9754e78b2d09d6175a83265ccd623b88e1e48c3854316fd6972201dbac6106"
+    },
+    "formal_output_namespace_empty": true,
+    "formal_random_count": 59,
+    "formal_random_hashes_verified": true,
+    "gold": "cannot_answer",
+    "model_tokenizer_identity": 12,
+    "primary_conjunction_conditions": 10,
+    "raw_schema": [
+      "immutable ID",
+      "gold",
+      "baseline four-mode scores",
+      "baseline prediction",
+      "Router probability and decision",
+      "arm identity",
+      "direction seed/hash",
+      "dose and achieved perturbation norm",
+      "intervention four-mode scores",
+      "intervention prediction",
+      "destination transition",
+      "batch index",
+      "global execution order"
+    ],
+    "same_run_single_load": true,
+    "sealed_evaluation_firewall": {
+      "count": 548,
+      "identity_inherited_by_reference": true,
+      "ids_enumerated": false,
+      "payload_opened": false,
+      "source_manifest": "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json"
+    },
+    "secondary_ordered_non_promotable": true,
+    "seed_disjointness_verified": true,
+    "software_versions": {
+      "numpy": "1.26.3",
+      "tokenizers": "0.21.1",
+      "torch": "2.1.2+cu121",
+      "transformers": "4.51.0"
+    },
+    "source": "tool_call",
+    "support_branch": {
+      "if_n_channel_error_lt_30": "FORMAL_SUPPORT_INSUFFICIENT_NO_CONFIRMATORY_CLAIM",
+      "must_not_be_reinterpreted_as_intervention_failure": true,
+      "report_descriptives": true,
+      "run_remains_valid": true
+    },
+    "void_rules": 13,
+    "zero_before_endpoints": true
+  },
+  "mode": "gate-only",
+  "schema_version": 1,
+  "status": "PASS",
+  "utc": "2026-08-03T14:56:42Z"
+}

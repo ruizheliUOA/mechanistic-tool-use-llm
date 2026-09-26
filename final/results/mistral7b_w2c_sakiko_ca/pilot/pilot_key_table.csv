@@ -1,0 +1,6 @@
+arm,channel_or_members,acc,macro_f1_3cls,fixed,broke,net,n_touched,damage_on_correct
+A_baseline,"-",0.42518,0.32262,0,0,0,0,
+C_rfi_tc,"rfi_tc",0.44708,0.37739,16,4,12,131,4
+C_ca_tc,"ca_tc",0.53832,0.47844,64,2,62,106,2
+C_ca_direct,"ca_direct",0.44343,0.34458,10,0,10,38,0
+F_manual_diag,"ca_tc,rfi_tc,ca_direct",0.57482,0.53292,88,6,82,270,6

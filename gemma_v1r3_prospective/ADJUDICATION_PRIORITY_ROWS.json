@@ -1,0 +1,28 @@
+{
+ "superseded_pass1_mode_disagreements": 8,
+ "superseded_pass1_alternative_defensible": 19,
+ "v1r3_pass_a_disagreements": 0,
+ "v1r3_pass_a_alternative_defensible": 0,
+ "note": "pass_1 is the pre-revision audit; V1R3 pass_a shows 0/144 after repair. Rows flagged by pass_1 are the highest-value adjudication targets.",
+ "priority_sample_ids": [
+  "G02-v2_missing",
+  "G04-v2_missing",
+  "G06-v2_missing",
+  "G08-v2_missing",
+  "G10-v2_missing",
+  "G13-v3_blocked",
+  "G14-v2_missing",
+  "G15-v2_missing",
+  "G16-v2_missing",
+  "G17-v2_missing",
+  "G18-v2_missing",
+  "G20-v2_missing",
+  "G22-v2_missing",
+  "G23-v2_missing",
+  "G23-v3_blocked",
+  "G26-v2_missing",
+  "G31-v2_missing",
+  "G31-v4_entailed",
+  "G32-v2_missing"
+ ]
+}

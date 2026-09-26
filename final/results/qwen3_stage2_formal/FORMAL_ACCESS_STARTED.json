@@ -1,0 +1,10 @@
+{
+  "environment_hash": "c510039cfbc9d30fe98f1f280ec4d284a8d311e2044a1b798e15c4460b206a13",
+  "execution_freeze_sha256": "c2a5655e82ec5643d66cd2775b54d1cc9a37588de8f32d582be49e9f61f68b67",
+  "git_head": "5e8f49708cf913c80ab8db747b6ddcb36bb40f08",
+  "invocation_uuid": "5e963c72-baeb-41e1-86f5-6cf660d3fa16",
+  "note": "evaluation access begins after this marker; any failure now VOIDs the attempt",
+  "runner_sha256": "363418390cad649954861d43e16251709af973337de65f42336d2a8ecf1163e1",
+  "schema_version": 1,
+  "utc": "2026-08-03T17:10:52Z"
+}

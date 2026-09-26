@@ -1,0 +1,38 @@
+{
+  "artifact_sha256": {
+    "final/results/qwen3_stage0_1_v2/.gitattributes": "d05b94edd377069f5dbfd5f72ec7d1381a342b890560df56ebad08e1d70c3a6f",
+    "final/results/qwen3_stage0_1_v2/OUTCOME_CONDITIONED_REFERENCE_SUPPORT_WINDOW.md": "9a91c4e56ceb8b72510f4d234041ee0d052ec47661a70797e60ea626f4cd509d",
+    "final/results/qwen3_stage0_1_v2/QWEN3_8B_STAGE0_1_INPUT_MANIFEST_V2.json": "09f03093b5cd21ce0ac868f134b0c2e4b73167bf2ca68f575cb16d47f835a83c",
+    "final/results/qwen3_stage0_1_v2/QWEN3_8B_STAGE0_1_PREFLIGHT_SPEC_V2.md": "2e058aac568e54e8312f6f50a1de763734c58d1f30637ba37b0be4eeae0fe6d4",
+    "final/results/qwen3_stage0_1_v2/QWEN3_8B_STAGE0_1_PROTOCOL_V2.json": "7b3b6198aa32c11b935d4c014bf39b0aa79434f6442a06df0203dc6bdd8b65fb",
+    "final/results/qwen3_stage0_1_v2/QWEN3_8B_STAGE0_1_PROTOCOL_V2.md": "a432f7830dc48dbb4e24465caacf40970b92c7dcffe82952c0b8eaeeb82e7b62",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V1_ATTENTION_GUARD_ERRATUM.md": "5eb7b030631f05b6eab3ffcb9edc8720f122205324c3fa823ccda0f22ee4966b",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V1_INTERPRETATION.md": "f41156bca1c437b619f47f7eb5a2570166cdaf1e7c5054738b214b31723a1d94",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V1_TOOL_CALL_BIAS.md": "0f63372f4601e9a0d0bfb630ee8c11935faa882a0dfe1623a99aafb4cfa182cf",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_ARTIFACT_INVENTORY.json": "a0da5f34e5878cfff2a584c54501e664a229dcfea168ff7d6ecdcb14aabb3c9c",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_ARTIFACT_INVENTORY.md": "cbd340262c4b4ec82cd07c25b239594671cc562ee712770b6dc357009f2e9136",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_ATTENTION_BACKEND_AUDIT.json": "639773549adb195d576842c883c437be7b2209283dba583b22133d9924da419c",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_SPLIT_RULE.md": "a497fae534a31de5f257b861a23e0252488547377b140669151d8e2b562e3113",
+    "final/results/qwen3_stage0_1_v2/THREE_CLASS_GOLD_FOUR_CLASS_PREDICTION.md": "c39e416ddc189b7198a768aa9dc34263a03cb55bfd5cf5baed480a36ae851278",
+    "scripts/qwen3_8b_stage0_1_v2.py": "f9b61395f1fbecd9b01022e03baedf8737f87602af057576837c02b935e80cf0"
+  },
+  "inherited_v1_hash_manifest": {
+    "artifact_sha256": {
+      ".gitattributes": "a9c4d3bdbfc951c1472ac1d13fa34e94bdce58092cef4429be1ee835bada0ae9",
+      "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json": "a1646cd91ce309bb2a3f36118dfe5d7335fe6239315288f03e45e42b19297161",
+      "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_PREFLIGHT_SPEC.md": "bb4c167e520506a5d1681a3c06ae2172dc6f55b456e2231aa65b2acbf4239d18",
+      "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_PROTOCOL.json": "83a66bcefb8d3dcc69d7631a4380d3804fc3c393724fa885d74f4e7d21575b7c",
+      "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_PROTOCOL.md": "d683ed4fcc4f8cbc5dd8390a565090b2181aadb352ebfffa767b9c2fbdb73329",
+      "final/results/qwen3_stage0_1/QWEN3_8B_TRAIN_DEV_BYTE_INDEX.csv": "a97dadf2c6be34f800496fb142635cc1ee02e89daf6bfce68e29c94cf3017520",
+      "final/results/qwen3_stage0_1/QWEN3_8B_TRAIN_DEV_BYTE_INDEX_MANIFEST.json": "269a2e917d117e93f9351bb221cd26cdbb5c8d7d0fa9dd2285eac864ea2bdfeb",
+      "scripts/qwen3_8b_stage0_1.py": "b1830b4be291c1adfe7e843e8de7fdea0ee1e4e1b6c10c25c6fc40465073f4ac"
+    },
+    "path": "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_HASHES.json"
+  },
+  "manifest_self_excluded": true,
+  "protocol_version": "QWEN3_8B_STAGE0_1_V2",
+  "runner_revision_note": "Block 3 froze V2 runner SHA256 9eebf8d80b49c76a2281a5e0046c525b8f8c498abdcf0d26b70a9cbd624c157b. Block 5 aborted with torch.cuda.OutOfMemoryError inside the frozen dev-geometry gradient on DEV rows above roughly 1900 tokens, because layers after L_inj retain eager attention probabilities costing 32*S^2*2 bytes per layer. An engineering-only gradient-checkpointing memory strategy was added under the Block 5 tier (engineering retries allowed, scientific definitions fixed). Verified bitwise identical: 3 DEV rows x 4 modes, identical scores and identical gradients. No scientific definition changed. The Block 4 split and support ledger remain promoted and were not recomputed. Superseded V2 runner SHA256: 9eebf8d80b49c76a2281a5e0046c525b8f8c498abdcf0d26b70a9cbd624c157b | Second Block 5 engineering retry: layer checkpointing alone still OOMed on the single longest DEV row (S=5165). Added per-head-chunk checkpointing inside the guarded attention, with identical chunk size, shapes and kernels, so only one chunk's probabilities are live at a time. Verified bitwise identical: forward logits at S=5165 equal to the frozen guard, and all four modes' scores, gradients and prompt states at S=4593 (a genuinely chunked sequence) equal to the frozen guard. Peak fell from OOM at 22.45 GiB to 20.41 GiB. Superseded V2 runner SHA256: ea7babad4a73f2e549c60e8b5753e569daa361dc016fc0c613ef2b8615e48907",
+  "schema_version": 1,
+  "scope": "QWEN3_8B_STAGE0_1_V2_FROZEN_ARTIFACTS",
+  "starting_head_v2": "5a4192b8ee6e8e1ef04b0d8dbb329d8832bbcf10"
+}

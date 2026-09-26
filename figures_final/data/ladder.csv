@@ -1,0 +1,43 @@
+setting,setting_order,protocol,property,property_order,label,status
+Qwen3-8B,7,sealed,Adjudicable,1,yes,holds
+Qwen3-8B,7,sealed,Readable,2,yes,holds
+Qwen3-8B,7,sealed,Steerable,3,0/59,holds
+Qwen3-8B,7,sealed,Correctable,4,0.731,holds
+Qwen3-8B,7,sealed,Preserving,5,0/211,holds
+Qwen3-8B,7,sealed,Licensable,6,ADMIT,holds
+Qwen3-4B,6,sealed,Adjudicable,1,yes,holds
+Qwen3-4B,6,sealed,Readable,2,yes,holds
+Qwen3-4B,6,sealed,Steerable,3,0/59,holds
+Qwen3-4B,6,sealed,Correctable,4,0.578,holds
+Qwen3-4B,6,sealed,Preserving,5,1/214,holds
+Qwen3-4B,6,sealed,Licensable,6,DECLINE,partial
+Gemma-2-9B,5,sealed,Adjudicable,1,yes,holds
+Gemma-2-9B,5,sealed,Readable,2,yes,holds
+Gemma-2-9B,5,sealed,Steerable,3,0/59,holds
+Gemma-2-9B,5,sealed,Correctable,4,0.630,holds
+Gemma-2-9B,5,sealed,Preserving,5,1/223,holds
+Gemma-2-9B,5,sealed,Licensable,6,DECLINE,partial
+Phi-3.5,4,historical,Adjudicable,1,yes,holds
+Phi-3.5,4,historical,Readable,2,yes,holds
+Phi-3.5,4,historical,Steerable,3,0/1,holds
+Phi-3.5,4,historical,Correctable,4,0.699,holds
+Phi-3.5,4,historical,Preserving,5,52/264,fails
+Phi-3.5,4,historical,Licensable,6,not sealed,not evaluated
+Qwen2.5-7B,3,historical,Adjudicable,1,yes,holds
+Qwen2.5-7B,3,historical,Readable,2,yes,holds
+Qwen2.5-7B,3,historical,Steerable,3,0/10,holds
+Qwen2.5-7B,3,historical,Correctable,4,n/a,not evaluated
+Qwen2.5-7B,3,historical,Preserving,5,--,not evaluated
+Qwen2.5-7B,3,historical,Licensable,6,not sealed,not evaluated
+Llama-3.1-8B,2,historical,Adjudicable,1,yes,holds
+Llama-3.1-8B,2,historical,Readable,2,yes,holds
+Llama-3.1-8B,2,historical,Steerable,3,5/20,fails
+Llama-3.1-8B,2,historical,Correctable,4,--,not evaluated
+Llama-3.1-8B,2,historical,Preserving,5,--,not evaluated
+Llama-3.1-8B,2,historical,Licensable,6,not sealed,not evaluated
+Mistral-7B,1,historical,Adjudicable,1,yes,holds
+Mistral-7B,1,historical,Readable,2,yes,holds
+Mistral-7B,1,historical,Steerable,3,17/20,fails
+Mistral-7B,1,historical,Correctable,4,--,not evaluated
+Mistral-7B,1,historical,Preserving,5,--,not evaluated
+Mistral-7B,1,historical,Licensable,6,not sealed,not evaluated

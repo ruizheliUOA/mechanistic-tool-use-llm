@@ -1,0 +1,105 @@
+{
+  "files": [
+    {
+      "bytes": 3857,
+      "file": "COLLATERAL_AUDIT_PROTOCOL.md",
+      "sha256": "466f54f4f5436e0e56dd2c65c66d57aab65b89325421aaceb6862cf21053cea0"
+    },
+    {
+      "bytes": 4193,
+      "file": "COLLATERAL_DENOMINATOR_TRACE.md",
+      "sha256": "278c2a1404c47277e8e5cb2b12093c18c4809cf429df5ba53afa29e55b16c3c6"
+    },
+    {
+      "bytes": 8265,
+      "file": "COLLATERAL_GATE_ADJUDICATION.md",
+      "sha256": "56531174a0b68dc572e46c36684dd5e7752d1ba32a1292bab19007c0410ccd64"
+    },
+    {
+      "bytes": 188455,
+      "file": "COLLATERAL_POPULATION_RECONSTRUCTION.csv",
+      "sha256": "be6ea4806484156ab30fa82b7acd90e50f17253b3cb0b513935774bcebb4d615"
+    },
+    {
+      "bytes": 8094,
+      "file": "COLLATERAL_RECOMPUTATION.json",
+      "sha256": "9bb6ef162425ff04735ed3d6e9d950dd1c79186118060a668d59083464b56a38"
+    },
+    {
+      "bytes": 4915,
+      "file": "FORMAL_ADVANCEMENT_READJUDICATION.md",
+      "sha256": "77e3f4c0610f79e8f063cad98a47d0da6077a8362e52aa29930847582ebd5393"
+    },
+    {
+      "bytes": 3957,
+      "file": "GEOMETRY_CI_AUDIT.md",
+      "sha256": "207cf03dbfa6fe9d8488cf7f906664186b733d718dc75adf32b5f47ee6ce37a8"
+    },
+    {
+      "bytes": 1999,
+      "file": "HUMAN_GIT_HANDOFF.md",
+      "sha256": "2cbaa0c66d7fec29d4369abff3c922815878800668b5b4f2257f0f222f56523b"
+    },
+    {
+      "bytes": 3490,
+      "file": "PACKAGE_STATUS.md",
+      "sha256": "a6442bf157c0671822cd83b05b2e6ad6fb6cd8feb5c6570480e71b98e5341e64"
+    },
+    {
+      "bytes": 4228,
+      "file": "QWEN3_8B_PRECEDENT_AUDIT.md",
+      "sha256": "0f9907dc37e2181c04ba286f1c66a55e225c45c01007bc970423bab41bcfe781"
+    },
+    {
+      "bytes": 3340,
+      "file": "RUNNER_AND_PROTOCOL_HASHES.json",
+      "sha256": "8cfdc8b842456db052f7402d09d8b381cd2e907fa59996b78294ddef0451df49"
+    },
+    {
+      "bytes": 1687,
+      "file": "SAFETY_SCAN.json",
+      "sha256": "bff16a8aa3730b5b3fc958f3a060fd115a3aef3802581755e20a987ae01d0f0d"
+    },
+    {
+      "bytes": 1124,
+      "file": "SEALED_FIREWALL_AUDIT.json",
+      "sha256": "3b9bac6ef6baccd2d880512be2b37e61412bb7f1d9e49690e56b900abc0f70ed"
+    },
+    {
+      "bytes": 4762,
+      "file": "_GEOMETRY_CI_RECOMPUTATION.json",
+      "sha256": "9efbe8776dcfb7c0c6c3b0579b6f4b6c77331ac77cd40ed8e626ef7c35b564e0"
+    },
+    {
+      "bytes": 7706,
+      "file": "audit_geometry_ci.py",
+      "sha256": "2280cd0489d9230b9484e9072295c779f75cb7e2127416db802a7d4db5b2f060"
+    },
+    {
+      "bytes": 16564,
+      "file": "reconstruct_collateral.py",
+      "sha256": "c40bc73a14e3644a82028b62711cf58cc9ef3fb4e6548cbd913308e64a24e6c8"
+    },
+    {
+      "bytes": 8893,
+      "file": "run_safety_scan.py",
+      "sha256": "a77aea63a6b14c780584863da7b7979cd3dfc2f4e98d5f987a435d3c0fc95ca0"
+    }
+  ],
+  "formal_artifacts_modified": false,
+  "gpu_used": false,
+  "inference_run": false,
+  "model_loaded": false,
+  "n_files": 17,
+  "package": "research_exploration/qwen3_4b_collateral_integrity_audit_v1",
+  "repository_head": "9f6f0116631326214b921ed759cacf7c463d358d",
+  "sealed_test_accessed": false,
+  "stage_d_e_package_modified": false,
+  "supporting_verdicts": [
+    "PRECEDENT_CONSISTENT",
+    "GEOMETRY_CI_VALID",
+    "SEALED_FIREWALL_INTACT",
+    "SAFETY_SCAN_CLEAN"
+  ],
+  "verdict": "QWEN3_4B_ADVANCEMENT_CONFIRMED"
+}

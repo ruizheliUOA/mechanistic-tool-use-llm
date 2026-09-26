@@ -1,0 +1,11 @@
+channel,all,train,val,test,ref_pool,status_default,status_lenient,bootstrap_scope,scope_pass,rejection
+ask_user__cannot_comply,1,1,0,0,28,insufficient,insufficient,0.0,False,insufficient split support
+ask_user__flag_param_error,1,0,1,0,28,insufficient,insufficient,0.0,False,insufficient split support
+ask_user__tool_call,40,29,5,6,28,weak,weak,0.215,False,insufficient split support
+cannot_comply__ask_user,22,14,4,4,53,insufficient,insufficient,0.0,False,insufficient split support
+cannot_comply__tool_call,2,2,0,0,53,insufficient,insufficient,0.0,False,insufficient split support
+flag_param_error__ask_user,6,5,0,1,27,insufficient,insufficient,0.0,False,insufficient split support
+flag_param_error__tool_call,52,38,10,4,27,weak,weak,0.31,False,insufficient split support
+tool_call__ask_user,7,7,0,0,315,insufficient,insufficient,0.0,False,insufficient split support
+tool_call__cannot_comply,1,1,0,0,315,insufficient,insufficient,0.0,False,insufficient split support
+tool_call__flag_param_error,5,3,1,1,315,insufficient,insufficient,0.0,False,insufficient split support

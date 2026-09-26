@@ -1,0 +1,21 @@
+{
+  "access_marker_utc": "2026-08-09T16:43:21Z",
+  "channel": "cannot_answer__to__tool_call",
+  "direction_sha256": "84c1029466571147813f6fe68ff77d185cef8d408e82d8c9a9805ec44d13fe84",
+  "formal_run_count": 1,
+  "gate_checks": "25/25",
+  "gate_verdict": "QWEN3_4B_FORMAL_GATE_PASSED",
+  "head_now": "277c3b123e9457cf49d5aaa9b854334aa1adac3e",
+  "incident_record": "research_exploration/qwen3_4b_formal_gate_v1/mechanical_incident_1/",
+  "invocation_uuid": "e3d9d0b5-92f9-42da-86c2-d8ca2606466c",
+  "mechanical_incidents_before_access": 2,
+  "model": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "protocol_sha256": "df85dac20e62ffc2cfa720786bb240906addab3b7116e3b5c50f8ccf357172a0",
+  "random_matrix_sha256": "063bb9d23514d8813081c935d69bc2f2f46e127979ef8a61d69ae3939901d1ac",
+  "repository_head": "277c3b123e9457cf49d5aaa9b854334aa1adac3e",
+  "router_sha256": "f45d6b7f7a159d881bbdca69c30b7beac39f2aaecf1bda7c9d2aaa8e361bc1ff",
+  "runner": "scripts/qwen3_4b_w2c_formal.py",
+  "runner_sha256": "c1a0241eacfc6ff775624e509f083ec5d4c2f2e0dcfa89b2e44e2045b96dcb2c",
+  "superseded_markers": []
+}

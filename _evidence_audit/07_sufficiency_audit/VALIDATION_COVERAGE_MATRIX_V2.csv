@@ -1,0 +1,19 @@
+dimension,rating,evidence,threatens_central_thesis
+Problem definition,STRONG,K>=3 destination distinction; |A_D|>=3 scope condition stated,NO
+Construct validity,ADEQUATE,W2C instantiates multiclass first-action gold with wrong-to-wrong destinations; gold itself not independently audited,NO
+Internal validity,STRONG,"zero exact, reverse null, 0/59 randoms in all 3 formal trials, wrong-layer, both DiffMean arms, ungated, score-space; per-sample recomputation reproduces every headline",NO
+Causal controls,STRONG,65 formal arms; 3 conditions are sole catchers in a 9-pathology battery,NO
+Ablation coverage,STRONG,"7-rule ladder, leave-one-condition-out, pathology battery, 420-cell operating characteristics",NO
+Randomness robustness,ADEQUATE,Router conditionally deterministic (delta 0.000e+00 over 20 seeds); decoding byte-identical; 30 group-preserving reallocations; historical 5-seed with disclosed heterogeneous null strength,NO
+Statistical validity,STRONG,"10k bootstrap, Clopper-Pearson exact, add-one p, power simulation",NO
+Formal breadth,PARTIAL,"3 formal trials, 1 benchmark",NO for Paper B thesis
+Model breadth,ADEQUATE,4 families formally or prospectively; 7 checkpoints across 5 families overall,NO
+Benchmark breadth,PARTIAL,licence on 1; apparatus on 2; 6 further screened,NO for current claim; YES for any transfer claim
+Measurement validity,STRONG,"W2C 0 unparsed / 0 ties / 0 exclusions across 4 models; ACEBench 9/10 locked criteria, 100% replay",NO
+Benchmark gold validity,PARTIAL,"dataset card: Synthetic collection, Automated labeling; no independent re-annotation by us",NO - disclosed
+Preservation,WEAK,no setting certifies alpha=0.05; ADMIT 0/6 upper 0.393,"NO - reported as a result, not claimed"
+Calibration,WEAK,N=3 formal outcomes; thresholds are conventions,"NO - paper claims evidential rule, not classifier"
+Mechanism,WEAK,3 searches negative or data-limited,NO - not claimed
+Novelty,ADEQUATE,destination resolution / OTHER_WRONG / automatic channel discovery: 0 prior works marked YES,NO
+Diagnostic value,ADEQUATE,19 units resolve to 9 classes at 6 rungs; each implies a different next action,NO
+Overall claim sufficiency,ADEQUATE,every SUPPORTED claim traces to a committed artifact via 62-row provenance,NO

@@ -1,0 +1,45 @@
+{
+  "allocation": "QWEN3_8B_STAGE0_1_V2 (TRAIN 2000 / DEV 1104)",
+  "candidate_channels": [
+    {
+      "channel": "request_for_info__to__tool_call",
+      "dev_correct_reference_support": 48,
+      "dev_error_support": 261,
+      "gold": "request_for_info",
+      "source": "tool_call",
+      "train_correct_reference_support": 71,
+      "train_error_support": 499
+    },
+    {
+      "channel": "cannot_answer__to__tool_call",
+      "dev_correct_reference_support": 38,
+      "dev_error_support": 224,
+      "gold": "cannot_answer",
+      "source": "tool_call",
+      "train_correct_reference_support": 77,
+      "train_error_support": 401
+    },
+    {
+      "channel": "cannot_answer__to__direct",
+      "dev_correct_reference_support": 38,
+      "dev_error_support": 110,
+      "gold": "cannot_answer",
+      "source": "direct",
+      "train_correct_reference_support": 77,
+      "train_error_support": 202
+    }
+  ],
+  "dev_denominator_actual": 1101,
+  "frozen_at": "before any Router fit or inspection",
+  "hardware_excluded": {
+    "dev": 3,
+    "sealed": 0,
+    "train": 3
+  },
+  "rules": [
+    "exactly these three; no fourth channel may be added later",
+    "no channel may be dropped because its Router or steering result is poor",
+    "no channel preselected; cannot_answer->tool_call has no privileged status"
+  ],
+  "train_denominator_actual": 1997
+}

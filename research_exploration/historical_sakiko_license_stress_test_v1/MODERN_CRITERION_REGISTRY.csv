@@ -1,0 +1,19 @@
+n,criterion,modern_rule,recoverability,phi_value,outcome
+1,minimum channel support,"TRAIN>=60/60, DEV>=30/30, SEALED>=30",RECOMPUTABLE_EXACTLY,112 / 77 / 59 channel errors on the 548-row locked test,PASS_ON_RECORDED_EVIDENCE
+2,Router / readability evidence,DEV AUC>=0.75 and tau-precision>=0.50,RECOMPUTABLE_WITH_LIMITATION,"router CV mean 0.7214 / 0.8478 / 0.8369 (accuracy-like CV, not DEV AUC)",UNADJUDICABLE_FROM_HISTORY
+3,real-direction specificity,real exceeds all K fresh matched-random directions,RECOMPUTABLE_WITH_LIMITATION,"real Net +55 vs RANDOM_DIR +14, REVERSE +14, WRONG_LAYER +3, MISMATCHED -17 (Net-based, single random draw)",PASS_ON_RECORDED_EVIDENCE (on the historical Net-based definition only)
+4,"fresh matched-random comparison (K=59, add-one p)",p_add_one<=0.05 on target_gain_rate,NOT_RECORDED,no per-random-direction destination records exist,UNADJUDICABLE_FROM_HISTORY
+5,reverse control,reverse must not reproduce the real effect,RECOMPUTABLE_WITH_LIMITATION,REVERSE_DIR Net +14 vs real +55,PASS_ON_RECORDED_EVIDENCE (Net-based)
+6,wrong-layer control,wrong layer must not reproduce the real effect,RECOMPUTABLE_WITH_LIMITATION,WRONG_LAYER (L4) Net +3 vs real +55,PASS_ON_RECORDED_EVIDENCE (Net-based)
+7,zero control,zero arm reproduces baseline exactly,RECOMPUTABLE_WITH_LIMITATION,no explicit zero arm; unrouted rows are an equivalent: 0 of 255 changed,PASS_ON_RECORDED_EVIDENCE (via the unrouted population)
+8,source exits / gold arrivals,destination-resolved counts,RECOMPUTABLE_WITH_LIMITATION,"rfi_tc 68/50, ca_tc 42/30, ca_direct 29/20",PASS_ON_RECORDED_EVIDENCE but NOT_COMPARABLE (three routers compete for the same rows)
+9,OTHER_WRONG redistribution,third-destination accounting,RECOMPUTABLE_WITH_LIMITATION,18 / 12 / 9,"PASS_ON_RECORDED_EVIDENCE, same comparability limit"
+10,target-hit,point>0.50 and bootstrap 95% lower bound>0.50,RECOMPUTABLE_WITH_LIMITATION,0.7353 / 0.7143 / 0.6897 (point only),PASS_ON_RECORDED_EVIDENCE at the point estimate; interval not comparable
+11,Target Gain,point>0 and bootstrap 95% lower bound>0,RECOMPUTABLE_WITH_LIMITATION,+0.2857 / +0.2338 / +0.1864 (point only),PASS_ON_RECORDED_EVIDENCE at the point estimate
+12,confidence-interval qualification,"frozen percentile bootstrap, 10000 draws",NOT_COMPARABLE,no frozen bootstrap seed or population definition exists for the historical run,UNADJUDICABLE_FROM_HISTORY
+13,baseline-correct collateral (frozen formal denominator),point<=0.05 AND 95% upper<=0.05,RECOMPUTABLE_EXACTLY,"52/264 = 0.1970, Clopper-Pearson 95% [0.1507, 0.2501]","FAIL_ON_RECORDED_EVIDENCE - 3.9x the threshold, both conditions fail"
+14,eligible-at-risk collateral,required diagnostic disclosure,RECOMPUTABLE_EXACTLY,"52/93 = 0.5591, Clopper-Pearson 95% [0.4524, 0.6620]",FAIL_ON_RECORDED_EVIDENCE - 11.2x the threshold
+15,collateral confidence interval,95% upper<=0.05,RECOMPUTABLE_EXACTLY,upper 0.2501 (all-correct) / 0.6620 (eligible-at-risk),FAIL_ON_RECORDED_EVIDENCE
+16,score-space comparator,frozen deterministic two-mode logit shift,NOT_RECORDED,no score-space arm was run in 2026-03,UNADJUDICABLE_FROM_HISTORY
+17,formal single-shot / sealed execution,one authorised run on an untouched partition,NOT_APPLICABLE,"val-selected config, locked test; not a sealed one-shot protocol",UNADJUDICABLE_FROM_HISTORY
+18,mechanical replay / integrity,"zero-control exact equality, hash manifests",RECOMPUTABLE_WITH_LIMITATION,per-sample file reproduces every committed aggregate exactly; unrouted rows unchanged,PASS_ON_RECORDED_EVIDENCE

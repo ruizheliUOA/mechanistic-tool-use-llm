@@ -1,0 +1,151 @@
+{
+  "model_repo": "mistralai/Mistral-7B-Instruct-v0.3",
+  "model_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "model_path": "/root/autodl-tmp/models/Mistral-7B-Instruct-v0.3",
+  "dtype": "bfloat16",
+  "seed": 42,
+  "n_total": 3652,
+  "n_eval": 3652,
+  "n_skipped": 0,
+  "skipped_detail": [],
+  "n_train": 2556,
+  "n_val": 548,
+  "n_test": 548,
+  "accuracy": 0.42689,
+  "balanced_accuracy": 0.40558,
+  "macro_f1_3cls": 0.33194,
+  "macro_f1_4opt": 0.24895,
+  "majority_gold_share": 0.3546,
+  "majority_pred_share": 0.82119,
+  "majority_pred_class": "tool_call",
+  "acc_minus_majority_gold": 0.07229,
+  "gold_distribution": {
+    "tool_call": 1295,
+    "cannot_answer": 1295,
+    "request_for_info": 1062
+  },
+  "pred_distribution": {
+    "tool_call": 2999,
+    "request_for_info": 103,
+    "direct": 327,
+    "cannot_answer": 223
+  },
+  "confusion_matrix_gold_by_pred": {
+    "tool_call": {
+      "tool_call": 1278,
+      "direct": 15,
+      "request_for_info": 1,
+      "cannot_answer": 1
+    },
+    "direct": {
+      "tool_call": 0,
+      "direct": 0,
+      "request_for_info": 0,
+      "cannot_answer": 0
+    },
+    "request_for_info": {
+      "tool_call": 948,
+      "direct": 21,
+      "request_for_info": 76,
+      "cannot_answer": 17
+    },
+    "cannot_answer": {
+      "tool_call": 773,
+      "direct": 291,
+      "request_for_info": 26,
+      "cannot_answer": 205
+    }
+  },
+  "per_class": {
+    "tool_call": {
+      "precision": 0.4261,
+      "recall": 0.9869,
+      "f1": 0.5952,
+      "support": 1295
+    },
+    "direct": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "request_for_info": {
+      "precision": 0.7379,
+      "recall": 0.0716,
+      "f1": 0.1305,
+      "support": 1062
+    },
+    "cannot_answer": {
+      "precision": 0.9193,
+      "recall": 0.1583,
+      "f1": 0.2701,
+      "support": 1295
+    }
+  },
+  "total_errors": 2093,
+  "score_margin": {
+    "mean": 0.82521,
+    "median": 0.80615,
+    "p05": 0.07621,
+    "p95": 1.6568,
+    "min": 0.00028
+  },
+  "all_transitions_overall": {
+    "request_for_info->tool_call": 948,
+    "cannot_answer->tool_call": 773,
+    "cannot_answer->direct": 291,
+    "cannot_answer->request_for_info": 26,
+    "request_for_info->direct": 21,
+    "request_for_info->cannot_answer": 17,
+    "tool_call->direct": 15,
+    "tool_call->cannot_answer": 1,
+    "tool_call->request_for_info": 1
+  },
+  "transitions_by_split": {
+    "train": {
+      "request_for_info->tool_call": 662,
+      "cannot_answer->tool_call": 541,
+      "cannot_answer->direct": 205,
+      "cannot_answer->request_for_info": 18,
+      "request_for_info->direct": 17,
+      "request_for_info->cannot_answer": 15,
+      "tool_call->direct": 9,
+      "tool_call->cannot_answer": 1,
+      "tool_call->request_for_info": 1
+    },
+    "val": {
+      "request_for_info->tool_call": 141,
+      "cannot_answer->tool_call": 117,
+      "cannot_answer->direct": 43,
+      "tool_call->direct": 4,
+      "cannot_answer->request_for_info": 2,
+      "request_for_info->direct": 2
+    },
+    "test": {
+      "request_for_info->tool_call": 145,
+      "cannot_answer->tool_call": 115,
+      "cannot_answer->direct": 43,
+      "cannot_answer->request_for_info": 6,
+      "request_for_info->cannot_answer": 2,
+      "tool_call->direct": 2,
+      "request_for_info->direct": 2
+    }
+  },
+  "replay": {
+    "n": 40,
+    "pred_agreement": 40,
+    "score_bitmatch": 40,
+    "pred_identical": true,
+    "score_identical": true
+  },
+  "R0_checks": {
+    "meaningful_above_majority": true,
+    "not_collapsed": true,
+    "finite_scores": true,
+    "deterministic_replay": true,
+    "adequate_transition_support": true,
+    "n_pred_classes": 4
+  },
+  "R0_PASS": true,
+  "elapsed_min": 34.1
+}

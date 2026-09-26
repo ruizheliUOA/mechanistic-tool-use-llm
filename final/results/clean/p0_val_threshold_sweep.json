@@ -1,0 +1,212 @@
+{
+  "sweep_on": "val",
+  "n_val": 548,
+  "ca_direct_alpha": 2.0,
+  "selection_criterion": "max net_benefit, tiebreak by accuracy",
+  "results": [
+    {
+      "threshold": 0.4,
+      "accuracy": 59.12,
+      "delta_acc": 10.95,
+      "macro_f1": 45.62,
+      "delta_f1": 12.75,
+      "fixed": 96,
+      "broke": 36,
+      "net": 60,
+      "channel_stats": {
+        "rfi_tc": {
+          "n_routed": 138,
+          "fixed": 63,
+          "broke": 31,
+          "net": 32,
+          "precision": 45.7
+        },
+        "ca_tc": {
+          "n_routed": 79,
+          "fixed": 25,
+          "broke": 4,
+          "net": 21,
+          "precision": 31.6
+        },
+        "ca_direct": {
+          "n_routed": 55,
+          "fixed": 8,
+          "broke": 1,
+          "net": 7,
+          "precision": 14.5
+        }
+      },
+      "baseline_accuracy": 48.18
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 58.58,
+      "delta_acc": 10.4,
+      "macro_f1": 45.07,
+      "delta_f1": 12.2,
+      "fixed": 90,
+      "broke": 33,
+      "net": 57,
+      "channel_stats": {
+        "rfi_tc": {
+          "n_routed": 128,
+          "fixed": 58,
+          "broke": 28,
+          "net": 30,
+          "precision": 45.3
+        },
+        "ca_tc": {
+          "n_routed": 77,
+          "fixed": 25,
+          "broke": 4,
+          "net": 21,
+          "precision": 32.5
+        },
+        "ca_direct": {
+          "n_routed": 52,
+          "fixed": 7,
+          "broke": 1,
+          "net": 6,
+          "precision": 13.5
+        }
+      },
+      "baseline_accuracy": 48.18
+    },
+    {
+      "threshold": 0.6,
+      "accuracy": 58.03,
+      "delta_acc": 9.85,
+      "macro_f1": 44.59,
+      "delta_f1": 11.72,
+      "fixed": 85,
+      "broke": 31,
+      "net": 54,
+      "channel_stats": {
+        "rfi_tc": {
+          "n_routed": 118,
+          "fixed": 54,
+          "broke": 26,
+          "net": 28,
+          "precision": 45.8
+        },
+        "ca_tc": {
+          "n_routed": 75,
+          "fixed": 24,
+          "broke": 4,
+          "net": 20,
+          "precision": 32.0
+        },
+        "ca_direct": {
+          "n_routed": 47,
+          "fixed": 7,
+          "broke": 1,
+          "net": 6,
+          "precision": 14.9
+        }
+      },
+      "baseline_accuracy": 48.18
+    },
+    {
+      "threshold": 0.7,
+      "accuracy": 57.48,
+      "delta_acc": 9.31,
+      "macro_f1": 44.02,
+      "delta_f1": 11.15,
+      "fixed": 80,
+      "broke": 29,
+      "net": 51,
+      "channel_stats": {
+        "rfi_tc": {
+          "n_routed": 111,
+          "fixed": 50,
+          "broke": 24,
+          "net": 26,
+          "precision": 45.0
+        },
+        "ca_tc": {
+          "n_routed": 73,
+          "fixed": 24,
+          "broke": 4,
+          "net": 20,
+          "precision": 32.9
+        },
+        "ca_direct": {
+          "n_routed": 45,
+          "fixed": 6,
+          "broke": 1,
+          "net": 5,
+          "precision": 13.3
+        }
+      },
+      "baseline_accuracy": 48.18
+    },
+    {
+      "threshold": 0.8,
+      "accuracy": 57.12,
+      "delta_acc": 8.94,
+      "macro_f1": 43.47,
+      "delta_f1": 10.6,
+      "fixed": 74,
+      "broke": 25,
+      "net": 49,
+      "channel_stats": {
+        "rfi_tc": {
+          "n_routed": 98,
+          "fixed": 44,
+          "broke": 21,
+          "net": 23,
+          "precision": 44.9
+        },
+        "ca_tc": {
+          "n_routed": 68,
+          "fixed": 24,
+          "broke": 3,
+          "net": 21,
+          "precision": 35.3
+        },
+        "ca_direct": {
+          "n_routed": 43,
+          "fixed": 6,
+          "broke": 1,
+          "net": 5,
+          "precision": 14.0
+        }
+      },
+      "baseline_accuracy": 48.18
+    },
+    {
+      "threshold": 0.9,
+      "accuracy": 57.12,
+      "delta_acc": 8.94,
+      "macro_f1": 43.16,
+      "delta_f1": 10.29,
+      "fixed": 68,
+      "broke": 19,
+      "net": 49,
+      "channel_stats": {
+        "rfi_tc": {
+          "n_routed": 85,
+          "fixed": 42,
+          "broke": 16,
+          "net": 26,
+          "precision": 49.4
+        },
+        "ca_tc": {
+          "n_routed": 63,
+          "fixed": 22,
+          "broke": 3,
+          "net": 19,
+          "precision": 34.9
+        },
+        "ca_direct": {
+          "n_routed": 37,
+          "fixed": 4,
+          "broke": 0,
+          "net": 4,
+          "precision": 10.8
+        }
+      },
+      "baseline_accuracy": 48.18
+    }
+  ]
+}

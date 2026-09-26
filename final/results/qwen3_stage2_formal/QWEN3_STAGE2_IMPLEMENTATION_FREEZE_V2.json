@@ -1,0 +1,66 @@
+{
+  "arm_order": [
+    "baseline",
+    "zero",
+    "d_grad",
+    "d_L26_diffmean",
+    "reverse_d_grad",
+    "wrong_layer_d_grad",
+    "ungated_d_grad",
+    "formal_randoms",
+    "score_space_comparator"
+  ],
+  "atomic_raw_output": {
+    "promoted_only_after_all_arms_complete": true,
+    "temp_path": "formal_records.partial.jsonl"
+  },
+  "authorization_lock": {
+    "cli_flag": "--run-formal",
+    "env_value": "APPROVE_QWEN3_STAGE2_FORMAL_EXECUTION",
+    "env_var": "QWEN3_STAGE2_FORMAL_APPROVAL",
+    "requires_all_hashes_match": true,
+    "requires_clean_worktree": true,
+    "requires_divergence_0_0": true,
+    "requires_empty_formal_namespace": true,
+    "requires_head_equals_frozen_implementation_head": true
+  },
+  "batch_size": 1,
+  "branch": "exp/sakiko-followup-archive",
+  "evaluation_access_boundary": {
+    "after_marker": {
+      "any_crash_or_structural_failure_voids": true,
+      "automatic_retry": false,
+      "failed_arm_replacement": false,
+      "partial_restart": false,
+      "resume": false
+    },
+    "contents": [
+      "utc",
+      "git_head",
+      "runner_sha256",
+      "execution_freeze_sha256",
+      "environment_hash",
+      "invocation_uuid"
+    ],
+    "marker": "FORMAL_ACCESS_STARTED.json",
+    "written_atomically_immediately_before_first_evaluation_read": true
+  },
+  "evaluation_access_confined_to": "EvaluationAccess class, constructed only inside run_formal after the marker",
+  "frozen_implementation_head": "a8b6c1a3a61092a03b7c2ccd817d301d72c58475",
+  "implementation_version": "V2",
+  "import_time_dataset_access": false,
+  "import_time_model_load": false,
+  "no_resume_between_arms": true,
+  "previous_runner": "scripts/qwen3_stage2_formal.py",
+  "previous_runner_preserved_unmodified": true,
+  "previous_runner_remains_non_runnable": true,
+  "protocol_version": "QWEN3_STAGE2_FORMAL_V1",
+  "runner": "scripts/qwen3_stage2_formal_v2.py",
+  "schema_version": 1,
+  "scientific_definitions_changed": false,
+  "scientific_design_head": "42261b30255c167975357f225f49c427474c1fd4",
+  "single_model_load": true,
+  "single_process": true,
+  "status": "IMPLEMENTATION_FROZEN_PENDING_FORMAL_APPROVAL",
+  "void_schema": "QWEN3_STAGE2_VOID_SCHEMA.json"
+}

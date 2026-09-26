@@ -1,0 +1,93 @@
+{
+  "n": 5,
+  "skipped": 0,
+  "records": [
+    {
+      "idx": 0,
+      "uuid": "03ebe797-26d3-4872-a020-f1997e685e01",
+      "gold": "tool_call",
+      "pred": "tool_call",
+      "correct": true,
+      "tools_empty": false,
+      "n_prompt_tok": 1058,
+      "margin": 1.74517,
+      "avg_logp": {
+        "direct": -2.60979,
+        "tool_call": -0.53903,
+        "request_for_info": -2.62048,
+        "cannot_answer": -2.2842
+      }
+    },
+    {
+      "idx": 1,
+      "uuid": "e1f112bf-8ef1-42e2-aae1-5f36e4375263",
+      "gold": "tool_call",
+      "pred": "tool_call",
+      "correct": true,
+      "tools_empty": false,
+      "n_prompt_tok": 294,
+      "margin": 1.62504,
+      "avg_logp": {
+        "direct": -1.96249,
+        "tool_call": -0.33744,
+        "request_for_info": -2.42081,
+        "cannot_answer": -3.18895
+      }
+    },
+    {
+      "idx": 2,
+      "uuid": "4b0defa3-94fd-4243-9e75-eb57389ff526",
+      "gold": "cannot_answer",
+      "pred": "tool_call",
+      "correct": false,
+      "tools_empty": false,
+      "n_prompt_tok": 735,
+      "margin": 0.62794,
+      "avg_logp": {
+        "direct": -3.0094,
+        "tool_call": -1.04199,
+        "request_for_info": -1.66992,
+        "cannot_answer": -2.10857
+      }
+    },
+    {
+      "idx": 3,
+      "uuid": "ea21dde5-f957-4511-89c4-ef375f574977",
+      "gold": "request_for_info",
+      "pred": "tool_call",
+      "correct": false,
+      "tools_empty": false,
+      "n_prompt_tok": 1701,
+      "margin": 1.71573,
+      "avg_logp": {
+        "direct": -2.916,
+        "tool_call": -0.36904,
+        "request_for_info": -2.08476,
+        "cannot_answer": -2.18605
+      }
+    },
+    {
+      "idx": 4,
+      "uuid": "bab23c4e-0f49-4766-9546-91e46982d6cf",
+      "gold": "tool_call",
+      "pred": "tool_call",
+      "correct": true,
+      "tools_empty": false,
+      "n_prompt_tok": 1151,
+      "margin": 1.47318,
+      "avg_logp": {
+        "direct": -4.27068,
+        "tool_call": -0.73835,
+        "request_for_info": -2.21152,
+        "cannot_answer": -2.2711
+      }
+    }
+  ],
+  "replay": {
+    "n": 5,
+    "pred_agreement": 5,
+    "score_bitmatch": 5,
+    "pred_identical": true,
+    "score_identical": true
+  }
+}

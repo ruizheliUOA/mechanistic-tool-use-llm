@@ -1,0 +1,396 @@
+{
+  "n": 100,
+  "agreement_all": 0.56,
+  "agreement_known_only": 0.7941,
+  "n_known_pairs": 68,
+  "gate_threshold": 0.8,
+  "PASS": false,
+  "per_mode_agreement": {
+    "tool_call": {
+      "n": 25,
+      "agreement": 0.84
+    },
+    "ask_user": {
+      "n": 25,
+      "agreement": 0.36
+    },
+    "flag_param_error": {
+      "n": 25,
+      "agreement": 0.52
+    },
+    "cannot_comply": {
+      "n": 25,
+      "agreement": 0.52
+    }
+  },
+  "base_pred_dist": {
+    "tool_call": 43,
+    "flag_param_error": 16,
+    "ask_user": 20,
+    "UNKNOWN": 2,
+    "cannot_comply": 19
+  },
+  "para_pred_dist": {
+    "tool_call": 36,
+    "flag_param_error": 15,
+    "UNKNOWN": 32,
+    "ask_user": 4,
+    "cannot_comply": 13
+  },
+  "n_disagreements": 44,
+  "disagreements": [
+    {
+      "sample_id": "acebench_decision_0007",
+      "lang": "en",
+      "gold": "tool_call",
+      "base": "flag_param_error",
+      "para": "tool_call",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0254",
+      "lang": "en",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0257",
+      "lang": "en",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0258",
+      "lang": "en",
+      "gold": "flag_param_error",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0259",
+      "lang": "en",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "ask_user",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0260",
+      "lang": "en",
+      "gold": "flag_param_error",
+      "base": "ask_user",
+      "para": "tool_call",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0301",
+      "lang": "en",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0305",
+      "lang": "en",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0306",
+      "lang": "en",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0307",
+      "lang": "en",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0308",
+      "lang": "en",
+      "gold": "ask_user",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0310",
+      "lang": "en",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0311",
+      "lang": "en",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "tool_call",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0352",
+      "lang": "en",
+      "gold": "cannot_comply",
+      "base": "cannot_comply",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0356",
+      "lang": "en",
+      "gold": "cannot_comply",
+      "base": "ask_user",
+      "para": "cannot_comply",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0401",
+      "lang": "zh",
+      "gold": "tool_call",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0405",
+      "lang": "zh",
+      "gold": "tool_call",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0407",
+      "lang": "zh",
+      "gold": "tool_call",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0651",
+      "lang": "zh",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0652",
+      "lang": "zh",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0654",
+      "lang": "zh",
+      "gold": "flag_param_error",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0656",
+      "lang": "zh",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0659",
+      "lang": "zh",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0660",
+      "lang": "zh",
+      "gold": "flag_param_error",
+      "base": "flag_param_error",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0661",
+      "lang": "zh",
+      "gold": "flag_param_error",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0701",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "cannot_comply",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0702",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0703",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0704",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0705",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0706",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0707",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0708",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "tool_call",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0711",
+      "lang": "zh",
+      "gold": "ask_user",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0751",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "cannot_comply",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0752",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "cannot_comply",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0753",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "cannot_comply",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0754",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "cannot_comply",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0755",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "ask_user",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0757",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "ask_user",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0758",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "cannot_comply",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0759",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "ask_user",
+      "para": "flag_param_error",
+      "finish": "eos"
+    },
+    {
+      "sample_id": "acebench_decision_0760",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "ask_user",
+      "para": "UNKNOWN",
+      "finish": "length"
+    },
+    {
+      "sample_id": "acebench_decision_0761",
+      "lang": "zh",
+      "gold": "cannot_comply",
+      "base": "ask_user",
+      "para": "flag_param_error",
+      "finish": "eos"
+    }
+  ],
+  "note": "system-prompt paraphrase only; user prompt + output-format templates + model + decoding identical to the locked baseline"
+}

@@ -1,0 +1,4 @@
+setting,setting_order,point,lo,hi,exits,verdict
+Gemma-2-9B,1,0.6296,0.4444,0.8148,27,DECLINE
+Qwen3-4B,2,0.5781,0.4559,0.697,64,DECLINE
+Qwen3-8B,3,0.7308,0.60416,0.84615,52,ADMIT

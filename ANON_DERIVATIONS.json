@@ -1,0 +1,21 @@
+{
+  "derivatives": [
+    {
+      "original_path": "research_exploration/qwen35_sakiko/QWEN35_INFRASTRUCTURE_VERIFICATION.md",
+      "original_sha256": "6ca3ed1c26f54525a9fb86ecbcd107bd521710b7432a4bf87e661651ed85fd4e",
+      "derived_path": "research_exploration/qwen35_sakiko/QWEN35_INFRASTRUCTURE_VERIFICATION.anonymised.md",
+      "derived_sha256": "79e6c4e0b60293b3ccd8cbde7390809a2855097a83dcc1ea56e17c7d58dc1298",
+      "transformation": "Identity-only remote substitution plus explicit derivative header; original bytes remain private.",
+      "frozen_manifest_modified": false
+    },
+    {
+      "original_path": "final_freeze/PRE_DRAFT_GO_NOGO_REVIEW.md",
+      "original_sha256": "9370a474020fcf168866cce42312e130eb04dab09e5dde78d51cab1494ad3ea0",
+      "derived_path": "final_freeze/PRE_DRAFT_GO_NOGO_REVIEW.anonymised.md",
+      "derived_sha256": "ff75fbe9cbab3167f5ee9fa9d9ee105545a84351b0c5933901198ec44f4ed5fe",
+      "transformation": "Prior identity-only replacements at two lines, plus explicit derivative header; original remains private.",
+      "scientific_content": "unchanged outside those identity mentions",
+      "frozen_manifest_modified": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "dev": 1104,
+  "duplicate_uuids_in_index": 0,
+  "index_subset_of_population": true,
+  "non_sealed": 3104,
+  "note": "SEALED identity recorded as a hash over uuids only; no sealed row content read",
+  "population_total": 3652,
+  "sealed_content_read": false,
+  "sealed_count": 548,
+  "sealed_identity_sha256": "0bc79f5f4f8503509ffeade71e56e560a748c83ccf3a1b9feba59916c7d61e89",
+  "source": "final/results/qwen3_stage0_1_v2/QWEN3_V2_SPLIT_INDEX.csv",
+  "split_index_sha256": "83a7584aa993d42708d2c718bd9b5ccf209f85b87d60afa2dfc599d2dde392e9",
+  "superseded_v1_used": false,
+  "total_rows_in_index": 3104,
+  "train": 2000,
+  "train_dev_overlap": 0
+}
