@@ -1,0 +1,73 @@
+{
+  "changed_after_results": false,
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "k_random": 8,
+      "random_max": -0.017543859649122806,
+      "random_median": -0.021929824561403508,
+      "random_min": -0.05263157894736842,
+      "random_target_gain_rates": [
+        -0.017543859649122806,
+        -0.017543859649122806,
+        -0.017543859649122806,
+        -0.02631578947368421,
+        -0.03508771929824561,
+        -0.05263157894736842,
+        -0.03508771929824561,
+        -0.017543859649122806
+      ],
+      "randoms_ge_real": 0,
+      "real_exceeds_every_random": true,
+      "real_minus_random_median": 0.19736842105263158,
+      "real_rank_of_9": 1,
+      "real_target_gain_rate": 0.17543859649122806,
+      "seeds": [
+        20260811,
+        20260812,
+        20260813,
+        20260814,
+        20260815,
+        20260816,
+        20260817,
+        20260818
+      ],
+      "selected_q": 0.25,
+      "status": "frozen DEV development budget; descriptive_only per the frozen protocol. The formal K=59 null is not generated here and its seeds are disjoint from these by construction."
+    },
+    "cannot_answer__to__tool_call": {
+      "k_random": 8,
+      "random_max": 0.00909090909090909,
+      "random_median": -0.00909090909090909,
+      "random_min": -0.00909090909090909,
+      "random_target_gain_rates": [
+        -0.00909090909090909,
+        -0.00909090909090909,
+        -0.00909090909090909,
+        0.00909090909090909,
+        -0.00909090909090909,
+        -0.00909090909090909,
+        0.004545454545454545,
+        -0.00909090909090909
+      ],
+      "randoms_ge_real": 0,
+      "real_exceeds_every_random": true,
+      "real_minus_random_median": 0.1318181818181818,
+      "real_rank_of_9": 1,
+      "real_target_gain_rate": 0.12272727272727273,
+      "seeds": [
+        20260811,
+        20260812,
+        20260813,
+        20260814,
+        20260815,
+        20260816,
+        20260817,
+        20260818
+      ],
+      "selected_q": 0.25,
+      "status": "frozen DEV development budget; descriptive_only per the frozen protocol. The formal K=59 null is not generated here and its seeds are disjoint from these by construction."
+    }
+  },
+  "prespecified": true,
+  "statistic": "target_gain_rate of the real direction versus the eight frozen DEV matched-random directions at the selected dose, same absolute perturbation norm q*s_c, same population"
+}

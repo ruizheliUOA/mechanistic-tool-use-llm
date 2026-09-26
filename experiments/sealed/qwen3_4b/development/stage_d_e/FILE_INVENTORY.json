@@ -1,0 +1,256 @@
+{
+  "files": [
+    {
+      "bytes": 5177,
+      "file": "CHANNEL_ADVANCEMENT_DECISION.md",
+      "sha256": "d8c809096777cb13e676b894d00c4c1ff0187fb6711e8f1eb1888211687ab32b"
+    },
+    {
+      "bytes": 693,
+      "file": "CHANNEL_ADVANCEMENT_TABLE.csv",
+      "sha256": "b4cc86a4e0ab1d05fc0c858a0a562c88e28e5e6b261211722d98679eaf590de4"
+    },
+    {
+      "bytes": 7136,
+      "file": "DEV_ARM_SUMMARY.csv",
+      "sha256": "bd28a5f8d368e35bea7dfbc45e84435aea1227a48208a46256b2ffa6f57db90a"
+    },
+    {
+      "bytes": 4623,
+      "file": "DEV_COLLATERAL_AUDIT.csv",
+      "sha256": "3d22d244fe4a77d1e94a517988e10dce8073f188d064e58f3b255108ecd40412"
+    },
+    {
+      "bytes": 7509,
+      "file": "DEV_DESTINATION_AUDIT.csv",
+      "sha256": "df92d0dd3508b363c88dc12c74ab2cc4353cb659b1b3de0a5e20c5477cb81e9f"
+    },
+    {
+      "bytes": 5447,
+      "file": "DEV_DOSE_TABLE.csv",
+      "sha256": "9c5be81fe979a688c137c48d17cdd3ef01505b47442c7dc01f5a9a6fe061b697"
+    },
+    {
+      "bytes": 8913113,
+      "file": "DEV_INTERVENTION_RECORDS.jsonl",
+      "sha256": "25342c4374de852d3374b296f8fd98ed303dabf1928de0470d9e434a32a80974"
+    },
+    {
+      "bytes": 2404,
+      "file": "DEV_RANDOM_SPECIFICITY.json",
+      "sha256": "71a5d796f3b03064cc949b34b20929cdab4a36c5324cf3b37fa81b0179d36781"
+    },
+    {
+      "bytes": 1034,
+      "file": "DEV_REVERSE_CONTROL.json",
+      "sha256": "96ecc8de1abb44cd84c1ff8242510c84252816dbc20a22c72f70fdd619a22ddb"
+    },
+    {
+      "bytes": 1221,
+      "file": "DEV_UNGATED_CONTROL.json",
+      "sha256": "56b92d4c36d1e58b3e994adb784ad4c647ffa1274b1fcac2331d2cd720e086ae"
+    },
+    {
+      "bytes": 41656,
+      "file": "DIFFMEAN_DIRECTIONS.safetensors",
+      "sha256": "e47e07b7c16d2eedc01cf6537dc6c426152cd5cb158bb6cc60f82fe4faaa9b29"
+    },
+    {
+      "bytes": 2547,
+      "file": "DIFFMEAN_DIRECTIONS_MANIFEST.json",
+      "sha256": "dccce7cc28cd002639836131203466593a99395e0d72f44298ca8c909a65ed78"
+    },
+    {
+      "bytes": 2488,
+      "file": "DIRECTION_GEOMETRY_AUDIT.csv",
+      "sha256": "1b0cd0b074f555b14e43e99430fca4941915a9fd916d348c89bf065aea55a81b"
+    },
+    {
+      "bytes": 2679,
+      "file": "DOSE_DECLARATION.json",
+      "sha256": "4e1d3d18ed143430d8889b39d57e99c1a422afaa8ddb57bf52ece423d88b2181"
+    },
+    {
+      "bytes": 8041,
+      "file": "FILE_INVENTORY.json",
+      "sha256": "a1668bca4d29700ad2991dac188e359abac28680f46ebfa04a82669a1528d80f"
+    },
+    {
+      "bytes": 8202,
+      "file": "FORMAL_PREREGISTRATION.md",
+      "sha256": "8bc5c06f39dec3ce27a396000869cb39a5d5720ecab51294e92231ed8364fc95"
+    },
+    {
+      "bytes": 13081,
+      "file": "FORMAL_PROTOCOL_FROZEN.json",
+      "sha256": "df85dac20e62ffc2cfa720786bb240906addab3b7116e3b5c50f8ccf357172a0"
+    },
+    {
+      "bytes": 604640,
+      "file": "FORMAL_RANDOMS.safetensors",
+      "sha256": "ee258e63b7d5782005f60e89e4a0501823e4574bd76242968f5a4df6702f327e"
+    },
+    {
+      "bytes": 3677,
+      "file": "FORMAL_SELECTION_RULE_VERIFICATION.md",
+      "sha256": "a79f44a4bb44cf1d89feec26c712e66d5d43ae54e0e899bd04b6ad7692fee207"
+    },
+    {
+      "bytes": 3637,
+      "file": "GEOMETRY_GATE_DECISION.md",
+      "sha256": "f5468c2ed12faa19a2c20d83409b6f65a80015bab1e2fe80915462b46f5cd1d0"
+    },
+    {
+      "bytes": 756745,
+      "file": "GRADIENT_DIRECTION_RECORDS.jsonl",
+      "sha256": "1f9e65a17465a638d9ed576c82b93814228b06a95651254fe7d06124ca93b798"
+    },
+    {
+      "bytes": 4844,
+      "file": "HASHES.json",
+      "sha256": "3b4ea5c71d7f13f5ab2fafc5cdfa6907595ef49a6f6bc5f1c5d504cea6d9d7e6"
+    },
+    {
+      "bytes": 3708,
+      "file": "HUMAN_GIT_HANDOFF.md",
+      "sha256": "f60573854839999ab4251f3d386aa1e1ed738f8ac2f28a3a6c8da88e48f41c96"
+    },
+    {
+      "bytes": 20992,
+      "file": "PRIMARY_DIRECTIONS.safetensors",
+      "sha256": "2c543b71723afe3903d8ee509d6174ff53361f026efe5add23b96fccd3261441"
+    },
+    {
+      "bytes": 2548,
+      "file": "PRIMARY_DIRECTIONS_MANIFEST.json",
+      "sha256": "f82886e6da08182f9dc4394c9ae2a77fa10e5d6d77e35660edcf0e11c17eb3da"
+    },
+    {
+      "bytes": 5907,
+      "file": "RUNNER_AND_PROTOCOL_HASHES_STAGE_D_E.json",
+      "sha256": "f51ac4f2a6cc6e6a5a09a77befced327e43082916d1be3485b99c537b8fc11f7"
+    },
+    {
+      "bytes": 2643,
+      "file": "SAFETY_SCAN.json",
+      "sha256": "79c8c3b4ff5dcb4120987163ab24847ee9997aa36d934ed254745799971ff443"
+    },
+    {
+      "bytes": 4625,
+      "file": "STAGE_D_RESUME_STATUS.md",
+      "sha256": "647206c5820118a373a730bbe9507a7a7ba3498935f4da21b526adc3b64e3bf5"
+    },
+    {
+      "bytes": 9189,
+      "file": "_GEOMETRY_RESULTS.json",
+      "sha256": "2566574ce68d73283309964924723f0cb291382d03a393afad70af9056f48986"
+    },
+    {
+      "bytes": 29051,
+      "file": "_SELECTED_DOSE.json",
+      "sha256": "05407c7fdf0e3c951695044dfc38ecfc1192285de3c5ad7f732ff87748068fb5"
+    },
+    {
+      "bytes": 2919,
+      "file": "_STAGE_D_dev_SUMMARY.json",
+      "sha256": "5af26eca2c740eca384cc907cad2f2509af8d74bacaca5490a4a7caf5a8c8c2e"
+    },
+    {
+      "bytes": 2920,
+      "file": "_STAGE_D_train_SUMMARY.json",
+      "sha256": "fa9e3c8ca8341b95a83d0bf17e702d22d902b184464227c4c772330dd4325001"
+    },
+    {
+      "bytes": 121,
+      "file": "_STAGE_E_CONTROL_RUNTIME.json",
+      "sha256": "709c1882b8e529ea3efe80e51a087c77d7dc2741f75a9427200951e06178e767"
+    },
+    {
+      "bytes": 121,
+      "file": "_STAGE_E_DOSE_RUNTIME.json",
+      "sha256": "914c221fc732f412929e9f282c63fbad462b8647ec74aff9927cf31968cafb9b"
+    },
+    {
+      "bytes": 958,
+      "file": "_STAGE_E_PREFLIGHT.json",
+      "sha256": "21d3e32c6c34f410a2ebe8b5c7031a7ea6c8cfd81fc51fb3ab85dd3633184e58"
+    },
+    {
+      "bytes": 64515,
+      "file": "_STAGE_E_RESULTS.json",
+      "sha256": "2bf89db65436892b363e42ddcf56484f6df623fe3ac0f14ee3fd77d88e062f66"
+    },
+    {
+      "bytes": 26469,
+      "file": "analyze_stage_e.py",
+      "sha256": "a6a71e2e817f8ee3293c01b510483e19a44bb2c7783c0117765f0618c11a491d"
+    },
+    {
+      "bytes": 3719,
+      "file": "make_dose_declaration.py",
+      "sha256": "6798c04b38437028d0f4cbe629c6d7e259f7b1b43ed68fbc7294d7e3e58a57a7"
+    },
+    {
+      "bytes": 16903,
+      "file": "make_formal_freeze.py",
+      "sha256": "0c08364d691257d640cba7a094c65f8c3f33750f9269f1c9403a2f31afd85b56"
+    },
+    {
+      "bytes": 8841,
+      "file": "run_safety_scan.py",
+      "sha256": "52e246f2f002ed1855602f0c66f26f0652f4cc690698391db291a1e9e1c585e6"
+    },
+    {
+      "bytes": 15969,
+      "file": "run_stage_d_geometry.py",
+      "sha256": "9b990b974f8c79d2671eb0a31a57e92ea1a64133916be650ef97531a5e4d6ae8"
+    },
+    {
+      "bytes": 8456,
+      "file": "run_stage_d_gradients.py",
+      "sha256": "c395830f4fc6944e801a048f09b26099b3bb264cb3b0e0f50aa1ecfbd8a11a11"
+    },
+    {
+      "bytes": 9816,
+      "file": "run_stage_e_dev.py",
+      "sha256": "63e51f030f178779a7283691ecad298366874d24d71b74510f5e561b068bd1f9"
+    },
+    {
+      "bytes": 1307,
+      "file": "stage_d_dev.log",
+      "sha256": "a14d730cc6345acda88a1a57cfc9c83951a8a4f9fe8df1c2b41c79f9878c80a0"
+    },
+    {
+      "bytes": 11397,
+      "file": "stage_d_e_common.py",
+      "sha256": "3a37b1bb209e90d9500a07601d60e378d96e82963ad30fe25c5c69aff647f419"
+    },
+    {
+      "bytes": 2089,
+      "file": "stage_d_train.log",
+      "sha256": "a4ddfdf91900daa40198247f23436885d83fb4e05d158bb3cc8203a16976e25d"
+    },
+    {
+      "bytes": 1827,
+      "file": "stage_e_controls.log",
+      "sha256": "c90db6c8f224f83b0587bcb75df9635f8ee1ccfbced46f48acf99322d1a2670d"
+    },
+    {
+      "bytes": 1870,
+      "file": "stage_e_dose.log",
+      "sha256": "22e8f2a3e4d97015b94c0d293fd64bf4da74109fd5e905ec2df18a0b392422e1"
+    }
+  ],
+  "formal_executed": false,
+  "gitignore_note": "PRIMARY_DIRECTIONS/DIFFMEAN_DIRECTIONS/FORMAL_RANDOMS .safetensors match the repo-wide *.safetensors rule aimed at model weights. They are 667 KB of SAKIKO-estimated parameters required by the formal freeze and need 'git add -f', matching the committed final/results/qwen3_stage1_5/*.safetensors precedent.",
+  "historical_results_modified": false,
+  "n_files": 48,
+  "package": "research_exploration/qwen3_4b_stage_d_e_v1",
+  "qwen3_5_9b_touched": false,
+  "repository_head_at_build": "8e99b2982dc5466120278a95c22ced8d48c598b1",
+  "scientific_definitions_changed": false,
+  "sealed_test_accessed": false,
+  "stage_a_c_rerun": false,
+  "stages": "D (gradient direction + geometry) and E (DEV intervention); formal freeze prepared",
+  "verdict": "QWEN3_4B_FORMAL_CHANNEL_ADVANCED"
+}

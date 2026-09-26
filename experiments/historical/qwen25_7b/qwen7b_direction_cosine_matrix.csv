@@ -1,0 +1,19 @@
+method,channel_a,channel_b,layer_a,layer_b,cosine,same_layer,source
+recomputed_native,rfi_tc,rfi_tc,20,20,1.0,1,local acts (native layer)
+recomputed_native,rfi_tc,ca_tc,20,20,0.5687,1,local acts (native layer)
+recomputed_native,rfi_tc,ca_direct,20,16,0.0067,0,local acts (native layer)
+recomputed_native,ca_tc,ca_tc,20,20,1.0,1,local acts (native layer)
+recomputed_native,ca_tc,ca_direct,20,16,0.0124,0,local acts (native layer)
+recomputed_native,ca_direct,ca_direct,16,16,1.0,1,local acts (native layer)
+recomputed_L20_common,rfi_tc,rfi_tc,20,20,1.0,1,local acts_L20.npy
+recomputed_L20_common,rfi_tc,ca_tc,20,20,0.5687,1,local acts_L20.npy
+recomputed_L20_common,rfi_tc,ca_direct,20,20,0.488,1,local acts_L20.npy
+recomputed_L20_common,ca_tc,ca_tc,20,20,1.0,1,local acts_L20.npy
+recomputed_L20_common,ca_tc,ca_direct,20,20,0.7055,1,local acts_L20.npy
+recomputed_L20_common,ca_direct,ca_direct,20,20,1.0,1,local acts_L20.npy
+committed_npz,rfi_tc,rfi_tc,20,20,1.0,1,qwen25_7b_directions.npz
+committed_npz,rfi_tc,ca_tc,20,20,0.5542,1,qwen25_7b_directions.npz
+committed_npz,rfi_tc,ca_direct,20,16,0.0088,0,qwen25_7b_directions.npz
+committed_npz,ca_tc,ca_tc,20,20,1.0,1,qwen25_7b_directions.npz
+committed_npz,ca_tc,ca_direct,20,16,0.005,0,qwen25_7b_directions.npz
+committed_npz,ca_direct,ca_direct,16,16,1.0,1,qwen25_7b_directions.npz

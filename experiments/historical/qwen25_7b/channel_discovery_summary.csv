@@ -1,0 +1,15 @@
+dataset,model,channel_id,gold,pred,count_all,count_train,count_test,status,recompute_type,source_file
+w2c_qwen25_7b,Qwen2.5-7B,rfi_tc,request_for_info,tool_call,622,432,99,stable,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+w2c_qwen25_7b,Qwen2.5-7B,ca_tc,cannot_answer,tool_call,513,352,83,stable,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+w2c_qwen25_7b,Qwen2.5-7B,ca_direct,cannot_answer,direct,465,332,71,stable,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+w2c_qwen25_7b,Qwen2.5-7B,cannot_answer__request_for_info,cannot_answer,request_for_info,219,151,32,stable,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+w2c_qwen25_7b,Qwen2.5-7B,tool_call__request_for_info,tool_call,request_for_info,133,90,22,stable,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+w2c_qwen25_7b,Qwen2.5-7B,tool_call__direct,tool_call,direct,53,38,7,stable,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+w2c_qwen25_7b,Qwen2.5-7B,request_for_info__direct,request_for_info,direct,42,30,7,stable,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+w2c_qwen25_7b,Qwen2.5-7B,request_for_info__cannot_answer,request_for_info,cannot_answer,5,4,1,insufficient,EXACT_per_sample,final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl
+metatool_binary,microsoft/Phi-3.5-mini-instruct,no_tool__tool_call,no_tool,tool_call,155,,,summary_only,SUMMARY_ONLY,final/results/dataset_extension/metatool_binary_baseline_summary.json
+metatool_binary,microsoft/Phi-3.5-mini-instruct,tool_call__no_tool,tool_call,no_tool,141,,,summary_only,SUMMARY_ONLY,final/results/dataset_extension/metatool_binary_baseline_summary.json
+w2c_phi35,Phi-3.5,rfi_tc,request_for_info,tool_call,,,112,summary_only,SUMMARY_ONLY,sakiko_v3/results/p0_final_test_eval.json
+w2c_phi35,Phi-3.5,ca_tc,cannot_answer,tool_call,,,77,summary_only,SUMMARY_ONLY,sakiko_v3/results/p0_final_test_eval.json
+w2c_phi35,Phi-3.5,ca_direct,cannot_answer,direct,,,59,summary_only,SUMMARY_ONLY,sakiko_v3/results/p0_final_test_eval.json
+toolsandbox,-,-,-,-,,,,qualitative_only,QUALITATIVE_ONLY,data/annotation/toolsandbox_decision_candidates.csv

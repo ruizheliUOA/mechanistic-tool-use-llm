@@ -1,0 +1,129 @@
+{
+  "files": [
+    {
+      "bytes": 6044,
+      "file": "BASELINE_METRICS.json",
+      "sha256": "a659bdfab206f2f1056aee0858a5f5068dd82b7fbdd456a89bc5698caf630191"
+    },
+    {
+      "bytes": 2966,
+      "file": "BASELINE_REPORT.md",
+      "sha256": "85a4ff6b0de98e0318e6e801441609102799dfef7604af967cabdd59bc7f6ba5"
+    },
+    {
+      "bytes": 1905,
+      "file": "CHANNEL_ADVANCEMENT_DECISION.md",
+      "sha256": "fc1e2544757247ebbef8d946539420ff7e412e23cd1dc5b1ca782f8cdab69d1c"
+    },
+    {
+      "bytes": 2115,
+      "file": "CHANNEL_INVENTORY.csv",
+      "sha256": "90e3f7a87eaeaf9823bf43f8a8af4054b85b1c4ad0b1627027e903ade9ef817b"
+    },
+    {
+      "bytes": 1113,
+      "file": "CHANNEL_SUPPORT_AUDIT.csv",
+      "sha256": "c9c8a22613aca51faa847946e88e9f0b5fa8a9c7dbe5c1b63c42a0aebd231536"
+    },
+    {
+      "bytes": 2492,
+      "file": "DATASET_AND_SPLIT_MANIFEST.json",
+      "sha256": "0baa7de6d074c57041345298fa53c691d688e6c6443d4e80cd7f0de440e3e97a"
+    },
+    {
+      "bytes": 962,
+      "file": "EXTERNAL_ARTIFACTS.json",
+      "sha256": "c4a998214a230a3f9575f21b173b5d55afa232255212ef1fef2e8202f4bb4e00"
+    },
+    {
+      "bytes": 2128,
+      "file": "HUMAN_GIT_HANDOFF.md",
+      "sha256": "4e57513941aef38118920299812f871ff57893f362fd374d748eaf1ef70ec9a4"
+    },
+    {
+      "bytes": 2980,
+      "file": "MODEL_AND_ENV_MANIFEST.json",
+      "sha256": "666644f6546b8497038dc439d83f997f302ccb66b6cec6d6df35cbdf58f4b523"
+    },
+    {
+      "bytes": 1464,
+      "file": "PACKAGE_STATUS.md",
+      "sha256": "f68a5f0dfbffb23e51c5df233219862f225755bc89f713852d536fc75e335e68"
+    },
+    {
+      "bytes": 3483,
+      "file": "PROSPECTIVE_REPLICATION_PROTOCOL.md",
+      "sha256": "6b033c7e9ffe93c5bac44f0a1d61a7c5717edb3a056fac15d8412675040d2f41"
+    },
+    {
+      "bytes": 504,
+      "file": "QWEN3_4B_ACTIVATION_MANIFEST.json",
+      "sha256": "6c83b09220ccd4cf0ab0eb778f3b1d1095d10be75fd9e69264e5ef3923d97d15"
+    },
+    {
+      "bytes": 1608175,
+      "file": "QWEN3_4B_BASELINE_ROWS.jsonl",
+      "sha256": "fd9fadc9b8d01111a95811ff3c06db54189d91f0f3d35db954383d2c8ee5d9bf"
+    },
+    {
+      "bytes": 407,
+      "file": "ROUTER_AUDIT.csv",
+      "sha256": "58b08ff566873bd7b05ba600a7e3f98dcf0087f3ce36b7c4a1fe5b3758896280"
+    },
+    {
+      "bytes": 62442,
+      "file": "ROUTER_cannot_answer__direct.npz",
+      "sha256": "b10ff9fb2227f91c8f8d8c35335bb7948f2ecef1c12e4d709957b65bebc45eaa"
+    },
+    {
+      "bytes": 62442,
+      "file": "ROUTER_cannot_answer__tool_call.npz",
+      "sha256": "f45d6b7f7a159d881bbdca69c30b7beac39f2aaecf1bda7c9d2aaa8e361bc1ff"
+    },
+    {
+      "bytes": 1440,
+      "file": "SAFETY_SCAN.json",
+      "sha256": "f93eff1eae202b45409a5647c5e7f9598798076cdc3fe625268754af91dc9370"
+    },
+    {
+      "bytes": 2559,
+      "file": "STAGE_D_BLOCKER.json",
+      "sha256": "8ad0639508db75f02be476729f610dbf00179f6d918b299a92243e2c052f6f40"
+    },
+    {
+      "bytes": 3785,
+      "file": "capture_activations.py",
+      "sha256": "f3b0f442562920bf0aeb8a73238247a48a26ccf7b68f4ecbbf716ef92146890f"
+    },
+    {
+      "bytes": 1764,
+      "file": "directions.log",
+      "sha256": "04a579ab5952a410a536cc64445cca3a15fd664a6386e7f04427b598152155b2"
+    },
+    {
+      "bytes": 1764,
+      "file": "directions_FAILED_oom.log",
+      "sha256": "8a684fc37598ffd5c59de1b426d9c6c803ff18e362c8c52781a0de45593518d7"
+    },
+    {
+      "bytes": 4810,
+      "file": "estimate_directions.py",
+      "sha256": "8129988187fa9a22bda9a30124c1c05bd468974112a05eea9287de2f8b94a43f"
+    },
+    {
+      "bytes": 6768,
+      "file": "run_qwen3_4b_stage_a.py",
+      "sha256": "54f0144477e75ff3568c595eee3f6e56248f2f6f1390aaac27160dbe9b808860"
+    },
+    {
+      "bytes": 6661,
+      "file": "run_safety_scan.py",
+      "sha256": "6263ef6883e386f0b45318673ce53cd538476f5ff978a166a67dc003773e5218"
+    }
+  ],
+  "n_files": 24,
+  "package": "research_exploration/qwen3_4b_w2c_prospective_replication_v1",
+  "repository_head": "7ca83895885257b34d14a00750d692fb9b25bc79",
+  "sealed_eval_rows_touched": 0,
+  "status": "DATASET_KNOWN / MODEL_UNTOUCHED / stages A-C complete / Stage D blocked"
+}

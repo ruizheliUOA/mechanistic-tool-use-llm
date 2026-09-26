@@ -22,11 +22,15 @@ def payload(path):
         raise ValueError(f'MISSING_PAYLOAD: {path.name} is a Git LFS pointer, not evidence')
     return data
 
+def file_at(root, rel):
+    mapping = json.loads((root / "manifests/paths.json").read_text())["paths"]
+    return root / mapping.get(rel, rel)
+
 def js(root, rel):
-    return json.loads(payload(root / rel))
+    return json.loads(payload(file_at(root, rel)))
 
 def jl(root, rel):
-    return [json.loads(line) for line in payload(root / rel).splitlines() if line.strip()]
+    return [json.loads(line) for line in payload(file_at(root, rel)).splitlines() if line.strip()]
 
 def counts(rows):
     errors = [r for r in rows if r['gold'] == 'cannot_answer' and r['pred_base'] == 'tool_call']
@@ -43,7 +47,7 @@ def check(root):
     def require(ok, description):
         if not ok: raise AssertionError(description)
         checks.append(description)
-    release = js(root, 'ANON_RELEASE_MANIFEST.json')
+    release = js(root, 'manifests/release.json')
     for item in release['files']:
         p = root / item['path']
         require(p.is_file(), 'exists: ' + item['path'])
@@ -52,9 +56,9 @@ def check(root):
                 'release bytes: ' + item['path'])
     paths = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()
              and '.git' not in p.relative_to(root).parts and '__pycache__' not in p.parts}
-    require(paths == {f['path'] for f in release['files']} | {'ANON_RELEASE_MANIFEST.json'},
+    require(paths == {f['path'] for f in release['files']} | {'manifests/release.json'},
             'release file list is complete (manifest excludes only itself)')
-    for item in js(root, 'ARTIFACT_AVAILABILITY.json')['bundled_lfs_payloads']:
+    for item in js(root, 'manifests/payloads.json')['bundled_lfs_payloads']:
         data = payload(root / item['path'])
         require(len(data) == item['bytes'] and hashlib.sha256(data).hexdigest() == item['sha256'],
                 'recovered payload: ' + item['path'])
@@ -70,7 +74,7 @@ def check(root):
     specs = [('q8b', q8dir+'QWEN3_STAGE2_FORMAL_RECORDS.jsonl', 'd_grad', 6372, (72,52,38,14,6,0,40,40)),
              ('q4b', q4dir+'QWEN3_4B_FORMAL_RECORDS.jsonl', 'real_d_grad', 14404, (118,64,37,27,50,1,40,39)),
              ('gemma', gedir+'FORMAL_RECORDS.jsonl', 'real_d_grad', 7731, (96,27,17,10,11,1,17,16))]
-    evidence = {r['variable']: r for r in csv.DictReader((root/'final_evidence/FINAL_PAPER_EVIDENCE.csv').open())}
+    evidence = {r['variable']: r for r in csv.DictReader(file_at(root, 'final_evidence/FINAL_PAPER_EVIDENCE.csv').open())}
     for name, rel, real_arm, total, expected in specs:
         rows = jl(root, rel)
         require(len(rows) == total, name+': record count')
@@ -102,7 +106,7 @@ def check(root):
     ge = js(root, gedir+'FORMAL_PRINCIPAL_VERDICT.json')
     require(q8['outcome']=='FORMAL_CONFIRMATORY_SUCCESS' and len(q8['primary_conjunction'])==10
             and all(q8['primary_conjunction'].values()), 'q8b: preserved ten-condition success')
-    require((root/(q4dir+'FORMAL_PRINCIPAL_VERDICT.txt')).read_text().strip()=='QWEN3_4B_FORMAL_DECLINE',
+    require(file_at(root, q4dir+'FORMAL_PRINCIPAL_VERDICT.txt').read_text().strip()=='QWEN3_4B_FORMAL_DECLINE',
             'q4b: preserved principal DECLINE')
     require(len(q4['conjunction'])==10 and sum(q4['conjunction'].values())==8,
             'q4b: preserved 8/10 conjunction')
@@ -131,14 +135,37 @@ def check(root):
     exposed=[r for r in phi if r['route']!='none' and r['clean_pred']==r['gold']]
     require((len(phi),fixed,broke,len(exposed),fixed-broke)==(548,107,52,93,55),
             'Phi historical seed 42: 548 rows, 107 fixed, 52 broken, 93 exposed, net +55')
-    seeds=list(csv.DictReader((root/'final/results/clean/p1_multiseed_table.csv').open()))
+    seeds=list(csv.DictReader(file_at(root, 'final/results/clean/p1_multiseed_table.csv').open()))
     require(all(int(r['fixed'])-int(r['broke'])==int(r['net']) for r in seeds), 'Phi multiseed conservation')
-    split=list(csv.DictReader((root/'final/results/qwen3_stage0_1_v2/QWEN3_V2_SPLIT_INDEX.csv').open()))
+    split=list(csv.DictReader(file_at(root, 'final/results/qwen3_stage0_1_v2/QWEN3_V2_SPLIT_INDEX.csv').open()))
     require(len(split)==3104 and len({r['sample_id'] for r in split})==3104,'canonical non-test split uniqueness and count')
-    return {'executed_checks':len(checks),'result':'AVAILABLE_EVIDENCE_CHECKS_PASSED','release_readiness':'FAIL (see INTEGRITY_FINDINGS.md)','destination_counts':summaries,
+    # Historical tables recovered from existing records: arithmetic only, no new evaluation.
+    table=list(csv.DictReader(file_at(root,'final/results/channel_adaptive/placebo_control_summary_qwen7b.csv').open()))
+    table={r['variant']:r for r in table}
+    for arm,expected in [('real',(92,13,79)),('reverse',(17,1,16)),('ungated',(116,22,94))]:
+        row=table[arm]
+        require(tuple(int(row[k]) for k in ('fixed','broke','net'))==expected,
+                'Qwen2.5 archived control counts: '+arm)
+        require(int(row['fixed'])-int(row['broke'])==int(row['net']),
+                'Qwen2.5 control conservation: '+arm)
+    independent=js(root,'sakiko/results/p2_independent_baselines.json')
+    require(independent['REAL_LOCKED']['net']==62 and independent['UNGATED_TOP1_INDEP']['net']==-32,
+            'Phi independent gated/ungated comparison is +62/-32, distinct from original +55 run')
+    for key,row in independent.items():
+        if isinstance(row,dict) and all(k in row for k in ('fixed','broke','net')):
+            require(row['fixed']-row['broke']==row['net'],'Phi independent conservation: '+key)
+    meta=js(root,'final/results/metatool_qwen7b_sakiko_ca/metatool_qwen7b_sakiko_ca_summary.json')
+    for name,mean in [('B_overcall_only',8.6),('C_undercall_only',13.0),('D_dual',21.6)]:
+        arm=meta['arms_5seed'][name]
+        require(len(arm['nets'])==5 and all(n>0 for n in arm['nets']) and
+                abs(sum(arm['nets'])/5-mean)<1e-9 and arm['mean']==mean,
+                'MetaTool preserved five-seed aggregate: '+name)
+    for a,b,c in zip(*(meta['arms_5seed'][name]['nets'] for name in ('B_overcall_only','C_undercall_only','D_dual'))):
+        require(a+b==c,'MetaTool disjoint-channel additive count check (not independent replication)')
+    return {'executed_checks':len(checks),'result':'AVAILABLE_EVIDENCE_CHECKS_PASSED','scope':'bundled bytes and reported result arithmetic; historical limitations in docs/limitations.md','destination_counts':summaries,
             'gemma_full_baseline_channel_errors':ge_all_errors,
             'limitations':[
-                'This is not release approval: historical frozen-manifest discrepancies remain in INTEGRITY_FINDINGS.md.',
+                'This is not release approval: historical frozen-manifest discrepancies remain in docs/limitations.md.',
                 'Qwen3-8B population denominator 211 and Qwen3-4B denominator 214 are retained from frozen summaries; complete 548-row baselines are not separately bundled for these settings.',
                 'Gemma frozen target-gain uses 96 routed channel errors; its full baseline has 112. No denominator or verdict was changed.',
                 'No model inference, bootstrap rerun, sealed experiment, or historical missing-destination reconstruction was performed.'

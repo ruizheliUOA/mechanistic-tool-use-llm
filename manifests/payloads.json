@@ -1,0 +1,284 @@
+{
+  "bundled_lfs_payloads": [
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/d_diffmean_Linj__cannot_answer__to__direct.npy",
+      "status": "full_bytes_bundled",
+      "bytes": 14464,
+      "sha256": "4efdb5568ee7f989440da09858f04b4a15f9b0ae91468da3ab04d5142826024c",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/DEV_INTERVENTION_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 1887981,
+      "sha256": "3c1b36458692d188f5fdc10f5c80cf376741b7b618ead85f60b772313419c788",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/d_diffmean_Lobs__cannot_answer__to__tool_call.npy",
+      "status": "full_bytes_bundled",
+      "bytes": 14464,
+      "sha256": "3333b9f019122e5a0ccea34e585c928f418d2fe37404b105e8c41c9551a7d595",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/router_request_for_info__to__tool_call.npz",
+      "status": "full_bytes_bundled",
+      "bytes": 87018,
+      "sha256": "7b139deb08973cf2a8bce97c0dbf0874ceda896b3f7544d2408ff6c0bc5a9482",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/BASELINE_LOBS_ACTIVATIONS.npz",
+      "status": "full_bytes_bundled",
+      "bytes": 20815417,
+      "sha256": "539dae88390b6279838ecc273e735746c19793ecd7dad2884a2e231895420c01",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/DIRECTION_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 246671,
+      "sha256": "63f932b3cf400f0bcadf7edc97a13e176407f96f3acebd4b6a59e864736bea76",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/router_cannot_answer__to__tool_call.npz",
+      "status": "full_bytes_bundled",
+      "bytes": 87018,
+      "sha256": "0c34252a02cb94ee4a8eb44e856ff0c15d7b9b23eee65f52dd357c1b717c8619",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/d_grad__cannot_answer__to__direct.npy",
+      "status": "full_bytes_bundled",
+      "bytes": 14464,
+      "sha256": "59e3b0a2ddb2efd29d1c09ffa3c49cef7cff315bb666f80fde79df8a0f8b8d7e",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/BASELINE_ROWS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 942518,
+      "sha256": "b91469538bd0db33d7d771991b544edb92900a850c05f67720b521301c45d288",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/DEV_CONTROL_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 1894998,
+      "sha256": "4e57a48dd62da2c255be7c5decf35bb324d56dd6d7a183ad85a0bef749cd0037",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/d_diffmean_Linj__cannot_answer__to__tool_call.npy",
+      "status": "full_bytes_bundled",
+      "bytes": 14464,
+      "sha256": "da28f1bceda22ea8c73737d89bd6f735026d8acfc165b5c0d2ee65b165ab58a7",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/LINJ_ACTIVATIONS.npz",
+      "status": "full_bytes_bundled",
+      "bytes": 20797882,
+      "sha256": "ccf1bab3b538a2c3abd3f564d31f5468a3361420352857a3274a2e43ec4ccc38",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/router_cannot_answer__to__direct.npz",
+      "status": "full_bytes_bundled",
+      "bytes": 87018,
+      "sha256": "7dce9794ad58137318c7f7955621749f312b812a8b8f4e6be477661c4d367566",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/d_diffmean_Lobs__cannot_answer__to__direct.npy",
+      "status": "full_bytes_bundled",
+      "bytes": 14464,
+      "sha256": "69c3b811f8cb07cc2103c2f90f43a6010018519bfa003dd794968ca41a7e795a",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/development/d_grad__cannot_answer__to__tool_call.npy",
+      "status": "full_bytes_bundled",
+      "bytes": 14464,
+      "sha256": "cd4f75260b8dab35da6ef271b36e2b569afd434cb2a227ec50c2f2d733a81ae4",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/formal/formal_randoms_K59.npy",
+      "status": "full_bytes_bundled",
+      "bytes": 845952,
+      "sha256": "a3a6a4b0b07ce08eb2fc9c05c39a9a268bc6c3b7fb49fad49954528426285b02",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/gemma_2_9b/formal/FORMAL_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 5989063,
+      "sha256": "f05b75f471da5c8a503fb79fb62b958905e0dcfb25ef0261ba95765c263cfb1e",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/screening/qwen35_9b/BASELINE_ROWS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 1226102,
+      "sha256": "011068fbc939bff0ad8478623e5f78438b92d72ce0037028bac6580821d3a09a",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/formal/QWEN3_STAGE2_FORMAL_RANDOMS.safetensors",
+      "status": "full_bytes_bundled",
+      "bytes": 971816,
+      "sha256": "11055724067f46c66a0acebadece01424cd77588c58e8a87c7bca054e403356e",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/formal/QWEN3_STAGE2_FORMAL_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 5055748,
+      "sha256": "d8f622d4ed08e4ef6395b20c6af3ad5287f8cd2f89af9286608a20c06e8d8819",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/historical/mistral7b/baseline/mistral7b_w2c_baseline_details.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 1098088,
+      "sha256": "6f6f0fc39562cfd1d2d266cf09f258939ceeb795552ab0bd96ae7339fd23ac1c",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_ZERO_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 170322,
+      "sha256": "d061538bcd96716251a94140890c3a6b52f7b8e88f70fce151f8151ac4ce2215",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_RANDOM_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 11190963,
+      "sha256": "4a1cb5089c280e707f5eb13311b11d514bff88c82c0ed735a12854897b2ab9b7",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_REAL_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 188663,
+      "sha256": "e8b3339511b75380bf6d286abc01959023372cafb973a8f6b96149ea80924111",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_BASELINE_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 172587,
+      "sha256": "b9651d2bc9a1128967111df3aaa3bf3d48d0c6da209871446b234e0473dfc3f9",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_UNGATED_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 393578,
+      "sha256": "17f72196483a0f863424ca155d96590ddb75e11b1cac2e30024fb5afc8151f35",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_WRONG_LAYER_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 190011,
+      "sha256": "ebcf49dea3b5d89f8bd75397723cf7d323a8e0b4e068cadbe81e7a37c124f376",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_DIFFMEAN_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 189329,
+      "sha256": "13c6520ae1f6afa1a1c670aaf300f1db71ef2101cb06cc9fc5b9cde7729fa876",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_SCORE_SPACE_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 149898,
+      "sha256": "883ad9824614aafc09fc1fcdc6b59c613760a63bea1fd59e1e9a16876ae2cddc",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/QWEN3_4B_FORMAL_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 12511539,
+      "sha256": "aed60b18f4dab6f6475426317755440b04ecae09e87e79631bb53a453fe6b84d",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_4b/formal/FORMAL_REVERSE_RECORDS.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 188673,
+      "sha256": "987d8822d1d71798cd74473ac7dada97c97496f46707eb5e979e005c4796edcb",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/historical/phi35/p0_final_test_details.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 91258,
+      "sha256": "c5478da97b0c6134b1b35e321c23957c13181dbf4769a346ecbd015b42ae3b58",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/screening/acebench/audit/audit_judgments.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 30541,
+      "sha256": "d409fd35d093dbd2d306ed56ad5078503e4cd61dea987e9d3fa239ad5ac4eb0d",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/development/canonical/QWEN3_V2_LOG.jsonl",
+      "status": "full_bytes_bundled",
+      "bytes": 1791,
+      "sha256": "657a21d42ceaa3fa087c96e03812b30afd383cbda77bb6d80b3e46c5d37d5bc2",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/development/canonical/routers/cannot_answer__to__direct.safetensors",
+      "status": "full_bytes_bundled",
+      "bytes": 49684,
+      "sha256": "b1ebad7270971f830d3f3505eceab3c8f448148583502f2104e56c3e207db0b1",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/development/canonical/routers/cannot_answer__to__tool_call.safetensors",
+      "status": "full_bytes_bundled",
+      "bytes": 49684,
+      "sha256": "5d7000b3952ce97b78c93e636a99e73125b15b9138d21a613f1ca3a3a8313b74",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/development/canonical/routers/request_for_info__to__tool_call.safetensors",
+      "status": "full_bytes_bundled",
+      "bytes": 49692,
+      "sha256": "3a7086718f703d2c7be272c6f950657c2bf11d2aa44eaa1f01ee4e136e4cc06b",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/development/canonical/directions/cannot_answer__to__direct.safetensors",
+      "status": "full_bytes_bundled",
+      "bytes": 17120,
+      "sha256": "db986511c918eea56ce5f3f7dc82fbace2c17a8fe9bbdd62fd8ba6cb0948e10a",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/development/canonical/directions/cannot_answer__to__tool_call.safetensors",
+      "status": "full_bytes_bundled",
+      "bytes": 17128,
+      "sha256": "94c0302a015baad96b5e6b692342f2ef758b53325559a47514ddfe54aa866ce6",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    },
+    {
+      "path": "experiments/sealed/qwen3_8b/development/canonical/directions/request_for_info__to__tool_call.safetensors",
+      "status": "full_bytes_bundled",
+      "bytes": 17136,
+      "sha256": "8774e34f3d286be9f1e330bf88bfd0164d1cf5f8ad148af5c000c8359e883431",
+      "verification": "actual payload SHA-256 and size matched original LFS pointer"
+    }
+  ]
+}

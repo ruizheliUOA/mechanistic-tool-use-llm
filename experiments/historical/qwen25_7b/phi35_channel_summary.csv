@@ -1,0 +1,4 @@
+channel_id,gold,pred,count_test,corrected,correction_rate_pct,status,recompute_type,source_file
+rfi_tc,request_for_info,tool_call,112,50,44.6,summary_only,SUMMARY_ONLY,p0_final_test_eval.json
+ca_tc,cannot_answer,tool_call,77,30,39.0,summary_only,SUMMARY_ONLY,p0_final_test_eval.json
+ca_direct,cannot_answer,direct,59,20,33.9,summary_only,SUMMARY_ONLY,p0_final_test_eval.json

@@ -1,0 +1,9 @@
+direction_method,split,locked_thr,net,fixed,broke,before,after,direction_norm,cos_diffmean_pca1,source_file
+diffmean,val,0.8,28,33,5,78,15,16.4849,0.411,taskB_ca_tc_pca_vs_diffmean.json
+diffmean,test,0.8,36,37,1,83,18,16.4849,0.411,taskB_ca_tc_pca_vs_diffmean.json
+pca1,val,0.8,44,49,5,78,15,1.6509,0.411,taskB_ca_tc_pca_vs_diffmean.json
+pca1,test,0.8,50,51,1,83,18,1.6509,0.411,taskB_ca_tc_pca_vs_diffmean.json
+pca1_reverse,val,0.8,7,12,5,78,15,1.6509,0.411,taskB_ca_tc_pca_vs_diffmean.json
+pca1_reverse,test,0.8,9,10,1,83,18,1.6509,0.411,taskB_ca_tc_pca_vs_diffmean.json
+diffmean_reverse,val,0.8,9,14,5,78,15,16.4849,0.411,taskB_ca_tc_pca_vs_diffmean.json
+diffmean_reverse,test,0.8,16,17,1,83,18,16.4849,0.411,taskB_ca_tc_pca_vs_diffmean.json

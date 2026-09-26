@@ -1,0 +1,5 @@
+variant,net,fixed,broke,n_touched,detail,source_file
+real,79,92,13,202,,qwen25_7b_placebo_controls.json
+reverse,16,17,1,202,,qwen25_7b_placebo_controls.json
+ungated,94,116,22,293,,qwen25_7b_placebo_controls.json
+random_mean,25.2,,,,std=12.79 max=50 real_ge_all=True,qwen25_7b_placebo_controls.json

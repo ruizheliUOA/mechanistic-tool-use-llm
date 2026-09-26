@@ -1,0 +1,169 @@
+{
+  "dataset": "w2c_qwen25_7b",
+  "model": "Qwen2.5-7B-Instruct",
+  "provenance": {
+    "source_file": "final/results/7b_w2c_baseline/qwen25_7b_baseline_details.jsonl",
+    "recompute_type": "EXACT_per_sample",
+    "splits": "sakiko_v3/results/splits"
+  },
+  "n_samples": 3652,
+  "baseline_accuracy": 0.43812,
+  "gold_distribution": {
+    "tool_call": 1295,
+    "cannot_answer": 1295,
+    "request_for_info": 1062
+  },
+  "pred_distribution": {
+    "tool_call": 2244,
+    "request_for_info": 745,
+    "direct": 560,
+    "cannot_answer": 103
+  },
+  "label_space": {
+    "n_gold_classes": 3,
+    "gold_labels": [
+      "tool_call",
+      "request_for_info",
+      "cannot_answer"
+    ],
+    "pred_labels": [
+      "tool_call",
+      "direct",
+      "request_for_info",
+      "cannot_answer"
+    ],
+    "note": "'direct' is a distractor pred, never gold"
+  },
+  "total_errors": 2052,
+  "selection_thresholds": {
+    "count_min_overall": 50,
+    "train_min": 30
+  },
+  "discovered_channels": [
+    {
+      "channel_id": "rfi_tc",
+      "gold": "request_for_info",
+      "pred": "tool_call",
+      "is_named_sakiko_channel": true,
+      "count_all": 622,
+      "count_train": 432,
+      "count_val": 91,
+      "count_test": 99,
+      "pct_of_errors": 30.31,
+      "status": "stable"
+    },
+    {
+      "channel_id": "ca_tc",
+      "gold": "cannot_answer",
+      "pred": "tool_call",
+      "is_named_sakiko_channel": true,
+      "count_all": 513,
+      "count_train": 352,
+      "count_val": 78,
+      "count_test": 83,
+      "pct_of_errors": 25.0,
+      "status": "stable"
+    },
+    {
+      "channel_id": "ca_direct",
+      "gold": "cannot_answer",
+      "pred": "direct",
+      "is_named_sakiko_channel": true,
+      "count_all": 465,
+      "count_train": 332,
+      "count_val": 62,
+      "count_test": 71,
+      "pct_of_errors": 22.66,
+      "status": "stable"
+    },
+    {
+      "channel_id": "cannot_answer__request_for_info",
+      "gold": "cannot_answer",
+      "pred": "request_for_info",
+      "is_named_sakiko_channel": false,
+      "count_all": 219,
+      "count_train": 151,
+      "count_val": 36,
+      "count_test": 32,
+      "pct_of_errors": 10.67,
+      "status": "stable"
+    },
+    {
+      "channel_id": "tool_call__request_for_info",
+      "gold": "tool_call",
+      "pred": "request_for_info",
+      "is_named_sakiko_channel": false,
+      "count_all": 133,
+      "count_train": 90,
+      "count_val": 21,
+      "count_test": 22,
+      "pct_of_errors": 6.48,
+      "status": "stable"
+    },
+    {
+      "channel_id": "tool_call__direct",
+      "gold": "tool_call",
+      "pred": "direct",
+      "is_named_sakiko_channel": false,
+      "count_all": 53,
+      "count_train": 38,
+      "count_val": 8,
+      "count_test": 7,
+      "pct_of_errors": 2.58,
+      "status": "stable"
+    },
+    {
+      "channel_id": "request_for_info__direct",
+      "gold": "request_for_info",
+      "pred": "direct",
+      "is_named_sakiko_channel": false,
+      "count_all": 42,
+      "count_train": 30,
+      "count_val": 5,
+      "count_test": 7,
+      "pct_of_errors": 2.05,
+      "status": "stable"
+    },
+    {
+      "channel_id": "request_for_info__cannot_answer",
+      "gold": "request_for_info",
+      "pred": "cannot_answer",
+      "is_named_sakiko_channel": false,
+      "count_all": 5,
+      "count_train": 4,
+      "count_val": 0,
+      "count_test": 1,
+      "pct_of_errors": 0.24,
+      "status": "insufficient"
+    }
+  ],
+  "dominant_channels_stable": [
+    "rfi_tc",
+    "ca_tc",
+    "ca_direct",
+    "cannot_answer__request_for_info",
+    "tool_call__request_for_info",
+    "tool_call__direct",
+    "request_for_info__direct"
+  ],
+  "confusion_matrix_gold_by_pred": {
+    "tool_call": {
+      "tool_call": 1109,
+      "direct": 53,
+      "request_for_info": 133,
+      "cannot_answer": 0
+    },
+    "request_for_info": {
+      "tool_call": 622,
+      "direct": 42,
+      "request_for_info": 393,
+      "cannot_answer": 5
+    },
+    "cannot_answer": {
+      "tool_call": 513,
+      "direct": 465,
+      "request_for_info": 219,
+      "cannot_answer": 98
+    }
+  }
+}

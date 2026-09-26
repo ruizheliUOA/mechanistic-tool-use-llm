@@ -1,0 +1,78 @@
+{
+  "dataset": {
+    "config": "test",
+    "original_rows": 3652,
+    "raw_source_path": "data/processed/qwen25_7b_w2c/w2c_test_mcq.jsonl",
+    "raw_source_sha256": "8c3694e583eeeb8dbc297e6cd90da70efc68efa4b6adb7227523e828c6b7b14c",
+    "raw_source_sha256_matches_committed": true,
+    "repository": "nvidia/When2Call",
+    "revision": "0582f7749df63a96fdc3070932e83e72396ace53",
+    "split": "mcq"
+  },
+  "gold_distribution": {
+    "dev": {
+      "cannot_answer": 390,
+      "request_for_info": 322,
+      "tool_call": 392
+    },
+    "train": {
+      "cannot_answer": 707,
+      "request_for_info": 584,
+      "tool_call": 709
+    }
+  },
+  "layer_mapping": {
+    "copied_absolute_from_8b": false,
+    "formula": "round(old/(old_n-1)*(new_n-1))",
+    "note": "Qwen3-4B independently verified to have 36 layers; the mapping coincides with Qwen3-8B by computation, not assumption. Hidden size differs (2560 vs 4096).",
+    "qwen25_base": {
+      "L_inj": 16,
+      "L_obs": 20,
+      "layers": 28
+    },
+    "qwen3_4b": {
+      "L_inj": 21,
+      "L_obs": 26,
+      "layers": 36,
+      "normalised_depth_inj": 0.5926,
+      "normalised_depth_obs": 0.7407
+    },
+    "recomputed": true
+  },
+  "population_status": "DATASET_KNOWN / MODEL_UNTOUCHED",
+  "readout": {
+    "chat_template": "Qwen3 official, enable_thinking=False, add_generation_prompt=True",
+    "forwards_per_sample": 4,
+    "free_generation": false,
+    "modes": [
+      "tool_call",
+      "direct",
+      "request_for_info",
+      "cannot_answer"
+    ],
+    "redesigned": false,
+    "reused_from": "scripts/qwen3_8b_stage0_1.py (committed)",
+    "score": "mean log probability over complete candidate tokens, teacher forced"
+  },
+  "reconstruction": {
+    "gold_match": "3104/3104",
+    "mapping": "project_index i -> raw[perm[i]]",
+    "shuffle": "numpy.random.default_rng(42).permutation(3652)",
+    "uuid_match": "3104/3104",
+    "verified": true
+  },
+  "sealed_identity": {
+    "contents_opened": false,
+    "count": 548,
+    "note": "identity pinned by hash of the ordered uuid list; no sealed sample was rendered, tokenised or scored",
+    "uuid_order_sha256": "ccc7e0a0c46e4ed27299c638157dca200f207110a18dbfd1ebf40ec49f7e7ab0"
+  },
+  "splits": {
+    "dev": 1104,
+    "no_overlap_verified": true,
+    "sealed_evaluation": 548,
+    "split_index": "final/results/qwen3_stage0_1_v2/QWEN3_V2_SPLIT_INDEX.csv",
+    "split_index_sha256": "83a7584aa993d42708d2c718bd9b5ccf209f85b87d60afa2dfc599d2dde392e9",
+    "train": 2000
+  }
+}

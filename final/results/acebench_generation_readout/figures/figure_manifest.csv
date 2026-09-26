@@ -1,6 +1,0 @@
-figure_file,source_table,description,status,notes
-fig1_confusion_matrix.png,baseline/acebench_generation_baseline_summary.json,Gold x predicted confusion for the locked 800-row generation baseline.,generated,
-fig2_prediction_distribution.png,baseline/acebench_generation_baseline_summary.json,Predicted-mode distribution against the locked R0.3 collapse thresholds.,generated,
-fig3_parser_breakdown.png,.cache/acebench_phase4/generation_details_full.jsonl,Parser rule-tier breakdown and UNKNOWN composition (source is gitignored raw detail).,generated,
-fig4_transition_support.png,channel_discovery/acebench_channel_discovery.json,Per-split error-transition support vs the locked intervention-scope thresholds (R0.9).,generated,
-fig5_paraphrase_agreement.png,paraphrase_check/paraphrase_agreement.json,Pre-registered paraphrase eligibility gate: per-mode agreement and distribution shift.,generated,

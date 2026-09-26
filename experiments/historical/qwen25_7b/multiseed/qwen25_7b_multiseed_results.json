@@ -1,0 +1,398 @@
+{
+  "aggregate": {
+    "n_seeds": 5,
+    "net_mean": 92.0,
+    "net_std": 19.77,
+    "net_min": 63,
+    "net_max": 124,
+    "n_positive": 5,
+    "delta_acc_mean": 0.1679
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "n_train": 2556,
+      "n_val": 548,
+      "n_test": 548,
+      "base_acc": 0.43796,
+      "sakiko_acc": 0.5529,
+      "delta_acc": 0.11494,
+      "fixed": 88,
+      "broke": 25,
+      "net": 63,
+      "three_before": 240,
+      "three_after": 123,
+      "nt_before": {
+        "rfi_tc": 93,
+        "ca_tc": 77,
+        "ca_direct": 70
+      },
+      "nt_after": {
+        "rfi_tc": 50,
+        "ca_tc": 12,
+        "ca_direct": 61
+      },
+      "chan_fixed": {
+        "rfi_tc": 38,
+        "ca_tc": 37,
+        "ca_direct": 12
+      },
+      "routed": {
+        "rfi_tc": 81,
+        "ca_tc": 53,
+        "ca_direct": 55
+      },
+      "n_touched": 189,
+      "touched_correct": 25,
+      "damage_on_correct": 25,
+      "locked": {
+        "rfi_tc": {
+          "obs_layer": 20,
+          "inj_layer": 20,
+          "alpha": 4.0,
+          "threshold": 0.6,
+          "val_net": 41,
+          "router_val_auc": 0.8058691756272401,
+          "dir_norm": 12.824,
+          "n_ref": 277,
+          "n_err_train": 436
+        },
+        "ca_tc": {
+          "obs_layer": 20,
+          "inj_layer": 16,
+          "alpha": 4.0,
+          "threshold": 0.6,
+          "val_net": 43,
+          "router_val_auc": 0.9652056277056277,
+          "dir_norm": 16.844,
+          "n_ref": 66,
+          "n_err_train": 359
+        },
+        "ca_direct": {
+          "obs_layer": 16,
+          "inj_layer": 16,
+          "alpha": 6.0,
+          "threshold": 0.4,
+          "val_net": 16,
+          "router_val_auc": 0.9445238095238095,
+          "dir_norm": 1.998,
+          "n_ref": 66,
+          "n_err_train": 325
+        }
+      },
+      "router_auc": {
+        "rfi_tc": 0.8059,
+        "ca_tc": 0.9652,
+        "ca_direct": 0.9445
+      }
+    },
+    {
+      "seed": 123,
+      "n_train": 2556,
+      "n_val": 548,
+      "n_test": 548,
+      "base_acc": 0.43796,
+      "sakiko_acc": 0.5931,
+      "delta_acc": 0.15514,
+      "fixed": 87,
+      "broke": 2,
+      "net": 85,
+      "three_before": 240,
+      "three_after": 147,
+      "nt_before": {
+        "rfi_tc": 93,
+        "ca_tc": 77,
+        "ca_direct": 70
+      },
+      "nt_after": {
+        "rfi_tc": 89,
+        "ca_tc": 34,
+        "ca_direct": 24
+      },
+      "chan_fixed": {
+        "rfi_tc": 3,
+        "ca_tc": 28,
+        "ca_direct": 56
+      },
+      "routed": {
+        "ca_tc": 59,
+        "ca_direct": 62,
+        "rfi_tc": 102
+      },
+      "n_touched": 223,
+      "touched_correct": 47,
+      "damage_on_correct": 2,
+      "locked": {
+        "rfi_tc": {
+          "obs_layer": 12,
+          "inj_layer": 8,
+          "alpha": 2.0,
+          "threshold": 0.4,
+          "val_net": 4,
+          "router_val_auc": 0.7170698924731183,
+          "dir_norm": 2.151,
+          "n_ref": 288,
+          "n_err_train": 436
+        },
+        "ca_tc": {
+          "obs_layer": 20,
+          "inj_layer": 18,
+          "alpha": 2.0,
+          "threshold": 0.4,
+          "val_net": 39,
+          "router_val_auc": 0.9368506493506493,
+          "dir_norm": 17.369,
+          "n_ref": 66,
+          "n_err_train": 359
+        },
+        "ca_direct": {
+          "obs_layer": 20,
+          "inj_layer": 16,
+          "alpha": 6.0,
+          "threshold": 0.4,
+          "val_net": 52,
+          "router_val_auc": 0.9238095238095239,
+          "dir_norm": 10.152,
+          "n_ref": 66,
+          "n_err_train": 325
+        }
+      },
+      "router_auc": {
+        "rfi_tc": 0.7171,
+        "ca_tc": 0.9369,
+        "ca_direct": 0.9238
+      }
+    },
+    {
+      "seed": 456,
+      "n_train": 2556,
+      "n_val": 548,
+      "n_test": 548,
+      "base_acc": 0.43796,
+      "sakiko_acc": 0.6168,
+      "delta_acc": 0.17884,
+      "fixed": 120,
+      "broke": 22,
+      "net": 98,
+      "three_before": 240,
+      "three_after": 104,
+      "nt_before": {
+        "rfi_tc": 93,
+        "ca_tc": 77,
+        "ca_direct": 70
+      },
+      "nt_after": {
+        "rfi_tc": 44,
+        "ca_tc": 19,
+        "ca_direct": 41
+      },
+      "chan_fixed": {
+        "rfi_tc": 46,
+        "ca_tc": 18,
+        "ca_direct": 56
+      },
+      "routed": {
+        "ca_direct": 67,
+        "ca_tc": 50,
+        "rfi_tc": 96
+      },
+      "n_touched": 213,
+      "touched_correct": 31,
+      "damage_on_correct": 22,
+      "locked": {
+        "rfi_tc": {
+          "obs_layer": 20,
+          "inj_layer": 18,
+          "alpha": 2.0,
+          "threshold": 0.7,
+          "val_net": 19,
+          "router_val_auc": 0.711111111111111,
+          "dir_norm": 11.92,
+          "n_ref": 269,
+          "n_err_train": 436
+        },
+        "ca_tc": {
+          "obs_layer": 16,
+          "inj_layer": 12,
+          "alpha": 6.0,
+          "threshold": 0.8,
+          "val_net": 15,
+          "router_val_auc": 0.9603896103896103,
+          "dir_norm": 5.8,
+          "n_ref": 70,
+          "n_err_train": 359
+        },
+        "ca_direct": {
+          "obs_layer": 20,
+          "inj_layer": 16,
+          "alpha": 4.0,
+          "threshold": 0.4,
+          "val_net": 51,
+          "router_val_auc": 0.9378571428571428,
+          "dir_norm": 11.045,
+          "n_ref": 70,
+          "n_err_train": 325
+        }
+      },
+      "router_auc": {
+        "rfi_tc": 0.7111,
+        "ca_tc": 0.9604,
+        "ca_direct": 0.9379
+      }
+    },
+    {
+      "seed": 789,
+      "n_train": 2556,
+      "n_val": 548,
+      "n_test": 548,
+      "base_acc": 0.43796,
+      "sakiko_acc": 0.6642,
+      "delta_acc": 0.22624,
+      "fixed": 142,
+      "broke": 18,
+      "net": 124,
+      "three_before": 240,
+      "three_after": 79,
+      "nt_before": {
+        "rfi_tc": 93,
+        "ca_tc": 77,
+        "ca_direct": 70
+      },
+      "nt_after": {
+        "rfi_tc": 42,
+        "ca_tc": 15,
+        "ca_direct": 22
+      },
+      "chan_fixed": {
+        "rfi_tc": 49,
+        "ca_tc": 41,
+        "ca_direct": 52
+      },
+      "routed": {
+        "ca_tc": 54,
+        "ca_direct": 57,
+        "rfi_tc": 97
+      },
+      "n_touched": 208,
+      "touched_correct": 28,
+      "damage_on_correct": 18,
+      "locked": {
+        "rfi_tc": {
+          "obs_layer": 20,
+          "inj_layer": 18,
+          "alpha": 2.0,
+          "threshold": 0.7,
+          "val_net": 28,
+          "router_val_auc": 0.768301971326165,
+          "dir_norm": 12.687,
+          "n_ref": 283,
+          "n_err_train": 436
+        },
+        "ca_tc": {
+          "obs_layer": 20,
+          "inj_layer": 16,
+          "alpha": 4.0,
+          "threshold": 0.4,
+          "val_net": 48,
+          "router_val_auc": 0.9639069264069264,
+          "dir_norm": 16.149,
+          "n_ref": 73,
+          "n_err_train": 359
+        },
+        "ca_direct": {
+          "obs_layer": 20,
+          "inj_layer": 16,
+          "alpha": 6.0,
+          "threshold": 0.4,
+          "val_net": 54,
+          "router_val_auc": 0.929107142857143,
+          "dir_norm": 9.448,
+          "n_ref": 73,
+          "n_err_train": 325
+        }
+      },
+      "router_auc": {
+        "rfi_tc": 0.7683,
+        "ca_tc": 0.9639,
+        "ca_direct": 0.9291
+      }
+    },
+    {
+      "seed": 2024,
+      "n_train": 2556,
+      "n_val": 548,
+      "n_test": 548,
+      "base_acc": 0.43796,
+      "sakiko_acc": 0.6022,
+      "delta_acc": 0.16424,
+      "fixed": 109,
+      "broke": 19,
+      "net": 90,
+      "three_before": 240,
+      "three_after": 112,
+      "nt_before": {
+        "rfi_tc": 93,
+        "ca_tc": 77,
+        "ca_direct": 70
+      },
+      "nt_after": {
+        "rfi_tc": 57,
+        "ca_tc": 17,
+        "ca_direct": 38
+      },
+      "chan_fixed": {
+        "rfi_tc": 36,
+        "ca_tc": 17,
+        "ca_direct": 56
+      },
+      "routed": {
+        "ca_tc": 49,
+        "rfi_tc": 81,
+        "ca_direct": 66
+      },
+      "n_touched": 196,
+      "touched_correct": 26,
+      "damage_on_correct": 19,
+      "locked": {
+        "rfi_tc": {
+          "obs_layer": 20,
+          "inj_layer": 18,
+          "alpha": 2.0,
+          "threshold": 0.8,
+          "val_net": 26,
+          "router_val_auc": 0.7214605734767027,
+          "dir_norm": 12.153,
+          "n_ref": 276,
+          "n_err_train": 436
+        },
+        "ca_tc": {
+          "obs_layer": 16,
+          "inj_layer": 12,
+          "alpha": 6.0,
+          "threshold": 0.8,
+          "val_net": 13,
+          "router_val_auc": 0.9420454545454545,
+          "dir_norm": 6.364,
+          "n_ref": 69,
+          "n_err_train": 359
+        },
+        "ca_direct": {
+          "obs_layer": 20,
+          "inj_layer": 16,
+          "alpha": 6.0,
+          "threshold": 0.4,
+          "val_net": 55,
+          "router_val_auc": 0.9521428571428571,
+          "dir_norm": 9.868,
+          "n_ref": 69,
+          "n_err_train": 325
+        }
+      },
+      "router_auc": {
+        "rfi_tc": 0.7215,
+        "ca_tc": 0.942,
+        "ca_direct": 0.9521
+      }
+    }
+  ]
+}

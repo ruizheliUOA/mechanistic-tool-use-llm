@@ -1,6 +1,0 @@
-model,family_generation,parameter_scale,revision,local_available,VRAM_feasible,interface_compatible,historical_usage,formal_usage,eligible_for_exploration,reason
-google/gemma-2-9b-it,Gemma 2,9B,11c9b309abf73637e4b6f9a3fa1e92e615547819,YES — /root/autodl-tmp/models/gemma-2-9b-it-11c9b309 (18GB, 4/4 safetensors, SHA256 manifest),YES bf16 ~18.5GB < 24GB VRAM,YES — native 4-mode scored readout validated,"W2C baseline, channel discovery, DEV dose trajectory, SEALED formal",GEMMA_FORMAL_DECLINE 8/10 (conditions 3 and 6),ELIGIBLE,"present and complete; 42 layers; C0 model"
-google/gemma-2-2b-it,Gemma 2,2B,unpinned,NO,YES ~5.2GB,likely — same tokenizer/chat template family,none,none,BLOCKED,"not downloaded; ~5.2GB would fit but panel cannot be frozen on one feasible model"
-google/gemma-2-27b-it,Gemma 2,27B,unpinned,NO,NO — ~54GB bf16 exceeds 24GB VRAM,n/a,none,none,INELIGIBLE,VRAM infeasible without quantisation; quantisation changes the readout and is out of protocol
-google/gemma-3-4b-it,Gemma 3,4B,unpinned,NO,YES ~9GB,UNVERIFIED — multimodal architecture; text-only path needs interface audit,none,none,BLOCKED,"not downloaded; interface compatibility unverified"
-google/gemma-3-12b-it,Gemma 3,12B,unpinned,NO,YES ~24GB — marginal,UNVERIFIED,none,none,BLOCKED,"not downloaded; ~24GB is at the VRAM ceiling with no headroom for activation capture"

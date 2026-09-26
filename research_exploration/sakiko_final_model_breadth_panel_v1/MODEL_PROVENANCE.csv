@@ -1,4 +1,0 @@
-slot,repo_id,role,upstream_revision,weights_gb,n_shards,gated,weights_obtained,weight_hashes,metadata_obtained,prior_sakiko_exposure,this_checkpoint_previously_tested
-MODEL_G,google/gemma-2-9b-it,primary cross-family replication,11c9b309abf73637e4b6f9a3fa1e92e615547819,18.48,4,manual,NO,NOT_OBTAINED,YES - ACCESS PASS; config retrieved; weights blocked on bandwidth only,family used at Gemma-2-2B under earlier non-modern protocol,NO
-MODEL_G_FALLBACK,google/gemma-7b-it,hardware-triggered fallback only - NOT AUTHORISED,9c5798d27f58,17.08,4,manual,NO,NOT_OBTAINED,not re-tested; earlier 401 was confounded by the same HF_HOME token-path error,none,NO
-MODEL_Q,Qwen/Qwen3.5-9B,secondary cross-generation / architecture stress,c20223623576,19.31,4,none,NO,NOT_OBTAINED,YES - config+tokenizer only 4.22 MB,none - cache dir was empty stub with 0 blobs,NO

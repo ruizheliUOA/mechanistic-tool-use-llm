@@ -1,0 +1,73 @@
+{
+  "file": "DIFFMEAN_DIRECTIONS.safetensors",
+  "file_sha256": "e47e07b7c16d2eedc01cf6537dc6c426152cd5cb158bb6cc60f82fe4faaa9b29",
+  "note": "No PCA, LDA, CAA variant, low-rank or nonlinear direction was computed.",
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "L21_diffmean_committed": {
+        "dtype": "float32",
+        "formula": "unit(mean(correct gold reference) - mean(gold->source error))",
+        "layer": 21,
+        "n_error": 174,
+        "n_reference": 68,
+        "population": "TRAIN only",
+        "raw_norm": 2.480331160578185,
+        "sha256": "eabf476d5514ec13dbc997bc2a91fa79c51480e3aca29f767ff0b7356466abe0",
+        "shape": [
+          2560
+        ],
+        "sign_convention": "positive intended goldward",
+        "unit_norm": 1.0000000021592428
+      },
+      "L26_diffmean_frozen": {
+        "dtype": "float32",
+        "formula": "unit(mean(correct gold reference) - mean(gold->source error))",
+        "layer": 26,
+        "n_error": 174,
+        "n_reference": 68,
+        "population": "TRAIN only",
+        "raw_norm": 5.703530383371771,
+        "sha256": "24ae41752b9e90b3397e8c86c412c9be59e4d07ad50e25629037ae1e2ecc25ac",
+        "shape": [
+          2560
+        ],
+        "sign_convention": "positive intended goldward",
+        "unit_norm": 0.9999999990564574
+      }
+    },
+    "cannot_answer__to__tool_call": {
+      "L21_diffmean_committed": {
+        "dtype": "float32",
+        "formula": "unit(mean(correct gold reference) - mean(gold->source error))",
+        "layer": 21,
+        "n_error": 436,
+        "n_reference": 68,
+        "population": "TRAIN only",
+        "raw_norm": 5.61628916353248,
+        "sha256": "643d73f298de031bea84e53a902b58c173f5ebb043bd9dec37cb96e62e4f2a21",
+        "shape": [
+          2560
+        ],
+        "sign_convention": "positive intended goldward",
+        "unit_norm": 0.9999999996815148
+      },
+      "L26_diffmean_frozen": {
+        "dtype": "float32",
+        "formula": "unit(mean(correct gold reference) - mean(gold->source error))",
+        "layer": 26,
+        "n_error": 436,
+        "n_reference": 68,
+        "population": "TRAIN only",
+        "raw_norm": 8.576832057984499,
+        "sha256": "58d6d6f9de5e8d2078b257e1e6449701122734ab1994f38b9fc136814457e7f1",
+        "shape": [
+          2560
+        ],
+        "sign_convention": "positive intended goldward",
+        "unit_norm": 0.9999999998101607
+      }
+    }
+  },
+  "role": "prespecified comparators; may not modify the primary direction",
+  "substituted_estimators": []
+}

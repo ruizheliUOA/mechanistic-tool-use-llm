@@ -1,69 +1,74 @@
-# Reproducibility and inspection
+# Reproducibility
 
-This artifact preserves results; it does not authorize another sealed experiment.
-The checks below read existing bytes and never load a model, contact a service,
-rewrite a protocol, or generate a new formal verdict.
+## 1. Inspect the preserved results
 
-## Runnable checks
-
-Python 3.10+, from the artifact root; no dependency installation:
+From the repository root, with Python 3.10+:
 
 ```sh
 python3 tools/verify_artifact.py
-python3 final_evidence/tier_check.py
 ```
 
-Redirect output to a separate audit directory if desired. To check a specific file:
+No dependencies need installing. Expected output includes
+`AVAILABLE_EVIDENCE_CHECKS_PASSED`; this applies to the stated checks, not to
+missing historical inputs or an assertion that all historical hashes match.
+A missing file, changed byte or LFS pointer causes a nonzero exit.
+
+| Setting | Real arm | Exits / gold / other wrong | Exposed correct / broken | Whole-arm net |
+|---|---|---|---|---|
+| Qwen3-8B | `d_grad` | 52 / 38 / 14 | 6 / 0 | +40 |
+| Qwen3-4B | `real_d_grad` | 64 / 37 / 27 | 50 / 1 | +39 |
+| Gemma-2-9B | `real_d_grad` | 27 / 17 / 10 | 11 / 1 | +16 |
+| Phi-3.5, historical seed 42 | archived locked run | 153 / 107 / 46 | 93 / 52 | +55 |
+
+The three sealed verdicts remain success, decline, decline. The checker reads
+frozen intervals rather than regenerating them. Original rows, thresholds, seeds,
+doses, labels and splits are not changed by packaging.
+
+## 2. Understand file hashes and locations
+
+`manifests/release.json` covers every delivered file except itself.
+`manifests/payloads.json` records original LFS payload hashes/sizes, all verified.
+`manifests/retained_artifacts.json` distinguishes byte-identical files from the four
+Phi usage-docstring derivatives. Four further Qwen3-4B files have separately named
+anonymous derivatives that replace a private session/cache path only; see
+`manifests/anonymous_derivatives.json`. `manifests/paths.json` resolves the old relative
+paths referenced inside preserved scripts/manifests to this curated layout.
+
+Original frozen manifests are unchanged. They describe their original packages,
+including administrative files intentionally outside this data-focused selection.
+Use the path map for retained files. An absent historical reference is not treated
+as verified; old self/cross-hash discrepancies remain in `docs/limitations.md`.
+
+## 3. Inspect or prepare the experiment code
+
+The final Qwen3-8B executed runner is `scripts/qwen3_stage2_formal_v4.py`, as stated
+in the frozen V4 implementation record. Older superseded formal runners are not
+advertised as final code. Qwen3-4B's development modules and Phi's locked-evaluation
+modules were recovered from existing Git history, not recreated from outcomes.
+
+For an independent historical-layout workspace, outside this checkout:
 
 ```sh
-python3 tools/verify_artifact.py --require-payload final/results/qwen3_stage2_formal/QWEN3_STAGE2_FORMAL_RECORDS.jsonl
+python3 tools/prepare_legacy_layout.py --out /path/to/new-empty-workspace
 ```
 
-A missing file or LFS pointer produces a nonzero exit. A pointer is never interpreted
-as zero observations. The release manifest covers all delivered files except itself;
-it verifies delivered bytes, not every historical hash assertion. Original
-inconsistencies are reported separately in `INTEGRITY_FINDINGS.md`.
+This optional command copies retained files to their original relative locations.
+It refuses an existing destination and performs no inference, download, installation
+or Git operation. It restores paths, not missing inputs or a historic machine.
 
-## Available row-level checks
+Experiment runners retain their frozen environment/path assumptions. They require
+benchmark inputs and licensed model weights, and some can write files even with
+`--gate-only` or at import time. Do not import arbitrary runners as integrity tests.
+Formal one-shot runs must not be repeated to inspect this artifact.
 
-| Setting | Records | Directly reconstructed counts |
-|---|---|---|
-| Qwen3-8B sealed | 6,372 arm records | `d_grad`: 72 routed errors, 52 exits, 38 gold, 14 other wrong, 6 exposed correct, 0 broken, 40 fixed, net +40. The 87-error channel denominator is recoverable from the arm-baseline union. |
-| Qwen3-4B sealed | 14,404 forward-arm records, separate baseline and comparator records | `real_d_grad`: 118 routed errors, 64 exits, 37 gold, 27 other wrong, 50 exposed correct, 1 broken, 40 fixed, net +39. Bundled baseline subset: 452 rows, 186 correct; population denominator 214 is preserved from the summary. |
-| Gemma sealed | 7,731 arm records, 548 baseline rows | `real_d_grad`: 96 routed errors, 27 exits, 17 gold, 10 other wrong, 11 exposed correct, 1 broken, net +16. Full baseline: 223 correct, 112 channel errors. Frozen target-gain denominator remains 96. |
-| Phi-3.5 historical, seed 42 | 548 rows | 107 fixed, 52 broken, net +55; exposed-correct denominator 93, using archived firing rule `route != 'none'`. |
+## 4. External inputs and limits
 
-All three sealed settings have zero controls and 59 random directions. The helper
-checks zero-arm predictions and scores, random count, and whether random target-gain
-numerators reach the real numerator. It compares existing intervals and verdicts
-to the index. It does not rerun bootstrap selection or substitute intervals.
+[docs/data_and_models.md](docs/data_and_models.md) gives official sources, known
+revisions, preprocessing and environment records. `requirements.txt` is an optional
+import inventory, not a universal reproduction lock. No GPU runtime was recreated.
 
-**Limits:** Complete 548-row baselines are not separately bundled for Qwen3-8B or
-Qwen3-4B. Population-correct denominators 211 and 214 are preserved summary
-values, not complete baseline recounts here. Its exposed denominator 6 and zero breaks are directly
-checkable. Missing historical destination outcomes cannot be reconstructed from
-Fixed/Broke/Net. CPU checks do not validate model weights or the original GPU runtime.
-
-## Command classes
-
-| Component | Prerequisites and effect |
-|---|---|
-| `tools/verify_artifact.py` | Read-only standard-library inspection of bundled bytes. |
-| `final_evidence/tier_check.py` | Read-only standard-library check of the index mapping. |
-| `figures_final/_panels.py:load_all()` | Optional figure-source consistency check; needs NumPy and Matplotlib. No figure-writing function is needed. |
-| Dataset conversion examples | External inputs required; run in a separate staging copy. New serialization is not proof of historical byte identity. |
-| `scripts/qwen3_stage2_formal.py --gate-only` | Historical command: requires input arrays/model files and writes gate/retry ledgers. Not a safe quick-start check. |
-| Formal runners with `--run-formal` | Historical provenance only. Require exact inputs, runtime, paths, and one-shot authorization state. Do not run to inspect this artifact. |
-| Arbitrary script imports | Not a supported safety check: some create output directories at import time. Syntax is checked without importing them. |
-
-The optional figure check requires an isolated venv with `numpy` and `matplotlib`.
-Set `MPLCONFIGDIR` and `PYTHONPYCACHEPREFIX` outside the checkout and invoke only
-`_panels.load_all()`. The experiment dependencies in `requirements.txt` are an
-inventory, not a universal environment lock. Package-local frozen records take
-precedence: Qwen3-8B and Gemma formal records specify Transformers 4.51.0,
-PyTorch 2.1.2+cu121, CUDA 12.1; older ACEBench/Llama records may specify 4.49.0.
-Versions absent from the original record remain unknown.
-
-No sample, label, split, seed, direction, dose, threshold, statistical rule,
-preregistration, or formal verdict was changed. Unresolved original-record
-inconsistencies prevent a blanket reproducibility or release PASS.
+Qwen3-8B/4B full-population denominators 211/214 are preserved in summaries; their
+complete 548-row baseline exports are not separately included. The Qwen3-4B
+baseline export intentionally covers 452 rows entering at least one arm. Gemma's
+full baseline has 112 channel errors, while its frozen target-gain uses 96 routed
+errors. Missing historical placebo destinations cannot be inferred from net gains.

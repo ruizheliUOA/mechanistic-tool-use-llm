@@ -1,0 +1,190 @@
+{
+  "42": {
+    "real": {
+      "fixed": 88,
+      "broke": 25,
+      "net": 63,
+      "n_touched": 189
+    },
+    "reverse": {
+      "fixed": 13,
+      "broke": 15,
+      "net": -2,
+      "n_touched": 189
+    },
+    "ungated": {
+      "fixed": 115,
+      "broke": 37,
+      "net": 78,
+      "n_touched": 280
+    },
+    "random": {
+      "n": 10,
+      "nets": [
+        20,
+        42,
+        29,
+        17,
+        16,
+        31,
+        0,
+        3,
+        17,
+        21
+      ],
+      "limited": false,
+      "mean": 19.6,
+      "std": 11.87,
+      "max": 42,
+      "min": 0,
+      "real_net": 63,
+      "real_ge_all": true,
+      "n_random_ge_real": 0
+    }
+  },
+  "123": {
+    "real": {
+      "fixed": 87,
+      "broke": 2,
+      "net": 85,
+      "n_touched": 223
+    },
+    "reverse": {
+      "fixed": 12,
+      "broke": 3,
+      "net": 9,
+      "n_touched": 223
+    },
+    "ungated": {
+      "fixed": 88,
+      "broke": 7,
+      "net": 81,
+      "n_touched": 308
+    },
+    "random": {
+      "n": 10,
+      "nets": [
+        22,
+        26,
+        25,
+        21,
+        32,
+        23,
+        10,
+        9,
+        16,
+        12
+      ],
+      "limited": false,
+      "mean": 19.6,
+      "std": 7.2,
+      "max": 32,
+      "min": 9,
+      "real_net": 85,
+      "real_ge_all": true,
+      "n_random_ge_real": 0
+    }
+  },
+  "456": {
+    "real": {
+      "fixed": 120,
+      "broke": 22,
+      "net": 98,
+      "n_touched": 213
+    },
+    "reverse": {
+      "fixed": 10,
+      "broke": 0,
+      "net": 10,
+      "n_touched": 213
+    },
+    "ungated": {
+      "fixed": 124,
+      "broke": 27,
+      "net": 97,
+      "n_touched": 291
+    },
+    "random": {
+      "n": 1,
+      "nets": [
+        37
+      ],
+      "limited": true,
+      "mean": 37.0,
+      "std": 0.0,
+      "max": 37,
+      "min": 37,
+      "real_net": 98,
+      "real_ge_all": true,
+      "n_random_ge_real": 0
+    }
+  },
+  "789": {
+    "real": {
+      "fixed": 142,
+      "broke": 18,
+      "net": 124,
+      "n_touched": 208
+    },
+    "reverse": {
+      "fixed": 25,
+      "broke": 4,
+      "net": 21,
+      "n_touched": 208
+    },
+    "ungated": {
+      "fixed": 153,
+      "broke": 19,
+      "net": 134,
+      "n_touched": 280
+    },
+    "random": {
+      "n": 1,
+      "nets": [
+        30
+      ],
+      "limited": true,
+      "mean": 30.0,
+      "std": 0.0,
+      "max": 30,
+      "min": 30,
+      "real_net": 124,
+      "real_ge_all": true,
+      "n_random_ge_real": 0
+    }
+  },
+  "2024": {
+    "real": {
+      "fixed": 109,
+      "broke": 19,
+      "net": 90,
+      "n_touched": 196
+    },
+    "reverse": {
+      "fixed": 17,
+      "broke": 0,
+      "net": 17,
+      "n_touched": 196
+    },
+    "ungated": {
+      "fixed": 103,
+      "broke": 27,
+      "net": 76,
+      "n_touched": 273
+    },
+    "random": {
+      "n": 1,
+      "nets": [
+        33
+      ],
+      "limited": true,
+      "mean": 33.0,
+      "std": 0.0,
+      "max": 33,
+      "min": 33,
+      "real_net": 90,
+      "real_ge_all": true,
+      "n_random_ge_real": 0
+    }
+  }
+}

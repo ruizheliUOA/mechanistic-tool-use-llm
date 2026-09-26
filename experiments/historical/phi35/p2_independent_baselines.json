@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "script": "p2_independent_baselines.py",
+    "date": "2026-03-31 20:22:32",
+    "test_n": 548,
+    "train_n": 2556,
+    "global_basis": {
+      "n_err": 1154,
+      "n_ref": 1233
+    },
+    "definitions": {
+      "GLOBAL_STEERING_INDEP": "single global correction direction + global binary router",
+      "UNGATED_TOP1_INDEP": "threshold=0 + no TARGET_GATE; always apply top1 router channel"
+    }
+  },
+  "REAL_LOCKED": {
+    "accuracy": 59.49,
+    "delta_acc": 11.31,
+    "macro_f1": 47.05,
+    "delta_f1": 13.24,
+    "fixed": 106,
+    "broke": 44,
+    "net": 62,
+    "channel_stats": {
+      "rfi_tc": {
+        "n_routed": 113,
+        "fixed": 58,
+        "broke": 32,
+        "net": 26,
+        "precision": 51.3
+      },
+      "ca_tc": {
+        "n_routed": 70,
+        "fixed": 18,
+        "broke": 5,
+        "net": 13,
+        "precision": 25.7
+      },
+      "ca_direct": {
+        "n_routed": 60,
+        "fixed": 30,
+        "broke": 7,
+        "net": 23,
+        "precision": 50.0
+      }
+    },
+    "baseline_accuracy": 48.18
+  },
+  "GLOBAL_STEERING_INDEP": {
+    "accuracy": 48.18,
+    "delta_acc": 0.0,
+    "macro_f1": 32.85,
+    "delta_f1": -0.95,
+    "fixed": 27,
+    "broke": 27,
+    "net": 0,
+    "channel_stats": {},
+    "baseline_accuracy": 48.18
+  },
+  "UNGATED_TOP1_INDEP": {
+    "accuracy": 42.34,
+    "delta_acc": -5.84,
+    "macro_f1": 32.69,
+    "delta_f1": -1.11,
+    "fixed": 143,
+    "broke": 175,
+    "net": -32,
+    "channel_stats": {},
+    "baseline_accuracy": 48.18
+  }
+}

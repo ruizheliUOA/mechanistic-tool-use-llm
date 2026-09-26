@@ -1,0 +1,19 @@
+{
+  "external": [
+    {
+      "bytes": 31785088,
+      "file": "QWEN3_4B_ACT_L21.npy",
+      "moved_to": "/path/to/experiment-cache/QWEN3_4B_ACT_L21.npy",
+      "sha256": "18b1c5cc43743bf397aef9ccfba2f5828292c0c05f4d9fd5195c8a4fcffd7922",
+      "why": "31 MB derived activation cache; regenerable by capture_activations.py"
+    },
+    {
+      "bytes": 31785088,
+      "file": "QWEN3_4B_ACT_L26.npy",
+      "moved_to": "/path/to/experiment-cache/QWEN3_4B_ACT_L26.npy",
+      "sha256": "38487e7472552aa81c6a9a2b2a2c5dd3b11af9f7744f9bc8108405ba189dd9cd",
+      "why": "31 MB derived activation cache; regenerable by capture_activations.py"
+    }
+  ],
+  "note": "Derived activation caches are kept outside Git, like the benchmark payload and model weights. Router and direction .npz files are small SAKIKO-derived parameters and are retained."
+}

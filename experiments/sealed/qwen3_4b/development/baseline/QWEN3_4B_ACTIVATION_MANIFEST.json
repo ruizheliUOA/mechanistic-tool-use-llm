@@ -1,0 +1,22 @@
+{
+  "L_inj": 21,
+  "L_obs": 26,
+  "attention_guard": {
+    "below_threshold_path": "unmodified upstream eager_attention_forward",
+    "head_chunk": 8,
+    "installed": true,
+    "scientific_definitions_changed": false,
+    "threshold_tokens": 4096
+  },
+  "elapsed_s": 375.9,
+  "hidden": 2560,
+  "readout_validity_pilot": {
+    "atol": 1e-05,
+    "max_score_deviation": 0.0,
+    "prediction_and_runner_up_identical": true,
+    "repetitions": 2,
+    "rows": 8,
+    "within_atol": true
+  },
+  "rows": 3104
+}

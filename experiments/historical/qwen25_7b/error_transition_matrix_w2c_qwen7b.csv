@@ -1,0 +1,13 @@
+gold,pred,count,is_error,is_named_channel,channel_id,count_train,count_val,count_test,source_file
+tool_call,tool_call,1109,0,0,-,0,0,0,qwen25_7b_baseline_details.jsonl
+tool_call,direct,53,1,0,tool_call__direct,38,8,7,qwen25_7b_baseline_details.jsonl
+tool_call,request_for_info,133,1,0,tool_call__request_for_info,90,21,22,qwen25_7b_baseline_details.jsonl
+tool_call,cannot_answer,0,1,0,tool_call__cannot_answer,0,0,0,qwen25_7b_baseline_details.jsonl
+request_for_info,tool_call,622,1,1,rfi_tc,432,91,99,qwen25_7b_baseline_details.jsonl
+request_for_info,direct,42,1,0,request_for_info__direct,30,5,7,qwen25_7b_baseline_details.jsonl
+request_for_info,request_for_info,393,0,0,-,0,0,0,qwen25_7b_baseline_details.jsonl
+request_for_info,cannot_answer,5,1,0,request_for_info__cannot_answer,4,0,1,qwen25_7b_baseline_details.jsonl
+cannot_answer,tool_call,513,1,1,ca_tc,352,78,83,qwen25_7b_baseline_details.jsonl
+cannot_answer,direct,465,1,1,ca_direct,332,62,71,qwen25_7b_baseline_details.jsonl
+cannot_answer,request_for_info,219,1,0,cannot_answer__request_for_info,151,36,32,qwen25_7b_baseline_details.jsonl
+cannot_answer,cannot_answer,98,0,0,-,0,0,0,qwen25_7b_baseline_details.jsonl

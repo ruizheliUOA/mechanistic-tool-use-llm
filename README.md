@@ -1,66 +1,50 @@
-# SAKIKO: code and preserved research evidence
+# SAKIKO experimental artifact
 
-Companion artifact for *When Does Correction Become Repair?* It contains code,
-frozen protocols, outcome records, summaries, and the evidence audit trail.
-Historical analyses and prospective sealed evaluations retain their original scope.
-Manuscript drafts and private development history are outside this artifact.
+Experimental data, frozen configurations and the code for *When Does Correction
+Become Repair?* Start with the three sealed result packages below. Historical
+experiments and settings stopped at screening are separated from sealed results.
 
-**Candidate status:** preserved evidence and runnable inspection checks, with known
-historical hash and availability limitations in [INTEGRITY_FINDINGS.md](INTEGRITY_FINDINGS.md).
-The Gemma pre-execution chain is reconciled in [PROVENANCE_RECONCILIATION.md](PROVENANCE_RECONCILIATION.md).
-A private source repository is not a verified anonymous mirror or a blanket full
-reproducibility PASS. See [AUDIT_STATUS.md](AUDIT_STATUS.md).
+## Data layout
 
-## Shortest reading path
+| Directory | Contents |
+|---|---|
+| [experiments/sealed/qwen3_8b/](experiments/sealed/qwen3_8b/) | Development split/dose, preregistration, 6,372 formal arm records, controls, result summary; **FORMAL_CONFIRMATORY_SUCCESS**. |
+| [experiments/sealed/qwen3_4b/](experiments/sealed/qwen3_4b/) | Development configuration/directions, 14,404 formal arm records, per-arm exports, destination/collateral results; **DECLINE**. |
+| [experiments/sealed/gemma_2_9b/](experiments/sealed/gemma_2_9b/) | Development data/arrays, 548-row formal baseline, 7,731 arm records, result and principal verdict; **DECLINE**. |
+| [experiments/historical/](experiments/historical/) | Phi-3.5, Qwen2.5-7B, Mistral, Llama and MetaTool locked results/control tables. These are not additional prospective licences. |
+| [experiments/screening/](experiments/screening/) | ACEBench readout/support data and Qwen3.5 screening results/stop decision. |
+| [experiments/analysis/](experiments/analysis/) | Statistical sensitivity, preservation and secondary-analysis tables. |
+| [experiments/paper_evidence.csv](experiments/paper_evidence.csv) | Existing numerical index; individual frozen results and principal verdicts take precedence. |
+| [scripts/](scripts/) | Experiment runners, preprocessing, analysis and their local dependencies. See [code map](scripts/README.md). |
+| [manifests/](manifests/) | Delivered-byte hashes, original-to-current path map, payload availability and preserved pre-execution provenance. |
 
-1. [ARTIFACT_INDEX.md](ARTIFACT_INDEX.md): claims, protocols, evidence, and scripts.
-2. [REPRODUCIBILITY.md](REPRODUCIBILITY.md): safe checks and their actual limits.
-3. [LFS_MANIFEST.md](LFS_MANIFEST.md): payloads and unavailable inputs.
-4. [final_evidence/FINAL_PAPER_EVIDENCE.csv](final_evidence/FINAL_PAPER_EVIDENCE.csv)
-   and [EVIDENCE_CORRECTIONS.md](final_evidence/EVIDENCE_CORRECTIONS.md): the index
-   and appended corrections. Older audit prose can predate these corrections.
+## Verify without running experiments
 
-## Verify the bundled evidence
-
-Python 3.10+ is sufficient. Run from the artifact root; no GPU, model, account, or
-third-party package is needed:
+Python 3.10 or newer; no third-party packages or GPU required:
 
 ```sh
 python3 tools/verify_artifact.py
-python3 final_evidence/tier_check.py
 ```
 
-The first checks delivered files and hashes, recovered payloads, Python syntax,
-destination counts, zero controls, random-arm counts, selected denominators, and
-preserved formal verdicts. Missing files and LFS pointers cause explicit failure.
-The second checks the existing claim-to-evidence tier mapping; it does not establish
-the truth or completeness of every claim.
+The command reads only: file hashes, full payload availability, syntax, destination
+counts, zero controls, 59 random arms per sealed setting, selected denominators,
+frozen intervals and principal verdicts. It does not run a model or alter results.
 
-## Scientific boundaries
+All 40 recovered LFS objects are included as **full bytes**, not pointers. Raw
+benchmark downloads and model weights are acquired separately. See
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md) and [data/model sources](docs/data_and_models.md).
 
-- Qwen3-8B retains `FORMAL_CONFIRMATORY_SUCCESS`; Qwen3-4B and Gemma retain their
-  principal `DECLINE` verdicts. Positive point estimates do not replace the gate.
-- Aggregate net gains +40 and +39 differ from channel gold arrivals 38 and 37.
-- Population collateral and collateral among exposed baseline-correct decisions
-  are separate estimands: Qwen3-8B's recorded 0/211 is not tight 0/6 evidence.
-- Gemma's frozen summary uses 96 routed channel errors; the full baseline contains
-  112. These denominators are not interchangeable.
-- Historical Phi-3.5 results and exploratory work acquire no prospective licence
-  through packaging. No experiment was rerun.
+## Reading the results correctly
 
-## Availability
+- Aggregate net gains +40/+39 are different from channel gold arrivals 38/37.
+- Population collateral and exposed-correct collateral have different denominators.
+  In particular, Qwen3-8B's 0/211 does not establish a tight bound from its 0/6 exposure.
+- Positive point estimates do not override the two frozen DECLINE verdicts.
+- Known old-manifest hash discrepancies and incomplete historical inputs are
+  disclosed in [limitations](docs/limitations.md). A matching release hash does not
+  certify every assertion in an old manifest.
 
-All 40 formerly pointer-only files now contain verified full payloads (87,789,671
-bytes in total). Their original payload OIDs and sizes are recorded in
-[ARTIFACT_AVAILABILITY.json](ARTIFACT_AVAILABILITY.json). Model checkpoints and
-large raw datasets are not bundled. [DATASETS_AND_MODELS.md](DATASETS_AND_MODELS.md)
-records official sources, known revisions, licenses, and reconstruction limits.
-
-Frozen runners retain their original environment assumptions, including some
-historical absolute paths. They are not the quick-start interface. In particular,
-`--gate-only` does not guarantee a read-only operation; see the command classes in
-[REPRODUCIBILITY.md](REPRODUCIBILITY.md).
-
-[ANON_RELEASE_NOTES.md](ANON_RELEASE_NOTES.md) distinguishes byte-preserved evidence,
-operational edits, recovered dependencies, and the separately named anonymous
-derivative. Original frozen hash manifests have not been rewritten.
+This distribution focuses on experiments. Editorial drafts, internal handoffs,
+reviewer simulations, writing audits, obsolete plots and duplicate prose reports
+are not included. Retained scientific data and frozen protocols preserve their
+bytes; the separate path map records the new layout.

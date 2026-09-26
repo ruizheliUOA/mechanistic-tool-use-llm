@@ -1,0 +1,96 @@
+{
+  "amendment": {
+    "equivalence": "BITWISE_EQUIVALENT",
+    "hashes_sha256": "3edaa119ef13a6167d2582673cb618cb33d5b520839d82d3bc92a99e4a4d5330",
+    "loader_correction": "model.eval(); model.config.use_cache=False; for p in model.parameters(): p.requires_grad_(False)",
+    "package": "qwen3_4b_gradient_memory_amendment_v1",
+    "verdict": "QWEN3_4B_STAGE_D_AMENDMENT_READY"
+  },
+  "external_not_committed": {
+    "QWEN3_4B_ACT_L21.npy": "18b1c5cc43743bf397aef9ccfba2f5828292c0c05f4d9fd5195c8a4fcffd7922",
+    "QWEN3_4B_ACT_L26.npy": "38487e7472552aa81c6a9a2b2a2c5dd3b11af9f7744f9bc8108405ba189dd9cd",
+    "QWEN3_4B_DEV_GRADIENTS.safetensors": "4fc8774c35778ac04e07e0f450fd4ad3b0f9465ca62be0a8cbe0eea9acaaa113",
+    "QWEN3_4B_TRAIN_GRADIENTS.safetensors": "e1a4956313dcdaa6cfad977f90bea98bd85b2386224291c10b2bd29dd506b86d",
+    "why": "derived caches and raw gradient tensors; regenerable from the committed runners"
+  },
+  "frozen_constants": {
+    "L_inj": 21,
+    "L_obs": 26,
+    "dev_bootstrap": {
+      "draws": 10000,
+      "seed": 20260801
+    },
+    "dev_random_seeds": [
+      20260811,
+      20260812,
+      20260813,
+      20260814,
+      20260815,
+      20260816,
+      20260817,
+      20260818
+    ],
+    "gate": {
+      "clean_collateral_max": 0.05,
+      "source_exits_min": 10,
+      "target_hit_min": 0.5
+    },
+    "geometry_bootstrap": {
+      "draws": 10000,
+      "seed": 20260731
+    },
+    "hidden": 2560,
+    "q_grid": [
+      0.0,
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "wrong_layer": 26
+  },
+  "frozen_protocol_sources_unmodified": {
+    "final/results/qwen3_stage1_5/QWEN3_STAGE1_5_ADVANCEMENT_GATE.md": "492c332432f1e005d8fb34b817085def1d0e713f952c30e62d7c80814b7a25ad",
+    "final/results/qwen3_stage1_5/QWEN3_STAGE1_5_PROTOCOL.md": "00915aa4a410eafb3c2fb3beb92bc1d9cf12a7d12c8695393184650aaa6b1637",
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_CHANNEL_SELECTION_DISCLOSURE.md": "681097936e3a37edc0a0fb7aaf7200b458677e3fd9b8c577746482b3a036e0e7",
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_ENDPOINT_SPEC.md": "5b5f5bdc199961c461985638f26188af53bd709279140145a2946dea57e47a0f",
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_GATE_SPEC.md": "3c8ea57f8f45d2b8e4033a64cd9f9534f07594ee5f502a24046323efc2df92b9",
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_PREREGISTRATION.json": "5526621b27a150c0733b2ca88d6194057f78ba64f8615b7d147b1cf17ff230ef",
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_RANDOM_MANIFEST.json": "b2c86a1a9cd816daf69304fb2612d879e91d292a9a61ea2d77fb5a1d5040d9a0",
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_VOID_SCHEMA.json": "ee52e392aed6ed0e7105f0d02484f41569337eb2180e0421fc5c25d41240841f",
+    "final/results/qwen3_stage2a_dose/QWEN3_STAGE2A_DOSE_DECLARATION.md": "d011e3a16828fcaa47808d234ef47610a43032d87ccf619d4268b3806ccb1695",
+    "final/results/qwen3_stage2a_v2/QWEN3_STAGE2A_V2_DOSE_SELECTION_RULE.md": "8c691fd49e035f261ab74f63eaaea212ee6d24a3e355cf95559c920857b2191c",
+    "final/results/qwen3_stage2a_v2/QWEN3_STAGE2A_V2_PROTOCOL.md": "25874047b4bf62a3203efdce4a30a5c2d9cb3cb4936b7cf8cfb8dc7c500a5479",
+    "scripts/qwen3_8b_stage0_1.py": "b1830b4be291c1adfe7e843e8de7fdea0ee1e4e1b6c10c25c6fc40465073f4ac",
+    "scripts/qwen3_8b_stage0_1_v2.py": "f9b61395f1fbecd9b01022e03baedf8737f87602af057576837c02b935e80cf0",
+    "scripts/qwen3_stage1_5_gradient_mean.py": "2509073e1e12285b978cdb3ef81565216695c8387898475a6e011ad65833ecff",
+    "scripts/qwen3_stage2a_v2_analyze.py": "5c8dc5b86b0ae8b0ee848d721e2145e5add003f791c0b0b08f34f55ec56f723e",
+    "scripts/qwen3_stage2a_v2_dev_calibration.py": "b76ab74c7adb9d8ec9dba342350051db1a837b4b6e4da50eea884c274c199eee"
+  },
+  "historical_results_modified": false,
+  "inherited_stage_a_c_artifacts": {
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_SPLIT_INDEX.csv": "83a7584aa993d42708d2c718bd9b5ccf209f85b87d60afa2dfc599d2dde392e9",
+    "research_exploration/qwen3_4b_gradient_memory_amendment_v1/HASHES.json": "3edaa119ef13a6167d2582673cb618cb33d5b520839d82d3bc92a99e4a4d5330",
+    "research_exploration/qwen3_4b_w2c_prospective_replication_v1/HASHES.json": "7410f0a22459163b691057163533fbfb9f1c90be00794d9fe2d017859e3ecb53",
+    "research_exploration/qwen3_4b_w2c_prospective_replication_v1/QWEN3_4B_BASELINE_ROWS.jsonl": "fd9fadc9b8d01111a95811ff3c06db54189d91f0f3d35db954383d2c8ee5d9bf",
+    "research_exploration/qwen3_4b_w2c_prospective_replication_v1/ROUTER_AUDIT.csv": "58b08ff566873bd7b05ba600a7e3f98dcf0087f3ce36b7c4a1fe5b3758896280",
+    "research_exploration/qwen3_4b_w2c_prospective_replication_v1/ROUTER_cannot_answer__direct.npz": "b10ff9fb2227f91c8f8d8c35335bb7948f2ecef1c12e4d709957b65bebc45eaa",
+    "research_exploration/qwen3_4b_w2c_prospective_replication_v1/ROUTER_cannot_answer__tool_call.npz": "f45d6b7f7a159d881bbdca69c30b7beac39f2aaecf1bda7c9d2aaa8e361bc1ff"
+  },
+  "package": "research_exploration/qwen3_4b_stage_d_e_v1",
+  "qwen3_5_9b_touched": false,
+  "scientific_definitions_changed": false,
+  "sealed_evaluation_accessed": false,
+  "stage": "D+E, DEV only; formal freeze prepared not executed",
+  "stage_d_e_runners": {
+    "analyze_stage_e.py": "a6a71e2e817f8ee3293c01b510483e19a44bb2c7783c0117765f0618c11a491d",
+    "make_dose_declaration.py": "6798c04b38437028d0f4cbe629c6d7e259f7b1b43ed68fbc7294d7e3e58a57a7",
+    "make_formal_freeze.py": "0c08364d691257d640cba7a094c65f8c3f33750f9269f1c9403a2f31afd85b56",
+    "run_safety_scan.py": "52e246f2f002ed1855602f0c66f26f0652f4cc690698391db291a1e9e1c585e6",
+    "run_stage_d_geometry.py": "9b990b974f8c79d2671eb0a31a57e92ea1a64133916be650ef97531a5e4d6ae8",
+    "run_stage_d_gradients.py": "c395830f4fc6944e801a048f09b26099b3bb264cb3b0e0f50aa1ecfbd8a11a11",
+    "run_stage_e_dev.py": "63e51f030f178779a7283691ecad298366874d24d71b74510f5e561b068bd1f9",
+    "stage_d_e_common.py": "3a37b1bb209e90d9500a07601d60e378d96e82963ad30fe25c5c69aff647f419"
+  }
+}

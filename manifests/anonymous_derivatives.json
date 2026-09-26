@@ -1,0 +1,46 @@
+{
+  "description": "Clearly named derivatives of preserved source files; original frozen hashes do not validate these derivatives. Only listed private runtime paths changed.",
+  "files": [
+    {
+      "original_relative_path": "research_exploration/qwen3_4b_stage_d_e_v1/_STAGE_D_train_SUMMARY.json",
+      "derived_path": "experiments/sealed/qwen3_4b/development/stage_d_e/_STAGE_D_train_SUMMARY.anonymised.json",
+      "original_sha256": "fa9e3c8ca8341b95a83d0bf17e702d22d902b184464227c4c772330dd4325001",
+      "derived_sha256": "b08e634ba3c5b105cf86c36c04018e26775531635888c90dc2d1d2277ca2184c",
+      "changed_fields": [
+        "gradients_file"
+      ],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "original_relative_path": "research_exploration/qwen3_4b_stage_d_e_v1/_STAGE_D_dev_SUMMARY.json",
+      "derived_path": "experiments/sealed/qwen3_4b/development/stage_d_e/_STAGE_D_dev_SUMMARY.anonymised.json",
+      "original_sha256": "5af26eca2c740eca384cc907cad2f2509af8d74bacaca5490a4a7caf5a8c8c2e",
+      "derived_sha256": "a0d0cba09f55072bb8313cb1c0691003d5d7114c5fe8e6b64d834b169355e62c",
+      "changed_fields": [
+        "gradients_file"
+      ],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "original_relative_path": "research_exploration/qwen3_4b_w2c_prospective_replication_v1/EXTERNAL_ARTIFACTS.json",
+      "derived_path": "experiments/sealed/qwen3_4b/development/baseline/EXTERNAL_ARTIFACTS.anonymised.json",
+      "original_sha256": "c4a998214a230a3f9575f21b173b5d55afa232255212ef1fef2e8202f4bb4e00",
+      "derived_sha256": "16d92d88d3696341157f11e24a6076a746b8e78631aeab0ce64c7b8c60e8c315",
+      "changed_fields": [
+        "external.0.moved_to",
+        "external.1.moved_to"
+      ],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "original_relative_path": "research_exploration/qwen3_4b_stage_d_e_v1/stage_d_e_common.py",
+      "derived_path": "scripts/qwen3_4b/stage_d_e/stage_d_e_common.anonymised.py",
+      "original_sha256": "3a37b1bb209e90d9500a07601d60e378d96e82963ad30fe25c5c69aff647f419",
+      "derived_sha256": "22261b1c822db0327f42fbd9f38f45c155517980d4a06dfe136a2b37ab40ea98",
+      "changed_fields": [
+        "SCRATCH path literal only; AST otherwise identical"
+      ],
+      "scientific_fields_unchanged": true
+    }
+  ]
+}
