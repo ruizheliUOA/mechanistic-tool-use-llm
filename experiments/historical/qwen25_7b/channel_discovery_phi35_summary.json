@@ -1,0 +1,50 @@
+{
+  "dataset": "w2c_phi35",
+  "model": "Phi-3.5-mini-instruct",
+  "provenance": {
+    "source_files": [
+      "sakiko_v3/results/p0_final_test_eval.json",
+      "trace_db/w2c_phi35_summary.json"
+    ],
+    "recompute_type": "SUMMARY_ONLY",
+    "note": "per-sample Phi labels are LFS pointers / W2C source (read-only)"
+  },
+  "test_baseline_accuracy_pct": 48.18,
+  "test_intervened_accuracy_pct": 58.21,
+  "net_benefit": 55,
+  "discovered_channels": [
+    {
+      "channel_id": "rfi_tc",
+      "gold": "request_for_info",
+      "pred": "tool_call",
+      "count_test": 112,
+      "corrected": 50,
+      "correction_rate": 44.6,
+      "status": "summary_only"
+    },
+    {
+      "channel_id": "ca_tc",
+      "gold": "cannot_answer",
+      "pred": "tool_call",
+      "count_test": 77,
+      "corrected": 30,
+      "correction_rate": 39.0,
+      "status": "summary_only"
+    },
+    {
+      "channel_id": "ca_direct",
+      "gold": "cannot_answer",
+      "pred": "direct",
+      "count_test": 59,
+      "corrected": 20,
+      "correction_rate": 33.9,
+      "status": "summary_only"
+    }
+  ],
+  "dominant_channels": [
+    "rfi_tc",
+    "ca_tc",
+    "ca_direct"
+  ],
+  "note": "Phi confirms the SAME 3 dominant channels as Qwen (rfi_tc, ca_tc, ca_direct), summary-level."
+}

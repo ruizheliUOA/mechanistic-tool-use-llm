@@ -1,0 +1,572 @@
+{
+  "locked": {
+    "rfi_tc": {
+      "method": "diffmean",
+      "obs": 22,
+      "inj": 20,
+      "alpha": 6.0,
+      "thr": 0.6,
+      "dir_norm": 0.723,
+      "val_net": 11,
+      "val_fixed": 19,
+      "val_broke": 8,
+      "val_ch_fixed": 17,
+      "val_touched": 145,
+      "router_val_auc": 0.8776707963012838
+    },
+    "ca_tc": {
+      "method": "diffmean",
+      "obs": 22,
+      "inj": 18,
+      "alpha": 6.0,
+      "thr": 0.8,
+      "dir_norm": 0.794,
+      "val_net": 54,
+      "val_fixed": 57,
+      "val_broke": 3,
+      "val_ch_fixed": 57,
+      "val_touched": 102,
+      "router_val_auc": 0.9635746606334841
+    },
+    "ca_direct": {
+      "method": "pca1",
+      "obs": 22,
+      "inj": 18,
+      "alpha": 6.0,
+      "thr": 0.4,
+      "dir_norm": 29.548,
+      "val_net": 13,
+      "val_fixed": 13,
+      "val_broke": 0,
+      "val_ch_fixed": 13,
+      "val_touched": 40,
+      "router_val_auc": 0.937984496124031
+    }
+  },
+  "arms": {
+    "A_baseline": {
+      "arm": "A_baseline",
+      "acc": 0.42518,
+      "macro_f1_3cls": 0.32262,
+      "fixed": 0,
+      "broke": 0,
+      "net": 0,
+      "nt_before": {
+        "rfi_tc": 145,
+        "ca_tc": 115,
+        "ca_direct": 43
+      },
+      "nt_after": {
+        "rfi_tc": 145,
+        "ca_tc": 115,
+        "ca_direct": 43
+      },
+      "chan_fixed": {
+        "rfi_tc": 0,
+        "ca_tc": 0,
+        "ca_direct": 0
+      },
+      "n_touched": 0,
+      "transition_matrix": {
+        "tool_call": {
+          "tool_call": 192,
+          "direct": 2,
+          "request_for_info": 0,
+          "cannot_answer": 0
+        },
+        "request_for_info": {
+          "tool_call": 145,
+          "direct": 2,
+          "request_for_info": 7,
+          "cannot_answer": 2
+        },
+        "cannot_answer": {
+          "tool_call": 115,
+          "direct": 43,
+          "request_for_info": 6,
+          "cannot_answer": 34
+        }
+      }
+    },
+    "C_rfi_tc": {
+      "arm": "C_rfi_tc",
+      "channel": "rfi_tc",
+      "acc": 0.44708,
+      "macro_f1_3cls": 0.37739,
+      "fixed": 16,
+      "broke": 4,
+      "net": 12,
+      "nt_before": {
+        "rfi_tc": 145,
+        "ca_tc": 115,
+        "ca_direct": 43
+      },
+      "nt_after": {
+        "rfi_tc": 117,
+        "ca_tc": 111,
+        "ca_direct": 43
+      },
+      "chan_fixed": {
+        "rfi_tc": 13,
+        "ca_tc": 3,
+        "ca_direct": 0
+      },
+      "n_touched": 131,
+      "touched_correct": 30,
+      "damage_on_correct": 4,
+      "own_errors_touched": 96,
+      "own_to_gold": 13,
+      "own_to_other_wrong": 15,
+      "destination": [
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "tool_call",
+          "n": 68
+        },
+        {
+          "gold": "tool_call",
+          "from": "tool_call",
+          "to": "tool_call",
+          "n": 26
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "request_for_info",
+          "n": 13
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 10
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 5
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 3
+        },
+        {
+          "gold": "tool_call",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 2
+        },
+        {
+          "gold": "tool_call",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 2
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "tool_call",
+          "n": 1
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "request_for_info",
+          "n": 1
+        }
+      ],
+      "transition_matrix": {
+        "tool_call": {
+          "tool_call": 188,
+          "direct": 4,
+          "request_for_info": 0,
+          "cannot_answer": 2
+        },
+        "request_for_info": {
+          "tool_call": 117,
+          "direct": 7,
+          "request_for_info": 20,
+          "cannot_answer": 12
+        },
+        "cannot_answer": {
+          "tool_call": 111,
+          "direct": 43,
+          "request_for_info": 7,
+          "cannot_answer": 37
+        }
+      }
+    },
+    "C_ca_tc": {
+      "arm": "C_ca_tc",
+      "channel": "ca_tc",
+      "acc": 0.53832,
+      "macro_f1_3cls": 0.47844,
+      "fixed": 64,
+      "broke": 2,
+      "net": 62,
+      "nt_before": {
+        "rfi_tc": 145,
+        "ca_tc": 115,
+        "ca_direct": 43
+      },
+      "nt_after": {
+        "rfi_tc": 142,
+        "ca_tc": 14,
+        "ca_direct": 65
+      },
+      "chan_fixed": {
+        "rfi_tc": 0,
+        "ca_tc": 64,
+        "ca_direct": 0
+      },
+      "n_touched": 106,
+      "touched_correct": 2,
+      "damage_on_correct": 2,
+      "own_errors_touched": 101,
+      "own_to_gold": 64,
+      "own_to_other_wrong": 37,
+      "destination": [
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 64
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 22
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "request_for_info",
+          "n": 15
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 2
+        },
+        {
+          "gold": "tool_call",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 2
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 1
+        }
+      ],
+      "transition_matrix": {
+        "tool_call": {
+          "tool_call": 190,
+          "direct": 4,
+          "request_for_info": 0,
+          "cannot_answer": 0
+        },
+        "request_for_info": {
+          "tool_call": 142,
+          "direct": 4,
+          "request_for_info": 7,
+          "cannot_answer": 3
+        },
+        "cannot_answer": {
+          "tool_call": 14,
+          "direct": 65,
+          "request_for_info": 21,
+          "cannot_answer": 98
+        }
+      }
+    },
+    "C_ca_direct": {
+      "arm": "C_ca_direct",
+      "channel": "ca_direct",
+      "acc": 0.44343,
+      "macro_f1_3cls": 0.34458,
+      "fixed": 10,
+      "broke": 0,
+      "net": 10,
+      "nt_before": {
+        "rfi_tc": 145,
+        "ca_tc": 115,
+        "ca_direct": 43
+      },
+      "nt_after": {
+        "rfi_tc": 145,
+        "ca_tc": 115,
+        "ca_direct": 24
+      },
+      "chan_fixed": {
+        "rfi_tc": 0,
+        "ca_tc": 0,
+        "ca_direct": 10
+      },
+      "n_touched": 38,
+      "touched_correct": 0,
+      "damage_on_correct": 0,
+      "own_errors_touched": 38,
+      "own_to_gold": 10,
+      "own_to_other_wrong": 9,
+      "destination": [
+        {
+          "gold": "cannot_answer",
+          "from": "direct",
+          "to": "direct",
+          "n": 19
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "direct",
+          "to": "cannot_answer",
+          "n": 10
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "direct",
+          "to": "request_for_info",
+          "n": 9
+        }
+      ],
+      "transition_matrix": {
+        "tool_call": {
+          "tool_call": 192,
+          "direct": 2,
+          "request_for_info": 0,
+          "cannot_answer": 0
+        },
+        "request_for_info": {
+          "tool_call": 145,
+          "direct": 2,
+          "request_for_info": 7,
+          "cannot_answer": 2
+        },
+        "cannot_answer": {
+          "tool_call": 115,
+          "direct": 24,
+          "request_for_info": 15,
+          "cannot_answer": 44
+        }
+      }
+    },
+    "F_manual_diag": {
+      "arm": "F_manual_diag",
+      "members": [
+        "ca_tc",
+        "rfi_tc",
+        "ca_direct"
+      ],
+      "acc": 0.57482,
+      "macro_f1_3cls": 0.53292,
+      "fixed": 88,
+      "broke": 6,
+      "net": 82,
+      "nt_before": {
+        "rfi_tc": 145,
+        "ca_tc": 115,
+        "ca_direct": 43
+      },
+      "nt_after": {
+        "rfi_tc": 116,
+        "ca_tc": 12,
+        "ca_direct": 46
+      },
+      "chan_fixed": {
+        "rfi_tc": 12,
+        "ca_tc": 66,
+        "ca_direct": 10
+      },
+      "n_touched": 270,
+      "touched_correct": 31,
+      "damage_on_correct": 6,
+      "routed": {
+        "ca_tc": 106,
+        "rfi_tc": 126,
+        "ca_direct": 38
+      },
+      "destination": [
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "tool_call",
+          "n": 68
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 66
+        },
+        {
+          "gold": "tool_call",
+          "from": "tool_call",
+          "to": "tool_call",
+          "n": 25
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 22
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "direct",
+          "to": "direct",
+          "n": 19
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "request_for_info",
+          "n": 15
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "request_for_info",
+          "n": 12
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 11
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "direct",
+          "to": "cannot_answer",
+          "n": 10
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "direct",
+          "to": "request_for_info",
+          "n": 9
+        },
+        {
+          "gold": "request_for_info",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 6
+        },
+        {
+          "gold": "tool_call",
+          "from": "tool_call",
+          "to": "direct",
+          "n": 4
+        },
+        {
+          "gold": "tool_call",
+          "from": "tool_call",
+          "to": "cannot_answer",
+          "n": 2
+        },
+        {
+          "gold": "cannot_answer",
+          "from": "tool_call",
+          "to": "tool_call",
+          "n": 1
+        }
+      ],
+      "transition_matrix": {
+        "tool_call": {
+          "tool_call": 186,
+          "direct": 6,
+          "request_for_info": 0,
+          "cannot_answer": 2
+        },
+        "request_for_info": {
+          "tool_call": 116,
+          "direct": 8,
+          "request_for_info": 19,
+          "cannot_answer": 13
+        },
+        "cannot_answer": {
+          "tool_call": 12,
+          "direct": 46,
+          "request_for_info": 30,
+          "cannot_answer": 110
+        }
+      }
+    }
+  },
+  "gate": {
+    "rfi_tc": {
+      "criteria": {
+        "1_net_pos": true,
+        "2_residual_down_25pct": false,
+        "3_broke_controlled": true,
+        "4_other_channels_ok": true,
+        "5_not_mere_redirection": false,
+        "6_real_gt_reverse": false,
+        "7_random_advantage": false,
+        "8_no_test_tuning": true
+      },
+      "pass": false,
+      "net": 12,
+      "fixed": 16,
+      "broke": 4,
+      "own_residual": [
+        145,
+        117
+      ]
+    },
+    "ca_tc": {
+      "criteria": {
+        "1_net_pos": true,
+        "2_residual_down_25pct": true,
+        "3_broke_controlled": true,
+        "4_other_channels_ok": false,
+        "5_not_mere_redirection": true,
+        "6_real_gt_reverse": true,
+        "7_random_advantage": true,
+        "8_no_test_tuning": true
+      },
+      "pass": false,
+      "net": 62,
+      "fixed": 64,
+      "broke": 2,
+      "own_residual": [
+        115,
+        14
+      ]
+    },
+    "ca_direct": {
+      "criteria": {
+        "1_net_pos": true,
+        "2_residual_down_25pct": true,
+        "3_broke_controlled": true,
+        "4_other_channels_ok": true,
+        "5_not_mere_redirection": true,
+        "6_real_gt_reverse": false,
+        "7_random_advantage": false,
+        "8_no_test_tuning": true
+      },
+      "pass": false,
+      "net": 10,
+      "fixed": 10,
+      "broke": 0,
+      "own_residual": [
+        43,
+        24
+      ]
+    }
+  },
+  "cascade_members": [],
+  "manual_diag_members": [
+    "rfi_tc",
+    "ca_tc",
+    "ca_direct"
+  ]
+}

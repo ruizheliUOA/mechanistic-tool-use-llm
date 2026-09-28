@@ -1,0 +1,283 @@
+{
+  "channels": {
+    "cannot_answer__to__direct": {
+      "converged_iterations": 10,
+      "dev_comparable": {
+        "PR_AUC": 0.8361554445843904,
+        "ROC_AUC": 0.9329095181819417,
+        "all_correct_negative_n": 463,
+        "positive_n": 159
+      },
+      "dev_operational_source_matched_n": 198,
+      "direction_file_sha256": "db986511c918eea56ce5f3f7dc82fbace2c17a8fe9bbdd62fd8ba6cb0948e10a",
+      "direction_path": "final/results/qwen3_stage0_1_v2/directions/cannot_answer__to__direct.safetensors",
+      "direction_raw_norm": 13.099062838861974,
+      "direction_unit_sha256": "a136818a657e67cdd3c5b41417d8514b3016ad1b8e20717d28638c80c3836c4d",
+      "eligible": true,
+      "router_file_sha256": "b1ebad7270971f830d3f3505eceab3c8f448148583502f2104e56c3e207db0b1",
+      "router_path": "final/results/qwen3_stage0_1_v2/routers/cannot_answer__to__direct.safetensors",
+      "selected_metrics": {
+        "fn": 26,
+        "fp": 9,
+        "precision": 0.9366197183098591,
+        "recall": 0.8364779874213837,
+        "routed": 142,
+        "specificity": 0.7692307692307693,
+        "tau": 0.4,
+        "tn": 30,
+        "tp": 133
+      },
+      "selected_tau": 0.4,
+      "tau_grid": [
+        {
+          "fn": 26,
+          "fp": 9,
+          "precision": 0.9366197183098591,
+          "recall": 0.8364779874213837,
+          "routed": 142,
+          "specificity": 0.7692307692307693,
+          "tau": 0.4,
+          "tn": 30,
+          "tp": 133
+        },
+        {
+          "fn": 30,
+          "fp": 9,
+          "precision": 0.9347826086956522,
+          "recall": 0.8113207547169812,
+          "routed": 138,
+          "specificity": 0.7692307692307693,
+          "tau": 0.5,
+          "tn": 30,
+          "tp": 129
+        },
+        {
+          "fn": 32,
+          "fp": 9,
+          "precision": 0.9338235294117647,
+          "recall": 0.7987421383647799,
+          "routed": 136,
+          "specificity": 0.7692307692307693,
+          "tau": 0.6,
+          "tn": 30,
+          "tp": 127
+        },
+        {
+          "fn": 34,
+          "fp": 9,
+          "precision": 0.9328358208955224,
+          "recall": 0.7861635220125787,
+          "routed": 134,
+          "specificity": 0.7692307692307693,
+          "tau": 0.7,
+          "tn": 30,
+          "tp": 125
+        },
+        {
+          "fn": 41,
+          "fp": 9,
+          "precision": 0.9291338582677166,
+          "recall": 0.7421383647798742,
+          "routed": 127,
+          "specificity": 0.7692307692307693,
+          "tau": 0.8,
+          "tn": 30,
+          "tp": 118
+        }
+      ],
+      "train_all_correct_negative_n": 848,
+      "train_positive_n": 269
+    },
+    "cannot_answer__to__tool_call": {
+      "converged_iterations": 11,
+      "dev_comparable": {
+        "PR_AUC": 0.8676320041472362,
+        "ROC_AUC": 0.9387359190905445,
+        "all_correct_negative_n": 463,
+        "positive_n": 167
+      },
+      "dev_operational_source_matched_n": 779,
+      "direction_file_sha256": "94c0302a015baad96b5e6b692342f2ef758b53325559a47514ddfe54aa866ce6",
+      "direction_path": "final/results/qwen3_stage0_1_v2/directions/cannot_answer__to__tool_call.safetensors",
+      "direction_raw_norm": 18.186656885790185,
+      "direction_unit_sha256": "1ec06c367d00c5aba6016d6c78f7721e5c7688401e584cefea4aedd58b0ab172",
+      "eligible": true,
+      "router_file_sha256": "5d7000b3952ce97b78c93e636a99e73125b15b9138d21a613f1ca3a3a8313b74",
+      "router_path": "final/results/qwen3_stage0_1_v2/routers/cannot_answer__to__tool_call.safetensors",
+      "selected_metrics": {
+        "fn": 26,
+        "fp": 29,
+        "precision": 0.8294117647058824,
+        "recall": 0.844311377245509,
+        "routed": 170,
+        "specificity": 0.9526143790849673,
+        "tau": 0.4,
+        "tn": 583,
+        "tp": 141
+      },
+      "selected_tau": 0.4,
+      "tau_grid": [
+        {
+          "fn": 26,
+          "fp": 29,
+          "precision": 0.8294117647058824,
+          "recall": 0.844311377245509,
+          "routed": 170,
+          "specificity": 0.9526143790849673,
+          "tau": 0.4,
+          "tn": 583,
+          "tp": 141
+        },
+        {
+          "fn": 28,
+          "fp": 25,
+          "precision": 0.8475609756097561,
+          "recall": 0.8323353293413174,
+          "routed": 164,
+          "specificity": 0.9591503267973857,
+          "tau": 0.5,
+          "tn": 587,
+          "tp": 139
+        },
+        {
+          "fn": 31,
+          "fp": 21,
+          "precision": 0.8662420382165605,
+          "recall": 0.8143712574850299,
+          "routed": 157,
+          "specificity": 0.9656862745098039,
+          "tau": 0.6,
+          "tn": 591,
+          "tp": 136
+        },
+        {
+          "fn": 33,
+          "fp": 16,
+          "precision": 0.8933333333333333,
+          "recall": 0.8023952095808383,
+          "routed": 150,
+          "specificity": 0.9738562091503268,
+          "tau": 0.7,
+          "tn": 596,
+          "tp": 134
+        },
+        {
+          "fn": 36,
+          "fp": 13,
+          "precision": 0.9097222222222222,
+          "recall": 0.7844311377245509,
+          "routed": 144,
+          "specificity": 0.9787581699346405,
+          "tau": 0.8,
+          "tn": 599,
+          "tp": 131
+        }
+      ],
+      "train_all_correct_negative_n": 848,
+      "train_positive_n": 314
+    },
+    "request_for_info__to__tool_call": {
+      "converged_iterations": 8,
+      "dev_comparable": {
+        "PR_AUC": 0.6292039186148622,
+        "ROC_AUC": 0.7699606982261091,
+        "all_correct_negative_n": 463,
+        "positive_n": 244
+      },
+      "dev_operational_source_matched_n": 779,
+      "direction_file_sha256": "8774e34f3d286be9f1e330bf88bfd0164d1cf5f8ad148af5c000c8359e883431",
+      "direction_path": "final/results/qwen3_stage0_1_v2/directions/request_for_info__to__tool_call.safetensors",
+      "direction_raw_norm": 25.320631740177184,
+      "direction_unit_sha256": "4d7743af6844359cc4803f1f5952a25cf58cf8d0278368d67740b3f473ddd433",
+      "eligible": true,
+      "router_file_sha256": "3a7086718f703d2c7be272c6f950657c2bf11d2aa44eaa1f01ee4e136e4cc06b",
+      "router_path": "final/results/qwen3_stage0_1_v2/routers/request_for_info__to__tool_call.safetensors",
+      "selected_metrics": {
+        "fn": 79,
+        "fp": 120,
+        "precision": 0.5789473684210527,
+        "recall": 0.6762295081967213,
+        "routed": 285,
+        "specificity": 0.7757009345794392,
+        "tau": 0.4,
+        "tn": 415,
+        "tp": 165
+      },
+      "selected_tau": 0.4,
+      "tau_grid": [
+        {
+          "fn": 79,
+          "fp": 120,
+          "precision": 0.5789473684210527,
+          "recall": 0.6762295081967213,
+          "routed": 285,
+          "specificity": 0.7757009345794392,
+          "tau": 0.4,
+          "tn": 415,
+          "tp": 165
+        },
+        {
+          "fn": 90,
+          "fp": 107,
+          "precision": 0.5900383141762452,
+          "recall": 0.6311475409836066,
+          "routed": 261,
+          "specificity": 0.8,
+          "tau": 0.5,
+          "tn": 428,
+          "tp": 154
+        },
+        {
+          "fn": 95,
+          "fp": 95,
+          "precision": 0.610655737704918,
+          "recall": 0.610655737704918,
+          "routed": 244,
+          "specificity": 0.822429906542056,
+          "tau": 0.6,
+          "tn": 440,
+          "tp": 149
+        },
+        {
+          "fn": 100,
+          "fp": 86,
+          "precision": 0.6260869565217392,
+          "recall": 0.5901639344262295,
+          "routed": 230,
+          "specificity": 0.8392523364485981,
+          "tau": 0.7,
+          "tn": 449,
+          "tp": 144
+        },
+        {
+          "fn": 112,
+          "fp": 73,
+          "precision": 0.6439024390243903,
+          "recall": 0.5409836065573771,
+          "routed": 205,
+          "specificity": 0.8635514018691589,
+          "tau": 0.8,
+          "tn": 462,
+          "tp": 132
+        }
+      ],
+      "train_all_correct_negative_n": 848,
+      "train_positive_n": 448
+    }
+  },
+  "schema_version": 1,
+  "specification": {
+    "classifier": "StandardScaler + LogisticRegression(C=1,L2,liblinear,max_iter=2000,tol=1e-4,seed=42,class_weight=None)",
+    "eligibility": "dev comparable ROC-AUC >=0.75 and selected tau precision >=0.50",
+    "feature": "L26 MLP output final prompt token",
+    "tau_grid": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "tau_rule": "smallest tau with source-matched dev precision >=0.50",
+    "train_negatives": "all correct train rows"
+  }
+}

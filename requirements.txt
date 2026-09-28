@@ -1,0 +1,15 @@
+# Optional dependencies for historical GPU experiment scripts.
+# No packages are required by tools/verify_artifact.py or prepare_legacy_layout.py.
+# This is an import inventory, not a historical lockfile. Follow each frozen
+# model/environment manifest; versions not recorded there are unknown.
+numpy
+scipy
+scikit-learn
+torch
+transformers
+tokenizers
+safetensors
+datasets
+huggingface_hub
+tqdm
+PyYAML

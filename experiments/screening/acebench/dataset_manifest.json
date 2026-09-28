@@ -1,0 +1,76 @@
+{
+  "raw_dir": ".cache/acebench_raw (gitignored, local only)",
+  "source": "github.com/ACEBench/ACEBench data_all/data_{en,zh} (MIT, arXiv:2501.12851)",
+  "files": {
+    "en/data_normal_single_turn_single_function.json": {
+      "n": 100,
+      "sha256": "45278849617f4b3e290db1da13929ba0a43fc4cb3332b461560a519e32af82f2"
+    },
+    "en/data_normal_single_turn_parallel_function.json": {
+      "n": 100,
+      "sha256": "7b9b9200cf5224e93f20bf14f076bead8e75d451a7dd6956d346fb1200412235"
+    },
+    "en/data_normal_similar_api.json": {
+      "n": 50,
+      "sha256": "f3ae38a6b56ab27c47bd929f16468598636ff76ecc095ff60c41c8b5a9ee843f"
+    },
+    "en/data_special_incomplete.json": {
+      "n": 50,
+      "sha256": "186f593f8f2be7e709c5878f57d23f401c51e326ffcadcd62f9c5c08c8e34f3b"
+    },
+    "en/data_special_error_param.json": {
+      "n": 50,
+      "sha256": "3ce0f322934d8a8a96eb8bae945949f61c53b74505ba0d65c4850f98e8ba3bae"
+    },
+    "en/data_special_irrelevant.json": {
+      "n": 50,
+      "sha256": "20bb62a9c48b1daf852870096f5d70d53a09a07b8f90a7c09815c6d934e8f41e"
+    },
+    "zh/data_normal_single_turn_single_function.json": {
+      "n": 100,
+      "sha256": "95e8a10c3fc98d706d69a2b47cc7ec1a18449eb24e1dcb616b232b0a8a83aff4"
+    },
+    "zh/data_normal_single_turn_parallel_function.json": {
+      "n": 100,
+      "sha256": "8479e8739e25a58ae61f18b5d68f3843dc76f22c3ce155353d56036d4778f894"
+    },
+    "zh/data_normal_similar_api.json": {
+      "n": 50,
+      "sha256": "ecf3324eabfd91a626f97c91a550213601cce84b4eb410e3c12a5e05eff9cb91"
+    },
+    "zh/data_special_incomplete.json": {
+      "n": 50,
+      "sha256": "e2e6b3383679d3e6970590be6972bb7b36f2dad47aba3ed18b83556d00f7d5fc"
+    },
+    "zh/data_special_error_param.json": {
+      "n": 50,
+      "sha256": "2c728affde4a5551c38d59eef4d36aa0997bc23e2deb097532536a854cf7f4d2"
+    },
+    "zh/data_special_irrelevant.json": {
+      "n": 50,
+      "sha256": "3a43bf88e1b77be69f2d078a978979e7b37d402735af5cd764f116f09bbbc29f"
+    }
+  },
+  "n_total": 800,
+  "seed": 42,
+  "regen_dataset": ".cache/acebench_phase4/acebench_decision_all_with_time.jsonl (gitignored)",
+  "regen_dataset_sha256": "e207df57d501b0d29b9b843660510905e3ce7023f47ee1ce56097b6496dcd49b",
+  "split_verification": {
+    "per_cell_match_vs_archived": true,
+    "gold_dist_match": true,
+    "first200_order_match_vs_archived_pilot": true
+  },
+  "schema_issues": [],
+  "row_schema": [
+    "sample_id",
+    "source_id",
+    "lang",
+    "source_file",
+    "gold_mode",
+    "question",
+    "functions",
+    "time",
+    "split"
+  ],
+  "difference_vs_archived_rows": "adds the raw 'time' field (official prompt slot); all other fields and the split are byte-logic identical"
+}

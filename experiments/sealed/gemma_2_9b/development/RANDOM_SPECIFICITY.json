@@ -1,0 +1,80 @@
+{
+  "cannot_answer__to__direct": {
+    "condition_4": "PASS",
+    "max_random": 0.023255813953488372,
+    "min_random": 0.0,
+    "n_random_ge_real": 0,
+    "n_randoms": 8,
+    "random_gold_arrivals": {
+      "DEV_RANDOM_0": 1,
+      "DEV_RANDOM_1": 1,
+      "DEV_RANDOM_2": 0,
+      "DEV_RANDOM_3": 2,
+      "DEV_RANDOM_4": 0,
+      "DEV_RANDOM_5": 1,
+      "DEV_RANDOM_6": 0,
+      "DEV_RANDOM_7": 2
+    },
+    "random_target_gain": {
+      "DEV_RANDOM_0": 0.011627906976744186,
+      "DEV_RANDOM_1": 0.011627906976744186,
+      "DEV_RANDOM_2": 0.0,
+      "DEV_RANDOM_3": 0.023255813953488372,
+      "DEV_RANDOM_4": 0.0,
+      "DEV_RANDOM_5": 0.011627906976744186,
+      "DEV_RANDOM_6": 0.0,
+      "DEV_RANDOM_7": 0.023255813953488372
+    },
+    "real_target_gain": 0.18604651162790697,
+    "rule": "condition 4: real target gain strictly exceeds every matched-random arm",
+    "seeds": [
+      20260811,
+      20260812,
+      20260813,
+      20260814,
+      20260815,
+      20260816,
+      20260817,
+      20260818
+    ]
+  },
+  "cannot_answer__to__tool_call": {
+    "condition_4": "PASS",
+    "max_random": 0.0,
+    "min_random": -0.010362694300518135,
+    "n_random_ge_real": 0,
+    "n_randoms": 8,
+    "random_gold_arrivals": {
+      "DEV_RANDOM_0": 0,
+      "DEV_RANDOM_1": 0,
+      "DEV_RANDOM_2": 0,
+      "DEV_RANDOM_3": 0,
+      "DEV_RANDOM_4": 0,
+      "DEV_RANDOM_5": 0,
+      "DEV_RANDOM_6": 0,
+      "DEV_RANDOM_7": 0
+    },
+    "random_target_gain": {
+      "DEV_RANDOM_0": -0.0051813471502590676,
+      "DEV_RANDOM_1": 0.0,
+      "DEV_RANDOM_2": 0.0,
+      "DEV_RANDOM_3": -0.010362694300518135,
+      "DEV_RANDOM_4": -0.0051813471502590676,
+      "DEV_RANDOM_5": 0.0,
+      "DEV_RANDOM_6": 0.0,
+      "DEV_RANDOM_7": 0.0
+    },
+    "real_target_gain": 0.08808290155440414,
+    "rule": "condition 4: real target gain strictly exceeds every matched-random arm",
+    "seeds": [
+      20260811,
+      20260812,
+      20260813,
+      20260814,
+      20260815,
+      20260816,
+      20260817,
+      20260818
+    ]
+  }
+}

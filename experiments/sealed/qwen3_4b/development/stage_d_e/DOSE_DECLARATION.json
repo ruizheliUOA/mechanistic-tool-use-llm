@@ -1,0 +1,81 @@
+{
+  "conditioned_on_dev_or_evaluation": false,
+  "feature_position": "last prompt token",
+  "grid_extendable": false,
+  "injection": "h' = h + q * s_c * d",
+  "layer": 21,
+  "matched_activation_budget": [
+    "d_grad",
+    "L26_diffmean_frozen",
+    "L21_diffmean_committed",
+    "reverse_d_grad",
+    "matched_random"
+  ],
+  "model": "Qwen/Qwen3-4B@1cfa9a7208912126459214e8b04321603b3df60c",
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "absolute_delta_norm_by_q": {
+        "0.0": 0.0,
+        "0.125": 3.2828755632925537,
+        "0.25": 6.565751126585107,
+        "0.5": 13.131502253170215,
+        "1.0": 26.26300450634043,
+        "2.0": 52.52600901268086
+      },
+      "all_finite": true,
+      "gold": "cannot_answer",
+      "iqr": 2.570277611463162,
+      "max": 33.53796891694356,
+      "mean": 26.653556295781133,
+      "min": 22.29649513946919,
+      "population_sha256": "a5fbf9b295667af937613ba17aea12179ea76a811d6998676169e8ae3abd02a0",
+      "q25": 25.232497239689593,
+      "q75": 27.802774851152755,
+      "router_active": 193,
+      "s_c": 26.26300450634043,
+      "source": "direct",
+      "tau": 0.0,
+      "train_pred_eq_source": 193
+    },
+    "cannot_answer__to__tool_call": {
+      "absolute_delta_norm_by_q": {
+        "0.0": 0.0,
+        "0.125": 3.0874452702296518,
+        "0.25": 6.1748905404593035,
+        "0.5": 12.349781080918607,
+        "1.0": 24.699562161837214,
+        "2.0": 49.39912432367443
+      },
+      "all_finite": true,
+      "gold": "cannot_answer",
+      "iqr": 2.49493006268915,
+      "max": 36.949227245200404,
+      "mean": 25.394535774374063,
+      "min": 22.117705185942807,
+      "population_sha256": "7d1208176b8d76d9016f433af5df8a4d15b5897d690e2449711b144097e94ec6",
+      "q25": 23.88134067963925,
+      "q75": 26.3762707423284,
+      "router_active": 728,
+      "s_c": 24.699562161837214,
+      "source": "tool_call",
+      "tau": 0.011564,
+      "train_pred_eq_source": 1650
+    }
+  },
+  "q_grid": [
+    0.0,
+    0.125,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "rho_ref": 1.0,
+  "scale_statistic": "s_c = median_x ||h_L21(x)||_2 over the TRAIN Router-active population",
+  "scaling_population_rule": "baseline prediction == channel source AND committed Router predict_proba >= committed tau; TRAIN only",
+  "sealed_evaluation_accessed": false,
+  "site": "model.model.layers[L].mlp forward output, after MLP internals and before decoder residual addition",
+  "status": "FROZEN_BEFORE_ANY_DEV_BEHAVIOURAL_INTERVENTION",
+  "ungated_semantics": "same q*s_c; only the Router gate is disabled",
+  "wrong_layer_semantics": "same absolute norm q*s_c; NOT renormalised by the wrong layer's activation norm"
+}

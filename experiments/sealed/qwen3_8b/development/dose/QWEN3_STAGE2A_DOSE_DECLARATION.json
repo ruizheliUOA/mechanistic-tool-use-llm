@@ -1,0 +1,130 @@
+{
+  "authorizes_behavioral_run": false,
+  "control_semantics": {
+    "ungated": "preserve q*s_c and disable only the Router gate",
+    "wrong_layer": "preserve the SAME absolute perturbation norm q*s_c; do NOT renormalize by the wrong layer's activation norm, which would change layer and budget simultaneously"
+  },
+  "evaluation_accessed": false,
+  "explicit_statements": [
+    "equal hidden-state norm does not imply equal score-space effect",
+    "functional-effect differences are part of the estimator comparison and are not normalized away",
+    "no DEV outcome was used to define s_c, rho_ref or the grid",
+    "q=1 is a scale unit, not a previously validated operating dose",
+    "Stage 2A will select the smallest behaviorally admissible nonzero q",
+    "the grid must not be extended after observing DEV results"
+  ],
+  "gpu_used": false,
+  "injection": {
+    "absolute_perturbation_norm": "||delta h||_2 = q * s_c",
+    "d": "unit-norm direction",
+    "formula": "h' = h + q * s_c * d",
+    "grid_frozen": true,
+    "grid_may_not_be_extended_after_observing_dev": true,
+    "grid_q": [
+      0.0,
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "matched_budget_arms": [
+    "TRAIN-derived d_grad",
+    "frozen L26 DiffMean comparator injected at L21",
+    "reverse d_grad",
+    "matched-random directions"
+  ],
+  "model_loaded": false,
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "all_finite": true,
+      "gold": "cannot_answer",
+      "norm_iqr": 1.9257681907648134,
+      "norm_max": 50.015482493026916,
+      "norm_mean": 41.34710048440893,
+      "norm_median": 41.25219070727309,
+      "norm_min": 36.1900067139688,
+      "norm_q25": 40.2502805417153,
+      "norm_q75": 42.17604873248011,
+      "router_active_n": 282,
+      "s_c": 41.25219070727309,
+      "sample_order_sha256": "82975f096df3a5145847947672412ff871b7a266dfa6cd273677a4d1a1f7f14c",
+      "source": "direct",
+      "tau": 0.4,
+      "train_prediction_eq_source_n": 319
+    },
+    "cannot_answer__to__tool_call": {
+      "all_finite": true,
+      "gold": "cannot_answer",
+      "norm_iqr": 1.7445749836289863,
+      "norm_max": 46.162017644860796,
+      "norm_mean": 41.62981705858877,
+      "norm_median": 41.56598488897048,
+      "norm_min": 36.31136588287961,
+      "norm_q25": 40.73110565288071,
+      "norm_q75": 42.47568063650969,
+      "router_active_n": 343,
+      "s_c": 41.56598488897048,
+      "sample_order_sha256": "9156f7748fe7ef4a61849495611282dc47ab9b24d9f151cdd61866fccc236ac9",
+      "source": "tool_call",
+      "tau": 0.4,
+      "train_prediction_eq_source_n": 1433
+    },
+    "request_for_info__to__tool_call": {
+      "all_finite": true,
+      "gold": "request_for_info",
+      "norm_iqr": 1.4134540923956038,
+      "norm_max": 46.79999965800562,
+      "norm_mean": 41.55016525001534,
+      "norm_median": 41.4881155634666,
+      "norm_min": 38.6271941875201,
+      "norm_q25": 40.85390284605436,
+      "norm_q75": 42.267356938449964,
+      "router_active_n": 523,
+      "s_c": 41.4881155634666,
+      "sample_order_sha256": "743da42718e1d66de367bdbabc4fe45afe15dd95a13a933453649a1550e3a1e2",
+      "source": "tool_call",
+      "tau": 0.4,
+      "train_prediction_eq_source_n": 1433
+    }
+  },
+  "protocol_version": "QWEN3_STAGE2A_DOSE_DECLARATION_V1",
+  "purpose": "Prospectively define a Qwen3-specific activation-scale dose unit. This does not recover a historical dose; no unique Qwen3 rho_ref ever existed.",
+  "rho_ref": {
+    "semantics": "dimensionless activation-scale unit, NOT a recovered historical operating dose",
+    "value": 1.0
+  },
+  "scale_statistic": {
+    "dtype": "float64",
+    "formula": "s_c = median_x || h_L21(x) ||_2 over the scaling population",
+    "layer": 21,
+    "site": "model.model.layers[L].mlp forward output, after MLP internals and before decoder residual addition",
+    "token_position": "last prompt token (frozen feature position)"
+  },
+  "scaling_population": {
+    "definition": "all V2 TRAIN rows for which the frozen channel-c Router gate is active",
+    "gate": "baseline prediction == channel source AND committed Router predict_proba[:,1] >= committed selected tau",
+    "not_conditioned_on": [
+      "DEV results",
+      "future behavioral movement",
+      "target-hit",
+      "intervention success",
+      "d_grad alignment",
+      "baseline margin",
+      "any evaluation information"
+    ],
+    "router_reconstruction_validated": "recomputed DEV routed counts reproduce all 15 committed tau-grid cells exactly across the three channels"
+  },
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_ANY_DEV_BEHAVIORAL_INTERVENTION",
+  "tier": "PROTOCOL-ONLY / TRAIN-ONLY / CPU-ONLY / RETRYABLE",
+  "unchanged": [
+    "channels",
+    "Routers and tau",
+    "directions",
+    "L_obs=26 and L_inj=21",
+    "endpoints",
+    "advancement rules"
+  ]
+}

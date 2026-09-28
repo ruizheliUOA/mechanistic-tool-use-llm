@@ -1,0 +1,892 @@
+{
+  "cannot_answer__to__direct": {
+    "arms": {
+      "DEV_RANDOM_0": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 1,
+        "GOLD_ARRIVAL": 1,
+        "Net": 1,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 85,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 1,
+        "target_gain": 0.011627906976744186,
+        "target_hit": 1.0
+      },
+      "DEV_RANDOM_1": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 1,
+        "GOLD_ARRIVAL": 1,
+        "Net": 1,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 85,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 1,
+        "target_gain": 0.011627906976744186,
+        "target_hit": 1.0
+      },
+      "DEV_RANDOM_2": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 86,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DEV_RANDOM_3": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 2,
+        "GOLD_ARRIVAL": 2,
+        "Net": 2,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 84,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 2,
+        "target_gain": 0.023255813953488372,
+        "target_hit": 1.0
+      },
+      "DEV_RANDOM_4": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 86,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DEV_RANDOM_5": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 1,
+        "GOLD_ARRIVAL": 1,
+        "Net": 1,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 85,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 1,
+        "target_gain": 0.011627906976744186,
+        "target_hit": 1.0
+      },
+      "DEV_RANDOM_6": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 86,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DEV_RANDOM_7": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 2,
+        "GOLD_ARRIVAL": 2,
+        "Net": 2,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 84,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 2,
+        "target_gain": 0.023255813953488372,
+        "target_hit": 1.0
+      },
+      "DIFFMEAN_LOBS_CROSSLAYER": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 1,
+        "GOLD_ARRIVAL": 1,
+        "Net": 1,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 84,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 2,
+        "target_gain": 0.0,
+        "target_hit": 0.5
+      },
+      "REAL": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 19,
+        "GOLD_ARRIVAL": 19,
+        "Net": 19,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 64,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 22,
+        "target_gain": 0.18604651162790697,
+        "target_hit": 0.8636363636363636
+      },
+      "REVERSE": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 85,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 1,
+        "target_gain": -0.011627906976744186,
+        "target_hit": 0.0
+      },
+      "SAMELAYER_DIFFMEAN_L24": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 86,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "SCORE_SPACE": {
+        "b_c": 0.61198,
+        "broke": 0,
+        "collateral_all": 0.0,
+        "collateral_all_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "exposed_correct": 0,
+        "gold_arrivals": 22,
+        "n_channel_error": 86,
+        "note": "frozen score-space bias comparator",
+        "q": 0.25,
+        "source_exits": 51,
+        "target_gain_rate": -0.08139534883720931,
+        "target_hit": 0.43137254901960786,
+        "wrong_to_wrong": 29
+      },
+      "UNGATED": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 27,
+        "GOLD_ARRIVAL": 27,
+        "Net": 27,
+        "OTHER_WRONG": 3,
+        "SOURCE_RETAINED": 80,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 110,
+        "source_exits": 30,
+        "target_gain": 0.21818181818181817,
+        "target_hit": 0.9
+      },
+      "WRONG_LAYER_L30": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 2,
+        "GOLD_ARRIVAL": 2,
+        "Net": 2,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 84,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 2,
+        "target_gain": 0.023255813953488372,
+        "target_hit": 1.0
+      },
+      "ZERO": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 86,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          null,
+          null
+        ],
+        "exposed_correct_denom": 0,
+        "exposed_correct_rate": null,
+        "routed_source_errors": 86,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      }
+    },
+    "missing_required_arms": [],
+    "selected_q": 0.25,
+    "zero_reproduces_baseline_exactly": true
+  },
+  "cannot_answer__to__tool_call": {
+    "arms": {
+      "DEV_RANDOM_0": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 192,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 1,
+        "target_gain": -0.0051813471502590676,
+        "target_hit": 0.0
+      },
+      "DEV_RANDOM_1": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 193,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DEV_RANDOM_2": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 193,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DEV_RANDOM_3": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 191,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 2,
+        "target_gain": -0.010362694300518135,
+        "target_hit": 0.0
+      },
+      "DEV_RANDOM_4": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 1,
+        "SOURCE_RETAINED": 192,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 1,
+        "target_gain": -0.0051813471502590676,
+        "target_hit": 0.0
+      },
+      "DEV_RANDOM_5": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 193,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DEV_RANDOM_6": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 193,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DEV_RANDOM_7": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 193,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "DIFFMEAN_LOBS_CROSSLAYER": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 191,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 2,
+        "target_gain": -0.010362694300518135,
+        "target_hit": 0.0
+      },
+      "REAL": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 34,
+        "GOLD_ARRIVAL": 34,
+        "Net": 34,
+        "OTHER_WRONG": 17,
+        "SOURCE_RETAINED": 142,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 51,
+        "target_gain": 0.08808290155440414,
+        "target_hit": 0.6666666666666666
+      },
+      "REVERSE": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 193,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      },
+      "SAMELAYER_DIFFMEAN_L24": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 191,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 2,
+        "target_gain": -0.010362694300518135,
+        "target_hit": 0.0
+      },
+      "SCORE_SPACE": {
+        "b_c": 0.4273469999999999,
+        "broke": 2,
+        "collateral_all": 0.004246284501061571,
+        "collateral_all_ci95": [
+          0.0005146590719794441,
+          0.015254198815983576
+        ],
+        "exposed_correct": 23,
+        "gold_arrivals": 36,
+        "n_channel_error": 193,
+        "note": "frozen score-space bias comparator",
+        "q": 0.125,
+        "source_exits": 68,
+        "target_gain_rate": 0.02072538860103627,
+        "target_hit": 0.5294117647058824,
+        "wrong_to_wrong": 32
+      },
+      "UNGATED": {
+        "BROKEN_TO_OTHER": 8,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 8,
+        "Fixed": 38,
+        "GOLD_ARRIVAL": 38,
+        "Net": 30,
+        "OTHER_WRONG": 21,
+        "SOURCE_RETAINED": 165,
+        "all_correct_breaks": 8,
+        "all_correct_ci95": [
+          0.007360774923097816,
+          0.033192122075857956
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.016985138004246284,
+        "exposed_correct_breaks": 8,
+        "exposed_correct_ci95": [
+          0.009012661587406727,
+          0.04053136016099792
+        ],
+        "exposed_correct_denom": 385,
+        "exposed_correct_rate": 0.02077922077922078,
+        "routed_source_errors": 224,
+        "source_exits": 59,
+        "target_gain": 0.07589285714285714,
+        "target_hit": 0.6440677966101694
+      },
+      "WRONG_LAYER_L30": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 5,
+        "GOLD_ARRIVAL": 5,
+        "Net": 5,
+        "OTHER_WRONG": 2,
+        "SOURCE_RETAINED": 186,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 7,
+        "target_gain": 0.015544041450777202,
+        "target_hit": 0.7142857142857143
+      },
+      "ZERO": {
+        "BROKEN_TO_OTHER": 0,
+        "BROKEN_TO_SOURCE": 0,
+        "Broke": 0,
+        "Fixed": 0,
+        "GOLD_ARRIVAL": 0,
+        "Net": 0,
+        "OTHER_WRONG": 0,
+        "SOURCE_RETAINED": 193,
+        "all_correct_breaks": 0,
+        "all_correct_ci95": [
+          0.0,
+          0.007801425503586229
+        ],
+        "all_correct_denom": 471,
+        "all_correct_rate": 0.0,
+        "exposed_correct_breaks": 0,
+        "exposed_correct_ci95": [
+          0.0,
+          0.14818512891522437
+        ],
+        "exposed_correct_denom": 23,
+        "exposed_correct_rate": 0.0,
+        "routed_source_errors": 193,
+        "source_exits": 0,
+        "target_gain": 0.0,
+        "target_hit": null
+      }
+    },
+    "missing_required_arms": [],
+    "selected_q": 0.125,
+    "zero_reproduces_baseline_exactly": true
+  }
+}

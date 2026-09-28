@@ -1,0 +1,59 @@
+{
+  "locked": {
+    "rfi_tc": {
+      "obs_layer": 20,
+      "inj_layer": 18,
+      "alpha": 2.0,
+      "threshold": 0.7,
+      "val_net": 34,
+      "val_fixed": 51,
+      "val_broke": 17
+    },
+    "ca_tc": {
+      "obs_layer": 20,
+      "inj_layer": 16,
+      "alpha": 4.0,
+      "threshold": 0.8,
+      "val_net": 30,
+      "val_fixed": 35,
+      "val_broke": 5
+    },
+    "ca_direct": {
+      "obs_layer": 16,
+      "inj_layer": 16,
+      "alpha": 6.0,
+      "threshold": 0.4,
+      "val_net": 15,
+      "val_fixed": 15,
+      "val_broke": 0
+    }
+  },
+  "val_cascade": {
+    "fixed": 90,
+    "broke": 20,
+    "net": 70,
+    "acc": 0.5785,
+    "chan_fixed": {
+      "rfi_tc": 47,
+      "ca_tc": 28,
+      "ca_direct": 15
+    },
+    "nt_before": {
+      "rfi_tc": 91,
+      "ca_tc": 78,
+      "ca_direct": 62
+    },
+    "nt_after": {
+      "rfi_tc": 44,
+      "ca_tc": 15,
+      "ca_direct": 57
+    },
+    "routed": {
+      "rfi_tc": 100,
+      "ca_tc": 51,
+      "ca_direct": 54
+    },
+    "base_acc": 0.4507,
+    "n_touched": 205
+  }
+}

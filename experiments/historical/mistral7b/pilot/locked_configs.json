@@ -1,0 +1,44 @@
+{
+  "rfi_tc": {
+    "method": "diffmean",
+    "obs": 22,
+    "inj": 20,
+    "alpha": 6.0,
+    "thr": 0.6,
+    "dir_norm": 0.723,
+    "val_net": 11,
+    "val_fixed": 19,
+    "val_broke": 8,
+    "val_ch_fixed": 17,
+    "val_touched": 145,
+    "router_val_auc": 0.8776707963012838
+  },
+  "ca_tc": {
+    "method": "diffmean",
+    "obs": 22,
+    "inj": 18,
+    "alpha": 6.0,
+    "thr": 0.8,
+    "dir_norm": 0.794,
+    "val_net": 54,
+    "val_fixed": 57,
+    "val_broke": 3,
+    "val_ch_fixed": 57,
+    "val_touched": 102,
+    "router_val_auc": 0.9635746606334841
+  },
+  "ca_direct": {
+    "method": "pca1",
+    "obs": 22,
+    "inj": 18,
+    "alpha": 6.0,
+    "thr": 0.4,
+    "dir_norm": 29.548,
+    "val_net": 13,
+    "val_fixed": 13,
+    "val_broke": 0,
+    "val_ch_fixed": 13,
+    "val_touched": 40,
+    "router_val_auc": 0.937984496124031
+  }
+}

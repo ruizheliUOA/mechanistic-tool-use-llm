@@ -1,0 +1,32 @@
+{
+  "access_contract": "Consumers seek directly to emitted offsets and parse only emitted train/dev rows.",
+  "counts": {
+    "dev": 548,
+    "train": 2556
+  },
+  "dataset_config": "test",
+  "dataset_repository": "nvidia/When2Call",
+  "dataset_revision": "0582f7749df63a96fdc3070932e83e72396ace53",
+  "dataset_split": "mcq",
+  "dev_project_index_order_sha256": "5ebbc70650d3959bc40e46c181cdc1c511a9013426c5fedfb22f39550587bb9a",
+  "dev_sample_id_order_sha256": "e495034de7e5f31da4a918b6ec9da905bdb0276fdc427278512c5ee08b3c05d1",
+  "evaluation_index_emitted": false,
+  "evaluation_manifest_opened": false,
+  "index_path": "final/results/qwen3_stage0_1/QWEN3_8B_TRAIN_DEV_BYTE_INDEX.csv",
+  "index_sha256": "a97dadf2c6be34f800496fb142635cc1ee02e89daf6bfce68e29c94cf3017520",
+  "non_allowlisted_payloads_parsed": 0,
+  "permutation_sha256_int64_le": "3fdbe401cdfd131c591d4a3c13cecd44ccb590e0be29f7396a64111a1004234e",
+  "purpose": "QWEN3_TRAIN_DEV_SELECTIVE_ACCESS_ONLY",
+  "raw_source": "data/processed/qwen25_7b_w2c/w2c_test_mcq.jsonl",
+  "raw_source_payloads_parsed": 3104,
+  "raw_source_rows_structurally_scanned": 3652,
+  "raw_source_sha256": "8c3694e583eeeb8dbc297e6cd90da70efc68efa4b6adb7227523e828c6b7b14c",
+  "schema_version": 1,
+  "sealed_evaluation_count_structural_only": 548,
+  "shuffle_algorithm": "numpy.random.default_rng(42).permutation(3652), numpy 1.26.3",
+  "split_seed": 42,
+  "train_project_index_order_sha256": "192d4c33ac761457cf3e91b4370d0921774e7897236dc43d1123175811ae058e",
+  "train_sample_id_order_sha256": "88488d7377329771d7cc801367e279579f8a6fc56eb6a55680ba0ce10aead8ef",
+  "uuid_correspondence_checked_against_authorized_baseline_rows": 3104,
+  "uuid_mismatch_count": 0
+}

@@ -1,0 +1,37 @@
+{
+  "invocations": [
+    {
+      "exit_code": 0,
+      "mode": "preflight",
+      "reason": null,
+      "script_commit": "156edc10c3e735f78bae2d0ae800108dbe1b68e7",
+      "script_sha256": "363418390cad649954861d43e16251709af973337de65f42336d2a8ecf1163e1",
+      "utc": "2026-08-03T16:18:50Z"
+    },
+    {
+      "exit_code": 0,
+      "mode": "dev-engineering-check",
+      "reason": null,
+      "script_commit": "156edc10c3e735f78bae2d0ae800108dbe1b68e7",
+      "script_sha256": "363418390cad649954861d43e16251709af973337de65f42336d2a8ecf1163e1",
+      "utc": "2026-08-03T16:19:59Z"
+    },
+    {
+      "exit_code": 0,
+      "mode": "gate-only",
+      "reason": null,
+      "script_commit": "156edc10c3e735f78bae2d0ae800108dbe1b68e7",
+      "script_sha256": "363418390cad649954861d43e16251709af973337de65f42336d2a8ecf1163e1",
+      "utc": "2026-08-03T16:20:14Z"
+    },
+    {
+      "exit_code": 0,
+      "mode": "run-formal",
+      "reason": "FORMAL_CONFIRMATORY_SUCCESS",
+      "script_commit": "5e8f49708cf913c80ab8db747b6ddcb36bb40f08",
+      "script_sha256": "363418390cad649954861d43e16251709af973337de65f42336d2a8ecf1163e1",
+      "utc": "2026-08-03T18:27:57Z"
+    }
+  ],
+  "schema_version": 1
+}

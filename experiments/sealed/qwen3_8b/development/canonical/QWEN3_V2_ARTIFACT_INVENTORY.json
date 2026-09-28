@@ -1,0 +1,72 @@
+{
+  "activations": {
+    "all_3104_authorized_rows_present": true,
+    "keys": {
+      "activations_L21": {
+        "dtype": "F32",
+        "layer": 21,
+        "shape": [
+          3104,
+          4096
+        ],
+        "site": "mlp_output_last_prompt_token",
+        "storage_schema": "one vector per authorized row; not per position, not per candidate",
+        "token_position": "last prompt token"
+      },
+      "activations_L26": {
+        "dtype": "F32",
+        "layer": 26,
+        "shape": [
+          3104,
+          4096
+        ],
+        "site": "mlp_output_last_prompt_token",
+        "storage_schema": "one vector per authorized row; not per position, not per candidate",
+        "token_position": "last prompt token"
+      }
+    },
+    "path": "final/results/qwen3_stage0_1/QWEN3_STAGE1_ACTIVATIONS.safetensors",
+    "row_count": 3104,
+    "row_ordering": "baseline row order: TRAIN by ascending project index, then DEV by ascending project index",
+    "sha256": "0c0ef438e6f3c4837f28a8ec6540d5566d4111f76bb943cde5406e0b1c709efc",
+    "split_composition_v1": {
+      "dev": 548,
+      "train": 2556
+    },
+    "unique_project_index": 3104,
+    "unique_sample_id": 3104,
+    "uuid_mapping": "metadata sample_order_json, index-aligned with tensor rows"
+  },
+  "baseline": {
+    "four_finite_scores_all_rows": true,
+    "path": "final/results/qwen3_stage0_1/QWEN3_STAGE1_BASELINE_ROWS.jsonl",
+    "prediction_runner_up_consistent_with_scores": true,
+    "required_fields_present_all_rows": true,
+    "row_alignment_with_activations": "1:1 index aligned, verified on all 3104 rows",
+    "rows": 3104,
+    "sha256": "83c0836f4fd1b52df7d44e81e44254a4e3599bad97eb6239e8744571729a02c3",
+    "split_independence": {
+      "conclusion": "baseline values are a pure function of the sample and do not depend on V1 train/dev assignment",
+      "empirical": "pilot scores computed before the baseline loop match baseline rows exactly (max deviation 0.0) for 8 rows x 2 repetitions",
+      "structural": "score_sample(model, tokenizer, device, sample, capture_modules) takes no split argument; split is attached as a label after scoring"
+    },
+    "twelve_margins_all_rows": true,
+    "unique_sample_id": 3104
+  },
+  "frozen_layer_comparison": {
+    "L_inj_tensor_present": true,
+    "L_obs_tensor_present": true,
+    "identity_source": "safetensors metadata plus committed protocol, not filename",
+    "protocol_L_inj": 21,
+    "protocol_L_obs": 26,
+    "protocol_site": "model.model.layers[L].mlp forward output, after MLP internals and before decoder residual addition",
+    "protocol_token_positions": "last prompt token for feature/direction; all positions for full-effect gradient",
+    "stored_layers_metadata": [
+      26,
+      21
+    ]
+  },
+  "outcome": "CPU_SUFFICIENT",
+  "schema_version": 1,
+  "scope": "QWEN3_V2_ARTIFACT_REUSABILITY_AUDIT"
+}

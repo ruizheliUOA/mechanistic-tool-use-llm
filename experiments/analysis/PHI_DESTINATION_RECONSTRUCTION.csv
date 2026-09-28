@@ -1,0 +1,4 @@
+channel,gold,source,n_channel_error,router_fired_errors,SOURCE_RETAINED,GOLD_ARRIVAL,OTHER_WRONG,source_exits,target_hit,target_gain_count,target_gain_rate,partition_check
+rfi_tc,request_for_info,tool_call,112,66,44,50,18,68,0.735294,32,0.285714,True
+ca_tc,cannot_answer,tool_call,77,45,35,30,12,42,0.714286,18,0.233766,True
+ca_direct,cannot_answer,direct,59,32,30,20,9,29,0.689655,11,0.186441,True

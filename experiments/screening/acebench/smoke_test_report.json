@@ -1,0 +1,141 @@
+{
+  "env": {
+    "torch": "2.1.2+cu121",
+    "transformers": "4.49.0",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "dtype": "bfloat16",
+    "gen_params": {
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 256
+    },
+    "model_path": ".cache/modelscope/Qwen/Qwen2___5-7B-Instruct",
+    "parser_version": "1.0"
+  },
+  "metrics": {
+    "n": 48,
+    "accuracy": 0.64583,
+    "balanced_accuracy": 0.64583,
+    "macro_f1": 0.63749,
+    "majority_gold_share": 0.625,
+    "per_class": {
+      "tool_call": {
+        "precision": 0.5,
+        "recall": 0.9167,
+        "f1": 0.6471,
+        "support": 12
+      },
+      "ask_user": {
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333,
+        "support": 12
+      },
+      "flag_param_error": {
+        "precision": 0.875,
+        "recall": 0.5833,
+        "f1": 0.7,
+        "support": 12
+      },
+      "cannot_comply": {
+        "precision": 0.9091,
+        "recall": 0.8333,
+        "f1": 0.8696,
+        "support": 12
+      }
+    },
+    "per_class_recall": {
+      "tool_call": 0.9167,
+      "ask_user": 0.25,
+      "flag_param_error": 0.5833,
+      "cannot_comply": 0.8333
+    },
+    "prediction_distribution": {
+      "tool_call": 22,
+      "flag_param_error": 8,
+      "ask_user": 6,
+      "UNKNOWN": 1,
+      "cannot_comply": 11
+    },
+    "max_pred_share": 0.4583,
+    "unknown_rate": 0.0208,
+    "ambiguous_rate": 0.0208,
+    "conflict_rate": 0.0208,
+    "skipped": 0,
+    "empty_rate": 0.0,
+    "eos_rate": 1.0,
+    "gen_len": {
+      "mean": 30.4,
+      "p50": 21,
+      "p90": 70,
+      "p99": 112,
+      "max": 112
+    },
+    "confusion_gold_by_pred": {
+      "tool_call": {
+        "tool_call": 11,
+        "ask_user": 0,
+        "flag_param_error": 1,
+        "cannot_comply": 0,
+        "UNKNOWN": 0
+      },
+      "ask_user": {
+        "tool_call": 7,
+        "ask_user": 3,
+        "flag_param_error": 0,
+        "cannot_comply": 1,
+        "UNKNOWN": 1
+      },
+      "flag_param_error": {
+        "tool_call": 4,
+        "ask_user": 1,
+        "flag_param_error": 7,
+        "cannot_comply": 0,
+        "UNKNOWN": 0
+      },
+      "cannot_comply": {
+        "tool_call": 0,
+        "ask_user": 2,
+        "flag_param_error": 0,
+        "cannot_comply": 10,
+        "UNKNOWN": 0
+      }
+    },
+    "parser_version": "1.0",
+    "per_lang": {
+      "en": {
+        "n": 24,
+        "acc": 0.7083,
+        "unknown_rate": 0.0
+      },
+      "zh": {
+        "n": 24,
+        "acc": 0.5833,
+        "unknown_rate": 0.0417
+      }
+    },
+    "per_split": {
+      "train": {
+        "n": 48,
+        "acc": 0.6458,
+        "unknown_rate": 0.0208
+      }
+    }
+  },
+  "checks": {
+    "n": 48,
+    "oom_or_skipped": 0,
+    "parser_non_unknown_rate": 0.9792,
+    "eos_rate": 1.0,
+    "max_identical_output_share": 0.2292,
+    "gate": {
+      "loads_bf16": true,
+      "no_oom": true,
+      "non_unknown_ge_0.70": true,
+      "eos_ge_0.90": true,
+      "no_boilerplate_collapse": true,
+      "PASS": true
+    }
+  }
+}

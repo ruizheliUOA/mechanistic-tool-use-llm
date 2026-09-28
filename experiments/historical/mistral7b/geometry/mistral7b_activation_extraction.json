@@ -1,0 +1,22 @@
+{
+  "model_repo": "mistralai/Mistral-7B-Instruct-v0.3",
+  "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "n": 3652,
+  "hidden": 4096,
+  "obs_layers": [
+    13,
+    18,
+    22,
+    27
+  ],
+  "normalized_depth": {
+    "13": 0.406,
+    "18": 0.562,
+    "22": 0.688,
+    "27": 0.844
+  },
+  "decision_position": "last_prompt_token",
+  "cache_dir": "/root/autodl-tmp/phase5_mistral_cache",
+  "skipped": [],
+  "elapsed_min": 8.2
+}

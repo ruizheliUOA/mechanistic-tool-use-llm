@@ -1,0 +1,16 @@
+{
+  "last_feasible": 3169,
+  "first_infeasible": 4572,
+  "excluded_indices": [
+    217,
+    985,
+    1487,
+    2078,
+    2574,
+    3342
+  ],
+  "n_excluded": 6,
+  "n_population": 3652,
+  "fraction": 0.0016429353778751369,
+  "probe_detail": []
+}

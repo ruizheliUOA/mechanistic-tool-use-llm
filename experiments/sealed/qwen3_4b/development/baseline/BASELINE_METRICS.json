@@ -1,0 +1,246 @@
+{
+  "baseline_validity": "VALID",
+  "invalid_or_skipped_rows": 0,
+  "model": "Qwen/Qwen3-4B@1cfa9a7208912126459214e8b04321603b3df60c",
+  "population": "When2Call TRAIN+DEV (3104), SEALED 548 untouched",
+  "qwen3_8b_reference": {
+    "accuracy": 0.4224,
+    "max_prediction_share": 0.7126,
+    "note": "same behavioural regime; committed QWEN3_V1_TOOL_CALL_BIAS.md frames the tool_call bias as a baseline finding"
+  },
+  "readout": "committed Qwen3-8B teacher-forced 4-candidate mean-logprob, reused verbatim",
+  "readout_validity_pilot": {
+    "atol": 1e-05,
+    "max_score_deviation": 0.0,
+    "prediction_and_runner_up_identical": true,
+    "repetitions": 2,
+    "rows": 8,
+    "within_atol": true
+  },
+  "splits": {
+    "ALL": {
+      "accuracy": 0.4104,
+      "balanced_accuracy": 0.3914,
+      "confusion": {
+        "cannot_answer": {
+          "cannot_answer": 108,
+          "direct": 288,
+          "request_for_info": 45,
+          "tool_call": 656
+        },
+        "request_for_info": {
+          "cannot_answer": 8,
+          "direct": 23,
+          "request_for_info": 85,
+          "tool_call": 790
+        },
+        "tool_call": {
+          "cannot_answer": 2,
+          "direct": 14,
+          "request_for_info": 4,
+          "tool_call": 1081
+        }
+      },
+      "macro_f1_4mode": 0.2343,
+      "macro_f1_over_realised_gold": 0.3124,
+      "max_prediction_share": 0.8141,
+      "n": 3104,
+      "n_predicted_modes": 4,
+      "per_class": {
+        "cannot_answer": {
+          "f1": 0.1778,
+          "fn": 989,
+          "fp": 10,
+          "gold_support": 1097,
+          "precision": 0.9153,
+          "recall": 0.0985,
+          "tp": 108
+        },
+        "direct": {
+          "f1": 0.0,
+          "fn": 0,
+          "fp": 325,
+          "gold_support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "request_for_info": {
+          "f1": 0.1635,
+          "fn": 821,
+          "fp": 49,
+          "gold_support": 906,
+          "precision": 0.6343,
+          "recall": 0.0938,
+          "tp": 85
+        },
+        "tool_call": {
+          "f1": 0.5959,
+          "fn": 20,
+          "fp": 1446,
+          "gold_support": 1101,
+          "precision": 0.4278,
+          "recall": 0.9818,
+          "tp": 1081
+        }
+      },
+      "prediction_counts": {
+        "cannot_answer": 118,
+        "direct": 325,
+        "request_for_info": 134,
+        "tool_call": 2527
+      }
+    },
+    "dev": {
+      "accuracy": 0.4121,
+      "balanced_accuracy": 0.3928,
+      "confusion": {
+        "cannot_answer": {
+          "cannot_answer": 40,
+          "direct": 114,
+          "request_for_info": 16,
+          "tool_call": 220
+        },
+        "request_for_info": {
+          "cannot_answer": 6,
+          "direct": 12,
+          "request_for_info": 31,
+          "tool_call": 273
+        },
+        "tool_call": {
+          "cannot_answer": 1,
+          "direct": 6,
+          "request_for_info": 1,
+          "tool_call": 384
+        }
+      },
+      "macro_f1_4mode": 0.239,
+      "macro_f1_over_realised_gold": 0.3186,
+      "max_prediction_share": 0.7944,
+      "n": 1104,
+      "n_predicted_modes": 4,
+      "per_class": {
+        "cannot_answer": {
+          "f1": 0.1831,
+          "fn": 350,
+          "fp": 7,
+          "gold_support": 390,
+          "precision": 0.8511,
+          "recall": 0.1026,
+          "tp": 40
+        },
+        "direct": {
+          "f1": 0.0,
+          "fn": 0,
+          "fp": 132,
+          "gold_support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "request_for_info": {
+          "f1": 0.1676,
+          "fn": 291,
+          "fp": 17,
+          "gold_support": 322,
+          "precision": 0.6458,
+          "recall": 0.0963,
+          "tp": 31
+        },
+        "tool_call": {
+          "f1": 0.6052,
+          "fn": 8,
+          "fp": 493,
+          "gold_support": 392,
+          "precision": 0.4379,
+          "recall": 0.9796,
+          "tp": 384
+        }
+      },
+      "prediction_counts": {
+        "cannot_answer": 47,
+        "direct": 132,
+        "request_for_info": 48,
+        "tool_call": 877
+      }
+    },
+    "train": {
+      "accuracy": 0.4095,
+      "balanced_accuracy": 0.3906,
+      "confusion": {
+        "cannot_answer": {
+          "cannot_answer": 68,
+          "direct": 174,
+          "request_for_info": 29,
+          "tool_call": 436
+        },
+        "request_for_info": {
+          "cannot_answer": 2,
+          "direct": 11,
+          "request_for_info": 54,
+          "tool_call": 517
+        },
+        "tool_call": {
+          "cannot_answer": 1,
+          "direct": 8,
+          "request_for_info": 3,
+          "tool_call": 697
+        }
+      },
+      "macro_f1_4mode": 0.2317,
+      "macro_f1_over_realised_gold": 0.309,
+      "max_prediction_share": 0.825,
+      "n": 2000,
+      "n_predicted_modes": 4,
+      "per_class": {
+        "cannot_answer": {
+          "f1": 0.1748,
+          "fn": 639,
+          "fp": 3,
+          "gold_support": 707,
+          "precision": 0.9577,
+          "recall": 0.0962,
+          "tp": 68
+        },
+        "direct": {
+          "f1": 0.0,
+          "fn": 0,
+          "fp": 193,
+          "gold_support": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0
+        },
+        "request_for_info": {
+          "f1": 0.1612,
+          "fn": 530,
+          "fp": 32,
+          "gold_support": 584,
+          "precision": 0.6279,
+          "recall": 0.0925,
+          "tp": 54
+        },
+        "tool_call": {
+          "f1": 0.5909,
+          "fn": 12,
+          "fp": 953,
+          "gold_support": 709,
+          "precision": 0.4224,
+          "recall": 0.9831,
+          "tp": 697
+        }
+      },
+      "prediction_counts": {
+        "cannot_answer": 71,
+        "direct": 193,
+        "request_for_info": 86,
+        "tool_call": 1650
+      }
+    }
+  },
+  "train_dev_stability": {
+    "abs_diff": 0.0026,
+    "accuracy_dev": 0.4121,
+    "accuracy_train": 0.4095
+  }
+}

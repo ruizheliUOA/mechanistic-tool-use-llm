@@ -1,0 +1,1928 @@
+{
+  "advancement": {
+    "cannot_answer__to__direct": {
+      "conditions": {
+        "10_dose_not_pathological_boundary_optimum": true,
+        "11_non_vacuous_collateral_evaluation": false,
+        "12_exceeds_frozen_score_space_comparator": true,
+        "13_diffmean_does_not_reproduce": true,
+        "14_wrong_layer_does_not_reproduce": true,
+        "1_support_gate": true,
+        "2_readability_gate": true,
+        "3_geometry_qualification": true,
+        "4_real_beats_matched_random": true,
+        "5_reverse_does_not_reproduce": true,
+        "6_positive_destination_correct_signal": true,
+        "7_source_exits_not_dominated_by_other_wrong": true,
+        "8_fixed_broke_criterion": true,
+        "9_collateral_within_frozen_dev_limit": true
+      },
+      "decision": "DECLINE_COLLATERAL",
+      "reason": "collateral evaluation structurally vacuous",
+      "selected_q": 0.25
+    },
+    "cannot_answer__to__tool_call": {
+      "conditions": {
+        "10_dose_not_pathological_boundary_optimum": true,
+        "11_non_vacuous_collateral_evaluation": true,
+        "12_exceeds_frozen_score_space_comparator": true,
+        "13_diffmean_does_not_reproduce": true,
+        "14_wrong_layer_does_not_reproduce": true,
+        "1_support_gate": true,
+        "2_readability_gate": true,
+        "3_geometry_qualification": true,
+        "4_real_beats_matched_random": true,
+        "5_reverse_does_not_reproduce": true,
+        "6_positive_destination_correct_signal": true,
+        "7_source_exits_not_dominated_by_other_wrong": true,
+        "8_fixed_broke_criterion": true,
+        "9_collateral_within_frozen_dev_limit": true
+      },
+      "decision": "FORMAL_ADVANCEMENT_ELIGIBLE",
+      "reason": "complete frozen conjunction satisfied",
+      "selected_q": 0.25
+    }
+  },
+  "eligible": [
+    "cannot_answer__to__tool_call"
+  ],
+  "results": {
+    "cannot_answer__to__direct": {
+      "absolute_delta_norm": 6.565751126585107,
+      "arms": {
+        "d_L21_same_layer_diffmean": {
+          "deltas": {
+            "delta_e_gold_median": 0.20007503032684326,
+            "delta_e_source_median": 0.1638028621673584,
+            "delta_margin_mean": 0.04482552566026386,
+            "delta_margin_median": 0.02704465389251709,
+            "delta_other_modes_median": {
+              "request_for_info": 0.23297441005706787,
+              "tool_call": 0.16287755966186523
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.5877192982456141
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 5,
+              "SOURCE_RETAINED": 109
+            },
+            "eligible_collateral": 0,
+            "fixed": 1,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 1,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 5,
+            "target_gain_count": -5,
+            "target_gain_rate": -0.043859649122807015,
+            "target_gain_rate_ci95": [
+              -0.08771929824561403,
+              -0.008771929824561403
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 5
+          }
+        },
+        "d_L26_diffmean": {
+          "deltas": {
+            "delta_e_gold_median": -0.02748870849609375,
+            "delta_e_source_median": 0.012717008590698242,
+            "delta_margin_mean": -0.04072301586469015,
+            "delta_margin_median": -0.043956458568573,
+            "delta_other_modes_median": {
+              "request_for_info": 0.04498910903930664,
+              "tool_call": 0.0062174201011657715
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.34210526315789475
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 2,
+              "SOURCE_RETAINED": 112
+            },
+            "eligible_collateral": 0,
+            "fixed": 1,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 1,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 2,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.017543859649122806,
+            "target_gain_rate_ci95": [
+              -0.043859649122807015,
+              0.0
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 2
+          }
+        },
+        "d_grad": {
+          "deltas": {
+            "delta_e_gold_median": 1.979491114616394,
+            "delta_e_source_median": 0.5512565970420837,
+            "delta_margin_mean": 1.356389347921338,
+            "delta_margin_median": 1.2306674718856812,
+            "delta_other_modes_median": {
+              "request_for_info": 1.6796399354934692,
+              "tool_call": 0.7860041856765747
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 1.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 27,
+              "OTHER_WRONG": 7,
+              "SOURCE_RETAINED": 80
+            },
+            "eligible_collateral": 0,
+            "fixed": 31,
+            "gold_arrivals": 27,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 31,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 34,
+            "target_gain_count": 20,
+            "target_gain_rate": 0.17543859649122806,
+            "target_gain_rate_ci95": [
+              0.07894736842105263,
+              0.2719298245614035
+            ],
+            "target_hit": 0.7941176470588235,
+            "target_hit_ci95": [
+              0.6486486486486487,
+              0.9230769230769231
+            ],
+            "wrong_to_wrong": 7
+          }
+        },
+        "dev_random_0": {
+          "deltas": {
+            "delta_e_gold_median": -0.010759234428405762,
+            "delta_e_source_median": -0.017556309700012207,
+            "delta_margin_mean": 0.006279303839332179,
+            "delta_margin_median": 0.004818737506866455,
+            "delta_other_modes_median": {
+              "request_for_info": -0.06946444511413574,
+              "tool_call": -0.01929640769958496
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.5175438596491229
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 3,
+              "SOURCE_RETAINED": 110
+            },
+            "eligible_collateral": 0,
+            "fixed": 1,
+            "gold_arrivals": 1,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 1,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 4,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.017543859649122806,
+            "target_gain_rate_ci95": [
+              -0.05263157894736842,
+              0.017543859649122806
+            ],
+            "target_hit": 0.25,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 3
+          }
+        },
+        "dev_random_1": {
+          "deltas": {
+            "delta_e_gold_median": -0.025519967079162598,
+            "delta_e_source_median": -0.01356971263885498,
+            "delta_margin_mean": 0.007156902760790105,
+            "delta_margin_median": -0.015886664390563965,
+            "delta_other_modes_median": {
+              "request_for_info": -0.005238175392150879,
+              "tool_call": -0.008909225463867188
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.4649122807017544
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 3,
+              "SOURCE_RETAINED": 110
+            },
+            "eligible_collateral": 0,
+            "fixed": 1,
+            "gold_arrivals": 1,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 1,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 4,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.017543859649122806,
+            "target_gain_rate_ci95": [
+              -0.05263157894736842,
+              0.017543859649122806
+            ],
+            "target_hit": 0.25,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 3
+          }
+        },
+        "dev_random_2": {
+          "deltas": {
+            "delta_e_gold_median": 0.04528987407684326,
+            "delta_e_source_median": 0.029901742935180664,
+            "delta_margin_mean": 0.021694298376116836,
+            "delta_margin_median": 0.020242393016815186,
+            "delta_other_modes_median": {
+              "request_for_info": 0.11216378211975098,
+              "tool_call": 0.04421639442443848
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.5789473684210527
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 2,
+              "SOURCE_RETAINED": 112
+            },
+            "eligible_collateral": 0,
+            "fixed": 1,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 1,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 2,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.017543859649122806,
+            "target_gain_rate_ci95": [
+              -0.043859649122807015,
+              0.0
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 2
+          }
+        },
+        "dev_random_3": {
+          "deltas": {
+            "delta_e_gold_median": 0.01200723648071289,
+            "delta_e_source_median": -0.03010237216949463,
+            "delta_margin_mean": 0.04094627081302174,
+            "delta_margin_median": 0.05164194107055664,
+            "delta_other_modes_median": {
+              "request_for_info": -0.035431623458862305,
+              "tool_call": -0.02538132667541504
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.6929824561403509
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 3,
+              "SOURCE_RETAINED": 111
+            },
+            "eligible_collateral": 0,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 3,
+            "target_gain_count": -3,
+            "target_gain_rate": -0.02631578947368421,
+            "target_gain_rate_ci95": [
+              -0.06140350877192982,
+              0.0
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 3
+          }
+        },
+        "dev_random_4": {
+          "deltas": {
+            "delta_e_gold_median": -0.0005795955657958984,
+            "delta_e_source_median": -0.004288792610168457,
+            "delta_margin_mean": 0.004516200538267169,
+            "delta_margin_median": 0.014293789863586426,
+            "delta_other_modes_median": {
+              "request_for_info": -0.006821990013122559,
+              "tool_call": 0.03639674186706543
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.5263157894736842
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 4,
+              "SOURCE_RETAINED": 110
+            },
+            "eligible_collateral": 0,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 4,
+            "target_gain_count": -4,
+            "target_gain_rate": -0.03508771929824561,
+            "target_gain_rate_ci95": [
+              -0.07017543859649122,
+              -0.008771929824561403
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 4
+          }
+        },
+        "dev_random_5": {
+          "deltas": {
+            "delta_e_gold_median": 0.002888321876525879,
+            "delta_e_source_median": -0.010017633438110352,
+            "delta_margin_mean": 0.017933855454126995,
+            "delta_margin_median": 0.010657966136932373,
+            "delta_other_modes_median": {
+              "request_for_info": -0.011238574981689453,
+              "tool_call": 0.029059767723083496
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.5350877192982456
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 7,
+              "SOURCE_RETAINED": 106
+            },
+            "eligible_collateral": 0,
+            "fixed": 2,
+            "gold_arrivals": 1,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 2,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 8,
+            "target_gain_count": -6,
+            "target_gain_rate": -0.05263157894736842,
+            "target_gain_rate_ci95": [
+              -0.10526315789473684,
+              -0.008771929824561403
+            ],
+            "target_hit": 0.125,
+            "target_hit_ci95": [
+              0.0,
+              0.4
+            ],
+            "wrong_to_wrong": 7
+          }
+        },
+        "dev_random_6": {
+          "deltas": {
+            "delta_e_gold_median": -0.017673254013061523,
+            "delta_e_source_median": -0.040924668312072754,
+            "delta_margin_mean": 0.033499173427882944,
+            "delta_margin_median": 0.03921782970428467,
+            "delta_other_modes_median": {
+              "request_for_info": 0.012802600860595703,
+              "tool_call": 0.010834276676177979
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.6842105263157895
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 4,
+              "SOURCE_RETAINED": 110
+            },
+            "eligible_collateral": 0,
+            "fixed": 2,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 2,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 4,
+            "target_gain_count": -4,
+            "target_gain_rate": -0.03508771929824561,
+            "target_gain_rate_ci95": [
+              -0.07017543859649122,
+              -0.008771929824561403
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 4
+          }
+        },
+        "dev_random_7": {
+          "deltas": {
+            "delta_e_gold_median": 0.03469109535217285,
+            "delta_e_source_median": -0.018783509731292725,
+            "delta_margin_mean": 0.05045143710939508,
+            "delta_margin_median": 0.0517420768737793,
+            "delta_other_modes_median": {
+              "request_for_info": -0.010242819786071777,
+              "tool_call": 0.012899994850158691
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.7192982456140351
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 2,
+              "SOURCE_RETAINED": 112
+            },
+            "eligible_collateral": 0,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 2,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.017543859649122806,
+            "target_gain_rate_ci95": [
+              -0.043859649122807015,
+              0.0
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 2
+          }
+        },
+        "reverse_d_grad": {
+          "deltas": {
+            "delta_e_gold_median": -3.516655445098877,
+            "delta_e_source_median": -0.9399356245994568,
+            "delta_margin_mean": -2.5476658793917872,
+            "delta_margin_median": -2.5041430592536926,
+            "delta_other_modes_median": {
+              "request_for_info": -2.204847812652588,
+              "tool_call": -0.7881065607070923
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 24,
+              "SOURCE_RETAINED": 90
+            },
+            "eligible_collateral": 0,
+            "fixed": 2,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 2,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 24,
+            "target_gain_count": -24,
+            "target_gain_rate": -0.21052631578947367,
+            "target_gain_rate_ci95": [
+              -0.2894736842105263,
+              -0.14035087719298245
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 24
+          }
+        },
+        "ungated_d_grad": {
+          "deltas": {
+            "delta_e_gold_median": 1.979491114616394,
+            "delta_e_source_median": 0.5512565970420837,
+            "delta_margin_mean": 1.356389347921338,
+            "delta_margin_median": 1.2306674718856812,
+            "delta_other_modes_median": {
+              "request_for_info": 1.6796399354934692,
+              "tool_call": 0.7860041856765747
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 1.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 27,
+              "OTHER_WRONG": 7,
+              "SOURCE_RETAINED": 80
+            },
+            "eligible_collateral": 0,
+            "fixed": 31,
+            "gold_arrivals": 27,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 31,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 34,
+            "target_gain_count": 20,
+            "target_gain_rate": 0.17543859649122806,
+            "target_gain_rate_ci95": [
+              0.07894736842105263,
+              0.2719298245614035
+            ],
+            "target_hit": 0.7941176470588235,
+            "target_hit_ci95": [
+              0.6486486486486487,
+              0.9230769230769231
+            ],
+            "wrong_to_wrong": 7
+          }
+        },
+        "wrong_layer_d_grad": {
+          "deltas": {
+            "delta_e_gold_median": 0.4311809539794922,
+            "delta_e_source_median": 0.12541377544403076,
+            "delta_margin_mean": 0.3123599306533211,
+            "delta_margin_median": 0.2900834083557129,
+            "delta_other_modes_median": {
+              "request_for_info": 0.3158292770385742,
+              "tool_call": 0.10995995998382568
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.9912280701754386
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 0,
+              "SOURCE_RETAINED": 113
+            },
+            "eligible_collateral": 0,
+            "fixed": 2,
+            "gold_arrivals": 1,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 2,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 1,
+            "target_gain_count": 1,
+            "target_gain_rate": 0.008771929824561403,
+            "target_gain_rate_ci95": [
+              0.0,
+              0.02631578947368421
+            ],
+            "target_hit": 1.0,
+            "target_hit_ci95": [
+              1.0,
+              1.0
+            ],
+            "wrong_to_wrong": 0
+          }
+        },
+        "zero": {
+          "deltas": {
+            "delta_e_gold_median": 0.0,
+            "delta_e_source_median": 0.0,
+            "delta_margin_mean": 0.0,
+            "delta_margin_median": 0.0,
+            "delta_other_modes_median": {
+              "request_for_info": 0.0,
+              "tool_call": 0.0
+            },
+            "n": 114,
+            "positive_margin_change_fraction": 0.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 0,
+              "SOURCE_RETAINED": 114
+            },
+            "eligible_collateral": 0,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 114,
+            "n_intervened_records": 132,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 0,
+            "router_fired_channel_error_count": 114,
+            "source_exits": 0,
+            "target_gain_count": 0,
+            "target_gain_rate": 0.0,
+            "target_gain_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "target_hit": null,
+            "target_hit_ci95": [
+              null,
+              null
+            ],
+            "wrong_to_wrong": 0
+          }
+        }
+      },
+      "geometry": "GEOMETRY_QUALIFIED",
+      "random_specificity": {
+        "k_random": 8,
+        "random_max": -0.017543859649122806,
+        "random_median": -0.021929824561403508,
+        "random_min": -0.05263157894736842,
+        "random_target_gain_rates": [
+          -0.017543859649122806,
+          -0.017543859649122806,
+          -0.017543859649122806,
+          -0.02631578947368421,
+          -0.03508771929824561,
+          -0.05263157894736842,
+          -0.03508771929824561,
+          -0.017543859649122806
+        ],
+        "randoms_ge_real": 0,
+        "real_exceeds_every_random": true,
+        "real_minus_random_median": 0.19736842105263158,
+        "real_rank_of_9": 1,
+        "real_target_gain_rate": 0.17543859649122806,
+        "seeds": [
+          20260811,
+          20260812,
+          20260813,
+          20260814,
+          20260815,
+          20260816,
+          20260817,
+          20260818
+        ],
+        "selected_q": 0.25,
+        "status": "frozen DEV development budget; descriptive_only per the frozen protocol. The formal K=59 null is not generated here and its seeds are disjoint from these by construction."
+      },
+      "reverse_control": {
+        "real_delta_margin_median": 1.2306674718856812,
+        "real_source_exits": 34,
+        "real_target_gain_rate": 0.17543859649122806,
+        "real_target_hit": 0.7941176470588235,
+        "reverse_delta_margin_median": -2.5041430592536926,
+        "reverse_reproduces_real": false,
+        "reverse_source_exits": 24,
+        "reverse_target_gain_rate": -0.21052631578947367,
+        "reverse_target_hit": 0.0,
+        "selected_q": 0.25
+      },
+      "s_c": 26.26300450634043,
+      "score_comparator": {
+        "applied": "e_gold += b_c/2 ; e_source -= b_c/2 ; others unchanged",
+        "b_c": 1.2306674718856812,
+        "metrics": {
+          "baseline_correct_n": 455,
+          "broke": 0,
+          "clean_collateral_rate": 0.0,
+          "clean_collateral_rate_ci95": [
+            0.0,
+            0.0
+          ],
+          "collateral_count": 0,
+          "collateral_destination_counts": {
+            "BROKEN_TO_OTHER": 0,
+            "BROKEN_TO_SOURCE": 0,
+            "CORRECT_RETAINED": 455
+          },
+          "destination_counts": {
+            "GOLD_ARRIVAL": 32,
+            "OTHER_WRONG": 36,
+            "SOURCE_RETAINED": 46
+          },
+          "eligible_collateral": 0,
+          "fixed": 36,
+          "gold_arrivals": 32,
+          "n_channel_error": 114,
+          "n_intervened_records": 132,
+          "net": 36,
+          "router_fired_baseline_correct_exposure": 0,
+          "router_fired_channel_error_count": 114,
+          "source_exits": 68,
+          "target_gain_count": -4,
+          "target_gain_rate": -0.03508771929824561,
+          "target_gain_rate_ci95": [
+            -0.17543859649122806,
+            0.10526315789473684
+          ],
+          "target_hit": 0.47058823529411764,
+          "target_hit_ci95": [
+            0.352112676056338,
+            0.5901639344262295
+          ],
+          "wrong_to_wrong": 36
+        }
+      },
+      "selected_q": 0.25,
+      "ungated_control": {
+        "dev_pred_eq_source": 132,
+        "dev_rows_exposed_gated": 132,
+        "dev_rows_exposed_ungated": 132,
+        "gated_collateral_rate": 0.0,
+        "gated_eligible_collateral": 0,
+        "gated_target_gain_rate": 0.17543859649122806,
+        "router_effectively_ungated": true,
+        "router_selectivity_ratio": 1.0,
+        "selected_q": 0.25,
+        "tau": 0.0,
+        "ungated_collateral_rate": 0.0,
+        "ungated_eligible_collateral": 0,
+        "ungated_target_gain_rate": 0.17543859649122806
+      }
+    },
+    "cannot_answer__to__tool_call": {
+      "absolute_delta_norm": 6.1748905404593035,
+      "arms": {
+        "d_L21_same_layer_diffmean": {
+          "deltas": {
+            "delta_e_gold_median": -0.23151111602783203,
+            "delta_e_source_median": -0.06481128931045532,
+            "delta_margin_mean": -0.18451235180391984,
+            "delta_margin_median": -0.1733587384223938,
+            "delta_other_modes_median": {
+              "direct": -0.14190161228179932,
+              "request_for_info": -0.2624164819717407
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.049019607843137254
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 0,
+              "SOURCE_RETAINED": 219
+            },
+            "eligible_collateral": 106,
+            "fixed": 3,
+            "gold_arrivals": 1,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 3,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 1,
+            "target_gain_count": 1,
+            "target_gain_rate": 0.004545454545454545,
+            "target_gain_rate_ci95": [
+              0.0,
+              0.013636363636363636
+            ],
+            "target_hit": 1.0,
+            "target_hit_ci95": [
+              1.0,
+              1.0
+            ],
+            "wrong_to_wrong": 0
+          }
+        },
+        "d_L26_diffmean": {
+          "deltas": {
+            "delta_e_gold_median": 0.01660299301147461,
+            "delta_e_source_median": -0.009256482124328613,
+            "delta_margin_mean": 0.029416967840755686,
+            "delta_margin_median": 0.03334861993789673,
+            "delta_other_modes_median": {
+              "direct": 0.0005733966827392578,
+              "request_for_info": 0.037079453468322754
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.6421568627450981
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 1,
+              "SOURCE_RETAINED": 218
+            },
+            "eligible_collateral": 106,
+            "fixed": 3,
+            "gold_arrivals": 1,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 3,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 2,
+            "target_gain_count": 0,
+            "target_gain_rate": 0.0,
+            "target_gain_rate_ci95": [
+              -0.013636363636363636,
+              0.013636363636363636
+            ],
+            "target_hit": 0.5,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 1
+          }
+        },
+        "d_grad": {
+          "deltas": {
+            "delta_e_gold_median": 1.6547658443450928,
+            "delta_e_source_median": 0.29622626304626465,
+            "delta_margin_mean": 1.4095823104475058,
+            "delta_margin_median": 1.4013434648513794,
+            "delta_other_modes_median": {
+              "direct": 0.9761019945144653,
+              "request_for_info": 1.559493899345398
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 1.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 3,
+            "clean_collateral_rate": 0.006593406593406593,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.015384615384615385
+            ],
+            "collateral_count": 3,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 3,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 452
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 59,
+              "OTHER_WRONG": 32,
+              "SOURCE_RETAINED": 129
+            },
+            "eligible_collateral": 106,
+            "fixed": 72,
+            "gold_arrivals": 59,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 69,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 91,
+            "target_gain_count": 27,
+            "target_gain_rate": 0.12272727272727273,
+            "target_gain_rate_ci95": [
+              0.04090909090909091,
+              0.20454545454545456
+            ],
+            "target_hit": 0.6483516483516484,
+            "target_hit_ci95": [
+              0.55,
+              0.7446808510638298
+            ],
+            "wrong_to_wrong": 32
+          }
+        },
+        "dev_random_0": {
+          "deltas": {
+            "delta_e_gold_median": -0.01063835620880127,
+            "delta_e_source_median": -0.0211564302444458,
+            "delta_margin_mean": 0.009544859622039046,
+            "delta_margin_median": 0.009038805961608887,
+            "delta_other_modes_median": {
+              "direct": -0.04840195178985596,
+              "request_for_info": -0.07054257392883301
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.5490196078431373
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 3,
+              "SOURCE_RETAINED": 216
+            },
+            "eligible_collateral": 106,
+            "fixed": 1,
+            "gold_arrivals": 1,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 1,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 4,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.00909090909090909,
+            "target_gain_rate_ci95": [
+              -0.02727272727272727,
+              0.00909090909090909
+            ],
+            "target_hit": 0.25,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 3
+          }
+        },
+        "dev_random_1": {
+          "deltas": {
+            "delta_e_gold_median": 0.010282754898071289,
+            "delta_e_source_median": -0.011396646499633789,
+            "delta_margin_mean": 0.02438695801823747,
+            "delta_margin_median": 0.02198648452758789,
+            "delta_other_modes_median": {
+              "direct": 0.009458482265472412,
+              "request_for_info": 0.02189171314239502
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.6225490196078431
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 3,
+              "SOURCE_RETAINED": 216
+            },
+            "eligible_collateral": 106,
+            "fixed": 4,
+            "gold_arrivals": 1,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 4,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 4,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.00909090909090909,
+            "target_gain_rate_ci95": [
+              -0.02727272727272727,
+              0.00909090909090909
+            ],
+            "target_hit": 0.25,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 3
+          }
+        },
+        "dev_random_2": {
+          "deltas": {
+            "delta_e_gold_median": 0.048476576805114746,
+            "delta_e_source_median": 0.04427289962768555,
+            "delta_margin_mean": 0.004625030154106664,
+            "delta_margin_median": 0.0045435428619384766,
+            "delta_other_modes_median": {
+              "direct": 0.05046343803405762,
+              "request_for_info": 0.08419132232666016
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.5196078431372549
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 2,
+              "SOURCE_RETAINED": 218
+            },
+            "eligible_collateral": 106,
+            "fixed": 1,
+            "gold_arrivals": 0,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 1,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 2,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.00909090909090909,
+            "target_gain_rate_ci95": [
+              -0.022727272727272728,
+              0.0
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 2
+          }
+        },
+        "dev_random_3": {
+          "deltas": {
+            "delta_e_gold_median": 0.005350589752197266,
+            "delta_e_source_median": -0.013889908790588379,
+            "delta_margin_mean": 0.018302305802410723,
+            "delta_margin_median": 0.016429901123046875,
+            "delta_other_modes_median": {
+              "direct": -0.023979663848876953,
+              "request_for_info": -0.00793612003326416
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.5882352941176471
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 3,
+              "OTHER_WRONG": 1,
+              "SOURCE_RETAINED": 216
+            },
+            "eligible_collateral": 106,
+            "fixed": 5,
+            "gold_arrivals": 3,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 5,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 4,
+            "target_gain_count": 2,
+            "target_gain_rate": 0.00909090909090909,
+            "target_gain_rate_ci95": [
+              -0.00909090909090909,
+              0.02727272727272727
+            ],
+            "target_hit": 0.75,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 1
+          }
+        },
+        "dev_random_4": {
+          "deltas": {
+            "delta_e_gold_median": -0.0009670257568359375,
+            "delta_e_source_median": 0.018092691898345947,
+            "delta_margin_mean": -0.020302883404142717,
+            "delta_margin_median": -0.01774752140045166,
+            "delta_other_modes_median": {
+              "direct": 0.012784481048583984,
+              "request_for_info": 0.0021903514862060547
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.4117647058823529
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 1,
+              "OTHER_WRONG": 3,
+              "SOURCE_RETAINED": 216
+            },
+            "eligible_collateral": 106,
+            "fixed": 3,
+            "gold_arrivals": 1,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 3,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 4,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.00909090909090909,
+            "target_gain_rate_ci95": [
+              -0.02727272727272727,
+              0.00909090909090909
+            ],
+            "target_hit": 0.25,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 3
+          }
+        },
+        "dev_random_5": {
+          "deltas": {
+            "delta_e_gold_median": -0.027252912521362305,
+            "delta_e_source_median": 0.023528337478637695,
+            "delta_margin_mean": -0.05431563918497048,
+            "delta_margin_median": -0.05852532386779785,
+            "delta_other_modes_median": {
+              "direct": -0.02595221996307373,
+              "request_for_info": -0.03574943542480469
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.27450980392156865
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 2,
+              "SOURCE_RETAINED": 218
+            },
+            "eligible_collateral": 106,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 2,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.00909090909090909,
+            "target_gain_rate_ci95": [
+              -0.022727272727272728,
+              0.0
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 2
+          }
+        },
+        "dev_random_6": {
+          "deltas": {
+            "delta_e_gold_median": 0.0002321004867553711,
+            "delta_e_source_median": -0.004441976547241211,
+            "delta_margin_mean": 0.005925247190045375,
+            "delta_margin_median": 0.0042084455490112305,
+            "delta_other_modes_median": {
+              "direct": -0.029576003551483154,
+              "request_for_info": 0.0057446956634521484
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.5098039215686274
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 2,
+              "OTHER_WRONG": 1,
+              "SOURCE_RETAINED": 217
+            },
+            "eligible_collateral": 106,
+            "fixed": 3,
+            "gold_arrivals": 2,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 3,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 3,
+            "target_gain_count": 1,
+            "target_gain_rate": 0.004545454545454545,
+            "target_gain_rate_ci95": [
+              -0.00909090909090909,
+              0.01818181818181818
+            ],
+            "target_hit": 0.6666666666666666,
+            "target_hit_ci95": [
+              0.0,
+              1.0
+            ],
+            "wrong_to_wrong": 1
+          }
+        },
+        "dev_random_7": {
+          "deltas": {
+            "delta_e_gold_median": 0.0032355785369873047,
+            "delta_e_source_median": -0.0006948709487915039,
+            "delta_margin_mean": 0.015178336378406076,
+            "delta_margin_median": 0.01128244400024414,
+            "delta_other_modes_median": {
+              "direct": 0.022920846939086914,
+              "request_for_info": -0.026011109352111816
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.5392156862745098
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 2,
+              "SOURCE_RETAINED": 218
+            },
+            "eligible_collateral": 106,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 2,
+            "target_gain_count": -2,
+            "target_gain_rate": -0.00909090909090909,
+            "target_gain_rate_ci95": [
+              -0.022727272727272728,
+              0.0
+            ],
+            "target_hit": 0.0,
+            "target_hit_ci95": [
+              0.0,
+              0.0
+            ],
+            "wrong_to_wrong": 2
+          }
+        },
+        "reverse_d_grad": {
+          "deltas": {
+            "delta_e_gold_median": -3.1804745197296143,
+            "delta_e_source_median": -0.04764127731323242,
+            "delta_margin_mean": -3.0992604510164727,
+            "delta_margin_median": -3.0499491095542908,
+            "delta_other_modes_median": {
+              "direct": -1.3553552627563477,
+              "request_for_info": -1.9961975812911987
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 0,
+              "SOURCE_RETAINED": 220
+            },
+            "eligible_collateral": 106,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 0,
+            "target_gain_count": 0,
+            "target_gain_rate": 0.0,
+            "target_gain_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "target_hit": null,
+            "target_hit_ci95": [
+              null,
+              null
+            ],
+            "wrong_to_wrong": 0
+          }
+        },
+        "ungated_d_grad": {
+          "deltas": {
+            "delta_e_gold_median": 1.6511286497116089,
+            "delta_e_source_median": 0.29451075196266174,
+            "delta_margin_mean": 1.3981947167353197,
+            "delta_margin_median": 1.3661727607250214,
+            "delta_other_modes_median": {
+              "direct": 0.9820985794067383,
+              "request_for_info": 1.559493899345398
+            },
+            "n": 220,
+            "positive_margin_change_fraction": 1.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 12,
+            "clean_collateral_rate": 0.026373626373626374,
+            "clean_collateral_rate_ci95": [
+              0.013186813186813187,
+              0.041758241758241756
+            ],
+            "collateral_count": 12,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 12,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 443
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 66,
+              "OTHER_WRONG": 32,
+              "SOURCE_RETAINED": 122
+            },
+            "eligible_collateral": 384,
+            "fixed": 97,
+            "gold_arrivals": 66,
+            "n_channel_error": 220,
+            "n_intervened_records": 877,
+            "net": 85,
+            "router_fired_baseline_correct_exposure": 384,
+            "router_fired_channel_error_count": 220,
+            "source_exits": 98,
+            "target_gain_count": 34,
+            "target_gain_rate": 0.15454545454545454,
+            "target_gain_rate_ci95": [
+              0.06818181818181818,
+              0.2409090909090909
+            ],
+            "target_hit": 0.673469387755102,
+            "target_hit_ci95": [
+              0.5806290322580646,
+              0.7647058823529411
+            ],
+            "wrong_to_wrong": 32
+          }
+        },
+        "wrong_layer_d_grad": {
+          "deltas": {
+            "delta_e_gold_median": 0.3662508726119995,
+            "delta_e_source_median": 0.028357744216918945,
+            "delta_margin_mean": 0.3428918773344919,
+            "delta_margin_median": 0.3237863779067993,
+            "delta_other_modes_median": {
+              "direct": 0.17605113983154297,
+              "request_for_info": 0.2725679874420166
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 1.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 8,
+              "OTHER_WRONG": 7,
+              "SOURCE_RETAINED": 205
+            },
+            "eligible_collateral": 106,
+            "fixed": 12,
+            "gold_arrivals": 8,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 12,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 15,
+            "target_gain_count": 1,
+            "target_gain_rate": 0.004545454545454545,
+            "target_gain_rate_ci95": [
+              -0.031818181818181815,
+              0.04090909090909091
+            ],
+            "target_hit": 0.5333333333333333,
+            "target_hit_ci95": [
+              0.26666666666666666,
+              0.7857142857142857
+            ],
+            "wrong_to_wrong": 7
+          }
+        },
+        "zero": {
+          "deltas": {
+            "delta_e_gold_median": 0.0,
+            "delta_e_source_median": 0.0,
+            "delta_margin_mean": 0.0,
+            "delta_margin_median": 0.0,
+            "delta_other_modes_median": {
+              "direct": 0.0,
+              "request_for_info": 0.0
+            },
+            "n": 204,
+            "positive_margin_change_fraction": 0.0
+          },
+          "metrics": {
+            "baseline_correct_n": 455,
+            "broke": 0,
+            "clean_collateral_rate": 0.0,
+            "clean_collateral_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "collateral_count": 0,
+            "collateral_destination_counts": {
+              "BROKEN_TO_OTHER": 0,
+              "BROKEN_TO_SOURCE": 0,
+              "CORRECT_RETAINED": 455
+            },
+            "destination_counts": {
+              "GOLD_ARRIVAL": 0,
+              "OTHER_WRONG": 0,
+              "SOURCE_RETAINED": 220
+            },
+            "eligible_collateral": 106,
+            "fixed": 0,
+            "gold_arrivals": 0,
+            "n_channel_error": 220,
+            "n_intervened_records": 408,
+            "net": 0,
+            "router_fired_baseline_correct_exposure": 106,
+            "router_fired_channel_error_count": 204,
+            "source_exits": 0,
+            "target_gain_count": 0,
+            "target_gain_rate": 0.0,
+            "target_gain_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "target_hit": null,
+            "target_hit_ci95": [
+              null,
+              null
+            ],
+            "wrong_to_wrong": 0
+          }
+        }
+      },
+      "geometry": "GEOMETRY_QUALIFIED",
+      "random_specificity": {
+        "k_random": 8,
+        "random_max": 0.00909090909090909,
+        "random_median": -0.00909090909090909,
+        "random_min": -0.00909090909090909,
+        "random_target_gain_rates": [
+          -0.00909090909090909,
+          -0.00909090909090909,
+          -0.00909090909090909,
+          0.00909090909090909,
+          -0.00909090909090909,
+          -0.00909090909090909,
+          0.004545454545454545,
+          -0.00909090909090909
+        ],
+        "randoms_ge_real": 0,
+        "real_exceeds_every_random": true,
+        "real_minus_random_median": 0.1318181818181818,
+        "real_rank_of_9": 1,
+        "real_target_gain_rate": 0.12272727272727273,
+        "seeds": [
+          20260811,
+          20260812,
+          20260813,
+          20260814,
+          20260815,
+          20260816,
+          20260817,
+          20260818
+        ],
+        "selected_q": 0.25,
+        "status": "frozen DEV development budget; descriptive_only per the frozen protocol. The formal K=59 null is not generated here and its seeds are disjoint from these by construction."
+      },
+      "reverse_control": {
+        "real_delta_margin_median": 1.4013434648513794,
+        "real_source_exits": 91,
+        "real_target_gain_rate": 0.12272727272727273,
+        "real_target_hit": 0.6483516483516484,
+        "reverse_delta_margin_median": -3.0499491095542908,
+        "reverse_reproduces_real": false,
+        "reverse_source_exits": 0,
+        "reverse_target_gain_rate": 0.0,
+        "reverse_target_hit": null,
+        "selected_q": 0.25
+      },
+      "s_c": 24.699562161837214,
+      "score_comparator": {
+        "applied": "e_gold += b_c/2 ; e_source -= b_c/2 ; others unchanged",
+        "b_c": 1.4013434648513794,
+        "metrics": {
+          "baseline_correct_n": 455,
+          "broke": 10,
+          "clean_collateral_rate": 0.02197802197802198,
+          "clean_collateral_rate_ci95": [
+            0.01098901098901099,
+            0.03736263736263736
+          ],
+          "collateral_count": 10,
+          "collateral_destination_counts": {
+            "BROKEN_TO_OTHER": 10,
+            "BROKEN_TO_SOURCE": 0,
+            "CORRECT_RETAINED": 445
+          },
+          "destination_counts": {
+            "GOLD_ARRIVAL": 69,
+            "OTHER_WRONG": 48,
+            "SOURCE_RETAINED": 103
+          },
+          "eligible_collateral": 106,
+          "fixed": 84,
+          "gold_arrivals": 69,
+          "n_channel_error": 220,
+          "n_intervened_records": 408,
+          "net": 74,
+          "router_fired_baseline_correct_exposure": 106,
+          "router_fired_channel_error_count": 204,
+          "source_exits": 117,
+          "target_gain_count": 21,
+          "target_gain_rate": 0.09545454545454546,
+          "target_gain_rate_ci95": [
+            0.0,
+            0.19090909090909092
+          ],
+          "target_hit": 0.5897435897435898,
+          "target_hit_ci95": [
+            0.5,
+            0.6756819319319318
+          ],
+          "wrong_to_wrong": 48
+        }
+      },
+      "selected_q": 0.25,
+      "ungated_control": {
+        "dev_pred_eq_source": 877,
+        "dev_rows_exposed_gated": 408,
+        "dev_rows_exposed_ungated": 877,
+        "gated_collateral_rate": 0.006593406593406593,
+        "gated_eligible_collateral": 106,
+        "gated_target_gain_rate": 0.12272727272727273,
+        "router_effectively_ungated": false,
+        "router_selectivity_ratio": 0.4652223489167617,
+        "selected_q": 0.25,
+        "tau": 0.011564,
+        "ungated_collateral_rate": 0.026373626373626374,
+        "ungated_eligible_collateral": 384,
+        "ungated_target_gain_rate": 0.15454545454545454
+      }
+    }
+  },
+  "sealed_evaluation_accessed": false
+}

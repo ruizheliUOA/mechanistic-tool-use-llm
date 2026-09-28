@@ -1,0 +1,64 @@
+{
+  "access_declaration": {
+    "evaluation_aggregates": false,
+    "evaluation_ids": false,
+    "evaluation_labels": false,
+    "evaluation_payload": false,
+    "evaluation_predictions": false,
+    "evaluation_scores": false
+  },
+  "input_sha256": {
+    "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json": "a1646cd91ce309bb2a3f36118dfe5d7335fe6239315288f03e45e42b19297161",
+    "final/results/qwen3_stage0_1/QWEN3_STAGE1_ACTIVATIONS.safetensors": "0c0ef438e6f3c4837f28a8ec6540d5566d4111f76bb943cde5406e0b1c709efc",
+    "final/results/qwen3_stage0_1/QWEN3_STAGE1_BASELINE_ROWS.jsonl": "83c0836f4fd1b52df7d44e81e44254a4e3599bad97eb6239e8744571729a02c3",
+    "final/results/qwen3_stage0_1_v2/QWEN3_8B_STAGE0_1_PROTOCOL_V2.json": "7b3b6198aa32c11b935d4c014bf39b0aa79434f6442a06df0203dc6bdd8b65fb",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_ROUTER_METRICS.json": "7801181b57343cd867779c84cd8c87c07dd959e01061619eb67ea9190df43673",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_SPLIT_INDEX.csv": "83a7584aa993d42708d2c718bd9b5ccf209f85b87d60afa2dfc599d2dde392e9",
+    "final/results/qwen3_stage0_1_v2/QWEN3_V2_SUPPORT_LEDGER.csv": "58a9167a513be769caf71cd5265057d207a3b2022b7d142a7b497f864201591f",
+    "final/results/qwen3_stage0_1_v2/directions/cannot_answer__to__tool_call.safetensors": "94c0302a015baad96b5e6b692342f2ef758b53325559a47514ddfe54aa866ce6",
+    "final/results/qwen3_stage0_1_v2/routers/cannot_answer__to__tool_call.safetensors": "5d7000b3952ce97b78c93e636a99e73125b15b9138d21a613f1ca3a3a8313b74",
+    "final/results/qwen3_stage1_5/QWEN3_STAGE1_5_DGRAD.safetensors": "a9aca77e51573e23269997182a69666df0b29d714648f29a28877b5e6eb15671",
+    "final/results/qwen3_stage2a_dose/QWEN3_STAGE2A_DOSE_DECLARATION.json": "1bdd7b4df870dcf9e1e93f2b1a3dba3464c971dfc3d9a472a8cc27a2c8e3615c",
+    "final/results/qwen3_stage2a_v2/QWEN3_STAGE2A_V2_PILOT.json": "7f2d20e4b0ba88ed12c163c66e65f04743b5664408d34cd198b5e4ab43cd3580",
+    "final/results/qwen3_stage2a_v2/QWEN3_STAGE2A_V2_RESULTS.json": "364b6f66e58ec06df67c9d206aaa6e5e44bf13101decafb6d49e4eea1c47cccf",
+    "final/results/qwen3_stage2a_v2/QWEN3_STAGE2A_V2_SCORE_COMPARATOR.json": "0a9febe33a94f68b4216c000041f129c9b8f01f44c63b65a83eb96be4bb163c3",
+    "scripts/qwen3_8b_stage0_1.py": "b1830b4be291c1adfe7e843e8de7fdea0ee1e4e1b6c10c25c6fc40465073f4ac",
+    "scripts/qwen3_8b_stage0_1_v2.py": "f9b61395f1fbecd9b01022e03baedf8737f87602af057576837c02b935e80cf0",
+    "scripts/qwen3_stage2a_v2_dev_calibration.py": "b76ab74c7adb9d8ec9dba342350051db1a837b4b6e4da50eea884c274c199eee"
+  },
+  "model": {
+    "attention_implementation": "eager",
+    "dtype": "bfloat16",
+    "hidden_size": 4096,
+    "repository": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "tokenizers": "0.21.1",
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0"
+  },
+  "model_file_sha256": {
+    "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+    "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+    "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+    "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+    "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+    "model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "protocol_version": "QWEN3_STAGE2_FORMAL_V1",
+  "schema_version": 1,
+  "sealed_evaluation": {
+    "count": 548,
+    "hash_recomputed_from_payload": false,
+    "identity_inherited_by_reference": true,
+    "ids_enumerated": false,
+    "payload_opened": false,
+    "source_manifest": "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json"
+  }
+}

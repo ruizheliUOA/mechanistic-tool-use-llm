@@ -1,0 +1,11 @@
+{
+  "hashes": {
+    "DATASET_AND_SPLIT_MANIFEST.json": "0baa7de6d074c57041345298fa53c691d688e6c6443d4e80cd7f0de440e3e97a",
+    "MODEL_AND_ENV_MANIFEST.json": "666644f6546b8497038dc439d83f997f302ccb66b6cec6d6df35cbdf58f4b523",
+    "PROSPECTIVE_REPLICATION_PROTOCOL.md": "6b033c7e9ffe93c5bac44f0a1d61a7c5717edb3a056fac15d8412675040d2f41",
+    "capture_activations.py": "f3b0f442562920bf0aeb8a73238247a48a26ccf7b68f4ecbbf716ef92146890f",
+    "estimate_directions.py": "8129988187fa9a22bda9a30124c1c05bd468974112a05eea9287de2f8b94a43f",
+    "run_qwen3_4b_stage_a.py": "54f0144477e75ff3568c595eee3f6e56248f2f6f1390aaac27160dbe9b808860"
+  },
+  "note": "Runner and analysis hashes for the completed stages."
+}

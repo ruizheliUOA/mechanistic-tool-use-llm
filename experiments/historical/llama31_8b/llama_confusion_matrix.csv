@@ -1,0 +1,5 @@
+gold\pred,tool_call,direct,request_for_info,cannot_answer
+tool_call,1124,91,66,14
+direct,0,0,0,0
+request_for_info,678,73,286,25
+cannot_answer,535,463,99,198

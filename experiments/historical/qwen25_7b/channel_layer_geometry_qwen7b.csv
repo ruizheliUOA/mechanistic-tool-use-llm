@@ -1,0 +1,16 @@
+channel,obs_layer,diffmean_norm,median_act_norm,n_err,n_ref,cos_diffmean_pca1,is_native_layer,source
+rfi_tc,12,2.0649,17.3679,622,393,0.0838,0,local acts_L12.npy
+rfi_tc,16,2.9386,19.2957,622,393,0.2409,0,local acts_L16.npy
+rfi_tc,18,7.1853,28.2679,622,393,0.8648,0,local acts_L18.npy
+rfi_tc,20,12.58,38.5417,622,393,0.9118,1,local acts_L20.npy
+rfi_tc,22,21.2558,63.966,622,393,0.8891,0,local acts_L22.npy
+ca_tc,12,4.8109,17.3825,513,98,0.8342,0,local acts_L12.npy
+ca_tc,16,6.1634,19.1095,513,98,0.8625,0,local acts_L16.npy
+ca_tc,18,10.8262,32.9896,513,98,0.0505,0,local acts_L18.npy
+ca_tc,20,16.3492,49.4979,513,98,0.4398,1,local acts_L20.npy
+ca_tc,22,24.0536,75.6827,513,98,0.4114,0,local acts_L22.npy
+ca_direct,12,1.732,17.7467,465,98,0.1396,0,local acts_L12.npy
+ca_direct,16,1.9751,18.6212,465,98,0.0002,1,local acts_L16.npy
+ca_direct,18,5.5235,32.7899,465,98,0.5376,0,local acts_L18.npy
+ca_direct,20,9.8402,47.1817,465,98,0.6289,0,local acts_L20.npy
+ca_direct,22,13.343,77.9485,465,98,0.5156,0,local acts_L22.npy

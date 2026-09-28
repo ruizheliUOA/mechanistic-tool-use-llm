@@ -1,0 +1,109 @@
+{
+  "comparator": {
+    "cannot_answer__to__direct": {
+      "applied": "e_gold += b_c/2 ; e_source -= b_c/2 ; others unchanged",
+      "b_c": 1.2134971618652344,
+      "metrics": {
+        "baseline_correct_n": 463,
+        "broke": 0,
+        "clean_collateral_rate": 0.0,
+        "clean_collateral_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "collateral_count": 0,
+        "fixed": 53,
+        "gold_arrivals": 48,
+        "n_channel_error": 159,
+        "n_intervened_records": 142,
+        "net": 53,
+        "source_exits": 82,
+        "target_gain_count": 14,
+        "target_gain_rate": 0.0880503144654088,
+        "target_gain_rate_ci95": [
+          -0.018867924528301886,
+          0.1949685534591195
+        ],
+        "target_hit": 0.5853658536585366,
+        "target_hit_ci95": [
+          0.4788732394366197,
+          0.6913613081166272
+        ],
+        "wrong_to_wrong": 34
+      },
+      "n_routed": 142,
+      "selected_q": 0.5
+    },
+    "cannot_answer__to__tool_call": {
+      "applied": "e_gold += b_c/2 ; e_source -= b_c/2 ; others unchanged",
+      "b_c": 1.673107087612152,
+      "metrics": {
+        "baseline_correct_n": 463,
+        "broke": 5,
+        "clean_collateral_rate": 0.01079913606911447,
+        "clean_collateral_rate_ci95": [
+          0.0021598272138228943,
+          0.02159827213822894
+        ],
+        "collateral_count": 5,
+        "fixed": 71,
+        "gold_arrivals": 67,
+        "n_channel_error": 167,
+        "n_intervened_records": 170,
+        "net": 66,
+        "source_exits": 117,
+        "target_gain_count": 17,
+        "target_gain_rate": 0.10179640718562874,
+        "target_gain_rate_ci95": [
+          -0.023952095808383235,
+          0.2275449101796407
+        ],
+        "target_hit": 0.5726495726495726,
+        "target_hit_ci95": [
+          0.48148148148148145,
+          0.6612965260545904
+        ],
+        "wrong_to_wrong": 50
+      },
+      "n_routed": 170,
+      "selected_q": 1.0
+    },
+    "request_for_info__to__tool_call": {
+      "applied": "e_gold += b_c/2 ; e_source -= b_c/2 ; others unchanged",
+      "b_c": 0.809561550617218,
+      "metrics": {
+        "baseline_correct_n": 463,
+        "broke": 12,
+        "clean_collateral_rate": 0.02591792656587473,
+        "clean_collateral_rate_ci95": [
+          0.012958963282937365,
+          0.04103671706263499
+        ],
+        "collateral_count": 12,
+        "fixed": 55,
+        "gold_arrivals": 52,
+        "n_channel_error": 244,
+        "n_intervened_records": 285,
+        "net": 43,
+        "source_exits": 59,
+        "target_gain_count": 45,
+        "target_gain_rate": 0.18442622950819673,
+        "target_gain_rate_ci95": [
+          0.12704918032786885,
+          0.24180327868852458
+        ],
+        "target_hit": 0.8813559322033898,
+        "target_hit_ci95": [
+          0.7894736842105263,
+          0.9571428571428572
+        ],
+        "wrong_to_wrong": 7
+      },
+      "n_routed": 285,
+      "selected_q": 0.125
+    }
+  },
+  "frozen_for_future_formal_use": true,
+  "note": "b_c is calibrated on DEV only at the selected d_grad dose; no additional parameter is fitted",
+  "schema_version": 1
+}

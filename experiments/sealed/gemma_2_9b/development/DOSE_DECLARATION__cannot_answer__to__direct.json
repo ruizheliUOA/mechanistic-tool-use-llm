@@ -1,0 +1,18 @@
+{
+  "absolute_delta_norm_by_q": {
+    "0.0": 0.0,
+    "0.125": 0.1660953926433774,
+    "0.25": 0.3321907852867548,
+    "0.5": 0.6643815705735096,
+    "1.0": 1.328763141147019,
+    "2.0": 2.657526282294038
+  },
+  "d_grad_sha": "22c328957edfeaf9b971e0b0b5b4db2e85e31e3726496dc306e0a5e0cc917f98",
+  "dev_pred_eq_source": 125,
+  "dev_routed": 88,
+  "diffmean_Linj_sha": "d8992ce34fc014ed2905b38455ca56ad7eb66548c8de5eca33d38de594036813",
+  "diffmean_Lobs_sha": "63ccd3c0e8ccaa8b04c522311cee63ec5041289dc2582a093302a6e67659a482",
+  "s_c": 1.328763141147019,
+  "tau": 0.4,
+  "train_routed": 202
+}

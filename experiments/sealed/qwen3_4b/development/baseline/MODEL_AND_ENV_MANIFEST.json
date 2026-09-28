@@ -1,0 +1,72 @@
+{
+  "determinism": {
+    "batch_size": 1,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "readout_replay_max_deviation": 0.0,
+    "seed": 42,
+    "tf32": false,
+    "use_cache": false
+  },
+  "environment": {
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "gpu_total_gib": 23.52,
+    "matches_qwen3_8b_formal_program": {
+      "tokenizers": true,
+      "torch": true,
+      "transformers": true
+    },
+    "packages_upgraded": false,
+    "python": "3.10.8",
+    "tokenizers": "0.21.1",
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0"
+  },
+  "layer_mapping": {
+    "L_inj": 21,
+    "L_obs": 26,
+    "base": "Qwen2.5 28 layers, L_obs 20, L_inj 16",
+    "formula": "round(old/(old_n-1)*(new_n-1))",
+    "normalised_depth_inj": 0.6,
+    "normalised_depth_obs": 0.7429,
+    "note": "Qwen3-4B independently verified at 36 layers; absolute indices coincide with Qwen3-8B by computation. Hidden size differs (2560 vs 4096), so directions are 2560-dimensional.",
+    "recomputed_not_copied": true
+  },
+  "model": {
+    "architecture": [
+      "Qwen3ForCausalLM"
+    ],
+    "attention_implementation": "eager",
+    "chat_template_identical_to_qwen3_8b": true,
+    "chat_template_sha256_utf8": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "dtype": "bfloat16",
+    "gated": false,
+    "hidden_size": 2560,
+    "licence": "apache-2.0",
+    "local_path": "/root/autodl-tmp/sakiko-followup/.cache/qwen3_4b/1cfa9a7208912126459214e8b04321603b3df60c",
+    "model_type": "qwen3",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "quantised": false,
+    "repository": "Qwen/Qwen3-4B",
+    "resolved_from": "official upstream HF API before any inference",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "weights_committed_to_git": false
+  },
+  "model_file_sha256": {
+    "config.json": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model-00001-of-00003.safetensors": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+    "model-00002-of-00003.safetensors": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+    "model-00003-of-00003.safetensors": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1",
+    "model.safetensors.index.json": "6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "qwen3_5_9b_touched": false
+}

@@ -1,0 +1,114 @@
+variable,value,unit,model,dataset,channel,population,denominator,artifact,section,era,mode,provenance_tier
+phi_baseline_acc,48.18,pct,Phi-3.5,W2C,all,test n=548,n/a,p0_final_test_eval.json,Act1,historical,confirmatory,B
+phi_fixed,107,count,Phi-3.5,W2C,all,test n=548,n/a,p0_final_test_details.jsonl,Act1,historical,confirmatory,A
+phi_broke,52,count,Phi-3.5,W2C,all,test n=548,n/a,p0_final_test_details.jsonl,Act1,historical,confirmatory,A
+phi_net,55,count,Phi-3.5,W2C,all,test n=548,n/a,p0_final_test_details.jsonl,Act1,historical,confirmatory,A
+phi_router_fired,293,count,Phi-3.5,W2C,all,test n=548,n/a,p0_final_test_details.jsonl,Act1,historical,confirmatory,A
+phi_routed_errors,200,count,Phi-3.5,W2C,all,fired,n/a,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_source_retained,47,count,Phi-3.5,W2C,all,routed errors,n/a,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_gold_arrival,107,count,Phi-3.5,W2C,all,routed errors,n/a,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_other_wrong,46,count,Phi-3.5,W2C,all,routed errors,n/a,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_source_exits,153,count,Phi-3.5,W2C,all,routed errors,n/a,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_target_hit,0.6993,rate,Phi-3.5,W2C,all,source exits,153,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_exposed_correct,93,count,Phi-3.5,W2C,all,fired baseline-correct,n/a,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_broken_e2,52,count,Phi-3.5,W2C,all,exposed-correct,93,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_collateral_e2,0.5591,rate,Phi-3.5,W2C,all,exposed-correct,E2 n=93,p0_final_test_details.jsonl,Verify,historical,confirmatory,A
+phi_collateral_e1,0.1970,rate,Phi-3.5,W2C,all,all baseline-correct,E1 n=264,p1_multiseed_all_results.json,Verify,historical,confirmatory,B
+phi_e2_real_locked,107/52/+55,triple,Phi-3.5,W2C,all,test n=548,n/a,p2_placebo_controls.json,E-2,historical,confirmatory,B
+phi_e2_random_dir,71/57/+14,triple,Phi-3.5,W2C,all,test n=548,n/a,p2_placebo_controls.json,E-2,historical,confirmatory,B
+phi_e2_reverse_dir,71/57/+14,triple,Phi-3.5,W2C,all,test n=548,n/a,p2_placebo_controls.json,E-2,historical,confirmatory,B
+phi_e2_wrong_layer,66/63/+3,triple,Phi-3.5,W2C,all,test n=548,n/a,p2_placebo_controls.json,E-2,historical,confirmatory,B
+phi_e2_mismatched,38/55/-17,triple,Phi-3.5,W2C,all,test n=548,n/a,p2_placebo_controls.json,E-2,historical,confirmatory,B
+phi_ungated_withinrun,-32,net,Phi-3.5,W2C,all,test n=548,n/a,p2_independent_baselines.json,Mechanism,historical,confirmatory,B
+phi_ungated_reference,62,net,Phi-3.5,W2C,all,test n=548,n/a,p2_independent_baselines.json,Mechanism,historical,confirmatory,B
+phi_broken_route_prob_mean,0.8305,prob,Phi-3.5,W2C,all,broken exposed-correct,52,p0_final_test_details.jsonl,Mechanism,historical,post-hoc,A
+phi_retained_route_prob_mean,0.8432,prob,Phi-3.5,W2C,all,retained exposed-correct,41,p0_final_test_details.jsonl,Mechanism,historical,post-hoc,A
+phi_confidence_cliffs_delta,-0.0938,effect,Phi-3.5,W2C,all,exposed-correct,93,p0_final_test_details.jsonl,Mechanism,historical,post-hoc,A
+phi_break_rate_tau09,0.5100,rate,Phi-3.5,W2C,all,exposed-correct at tau>=0.9,49,p0_final_test_details.jsonl,Mechanism,historical,post-hoc,A
+q8b_routed_channel_errors,72,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,routed,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q8b_gold_arrival,38,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,routed errors,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q8b_other_wrong,14,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,routed errors,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q8b_source_exits,52,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,routed errors,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q8b_target_hit,0.7308,rate,Qwen3-8B,W2C,cannot_answer__to__tool_call,source exits,52,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q8b_exposed_correct,6,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,fired baseline-correct,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q8b_collateral_e2,VACUOUS,rate,Qwen3-8B,W2C,cannot_answer__to__tool_call,exposed-correct,E2 n=6,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q8b_collateral_e1,0.0000,rate,Qwen3-8B,W2C,cannot_answer__to__tool_call,all baseline-correct,E1 n=211,frozen licence record,Act2,modern,confirmatory,B
+q8b_collateral_e1_cp_upper,0.014097,rate,Qwen3-8B,W2C,cannot_answer__to__tool_call,all baseline-correct,E1 n=211,"analytic: 1-0.05^(1/211), verified",Act2,modern,confirmatory,A
+q8b_matched_random_exceed,0,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,K=59 randoms,59,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Specificity,modern,confirmatory,A
+q8b_random_gold_max,8,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,K=59 randoms,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Specificity,modern,confirmatory,A
+q8b_score_space_gold,37,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,routed errors,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Specificity,modern,confirmatory,A
+q8b_ungated_net,13,net,Qwen3-8B,W2C,cannot_answer__to__tool_call,ungated,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Mechanism,modern,confirmatory,A
+q8b_gated_net,38,net,Qwen3-8B,W2C,cannot_answer__to__tool_call,gated,n/a,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,Mechanism,modern,confirmatory,A
+q4b_routed_channel_errors,118,count,Qwen3-4B,W2C,cannot_answer__to__tool_call,routed,n/a,FORMAL_REAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q4b_gold_arrival,37,count,Qwen3-4B,W2C,cannot_answer__to__tool_call,routed errors,n/a,FORMAL_REAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q4b_other_wrong,27,count,Qwen3-4B,W2C,cannot_answer__to__tool_call,routed errors,n/a,FORMAL_REAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q4b_source_exits,64,count,Qwen3-4B,W2C,cannot_answer__to__tool_call,routed errors,n/a,FORMAL_REAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q4b_target_hit,0.5781,rate,Qwen3-4B,W2C,cannot_answer__to__tool_call,source exits,64,FORMAL_REAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q4b_exposed_correct,50,count,Qwen3-4B,W2C,cannot_answer__to__tool_call,fired baseline-correct,n/a,FORMAL_REAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+q4b_collateral_e2,0.0200,rate,Qwen3-4B,W2C,cannot_answer__to__tool_call,exposed-correct,E2 n=50,FORMAL_REAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_routed_channel_errors,96,count,Gemma-2-9b,W2C,cannot_answer__to__tool_call,routed,n/a,gemma FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_gold_arrival,17,count,Gemma-2-9b,W2C,cannot_answer__to__tool_call,routed errors,n/a,gemma FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_other_wrong,10,count,Gemma-2-9b,W2C,cannot_answer__to__tool_call,routed errors,n/a,gemma FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_source_exits,27,count,Gemma-2-9b,W2C,cannot_answer__to__tool_call,routed errors,n/a,gemma FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_target_hit,0.6296,rate,Gemma-2-9b,W2C,cannot_answer__to__tool_call,source exits,27,gemma FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_exposed_correct,11,count,Gemma-2-9b,W2C,cannot_answer__to__tool_call,fired baseline-correct,n/a,gemma FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_collateral_e2,0.0909,rate,Gemma-2-9b,W2C,cannot_answer__to__tool_call,exposed-correct,E2 n=11,gemma FORMAL_RECORDS.jsonl,Act2,modern,confirmatory,A
+gemma_matched_random_exceed,0,count,Gemma-2-9b,W2C,cannot_answer__to__tool_call,K=59 randoms,59,gemma FORMAL_RECORDS.jsonl,Specificity,modern,confirmatory,A
+gemma_gated_net,16,net,Gemma-2-9b,W2C,cannot_answer__to__tool_call,gated,n/a,gemma FORMAL_RECORDS.jsonl,Mechanism,modern,confirmatory,A
+gemma_ungated_net,17,net,Gemma-2-9b,W2C,cannot_answer__to__tool_call,ungated,n/a,gemma FORMAL_RECORDS.jsonl,Mechanism,modern,confirmatory,A
+metatool_baseline_acc,0.7731,rate,Qwen2.5-7B,MetaTool-Binary,both,1040 rows,n/a,metatool_qwen7b_sakiko_ca_summary.json,Breadth,historical,confirmatory,B
+metatool_overcall_mean_net,8.6,net,Qwen2.5-7B,MetaTool-Binary,no_tool__tool_call,5 seeds,n/a,metatool_qwen7b_sakiko_ca_summary.json,Breadth,historical,confirmatory,B
+metatool_undercall_mean_net,13.0,net,Qwen2.5-7B,MetaTool-Binary,tool_call__no_tool,5 seeds,n/a,metatool_qwen7b_sakiko_ca_summary.json,Breadth,historical,confirmatory,B
+metatool_dual_mean_net,21.6,net,Qwen2.5-7B,MetaTool-Binary,both,5 seeds,n/a,metatool_qwen7b_sakiko_ca_summary.json,Breadth,historical,confirmatory,B
+metatool_partition_overlap,0,count,Qwen2.5-7B,MetaTool-Binary,both,5 seeds,n/a,metatool_qwen7b_sakiko_ca_summary.json,Breadth,historical,confirmatory,B
+metatool_ungated_nt_tc,-39,net,Qwen2.5-7B,MetaTool-Binary,nt_tc,seed 42,n/a,metatool_qwen7b_sakiko_ca_summary.json,Mechanism,historical,confirmatory,B
+metatool_ungated_tc_nt,-34,net,Qwen2.5-7B,MetaTool-Binary,tc_nt,seed 42,n/a,metatool_qwen7b_sakiko_ca_summary.json,Mechanism,historical,confirmatory,B
+metatool_split_agreement,524,count,Qwen2.5-7B,MetaTool-Binary,both,archived vs regenerated,1040,PHASE2_CLAIM_BOUNDARY.md,Breadth,historical,confirmatory,C
+mech_channel_share,0.78,rate,Qwen2.5-7B,W2C,3 channels,2052 errors,2052,error_transition_matrix_w2c_qwen7b.csv,Discover,historical,exploratory,B
+mech_cos_rfi_ca_tc,0.5687,cosine,Qwen2.5-7B,W2C,pairwise,common layer L20,n/a,qwen7b_direction_cosine_matrix.csv,Discover,historical,exploratory,B
+mech_cos_rfi_ca_direct,0.4880,cosine,Qwen2.5-7B,W2C,pairwise,common layer L20,n/a,qwen7b_direction_cosine_matrix.csv,Discover,historical,exploratory,B
+mech_cos_ca_tc_ca_direct,0.7055,cosine,Qwen2.5-7B,W2C,pairwise,common layer L20,n/a,qwen7b_direction_cosine_matrix.csv,Discover,historical,exploratory,B
+mech_bootstrap_stability_healthy_min,0.9199,cosine,Qwen2.5-7B,W2C,all,train pools,n/a,bootstrap_direction_stability.csv,Mechanism,historical,exploratory,B
+mech_bootstrap_stability_degenerate,0.8235,cosine,Qwen2.5-7B,W2C,ca_direct L16,train pools,n/a,bootstrap_direction_stability.csv,Mechanism,historical,exploratory,B
+mech_estimator_pca1_vs_diffmean,+50 vs +36,net,Qwen2.5-7B,W2C,ca_tc,locked test,n/a,ca_tc_pca_vs_diffmean_qwen7b.csv,Mechanism,historical,exploratory,B
+mech_broke_set_jaccard,1.000,index,Phi-3.5,W2C,rfi_tc,PC subsets,n/a,rfi_pca_mainline_progress_summary.md,Mechanism,historical,exploratory,C
+e4_phi_alpha_sweep_exposure,272,count,Phi-3.5,W2C,all,val n=548 all alphas,n/a,p0_val_alpha_sweep.json,E-4,historical,exploratory,B
+e4_q4b_gate_e1_vs_e2,1.3 vs 5.7,pct,Qwen3-4B,W2C,cannot_answer__to__tool_call,dev q=0.5,E1 455 / E2 106,DEV_DOSE_TABLE.csv,E-4,modern,exploratory,B
+q8b_formal_verdict,FORMAL_CONFIRMATORY_SUCCESS,verdict,Qwen3-8B,W2C,cannot_answer__to__tool_call,sealed formal,n/a,QWEN3_STAGE2_FORMAL_REPORT.md,6-7,modern,confirmatory,B
+q8b_target_hit_ci_lo,0.60416,rate,Qwen3-8B,W2C,cannot_answer__to__tool_call,source exits,52,QWEN3_STAGE2_FORMAL_RESULTS.json,6-7,modern,confirmatory,B
+q8b_target_hit_ci_hi,0.84615,rate,Qwen3-8B,W2C,cannot_answer__to__tool_call,source exits,52,QWEN3_STAGE2_FORMAL_RESULTS.json,6-7,modern,confirmatory,B
+q4b_formal_verdict,QWEN3_4B_FORMAL_DECLINE,verdict,Qwen3-4B,W2C,cannot_answer__to__tool_call,sealed formal,n/a,FORMAL_PRINCIPAL_VERDICT.txt,6-7,modern,confirmatory,B
+q4b_target_hit_ci_lo,0.4559,rate,Qwen3-4B,W2C,cannot_answer__to__tool_call,source exits,64,QWEN3_4B_FORMAL_RESULTS.json (frozen; corrected 2026-09-11),6-7,modern,confirmatory,B
+gemma_formal_verdict,GEMMA_FORMAL_DECLINE,verdict,Gemma-2-9b,W2C,cannot_answer__to__tool_call,sealed formal,n/a,FORMAL_PRINCIPAL_VERDICT.json,6-7,modern,confirmatory,B
+gemma_target_hit_ci_lo,0.4444,rate,Gemma-2-9b,W2C,cannot_answer__to__tool_call,source exits,27,gemma FORMAL_PRINCIPAL_VERDICT.json (frozen; corrected 2026-09-11),6-7,modern,confirmatory,B
+gemma_failed_conditions,3_target_gain_CI_lower_gt_0;6_target_hit_CI_lower_gt_0.50,list,Gemma-2-9b,W2C,cannot_answer__to__tool_call,sealed formal,n/a,FORMAL_PRINCIPAL_VERDICT.json,6-7,modern,confirmatory,B
+q8b_score_space_other_wrong,21,count,Qwen3-8B,W2C,cannot_answer__to__tool_call,routed errors,72,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,5,modern,confirmatory,A
+q8b_score_space_target_hit,0.6379,rate,Qwen3-8B,W2C,cannot_answer__to__tool_call,source exits,58,QWEN3_STAGE2_FORMAL_RECORDS.jsonl,5,modern,confirmatory,A
+q8b_paired_mcnemar_p,1.0;0.189,p-value,Qwen3-8B,W2C,cannot_answer__to__tool_call,paired 548 / channel,n/a,QWEN3_STAGE2_PAIRED_RECOVERY.json,5,modern,post-hoc,B
+llama_gold_arrivals,19,count,Llama-3.1-8B,W2C,cannot_answer__to__tool_call,locked TEST,n/a,SAKIKO_LADDER_AUDIT.md,7,historical,post-hoc,C
+llama_other_wrong,44,count,Llama-3.1-8B,W2C,cannot_answer__to__tool_call,locked TEST,n/a,SAKIKO_LADDER_AUDIT.md,7,historical,post-hoc,C
+llama_target_hit,0.30,rate,Llama-3.1-8B,W2C,cannot_answer__to__tool_call,source exits,63,SAKIKO_LADDER_AUDIT.md,7,historical,post-hoc,C
+llama_randoms_ge_real,5/20;3/20,count,Llama-3.1-8B,W2C,multiple,K=20 randoms,20,SAKIKO_LADDER_AUDIT.md,7,historical,post-hoc,C
+mistral_real_net,12,net,Mistral-7B-v0.3,W2C,rfi_tc,locked TEST,n/a,SAKIKO_LADDER_AUDIT.md,7,historical,post-hoc,C
+mistral_random_mean_net,29,net,Mistral-7B-v0.3,W2C,rfi_tc,K=20 randoms,20,SAKIKO_LADDER_AUDIT.md,7,historical,post-hoc,C
+mistral_randoms_ge_real,17/20,count,Mistral-7B-v0.3,W2C,rfi_tc,K=20 randoms,20,SAKIKO_LADDER_AUDIT.md,7,historical,post-hoc,C
+q4b_target_hit_ci_hi,0.6970,rate,Qwen3-4B,W2C,cannot_answer__to__tool_call,source exits,64,QWEN3_4B_FORMAL_RESULTS.json (frozen; corrected 2026-09-11),6-7,modern,confirmatory,B
+gemma_target_hit_ci_hi,0.8148,rate,Gemma-2-9b,W2C,cannot_answer__to__tool_call,source exits,27,gemma FORMAL_PRINCIPAL_VERDICT.json (frozen; source corrected 2026-09-11),6-7,modern,confirmatory,B
+gemma_random_gold_max,0,count,Gemma-2-9b,W2C,cannot_answer__to__tool_call,K=59 randoms,n/a,gemma FORMAL_RECORDS.jsonl,4,modern,confirmatory,A
+phi_multiseed_nets,55;54;53;60;67,net,Phi-3.5,W2C,all,test n=548 x 5 seeds,n/a,p1_multiseed_table.csv,4,historical,confirmatory,B
+phi_multiseed_all_positive,5/5,count,Phi-3.5,W2C,all,test n=548 x 5 seeds,5,p1_multiseed_table.csv,4,historical,confirmatory,B
+qwen25_real_net,79,net,Qwen2.5-7B,W2C,all,locked test,n/a,placebo_control_summary_qwen7b.csv,4,historical,confirmatory,B
+qwen25_real_fixed_broke,92/13,count,Qwen2.5-7B,W2C,all,locked test,n_touched 202,placebo_control_summary_qwen7b.csv,4,historical,confirmatory,B
+qwen25_reverse_net,16,net,Qwen2.5-7B,W2C,all,locked test,n/a,placebo_control_summary_qwen7b.csv,4,historical,confirmatory,B
+qwen25_random_mean_net,25.2,net,Qwen2.5-7B,W2C,all,K=10 randoms,10,placebo_control_summary_qwen7b.csv,4,historical,confirmatory,B
+qwen25_random_max_net,50,net,Qwen2.5-7B,W2C,all,K=10 randoms,10,placebo_control_summary_qwen7b.csv,4,historical,confirmatory,B
+qwen25_real_ge_all_random,True,bool,Qwen2.5-7B,W2C,all,K=10 randoms; 5/5 seeds,10,placebo_control_summary_qwen7b.csv,4,historical,confirmatory,B
+qwen25_ungated_net,94,net,Qwen2.5-7B,W2C,all,locked test,n_touched 293,placebo_control_summary_qwen7b.csv,8,historical,confirmatory,B
+qwen25_ungated_fixed_broke,116/22,count,Qwen2.5-7B,W2C,all,locked test,n_touched 293,placebo_control_summary_qwen7b.csv,8,historical,confirmatory,B
+gating_precision_gated,7.08;inf;17.00,ratio,Qwen2.5-7B;Qwen3-8B;Gemma-2-9b,W2C,all,fixed per broken,varies,derived from committed arm records,8,mixed,confirmatory,B
+gating_precision_ungated,5.27;1.45;5.25,ratio,Qwen2.5-7B;Qwen3-8B;Gemma-2-9b,W2C,all,fixed per broken,varies,derived from committed arm records,8,mixed,confirmatory,B
+mech_ca_direct_layers,16;18;20;22,layer,Qwen2.5-7B,W2C,ca_direct,layer sweep,n/a,channel_layer_geometry_qwen7b.csv,8,historical,exploratory,B
+mech_ca_direct_auc_flat,0.96,auc,Qwen2.5-7B,W2C,ca_direct,layer sweep,n/a,channel_layer_geometry_qwen7b.csv,8,historical,exploratory,B
+mech_ca_direct_dm_norm,2.12;5.88;10.41;14.26,norm,Qwen2.5-7B,W2C,ca_direct,layer sweep,n/a,channel_layer_geometry_qwen7b.csv,8,historical,exploratory,B
+mech_ca_direct_best_val_net,13;24;46;42,net,Qwen2.5-7B,W2C,ca_direct,val sweep,n/a,channel_layer_geometry_qwen7b.csv,8,historical,exploratory,B
+mech_ca_direct_cos_dm_pc1_l16,0.0002,cosine,Qwen2.5-7B,W2C,ca_direct,L16,n/a,channel_geometry_summary.md,8,historical,exploratory,C

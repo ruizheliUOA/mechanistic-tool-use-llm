@@ -1,0 +1,136 @@
+{
+  "phase": "Phase 2 \u2014 MetaTool x Qwen2.5-7B target-native SAKIKO-CA",
+  "R0": {
+    "pass": true,
+    "baseline_acc": 0.7731,
+    "over_call_errors": 107,
+    "under_call_errors": 129
+  },
+  "discovery": {
+    "stable_default": [
+      "tool_call__no_tool"
+    ],
+    "weak_but_scope_eligible": [
+      "no_tool__tool_call"
+    ],
+    "dominant_channel_flipped_vs_phi": true
+  },
+  "locked_config_stability": {
+    "nt_tc": {
+      "dir": "diffmean 5/5",
+      "obs": "L24 5/5",
+      "inj": "L20 x3 / L22 x2",
+      "alpha": "2.0 5/5",
+      "thr": "0.6-0.8",
+      "router_auc_range": [
+        0.927,
+        0.979
+      ],
+      "dm_norm_range": [
+        31.9,
+        33.5
+      ]
+    },
+    "tc_nt": {
+      "dir": "pca1 5/5 (R2 cos 0.45-0.51 every seed)",
+      "obs": "L24 5/5",
+      "inj": "L20 x3 / L22 x2",
+      "alpha": "2.0-4.0",
+      "thr": "0.5-0.8",
+      "router_auc_range": [
+        0.947,
+        0.991
+      ],
+      "dm_norm_range": [
+        27.9,
+        29.4
+      ]
+    }
+  },
+  "arms_5seed": {
+    "B_overcall_only": {
+      "nets": [
+        3,
+        11,
+        15,
+        9,
+        5
+      ],
+      "mean": 8.6,
+      "std": 4.27,
+      "min": 3,
+      "max": 15,
+      "wins": 5,
+      "ties": 0,
+      "losses": 0
+    },
+    "C_undercall_only": {
+      "nets": [
+        11,
+        11,
+        12,
+        16,
+        15
+      ],
+      "mean": 13.0,
+      "std": 2.1,
+      "min": 11,
+      "max": 16,
+      "wins": 5,
+      "ties": 0,
+      "losses": 0
+    },
+    "D_dual": {
+      "nets": [
+        14,
+        22,
+        27,
+        25,
+        20
+      ],
+      "mean": 21.6,
+      "std": 4.5,
+      "min": 14,
+      "max": 27,
+      "wins": 5,
+      "ties": 0,
+      "losses": 0
+    }
+  },
+  "additive_all_seeds": true,
+  "partition_overlap_all_seeds": 0,
+  "acc_A_to_D": [
+    [
+      0.8141,
+      0.90385
+    ],
+    [
+      0.75641,
+      0.89744
+    ],
+    [
+      0.74359,
+      0.91667
+    ],
+    [
+      0.76282,
+      0.92308
+    ],
+    [
+      0.76282,
+      0.89103
+    ]
+  ],
+  "controls_seed42": {
+    "reverse_net": 0,
+    "random_percentile": {
+      "nt_tc": 95.0,
+      "tc_nt": 100.0
+    },
+    "ungated_net": {
+      "nt_tc": -39,
+      "tc_nt": -34
+    }
+  },
+  "outcome": "SUCCESS per PHASE2_PROTOCOL.md section 21 (direction-specific at seed 42; 5/5-seed robust Net on all arms; specificity controls run at pilot scope only)"
+}

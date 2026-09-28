@@ -1,0 +1,5 @@
+label,precision,recall,f1,support
+tool_call,0.8259,0.892,0.8577,500
+ask_user,0.5455,0.42,0.4746,100
+flag_param_error,0.875,0.42,0.5676,100
+cannot_comply,0.974,0.75,0.8475,100

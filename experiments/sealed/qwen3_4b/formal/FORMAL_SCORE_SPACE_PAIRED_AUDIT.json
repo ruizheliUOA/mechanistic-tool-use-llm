@@ -1,0 +1,36 @@
+{
+  "activation": {
+    "broke": 1,
+    "clean_collateral_rate": 0.004672897196261682,
+    "fixed": 40,
+    "gold_arrivals": 37,
+    "net": 39,
+    "source_exits": 64,
+    "target_gain_rate": 0.08064516129032258,
+    "target_hit": 0.578125,
+    "wrong_to_wrong": 27
+  },
+  "activation_exceeds_score_space": false,
+  "b_c_frozen_on": "DEV, at the selected dose; NOT tuned on SEALED",
+  "comparator": {
+    "applied": "e_gold += b_c/2 ; e_source -= b_c/2 ; others unchanged",
+    "b_c": 1.4013434648513794,
+    "calibrated_on": "DEV, at the selected dose",
+    "role": "frozen comparator; d_grad must exceed it for the non-reducibility claim"
+  },
+  "interpretation_rule": "If the score comparator matches or exceeds, do not claim the activation intervention provides behaviour unavailable to a simple frozen score-space shift.",
+  "paired_difference_target_gain_rate": -0.02419354838709678,
+  "paired_difference_wrong_to_wrong_rate": -0.03225806451612903,
+  "role_in_conjunction": "secondary/ordered, non-promotable; the frozen conjunction does NOT require activation superiority over score-space",
+  "score_space": {
+    "broke": 6,
+    "clean_collateral_rate": 0.028037383177570093,
+    "fixed": 45,
+    "gold_arrivals": 44,
+    "net": 39,
+    "source_exits": 75,
+    "target_gain_rate": 0.10483870967741936,
+    "target_hit": 0.5866666666666667,
+    "wrong_to_wrong": 31
+  }
+}

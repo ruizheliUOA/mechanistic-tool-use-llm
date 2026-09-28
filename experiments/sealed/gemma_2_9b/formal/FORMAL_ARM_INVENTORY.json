@@ -1,0 +1,75 @@
+{
+  "canonical_evidence": {
+    "arithmetic": "(5 routed named + 59 randoms) x 218 + 452 ungated = 64x218 + 452 = 14404",
+    "distinct_arms": 65,
+    "named_forward_arms": 6,
+    "per_arm_n": {
+      "d_L26_diffmean": 218,
+      "formal_random_i": 218,
+      "real_d_grad": 218,
+      "reverse_d_grad": 218,
+      "ungated_d_grad": 452,
+      "wrong_layer_d_grad": 218,
+      "zero": 218
+    },
+    "random_forward_arms": 59,
+    "total_records": 14404
+  },
+  "canonical_source": "final/results/qwen3_4b_w2c_formal_v1/QWEN3_4B_FORMAL_RECORDS.jsonl",
+  "derived_non_forward_comparators": [
+    {
+      "derivation": "b_c = median over channel-error rows of ((int[g]-int[s]) - (base[g]-base[s])) from the real arm; then base[g]+=b_c/2, base[s]-=b_c/2, argmax",
+      "forward_passes": 0,
+      "name": "score_space_bias",
+      "note": "computed from the real arm's stored scores; NOT counted as an arm",
+      "records": 0
+    }
+  ],
+  "expected_records_gemma": {
+    "formula": "64 * n_routed_sealed + n_pred_eq_source_sealed",
+    "n_routed_sealed": "UNKNOWN - determined at formal execution; cannot be known without reading SEALED",
+    "note": "the count is checked at execution, not pre-declared, because it depends on sealed Router firing"
+  },
+  "model_forward_intervention_arms": [
+    {
+      "arm": "zero",
+      "delta": null,
+      "note": "distinct forward arm; must reproduce baseline exactly",
+      "population": "routed"
+    },
+    {
+      "arm": "real_d_grad",
+      "delta": "q*s_c*d_grad at L_inj",
+      "population": "routed"
+    },
+    {
+      "arm": "d_Lobs_diffmean",
+      "delta": "q*s_c*DiffMean(L_obs) at L_inj (cross-layer)",
+      "population": "routed"
+    },
+    {
+      "arm": "reverse_d_grad",
+      "delta": "-q*s_c*d_grad at L_inj",
+      "population": "routed"
+    },
+    {
+      "arm": "wrong_layer_d_grad",
+      "delta": "q*s_c*d_grad at L_obs=30, NOT renormalised",
+      "population": "routed"
+    },
+    {
+      "arm": "ungated_d_grad",
+      "delta": "q*s_c*d_grad at L_inj",
+      "population": "all pred==source"
+    }
+  ],
+  "no_arm_created_or_removed_to_match_65": true,
+  "random_forward_arms": {
+    "count": 59,
+    "delta": "q*s_c*R[i] at L_inj",
+    "population": "routed"
+  },
+  "resolution": "65 arms, not 66",
+  "total_formal_arms": 65,
+  "why_66_is_wrong": "the naive count adds score_space as a 66th arm, but score-space performs no model forward pass and writes no records; it is derived from the real arm"
+}

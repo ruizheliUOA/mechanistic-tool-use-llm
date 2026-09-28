@@ -1,0 +1,4 @@
+dataset,model,gold_label_space,n_gold_classes,n_pred_classes,discovered_channels,n_sakiko_channels,channel_kind,status,source
+W2C (When2Call mcq),Qwen2.5-7B (primary) / Phi-3.5 (original),"tool_call | request_for_info | cannot_answer ('direct' = distractor pred, never gold)",3,4,rfi_tc(622) ca_tc(513) ca_direct(465) + 4 minor transitions,3,multi-class over-commitment,quantitative (exact per-sample),channel_discovery_qwen25_7b_w2c.json
+MetaTool-Binary (Task1),Phi-3.5-mini,tool_call | no_tool,2,2,no_tool→tool_call(155) [over-call]; tool_call→no_tool(141) [under-call],1,binary over-calling,quantitative (summary-level; per-sample via LFS),channel_discovery_metatool_binary_summary.json
+ToolSandbox,—,no reliable per-turn response-mode labels (milestones/minefields only),0,0,"derived candidates only (101 tool_call / 28 cannot_answer, not per-turn gold)",0,qualitative only,qualitative,data/annotation/toolsandbox_decision_candidates.csv

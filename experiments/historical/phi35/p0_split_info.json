@@ -1,0 +1,47 @@
+{
+  "seed": 42,
+  "split_ratio": "70/15/15",
+  "n_total": 3652,
+  "n_train": 2556,
+  "n_val": 548,
+  "n_test": 548,
+  "train_error_counts": {
+    "correct": 1233,
+    "request_for_info→tool_call": 522,
+    "cannot_answer→tool_call": 357,
+    "cannot_answer→direct": 275,
+    "cannot_answer→request_for_info": 65,
+    "request_for_info→direct": 33,
+    "tool_call→request_for_info": 26,
+    "tool_call→direct": 22,
+    "request_for_info→cannot_answer": 13,
+    "tool_call→cannot_answer": 10
+  },
+  "val_error_counts": {
+    "correct": 264,
+    "request_for_info→tool_call": 112,
+    "cannot_answer→tool_call": 77,
+    "cannot_answer→direct": 59,
+    "cannot_answer→request_for_info": 14,
+    "request_for_info→direct": 7,
+    "tool_call→request_for_info": 6,
+    "tool_call→direct": 4,
+    "request_for_info→cannot_answer": 3,
+    "tool_call→cannot_answer": 2
+  },
+  "test_error_counts": {
+    "correct": 264,
+    "request_for_info→tool_call": 112,
+    "cannot_answer→tool_call": 77,
+    "cannot_answer→direct": 59,
+    "cannot_answer→request_for_info": 14,
+    "request_for_info→direct": 7,
+    "tool_call→direct": 5,
+    "tool_call→request_for_info": 5,
+    "request_for_info→cannot_answer": 3,
+    "tool_call→cannot_answer": 2
+  },
+  "train_hash": "7b843b43080e9465",
+  "val_hash": "2d2f078a47ae7702",
+  "test_hash": "aa7dbd0750025fa8"
+}

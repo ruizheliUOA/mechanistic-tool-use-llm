@@ -1,0 +1,10 @@
+pathology,C1 support>=30,C2 TG>0,C3 TG CI lo>0,C4 beats random,C5 t-hit>0.5,C6 t-hit CI lo>0.5,C7 coll<=.05,C8 coll CI<=.05,C9 zero exact,C11 non-vacuous,ADMIT,caught_by
+healthy correction (Qwen3-8B-like),PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,YES,-
+high Net but real~random,PASS,PASS,PASS,**FAIL**,PASS,PASS,PASS,PASS,PASS,PASS,no,C4 beats random
+high t-hit but huge collateral,PASS,PASS,PASS,PASS,PASS,PASS,**FAIL**,**FAIL**,PASS,PASS,no,C7 coll<=.05;C8 coll CI<=.05
+high TG with almost no exits,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,YES,-
+"many exits, wrong destination",PASS,**FAIL**,**FAIL**,PASS,**FAIL**,**FAIL**,PASS,PASS,PASS,PASS,no,C2 TG>0;C3 TG CI lo>0;C5 t-hit>0.5;C6 t-hit CI lo>0.5
+zero collateral because zero exposure,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,**FAIL**,no,C11 non-vacuous
+"strong effect, tiny sample",**FAIL**,PASS,PASS,PASS,PASS,PASS,PASS,**FAIL**,PASS,PASS,no,C1 support>=30;C8 coll CI<=.05
+"modest true effect, adequate n",PASS,PASS,**FAIL**,PASS,PASS,**FAIL**,PASS,PASS,PASS,PASS,no,C3 TG CI lo>0;C6 t-hit CI lo>0.5
+broken zero control,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,**FAIL**,PASS,no,C9 zero exact

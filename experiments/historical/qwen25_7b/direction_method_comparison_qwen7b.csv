@@ -1,0 +1,14 @@
+split,channel,direction_method,obs_layer,inj_layer,alpha,direction_norm,cos_diffmean_pca1,net,fixed,broke,before,after,source_file
+val,rfi_tc,diffmean,20,18,2.0,13.323,0.9083,33,52,19,91,42,partC_direction_comparison.json
+val,rfi_tc,pca1,20,18,2.0,2.29,0.9083,29,46,17,91,47,partC_direction_comparison.json
+val,rfi_tc,pca_top10,20,18,2.0,64.954,0.9083,29,46,17,91,46,partC_direction_comparison.json
+val,ca_tc,diffmean,20,16,4.0,16.485,0.411,28,33,5,78,15,partC_direction_comparison.json
+val,ca_tc,pca1,20,16,4.0,1.651,0.411,44,49,5,78,15,partC_direction_comparison.json
+val,ca_tc,pca_top10,20,16,4.0,49.682,0.411,44,49,5,78,15,partC_direction_comparison.json
+val,ca_direct,diffmean,16,16,6.0,2.123,0.0912,13,13,0,62,45,partC_direction_comparison.json
+val,ca_direct,pca1,16,16,6.0,5.298,0.0912,6,6,0,62,47,partC_direction_comparison.json
+val,ca_direct,pca_top10,16,16,6.0,58.992,0.0912,9,9,0,62,46,partC_direction_comparison.json
+val,ca_tc,diffmean_locked,20,16,4.0,16.4849,0.411,28,33,5,78,15,taskB_ca_tc_pca_vs_diffmean.json
+test,ca_tc,diffmean_locked,20,16,4.0,16.4849,0.411,36,37,1,83,18,taskB_ca_tc_pca_vs_diffmean.json
+val,ca_tc,pca1_locked,20,16,4.0,1.6509,0.411,44,49,5,78,15,taskB_ca_tc_pca_vs_diffmean.json
+test,ca_tc,pca1_locked,20,16,4.0,1.6509,0.411,50,51,1,83,18,taskB_ca_tc_pca_vs_diffmean.json

@@ -1,0 +1,10 @@
+{
+  "access_marker_created": true,
+  "arms_executed": 65,
+  "authorisation": "GRANTED",
+  "authorised_head": "23d6da2a64639ca50d43d94de04a5b6d6275d896",
+  "completed_utc": "2026-08-12T17:22:57Z",
+  "formal_run_count": 1,
+  "scientific_endpoint_observed": true,
+  "sealed_rows_read": 548
+}

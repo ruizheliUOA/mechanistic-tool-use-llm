@@ -1,0 +1,55 @@
+{
+  "phase": "Phase 8 — prospective validation of frozen Actionability Gate v2 on an untouched architecture",
+  "written_before_any_model_output": true,
+  "gate_v2_lock_manifest_verified": "15/15 artifacts unchanged (see PHASE8_INTEGRITY_AUDIT.md)",
+  "repo_head": "1ff1f6f",
+  "target_model": "PENDING_HUMAN_DECISION (primary meta-llama/Llama-3.1-8B-Instruct gated/no-token; pre-registered fallback allenai/OLMo-2-1124-7B-Instruct)",
+  "claim_under_test": "Gate v2 makes correct actionability DECISIONS (admissions AND audited rejections) on an architecture that did not influence its design. Endpoint = decision accuracy vs final actionability truth, NOT Net, NOT accuracy gain.",
+
+  "decision_definitions": {
+    "ADMIT": "A channel passes ALL frozen Gate-v2 stages on VALIDATION: Stage0 readout valid; Stage1 support (train>=30, val>=8, test>=8), ref-pool>=80, own-val-errors>=30; Stage2 router val-AUC>=0.75 and a threshold with val-precision>=0.5; Stage3 R1' norm-ratio>=0.05, split-half cos>=0.5; Stage4 at an INTERIOR rho (< grid max 8): Net_real>0, own residual<=0.75*before, Broke<=Fixed/2, own->gold > own->other-wrong; Stage5 at that config: z>=2 AND n_ge_real/N<=0.05 AND real>reverse.",
+    "REJECT": "A channel that fails any stage. Sub-labels: ref-limited (Stage1 n_ref<80); low-power (Stage1 own-val-errors<30); undetectable (Stage2 AUC<0.75); degenerate-geometry (Stage3); no-utility (Stage4 no rho with Net>0/residual/broke ok); boundary-seeking (Stage4/5 only rho with Net>0 is the grid max); non-specific (Stage5 z<2 or randoms match or reverse>=real).",
+    "INCONCLUSIVE": "Positive control fails unexpectedly; random variance so large z is uninformative at every rho; grid fails to bracket the operating range; cached vs recomputed activations disagree; result unstable across adjacent rho; any implementation inconsistency discovered. INCONCLUSIVE is a valid, honest outcome and is NOT counted as a gate decision."
+  },
+
+  "test_confirmation_rules_frozen": {
+    "Stage6_confirm_admitted_channel": "z>=2 AND n_ge_real/N<=0.05 AND real>reverse AND Broke<=Fixed/2 AND own residual<=0.75*before, at the single locked config, one shot, 20 randoms seed-block 1000+k, plus ungated and wrong-layer controls.",
+    "rejection_audit": "Up to 2 channels rejected FOR SPECIFICITY at Stage 5 receive the full Stage-6 battery ONCE at their best Stage-4 config, solely to score the gate; never fed back into selection; audit is not expanded post hoc.",
+    "confirm_definition_of_truth": "Final actionability truth = the Stage-6 locked-test verdict itself (confirm/deny), scored against the pre-frozen ADMIT/REJECT label. Truth is NOT Net sign."
+  },
+
+  "outcome_to_decision_mapping": {
+    "TP_admit_confirmed": "A channel labelled ADMIT (pre-test) confirms at Stage 6. Supports the predictive-gate claim.",
+    "FP_admit_denied": "A channel labelled ADMIT fails Stage 6 confirmation. This is failure criterion F-1 (over-admission).",
+    "TN_reject_denied": "A channel labelled REJECT (for specificity) fails Stage 6 in the bounded audit. Supports the rejector claim.",
+    "FN_reject_confirmed": "A channel labelled REJECT (for specificity) confirms at Stage 6 in the audit. This is failure criterion F-2 (over-rejection).",
+    "registered_fragility": "Per scope-passing channel, F1=P(gold=runner-up) and F2=median(top-gold) on train channel errors, with a declared expected actionable/non-actionable, are hashed BEFORE intervention. F-3 = predictions wrong on >1 audited channel."
+  },
+
+  "verdict_branches": {
+    "A_PROSPECTIVE_GATE_SUPPORTED": "At least one channel is ADMITted and confirms at Stage 6 (TP), zero F-1, audited rejections deny (TN), and registered predictions hold. => predictive-gate claim SUPPORTED (single untouched architecture). Paper: 'actionability-gated discovery, prospectively validated'. Multiseed then justified for the confirmed channel.",
+    "B_PROSPECTIVE_REJECTOR_SUPPORTED_ADMISSION_UNRESOLVED": "No channel is ADMITted (all REJECT), and the bounded rejection audit DENIES the audited channels (TN, zero F-2). => the gate's REJECTIONS are prospectively correct on an unseen architecture; ADMISSION remains unvalidated (no admitted channel existed to test). Paper: 'a prospectively validated rejector; admission remains diagnostic'. Most likely branch given A-global on Mistral and the expected-value note.",
+    "C_PROSPECTIVE_GATE_FALSIFIED": "Any F-1 (admit then deny) or F-2 (audited reject then confirm) or F-3 (fragility predictions wrong on >1 channel). => Gate v2 FALSIFIED. Publish the falsification; NO Gate v3 on this model; claim reverts to 'Qwen-validated framework with a diagnostic battery'.",
+    "D_NO_ELIGIBLE_LLAMA_CHANNELS": "Discovery yields no channel passing Stage-1 support/ref/power floors (or R0 topology has no intervenable transition). => NO-ELIGIBLE-CHANNELS; the gate made no decision to test; report as a support boundary, not a gate result.",
+    "E_BASELINE_OR_DATA_INVALID": "R0 fails (collapsed/low readout, non-deterministic, unparsable). => measurement boundary; no intervention pipeline runs.",
+    "F_APPARATUS_FAILURE": "Implementation inconsistency, non-reproducible activations, or an inability to run the frozen procedure faithfully. => report and stop; no scientific claim."
+  },
+
+  "claim_withdrawal_trigger": "If verdict C occurs (any F-1/F-2/F-3), the 'Gate v2 can predict actionability' claim is WITHDRAWN in full; the program keeps only the diagnostic-rejector and Qwen-positive claims. If verdict B occurs, the ADMISSION half of the predictive claim is explicitly NOT made.",
+
+  "what_would_NOT_change_the_claim": [
+    "A positive Net on a REJECTed channel (Net sign is not truth; expected under de-saturation).",
+    "High router AUC on a rejected channel (AUC is a floor, never evidence of actionability).",
+    "A visually separated PCA plot (static geometry is non-predictive per Phase 7).",
+    "A single favorable seed found by searching (prohibited; multiseed only for a Stage-6-confirmed channel)."
+  ],
+
+  "hard_constraints_reaffirmed": [
+    "Gate v2 is not modified; no Gate v3; no threshold/grid/estimator/layer/outcome-rule change.",
+    "No target result revises the protocol.",
+    "Locked-test intervention outcome not inspected until decisions are frozen and this-plus-decisions files are hashed.",
+    "No second test run after seeing the outcome; no config search after a negative.",
+    "No Mistral rescue; no un-freezing of Phase-7 files.",
+    "OLMo (if used) is the pre-registered fallback for access failure only, recorded before inference; switching for performance is prohibited."
+  ]
+}

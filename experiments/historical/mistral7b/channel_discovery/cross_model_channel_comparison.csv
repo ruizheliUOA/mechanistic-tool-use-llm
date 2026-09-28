@@ -1,0 +1,8 @@
+channel_id,phi35_count,qwen7b_count,mistral7b_count,in_phi_stable,in_qwen_stable,in_mistral_stable
+rfi_tc,746,622,948,True,True,True
+ca_tc,511,513,773,True,True,True
+ca_direct,393,465,291,True,True,True
+ca_rfi,93,219,,True,True,False
+tc_rfi,37,133,,True,True,False
+tc_direct,31,53,,True,True,False
+rfi_direct,47,42,,True,True,False

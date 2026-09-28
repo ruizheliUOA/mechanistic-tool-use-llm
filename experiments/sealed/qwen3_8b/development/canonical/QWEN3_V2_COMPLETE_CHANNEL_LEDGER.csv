@@ -1,0 +1,13 @@
+channel,gold,source,train_error_support,train_correct_reference_support,dev_error_support,dev_correct_reference_support,train_error_pass,train_correct_reference_pass,dev_error_pass,dev_correct_reference_pass,support_eligible,support_exclusion_reasons,direction_valid,router_eligible,geometry_valid,stage2_eligible,stage2_exclusion_reasons
+tool_call__to__direct,tool_call,direct,23,671,17,368,False,True,False,True,False,TRAIN_ERROR_LT_60;DEV_ERROR_LT_30,False,False,False,False,NOT_YET_EVALUATED
+tool_call__to__request_for_info,tool_call,request_for_info,11,671,6,368,False,True,False,True,False,TRAIN_ERROR_LT_60;DEV_ERROR_LT_30,False,False,False,False,NOT_YET_EVALUATED
+tool_call__to__cannot_answer,tool_call,cannot_answer,4,671,1,368,False,True,False,True,False,TRAIN_ERROR_LT_60;DEV_ERROR_LT_30,False,False,False,False,NOT_YET_EVALUATED
+direct__to__tool_call,direct,tool_call,0,0,0,0,False,False,False,False,False,TRAIN_ERROR_LT_60;TRAIN_CORRECT_REFERENCE_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30,False,False,False,False,NOT_YET_EVALUATED
+direct__to__request_for_info,direct,request_for_info,0,0,0,0,False,False,False,False,False,TRAIN_ERROR_LT_60;TRAIN_CORRECT_REFERENCE_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30,False,False,False,False,NOT_YET_EVALUATED
+direct__to__cannot_answer,direct,cannot_answer,0,0,0,0,False,False,False,False,False,TRAIN_ERROR_LT_60;TRAIN_CORRECT_REFERENCE_LT_60;DEV_ERROR_LT_30;DEV_CORRECT_REFERENCE_LT_30,False,False,False,False,NOT_YET_EVALUATED
+request_for_info__to__tool_call,request_for_info,tool_call,448,102,244,52,True,True,True,True,True,,True,True,True,True,
+request_for_info__to__direct,request_for_info,direct,27,102,22,52,False,True,False,True,False,TRAIN_ERROR_LT_60;DEV_ERROR_LT_30,False,False,False,False,NOT_YET_EVALUATED
+request_for_info__to__cannot_answer,request_for_info,cannot_answer,7,102,4,52,False,True,False,True,False,TRAIN_ERROR_LT_60;DEV_ERROR_LT_30,False,False,False,False,NOT_YET_EVALUATED
+cannot_answer__to__tool_call,cannot_answer,tool_call,314,75,167,43,True,True,True,True,True,,True,True,True,True,
+cannot_answer__to__direct,cannot_answer,direct,269,75,159,43,True,True,True,True,True,,True,True,True,True,
+cannot_answer__to__request_for_info,cannot_answer,request_for_info,49,75,21,43,False,True,False,True,False,TRAIN_ERROR_LT_60;DEV_ERROR_LT_30,False,False,False,False,NOT_YET_EVALUATED

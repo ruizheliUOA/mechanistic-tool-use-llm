@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "BASELINE_METRICS.json": "a659bdfab206f2f1056aee0858a5f5068dd82b7fbdd456a89bc5698caf630191",
+    "BASELINE_REPORT.md": "85a4ff6b0de98e0318e6e801441609102799dfef7604af967cabdd59bc7f6ba5",
+    "CHANNEL_ADVANCEMENT_DECISION.md": "fc1e2544757247ebbef8d946539420ff7e412e23cd1dc5b1ca782f8cdab69d1c",
+    "CHANNEL_INVENTORY.csv": "90e3f7a87eaeaf9823bf43f8a8af4054b85b1c4ad0b1627027e903ade9ef817b",
+    "CHANNEL_SUPPORT_AUDIT.csv": "c9c8a22613aca51faa847946e88e9f0b5fa8a9c7dbe5c1b63c42a0aebd231536",
+    "DATASET_AND_SPLIT_MANIFEST.json": "0baa7de6d074c57041345298fa53c691d688e6c6443d4e80cd7f0de440e3e97a",
+    "EXTERNAL_ARTIFACTS.json": "c4a998214a230a3f9575f21b173b5d55afa232255212ef1fef2e8202f4bb4e00",
+    "FILE_INVENTORY.json": "9e91ed05f0d3e99e83f8c46c9e13b8059bb828d54c4f1722bc222aedcc39a95b",
+    "HUMAN_GIT_HANDOFF.md": "4e57513941aef38118920299812f871ff57893f362fd374d748eaf1ef70ec9a4",
+    "MODEL_AND_ENV_MANIFEST.json": "666644f6546b8497038dc439d83f997f302ccb66b6cec6d6df35cbdf58f4b523",
+    "PACKAGE_STATUS.md": "f68a5f0dfbffb23e51c5df233219862f225755bc89f713852d536fc75e335e68",
+    "PROSPECTIVE_REPLICATION_PROTOCOL.md": "6b033c7e9ffe93c5bac44f0a1d61a7c5717edb3a056fac15d8412675040d2f41",
+    "QWEN3_4B_ACTIVATION_MANIFEST.json": "6c83b09220ccd4cf0ab0eb778f3b1d1095d10be75fd9e69264e5ef3923d97d15",
+    "QWEN3_4B_BASELINE_ROWS.jsonl": "fd9fadc9b8d01111a95811ff3c06db54189d91f0f3d35db954383d2c8ee5d9bf",
+    "ROUTER_AUDIT.csv": "58b08ff566873bd7b05ba600a7e3f98dcf0087f3ce36b7c4a1fe5b3758896280",
+    "ROUTER_cannot_answer__direct.npz": "b10ff9fb2227f91c8f8d8c35335bb7948f2ecef1c12e4d709957b65bebc45eaa",
+    "ROUTER_cannot_answer__tool_call.npz": "f45d6b7f7a159d881bbdca69c30b7beac39f2aaecf1bda7c9d2aaa8e361bc1ff",
+    "SAFETY_SCAN.json": "f93eff1eae202b45409a5647c5e7f9598798076cdc3fe625268754af91dc9370",
+    "STAGE_D_BLOCKER.json": "8ad0639508db75f02be476729f610dbf00179f6d918b299a92243e2c052f6f40",
+    "capture_activations.py": "f3b0f442562920bf0aeb8a73238247a48a26ccf7b68f4ecbbf716ef92146890f",
+    "directions.log": "04a579ab5952a410a536cc64445cca3a15fd664a6386e7f04427b598152155b2",
+    "directions_FAILED_oom.log": "8a684fc37598ffd5c59de1b426d9c6c803ff18e362c8c52781a0de45593518d7",
+    "estimate_directions.py": "8129988187fa9a22bda9a30124c1c05bd468974112a05eea9287de2f8b94a43f",
+    "run_qwen3_4b_stage_a.py": "54f0144477e75ff3568c595eee3f6e56248f2f6f1390aaac27160dbe9b808860",
+    "run_safety_scan.py": "6263ef6883e386f0b45318673ce53cd538476f5ff978a166a67dc003773e5218"
+  },
+  "n_artifacts": 25,
+  "repository_head": "7ca83895885257b34d14a00750d692fb9b25bc79",
+  "scope": "research_exploration/qwen3_4b_w2c_prospective_replication_v1"
+}

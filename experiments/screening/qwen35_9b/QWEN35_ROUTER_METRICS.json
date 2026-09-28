@@ -1,0 +1,84 @@
+{
+  "request_for_info__to__tool_call": {
+    "decline_reason": "DEV_ROC_AUC_LT_0.75",
+    "dev_neg": 489,
+    "dev_pos": 207,
+    "dev_pr_auc": 0.5131,
+    "dev_roc_auc": 0.727,
+    "dev_roc_auc_ci95": [
+      0.6865,
+      0.7664
+    ],
+    "fired_baseline_correct_dev": 121,
+    "fired_channel_errors": 119,
+    "fired_off_channel": 93,
+    "operational_dev_rows": 737,
+    "router_eligible": false,
+    "selected": {
+      "fn": 88,
+      "fp": 118,
+      "precision": 0.5021,
+      "recall": 0.5749,
+      "routed": 237,
+      "tau": 0.4,
+      "tn": 412,
+      "tp": 119
+    },
+    "tau": 0.4,
+    "tau_grid": [
+      {
+        "fn": 88,
+        "fp": 118,
+        "precision": 0.5021,
+        "recall": 0.5749,
+        "routed": 237,
+        "tau": 0.4,
+        "tn": 412,
+        "tp": 119
+      },
+      {
+        "fn": 90,
+        "fp": 106,
+        "precision": 0.5247,
+        "recall": 0.5652,
+        "routed": 223,
+        "tau": 0.5,
+        "tn": 424,
+        "tp": 117
+      },
+      {
+        "fn": 98,
+        "fp": 95,
+        "precision": 0.5343,
+        "recall": 0.5266,
+        "routed": 204,
+        "tau": 0.6,
+        "tn": 435,
+        "tp": 109
+      },
+      {
+        "fn": 108,
+        "fp": 85,
+        "precision": 0.538,
+        "recall": 0.4783,
+        "routed": 184,
+        "tau": 0.7,
+        "tn": 445,
+        "tp": 99
+      },
+      {
+        "fn": 118,
+        "fp": 66,
+        "precision": 0.5742,
+        "recall": 0.43,
+        "routed": 155,
+        "tau": 0.8,
+        "tn": 464,
+        "tp": 89
+      }
+    ],
+    "train_auc": 0.9999,
+    "train_neg": 918,
+    "train_pos": 365
+  }
+}

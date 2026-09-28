@@ -1,0 +1,10 @@
+channel_id,gold,pred,count_all,count_train,count_val,count_test,pct_of_errors,status_default,status_strict,status_lenient,bootstrap_stable_freq,in_manual_set,scope_pass,scope_reject_reason
+rfi_tc,request_for_info,tool_call,948,662,141,145,45.29,stable,stable,stable,1.0,True,True,""
+ca_tc,cannot_answer,tool_call,773,541,117,115,36.93,stable,stable,stable,1.0,True,True,""
+ca_direct,cannot_answer,direct,291,205,43,43,13.9,stable,stable,stable,1.0,True,True,""
+ca_rfi,cannot_answer,request_for_info,26,18,2,6,1.24,insufficient,insufficient,weak,0.0,False,False,"train<30; eval<8; status=insufficient"
+rfi_direct,request_for_info,direct,21,17,2,2,1.0,insufficient,insufficient,weak,0.0,False,False,"train<30; eval<8; status=insufficient"
+rfi_ca,request_for_info,cannot_answer,17,15,0,2,0.81,insufficient,insufficient,weak,0.0,False,False,"train<30; eval<8; status=insufficient"
+tc_direct,tool_call,direct,15,9,4,2,0.72,insufficient,insufficient,insufficient,0.0,False,False,"train<30; eval<8; status=insufficient"
+tc_ca,tool_call,cannot_answer,1,1,0,0,0.05,insufficient,insufficient,insufficient,0.0,False,False,"train<30; eval<8; status=insufficient"
+tc_rfi,tool_call,request_for_info,1,1,0,0,0.05,insufficient,insufficient,insufficient,0.0,False,False,"train<30; eval<8; status=insufficient"

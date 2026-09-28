@@ -1,0 +1,80 @@
+{
+  "amendment_package_sha256": "3edaa119ef13a6167d2582673cb618cb33d5b520839d82d3bc92a99e4a4d5330",
+  "common_sha256": "3a37b1bb209e90d9500a07601d60e378d96e82963ad30fe25c5c69aff647f419",
+  "environment": {
+    "amendment_param_grads_disabled": true,
+    "attention_guard": {
+      "below_threshold_path": "unmodified upstream eager_attention_forward",
+      "head_chunk": 8,
+      "installed": true,
+      "scientific_definitions_changed": false,
+      "threshold_tokens": 4096
+    },
+    "chunk_checkpointed_attention": {
+      "below_threshold": "delegated unchanged to the frozen V1 guard",
+      "head_chunk": 8,
+      "installed": true,
+      "scientific_definitions_changed": false,
+      "shapes_and_kernels_unchanged": true,
+      "threshold_tokens": 4096
+    },
+    "gradient_checkpointing": {
+      "checkpointed_layers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "excluded_leaf_layer": 21,
+      "installed": true,
+      "rationale": "recompute instead of store; identical deterministic function",
+      "scientific_definitions_changed": false
+    },
+    "n_params_requiring_grad": 0
+  },
+  "frozen_module_sha256": "b1830b4be291c1adfe7e843e8de7fdea0ee1e4e1b6c10c25c6fc40465073f4ac",
+  "gradients_file": "/path/to/experiment-cache/QWEN3_4B_DEV_GRADIENTS.safetensors",
+  "gradients_sha256": "4fc8774c35778ac04e07e0f450fd4ad3b0f9465ca62be0a8cbe0eea9acaaa113",
+  "peak_allocated_gib": 12.355033874511719,
+  "peak_reserved_gib": 13.0703125,
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "chance_reference_one_over_sqrt_n": 0.0936585811581694,
+      "d_grad_norm": 1.0000000009929075,
+      "d_grad_sha256": "c29cdf05b9caa24776f6f1b3c7123beace10872a85e6704befadd425794cccf8",
+      "gold": "cannot_answer",
+      "n": 114,
+      "non_finite": 0,
+      "population_sha256": "4e610c5b10da4647302eed5c52ce5a7ac54c3f170cf61c15a2c85d378d3bb5b1",
+      "source": "direct",
+      "target_contrast_norm_median": 0.8446395057642422,
+      "wbar_norm": 0.43057134990462487
+    },
+    "cannot_answer__to__tool_call": {
+      "chance_reference_one_over_sqrt_n": 0.06741998624632421,
+      "d_grad_norm": 1.000000000006431,
+      "d_grad_sha256": "3ec94ba713ca68162d435109ac842b5e02e0df938bd23807aedb89fff864e0be",
+      "gold": "cannot_answer",
+      "n": 220,
+      "non_finite": 0,
+      "population_sha256": "f8a289fbf3377c47ff99d4fba06e473dbdc610f4aebe48bfe3041e87bb3af53b",
+      "source": "tool_call",
+      "target_contrast_norm_median": 0.7619458216791803,
+      "wbar_norm": 0.5778502522738782
+    }
+  },
+  "runner_sha256": "c395830f4fc6944e801a048f09b26099b3bb264cb3b0e0f50aa1ecfbd8a11a11",
+  "runtime_seconds": 315.06252816691995,
+  "sealed_evaluation_accessed": false,
+  "split": "dev"
+}

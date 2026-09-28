@@ -1,0 +1,53 @@
+{
+  "dataset": "metatool_binary",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "provenance": {
+    "source_file": "final/results/dataset_extension/metatool_binary_baseline_summary.json",
+    "recompute_type": "SUMMARY_ONLY",
+    "per_sample_details": "final/results/dataset_extension/metatool_binary_baseline_details.jsonl",
+    "per_sample_available": false
+  },
+  "n_evaluated": 1040,
+  "accuracy": 0.71538,
+  "label_space": {
+    "n_gold_classes": 2,
+    "gold_labels": [
+      "tool_call",
+      "no_tool"
+    ],
+    "candidate_strings": {
+      "tool_call": "Yes",
+      "no_tool": "No"
+    }
+  },
+  "confusion_matrix": {
+    "tool_call": {
+      "tool_call": 379,
+      "no_tool": 141
+    },
+    "no_tool": {
+      "tool_call": 155,
+      "no_tool": 365
+    }
+  },
+  "over_calling_channel": "no_tool__tool_call",
+  "discovered_channels": [
+    {
+      "channel_id": "no_tool__tool_call",
+      "gold": "no_tool",
+      "pred": "tool_call",
+      "kind": "over_calling",
+      "count_all": 155,
+      "status": "summary_only"
+    },
+    {
+      "channel_id": "tool_call__no_tool",
+      "gold": "tool_call",
+      "pred": "no_tool",
+      "kind": "under_calling",
+      "count_all": 141,
+      "status": "summary_only"
+    }
+  ],
+  "decision_verdict": "ENOUGH: MetaTool-Binary has sufficient over-calling errors for MetaTool-native binary SAKIKO."
+}

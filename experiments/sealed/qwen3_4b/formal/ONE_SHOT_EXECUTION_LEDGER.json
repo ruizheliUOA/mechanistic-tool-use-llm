@@ -1,0 +1,68 @@
+{
+  "access_started": true,
+  "authorised_runs": 1,
+  "created_by": "gate-only task; no scientific run performed",
+  "formal_run_count": 1,
+  "history": [
+    {
+      "detail": "run-formal aborted on contradictory gate checks 20/22 before any SEALED access",
+      "endpoint_observed": false,
+      "event": "MECHANICAL_ABORT_PRE_ACCESS",
+      "invocation_uuid": "4acb3736-41cf-458c-a01b-7229f989d8e9",
+      "run_consumed": false,
+      "runner_sha256_after": "0bb26989909a4494fd7770ff747c849c90bf46162ef7c947336eecb1ac3c2d1c",
+      "runner_sha256_before": "1cd41af19b6181889c7b7ed82c4c4611b40f67c7bd55295e6978c7eecc99343d",
+      "sealed_rows_loaded": 0,
+      "see": "mechanical_incident_1/MECHANICAL_INCIDENT_1.md",
+      "utc": "2026-08-08T18:17:14Z"
+    },
+    {
+      "detail": "run-formal aborted on gate check 2 (formal namespace untracked) before any SEALED access",
+      "endpoint_observed": false,
+      "event": "MECHANICAL_ABORT_PRE_ACCESS",
+      "invocation_uuid": "8004911f-9fda-45a1-a956-291e106fa19f",
+      "run_consumed": false,
+      "runner_sha256_after": "6a06498f3271c398b3275eb8e6bc87ad3b41b403d0dc2a725cec0fe5904f829b",
+      "runner_sha256_before": "0bb26989909a4494fd7770ff747c849c90bf46162ef7c947336eecb1ac3c2d1c",
+      "sealed_rows_loaded": 0,
+      "utc": "2026-08-08T18:37:21Z"
+    },
+    {
+      "detail": "process terminated by host/session teardown during the K=59 random battery",
+      "endpoint_observed": false,
+      "event": "MECHANICAL_VOID",
+      "invocation_uuid": "b21305ad-fbb0-446a-9500-94dc5d651cf0",
+      "retry_authorised": false,
+      "run_consumed": false,
+      "sealed_rows_loaded": 548,
+      "see": "void_attempt_1/FORMAL_VOID_DECLARATION.json",
+      "utc": "2026-08-09T16:35:00Z",
+      "void_reason_code": "INCOMPLETE_ALL_ARM_EXECUTION"
+    },
+    {
+      "detail": "owner authorised one restart; retry_authorised set true",
+      "event": "HUMAN_RESTART_AUTHORISATION",
+      "run_consumed": false,
+      "utc": "2026-08-09T16:40:00Z"
+    },
+    {
+      "invocation_uuid": "e3d9d0b5-92f9-42da-86c2-d8ca2606466c",
+      "utc": "2026-08-09T18:54:22Z",
+      "verdict": "QWEN3_4B_FORMAL_CONFIRMATORY_FAILURE"
+    }
+  ],
+  "retry_authorisation": {
+    "all_arms_re_executed_from_scratch": true,
+    "authorised_by": "repository owner (explicit instruction)",
+    "resume_from_partial_records": false,
+    "scope": "exactly one restart of the formal run after MECHANICAL_VOID INCOMPLETE_ALL_ARM_EXECUTION; no scientific configuration may change",
+    "utc": "2026-08-09T16:40:00Z",
+    "voided_attempt_uuid": "b21305ad-fbb0-446a-9500-94dc5d651cf0"
+  },
+  "retry_authorised": true,
+  "schema_version": 1,
+  "scientific_endpoint_observed": true,
+  "scope": "Qwen3-4B x When2Call formal one-shot confirmatory execution",
+  "update_rule": "The later one-shot execution task must update this ledger atomically: set access_started=true immediately before the first SEALED load (after the access marker is durably written), and formal_run_count=1 / scientific_endpoint_observed=true once any endpoint is computed. Once formal_run_count reaches 1 the runner refuses further scientific execution unless retry_authorised is set by explicit human action.",
+  "void_does_not_consume_the_run": "A mechanical VOID declared before any endpoint is computed leaves scientific_endpoint_observed=false; restart is manual and must be recorded here."
+}

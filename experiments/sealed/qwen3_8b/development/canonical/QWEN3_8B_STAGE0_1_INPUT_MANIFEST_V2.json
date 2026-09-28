@@ -1,0 +1,109 @@
+{
+  "access_declaration": {
+    "evaluation_behavioral_access": false,
+    "evaluation_hash_recomputed_from_payload": false,
+    "evaluation_manifest_opened": false,
+    "non_allowlisted_payloads_parsed": 0
+  },
+  "artifact_inventory_sha256": "a0da5f34e5878cfff2a584c54501e664a229dcfea168ff7d6ecdcb14aabb3c9c",
+  "attention_backend_audit_sha256": "639773549adb195d576842c883c437be7b2209283dba583b22133d9924da419c",
+  "branch": "exp/sakiko-followup-archive",
+  "dataset": {
+    "dev_manifest": {
+      "path": "final/results/splits/val_idx.json",
+      "sha256": "2d2f078a47ae7702b5ccceb23a86d9d4cf223d7b7cc0de4eb8090e809afa3610"
+    },
+    "evaluation_manifest_or_index_in_inputs": false,
+    "non_test_population": 3104,
+    "raw_source_path": "data/processed/qwen25_7b_w2c/w2c_test_mcq.jsonl",
+    "raw_source_sha256": "8c3694e583eeeb8dbc297e6cd90da70efc68efa4b6adb7227523e828c6b7b14c",
+    "repository": "nvidia/When2Call",
+    "revision": "0582f7749df63a96fdc3070932e83e72396ace53",
+    "sealed_evaluation_hash_recomputed": false,
+    "sealed_evaluation_identity_inherited_by_reference": true,
+    "selective_index": {
+      "path": "final/results/qwen3_stage0_1/QWEN3_8B_TRAIN_DEV_BYTE_INDEX.csv",
+      "sha256": "a97dadf2c6be34f800496fb142635cc1ee02e89daf6bfce68e29c94cf3017520"
+    },
+    "selective_index_manifest": {
+      "path": "final/results/qwen3_stage0_1/QWEN3_8B_TRAIN_DEV_BYTE_INDEX_MANIFEST.json",
+      "sha256": "269a2e917d117e93f9351bb221cd26cdbb5c8d7d0fa9dd2285eac864ea2bdfeb"
+    },
+    "train_manifest": {
+      "path": "final/results/splits/train_idx.json",
+      "sha256": "7b843b43080e946595eb48ffbad800b5b7223cc693ccc2c9c49da47c2393b1fc"
+    },
+    "v2_allocation": {
+      "dev": 1104,
+      "train": 2000
+    }
+  },
+  "inherited_v1_input_manifest_sha256": "a1646cd91ce309bb2a3f36118dfe5d7335fe6239315288f03e45e42b19297161",
+  "model": {
+    "architecture": "Qwen3ForCausalLM",
+    "attention_implementation": "eager",
+    "chat_template_sha256_utf8": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "dtype": "bfloat16",
+    "file_sha256": {
+      "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+      "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+      "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+      "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+      "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+      "model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "floating_main": false,
+    "hidden_size": 4096,
+    "local_exact_revision_cache": ".cache/qwen3_stage0_1/b968826d9c46dd6066d109eabc6255188de91218",
+    "model_type": "qwen3",
+    "num_hidden_layers": 36,
+    "official_checkpoint": true,
+    "repository": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "tokenizer_config_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "tokenizers": "0.21.1",
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0",
+    "weight_file_sizes": {
+      "model-00001-of-00005.safetensors": 3996250744,
+      "model-00002-of-00005.safetensors": 3993160032,
+      "model-00003-of-00005.safetensors": 3959604768,
+      "model-00004-of-00005.safetensors": 3187841392,
+      "model-00005-of-00005.safetensors": 1244659840
+    }
+  },
+  "protocol_version": "QWEN3_8B_STAGE0_1_V2",
+  "repository_root": "/root/autodl-tmp/sakiko-followup",
+  "reused_v1_artifacts": {
+    "activations": {
+      "path": "final/results/qwen3_stage0_1/QWEN3_STAGE1_ACTIVATIONS.safetensors",
+      "sha256": "0c0ef438e6f3c4837f28a8ec6540d5566d4111f76bb943cde5406e0b1c709efc"
+    },
+    "baseline_rows": {
+      "path": "final/results/qwen3_stage0_1/QWEN3_STAGE1_BASELINE_ROWS.jsonl",
+      "sha256": "83c0836f4fd1b52df7d44e81e44254a4e3599bad97eb6239e8744571729a02c3"
+    },
+    "selective_index": {
+      "path": "final/results/qwen3_stage0_1/QWEN3_8B_TRAIN_DEV_BYTE_INDEX.csv",
+      "sha256": "a97dadf2c6be34f800496fb142635cc1ee02e89daf6bfce68e29c94cf3017520"
+    }
+  },
+  "schema_version": 1,
+  "software": {
+    "numpy": "1.26.3",
+    "python": "3.10.8",
+    "safetensors": "0.8.0",
+    "scipy": "1.15.3",
+    "sklearn": "1.5.2",
+    "tokenizers": "0.21.1",
+    "torch": "2.1.2+cu121",
+    "transformers": "4.51.0"
+  }
+}

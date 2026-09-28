@@ -1,0 +1,47 @@
+{
+  "source": "Preserved Git historical blobs, not regenerated experiments",
+  "snapshots": [
+    {
+      "stage": "pre_execution_freeze",
+      "conjunction_sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780",
+      "formal_manifest_recorded_conjunction_sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780",
+      "ledger": {
+        "access_marker_created": false,
+        "authorisation": "NOT_GRANTED",
+        "formal_run_count": 0,
+        "scientific_endpoint_observed": false,
+        "sealed_rows_read": 0
+      },
+      "ancestry_verified_privately": true
+    },
+    {
+      "stage": "runner_refreeze",
+      "conjunction_sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780",
+      "formal_manifest_recorded_conjunction_sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780",
+      "ledger": {
+        "access_marker_created": false,
+        "authorisation": "NOT_GRANTED",
+        "formal_run_count": 0,
+        "scientific_endpoint_observed": false,
+        "sealed_rows_read": 0
+      },
+      "ancestry_verified_privately": true
+    },
+    {
+      "stage": "completed_execution",
+      "conjunction_sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780",
+      "formal_manifest_recorded_conjunction_sha256": "52644754757e71acfe2fcd90bff81ca797ee46de7dd4a13d2050b9888f123780",
+      "ledger": {
+        "access_marker_created": true,
+        "arms_executed": 65,
+        "authorisation": "GRANTED",
+        "authorised_head": "23d6da2a64639ca50d43d94de04a5b6d6275d896",
+        "completed_utc": "2026-08-12T17:22:57Z",
+        "formal_run_count": 1,
+        "scientific_endpoint_observed": true,
+        "sealed_rows_read": 548
+      },
+      "ancestry_verified_privately": true
+    }
+  ]
+}

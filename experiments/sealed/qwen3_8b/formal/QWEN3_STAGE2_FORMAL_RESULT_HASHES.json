@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    "final/results/qwen3_stage2_formal/FORMAL_ACCESS_STARTED.json": {
+      "bytes": 543,
+      "sha256": "004b3a8b3fb1427d7d9c13e28adb08b997953e22bca339357a3787e869297347"
+    },
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_FORMAL_RECORDS.jsonl": {
+      "bytes": 5055748,
+      "sha256": "d8f622d4ed08e4ef6395b20c6af3ad5287f8cd2f89af9286608a20c06e8d8819"
+    },
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_FORMAL_REPORT.md": {
+      "bytes": 271,
+      "sha256": "d048db3e5e9144c049df7d026d24f0290b65c12f38c5e211d42ee2c601b0ab1a"
+    },
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_FORMAL_RESULTS.json": {
+      "bytes": 32669,
+      "sha256": "016a230221a03f8d8f4f1d22f20807b8ebc7daed97fc90b83f0cb20d1d69eead"
+    },
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_FORMAL_STDOUT.log": {
+      "bytes": 612,
+      "sha256": "66bf3538fd16aa57d55c3b72d93caf7675ecd8a1f1b4eaccc1b4b87fa9d5999b"
+    },
+    "final/results/qwen3_stage2_formal/QWEN3_STAGE2_RETRY_LEDGER_V4.json": {
+      "bytes": 1199,
+      "sha256": "2a3391799a98a2e1fc8f8d64a651f0b33cb64c7c853bfa875b9a7ac78dcf88a0"
+    }
+  },
+  "schema_version": 1,
+  "scope": "QWEN3_STAGE2_FORMAL_RESULT_EVIDENCE"
+}

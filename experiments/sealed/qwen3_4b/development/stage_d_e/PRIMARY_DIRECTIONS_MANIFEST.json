@@ -1,0 +1,65 @@
+{
+  "aggregation": "full-effect: sum over prompt and candidate positions",
+  "amendment": {
+    "equivalence": "BITWISE_EQUIVALENT",
+    "hashes_sha256": "3edaa119ef13a6167d2582673cb618cb33d5b520839d82d3bc92a99e4a4d5330",
+    "package": "qwen3_4b_gradient_memory_amendment_v1",
+    "verdict": "QWEN3_4B_STAGE_D_AMENDMENT_READY"
+  },
+  "dev_gradients_sha256": "4fc8774c35778ac04e07e0f450fd4ad3b0f9465ca62be0a8cbe0eea9acaaa113",
+  "dev_peak_allocated_gib": 12.355033874511719,
+  "dev_runtime_seconds": 315.06252816691995,
+  "estimator": "d_grad = unit(mean_i unit(G_i,gold - G_i,source)) at L_inj, TRAIN only",
+  "file": "PRIMARY_DIRECTIONS.safetensors",
+  "file_sha256": "2c543b71723afe3903d8ee509d6174ff53361f026efe5add23b96fccd3261441",
+  "gram_matrix": {
+    "channels": [
+      "cannot_answer__to__tool_call",
+      "cannot_answer__to__direct"
+    ],
+    "matrix": [
+      [
+        0.9999999991096556,
+        0.8604392687364301
+      ],
+      [
+        0.8604392687364301,
+        0.999999999688304
+      ]
+    ]
+  },
+  "hidden_size": 2560,
+  "layer": 21,
+  "model": "Qwen/Qwen3-4B@1cfa9a7208912126459214e8b04321603b3df60c",
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "chance_reference_one_over_sqrt_n": 0.07580980435789034,
+      "d_grad_norm": 0.9999999998441523,
+      "d_grad_sha256": "c9984064a1eadff974e6686f9a1a0a7eaae380e8a2f84b1ab3a386b84cc022e1",
+      "gold": "cannot_answer",
+      "n": 174,
+      "non_finite": 0,
+      "population_sha256": "3ab90e29cbafaf9cf14d21262e0a0a655383208fc035d81acb3f20993927d856",
+      "source": "direct",
+      "target_contrast_norm_median": 0.8530982670621257,
+      "wbar_norm": 0.4436340053899528
+    },
+    "cannot_answer__to__tool_call": {
+      "chance_reference_one_over_sqrt_n": 0.04789131426105757,
+      "d_grad_norm": 0.999999999554828,
+      "d_grad_sha256": "84c1029466571147813f6fe68ff77d185cef8d408e82d8c9a9805ec44d13fe84",
+      "gold": "cannot_answer",
+      "n": 436,
+      "non_finite": 0,
+      "population_sha256": "1fa3daf7345e027d514af558f95b3c020b80aec9d27aeda1ff9cce9800f3d350",
+      "source": "tool_call",
+      "target_contrast_norm_median": 0.7738155211391933,
+      "wbar_norm": 0.5785930565361586
+    }
+  },
+  "sealed_evaluation_accessed": false,
+  "site": "model.model.layers[L].mlp forward output, after MLP internals and before decoder residual addition",
+  "train_gradients_sha256": "e1a4956313dcdaa6cfad977f90bea98bd85b2386224291c10b2bd29dd506b86d",
+  "train_peak_allocated_gib": 11.574477672576904,
+  "train_runtime_seconds": 518.6197563894093
+}

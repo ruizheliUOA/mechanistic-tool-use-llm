@@ -1,0 +1,21 @@
+model,channel,split,rho,alpha_equiv,delta_norm,obs,inj,method,thr,router_val_auc,n_routed,real_net,real_fixed,real_broke,reverse_net,rand_mean,rand_std,rand_max,n_ge_real,n_random,spec_z,own_before,own_after,own_to_gold,own_to_other_wrong,damage_on_correct,stage45_pass,gate_decision
+Llama-3.1-8B,rfi_tc,val,0.25,0.25,1.2213,22,22,diffmean,0.4,0.8367,106,1,1,0,1,0.6,0.8,3,9,20,0.5,101,100,1,0,0,False,REJECT
+Llama-3.1-8B,rfi_tc,val,0.5,0.5,2.4427,22,22,diffmean,0.4,0.8367,106,0,0,0,1,0.95,0.921,3,20,20,-1.032,101,101,0,0,0,False,REJECT
+Llama-3.1-8B,rfi_tc,val,1.0,1.0,4.8853,22,22,diffmean,0.4,0.8367,106,1,1,0,1,1.1,1.179,5,14,20,-0.085,101,101,0,0,0,False,REJECT
+Llama-3.1-8B,rfi_tc,val,2.0,2.0,9.7706,22,22,diffmean,0.4,0.8367,106,1,1,0,0,0.9,0.7,2,14,20,0.143,101,101,0,0,0,False,REJECT
+Llama-3.1-8B,rfi_tc,val,4.0,4.0,19.5412,22,22,diffmean,0.4,0.8367,106,3,3,0,1,2.35,1.276,6,6,20,0.51,101,99,2,0,0,False,REJECT
+Llama-3.1-8B,rfi_tc,val,8.0,8.0,39.0824,22,22,diffmean,0.4,0.8367,106,18,46,28,18,24.15,8.708,38,16,20,-0.706,101,30,46,25,28,False,REJECT
+Llama-3.1-8B,ca_tc,val,0.25,0.2362,1.1539,22,18,diffmean,0.4,0.9585,74,0,0,0,1,0.8,0.6,2,20,20,-1.333,79,77,0,2,0,False,REJECT
+Llama-3.1-8B,ca_tc,val,0.5,0.4724,2.3078,22,18,diffmean,0.4,0.9585,74,0,0,0,1,1.1,0.768,2,20,20,-1.432,79,77,0,2,0,False,REJECT
+Llama-3.1-8B,ca_tc,val,1.0,0.9448,4.6157,22,18,diffmean,0.4,0.9585,74,0,0,0,0,1.25,1.043,4,19,20,-1.199,79,76,0,3,0,False,REJECT
+Llama-3.1-8B,ca_tc,val,2.0,1.8896,9.2314,22,18,diffmean,0.4,0.9585,74,0,0,0,0,1.2,1.208,4,19,20,-0.993,79,77,0,2,0,False,REJECT
+Llama-3.1-8B,ca_tc,val,4.0,3.7792,18.4627,22,18,diffmean,0.4,0.9585,74,8,11,3,0,-0.3,1.52,3,0,20,5.461,79,44,10,25,3,False,REJECT
+Llama-3.1-8B,ca_tc,val,8.0,7.5585,36.9255,22,18,diffmean,0.4,0.9585,74,23,28,5,0,4.5,7.075,20,0,20,2.615,79,12,28,39,5,False,REJECT
+Llama-3.1-8B,ca_direct,val,0.25,0.2362,1.1539,22,18,diffmean,0.4,0.9366,77,0,0,0,1,0.8,0.748,2,20,20,-1.069,73,73,0,0,0,False,REJECT
+Llama-3.1-8B,ca_direct,val,0.5,0.4724,2.3078,22,18,diffmean,0.4,0.9366,77,1,1,0,1,1.15,0.726,2,16,20,-0.207,73,72,0,1,0,False,REJECT
+Llama-3.1-8B,ca_direct,val,1.0,0.9448,4.6157,22,18,diffmean,0.4,0.9366,77,1,1,0,2,2.7,1.487,7,20,20,-1.144,73,70,0,3,0,False,REJECT
+Llama-3.1-8B,ca_direct,val,2.0,1.8896,9.2314,22,18,diffmean,0.4,0.9366,77,2,2,0,2,4.5,2.179,11,20,20,-1.147,73,57,2,14,0,False,REJECT
+Llama-3.1-8B,ca_direct,val,4.0,3.7792,18.4627,22,18,diffmean,0.4,0.9366,77,6,6,0,2,5.45,2.109,11,9,20,0.261,73,51,3,19,0,False,REJECT
+Llama-3.1-8B,ca_direct,val,8.0,7.5585,36.9255,22,18,diffmean,0.4,0.9366,77,23,23,0,1,7.05,5.472,21,0,20,2.915,73,33,22,18,0,False,REJECT
+Llama-3.1-8B,ca_tc,"TEST(locked,one-shot)",8.0,,,22,18,diffmean,0.4,,69,16,19,3,-2,6.75,10.526,36,5,20,0.879,73,10,19,44,3,False,REJECT -> test DENIED
+Llama-3.1-8B,ca_direct,"TEST(locked,one-shot)",8.0,,,22,18,diffmean,0.4,,67,19,19,0,0,8.65,8.242,30,3,20,1.256,74,42,18,14,0,False,REJECT -> test DENIED

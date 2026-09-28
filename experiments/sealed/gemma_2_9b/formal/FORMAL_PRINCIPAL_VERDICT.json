@@ -1,0 +1,66 @@
+{
+  "principal_verdict": "GEMMA_FORMAL_DECLINE",
+  "conditions": {
+    "1_channel_support_ge_30": true,
+    "2_target_gain_gt_0": true,
+    "3_target_gain_CI_lower_gt_0": false,
+    "4_real_exceeds_K59_random_null": true,
+    "5_target_hit_gt_0.50": true,
+    "6_target_hit_CI_lower_gt_0.50": false,
+    "7_collateral_point_le_0.05": true,
+    "8_collateral_CI_upper_le_0.05": true,
+    "9_zero_reproduces_baseline_exactly": true,
+    "10_no_structural_integrity_failure": true
+  },
+  "n_pass": 8,
+  "failed_conditions": [
+    "3_target_gain_CI_lower_gt_0",
+    "6_target_hit_CI_lower_gt_0.50"
+  ],
+  "failed_evidence_layer": "destination interval conditions (3 and 6)",
+  "headline": {
+    "channel": "cannot_answer__to__tool_call",
+    "q": 0.125,
+    "sealed_rows": 548,
+    "routed": 114,
+    "channel_errors": 96,
+    "SOURCE_RETAINED": 69,
+    "source_exits": 27,
+    "GOLD_ARRIVAL": 17,
+    "OTHER_WRONG": 10,
+    "target_hit": 0.6296296296296297,
+    "target_hit_ci95": [
+      0.4444444444444444,
+      0.8148148148148148
+    ],
+    "target_gain": 0.07291666666666667,
+    "target_gain_ci95": [
+      -0.03125,
+      0.17708333333333334
+    ],
+    "fixed": 17,
+    "broke": 1,
+    "net": 16,
+    "add_one_p": 0.016666666666666666,
+    "n_random_ge_real": 0,
+    "collateral_all_correct": [
+      1,
+      223,
+      0.004484304932735426,
+      [
+        0.0001135263266288213,
+        0.024730342614908973
+      ]
+    ],
+    "collateral_exposed_correct": [
+      1,
+      11,
+      0.09090909090909091,
+      [
+        0.0022989722138142673,
+        0.4127799169883827
+      ]
+    ]
+  },
+  "prohibition": "the all-correct collateral pass (1/223) must NOT be read as deployment safety; exposed-at-risk is 1/11 = 9.09%, above the 0.05 bound, on 11 rows"
+}

@@ -1,0 +1,84 @@
+{
+  "cost_ceiling_seconds": 7200,
+  "deterministic_replay_bitwise": true,
+  "dev_error_samples_total": 570,
+  "memory_released_between_samples": true,
+  "peak_gpu_memory_bytes_after_pilot": 17483655680,
+  "pilot_detail": [
+    {
+      "channel": "request_for_info__to__tool_call",
+      "finite": true,
+      "gradient_shape": [
+        4,
+        4096
+      ],
+      "sample_id": "0090a882-5cfc-4fb7-8526-c91ceb514efd",
+      "statuses": [
+        "VALID",
+        "COMMON_PROMPT_STATE_NOT_SHARED"
+      ],
+      "variants": [
+        "full_effect"
+      ]
+    },
+    {
+      "channel": "cannot_answer__to__tool_call",
+      "finite": true,
+      "gradient_shape": [
+        4,
+        4096
+      ],
+      "sample_id": "00d52177-ca0a-46a7-b7a7-320d7b432cdf",
+      "statuses": [
+        "VALID",
+        "COMMON_PROMPT_STATE_NOT_SHARED"
+      ],
+      "variants": [
+        "full_effect"
+      ]
+    },
+    {
+      "channel": "request_for_info__to__tool_call",
+      "finite": true,
+      "gradient_shape": [
+        4,
+        4096
+      ],
+      "sample_id": "0237c981-34a3-45f5-bbf0-7c5067cc1b72",
+      "statuses": [
+        "VALID",
+        "COMMON_PROMPT_STATE_NOT_SHARED"
+      ],
+      "variants": [
+        "full_effect"
+      ]
+    },
+    {
+      "channel": "request_for_info__to__tool_call",
+      "finite": true,
+      "gradient_shape": [
+        4,
+        4096
+      ],
+      "sample_id": "024a4c20-fd3b-4f09-9f72-5e2c937e2037",
+      "statuses": [
+        "VALID",
+        "COMMON_PROMPT_STATE_NOT_SHARED"
+      ],
+      "variants": [
+        "full_effect"
+      ]
+    }
+  ],
+  "pilot_rows": [
+    "0090a882-5cfc-4fb7-8526-c91ceb514efd",
+    "00d52177-ca0a-46a7-b7a7-320d7b432cdf",
+    "0237c981-34a3-45f5-bbf0-7c5067cc1b72",
+    "024a4c20-fd3b-4f09-9f72-5e2c937e2037"
+  ],
+  "pilot_seconds": 5.168532606214285,
+  "projected_geometry_seconds": 736.5158963855356,
+  "schema_version": 1,
+  "seconds_per_sample": 1.2921331515535712,
+  "selection": "ascending immutable UUID over V2 DEV channel-error rows"
+}

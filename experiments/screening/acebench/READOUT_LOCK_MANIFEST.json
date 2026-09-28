@@ -1,0 +1,60 @@
+{
+  "locked_on": "2026-07-14",
+  "protocol_version": "1.0",
+  "parser_version": "1.0",
+  "model": "Qwen2.5-7B-Instruct bf16 (local shards; index total 15.231 GB)",
+  "generation_params": {
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 256,
+    "batch_size": 1,
+    "order": "ascending sample_id",
+    "max_prompt_tokens": 8192,
+    "stop": "eos only"
+  },
+  "unknown_policy": "UNKNOWN is a first-class outcome; counted as error for accuracy; excluded from channel-discovery transitions; never forced to a label",
+  "split": "archived stratified 70/15/15 seed 42 (verified cell-exact vs archive)",
+  "smoke_gate": {
+    "loads_bf16": true,
+    "no_oom": true,
+    "non_unknown_ge_0.70": true,
+    "eos_ge_0.90": true,
+    "no_boilerplate_collapse": true,
+    "PASS": true
+  },
+  "env": {
+    "torch": "2.1.2+cu121",
+    "transformers": "4.49.0",
+    "cuda": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "dtype": "bfloat16",
+    "gen_params": {
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 256
+    },
+    "model_path": ".cache/modelscope/Qwen/Qwen2___5-7B-Instruct",
+    "parser_version": "1.0"
+  },
+  "sha256": {
+    "protocol": "8e26bc229412e715e9a07d9bdc8cdf70ecff681acc8ade79d5b9c2aa004b1ec6",
+    "parser": "e20ea325e512018c1f18416621cd96ee3e6015d5bb573ceff7150d3e742b9373",
+    "generation_script": "84f393473098b03ff6a1e43c20777b0fdadf9a68b498e05c10f0246da37a83bc",
+    "dataset": "e207df57d501b0d29b9b843660510905e3ce7023f47ee1ce56097b6496dcd49b",
+    "official_prompt_en": "d479f487f7e1e77090eb65321f774b13e42efba11cd29717db0973953985a013",
+    "official_prompt_zh": "e824a7fc3010287e33a9adee0d055c659ec7e10b02287a6d6b8e04be73cd16c9",
+    "model_config": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+    "model_index": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028"
+  },
+  "files": {
+    "protocol": "final/results/acebench_generation_readout/PHASE4_GENERATION_PROTOCOL.md",
+    "parser": "scripts/acebench_parse_outputs.py",
+    "generation_script": "scripts/acebench_generation_baseline.py",
+    "dataset": ".cache/acebench_phase4/acebench_decision_all_with_time.jsonl",
+    "official_prompt_en": ".cache/acebench_raw/official_prompt_en.py",
+    "official_prompt_zh": ".cache/acebench_raw/official_prompt_zh.py",
+    "model_config": ".cache/modelscope/Qwen/Qwen2___5-7B-Instruct/config.json",
+    "model_index": ".cache/modelscope/Qwen/Qwen2___5-7B-Instruct/model.safetensors.index.json"
+  },
+  "note": "No readout change is permitted after inspecting full-run results; any change is a new protocol version requiring a fresh run."
+}

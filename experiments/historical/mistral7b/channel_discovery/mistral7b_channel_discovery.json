@@ -1,0 +1,250 @@
+{
+  "model": "Mistral-7B-Instruct-v0.3",
+  "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "dataset": "nvidia/When2Call test/mcq",
+  "n_samples": 3652,
+  "baseline_accuracy": 0.42689,
+  "total_errors": 2093,
+  "baseline_validity_R0": {
+    "majority_gold_share": 0.3546,
+    "majority_pred_share": 0.8212,
+    "majority_pred_class": "tool_call",
+    "acc_minus_majority_gold": 0.0723,
+    "readout_collapse_flag": false,
+    "rule": "collapse iff majority_pred_share > 0.6 AND acc < majority_gold_share"
+  },
+  "confusion_matrix_gold_by_pred": {
+    "cannot_answer": {
+      "cannot_answer": 205,
+      "direct": 291,
+      "request_for_info": 26,
+      "tool_call": 773
+    },
+    "request_for_info": {
+      "cannot_answer": 17,
+      "direct": 21,
+      "request_for_info": 76,
+      "tool_call": 948
+    },
+    "tool_call": {
+      "cannot_answer": 1,
+      "direct": 15,
+      "request_for_info": 1,
+      "tool_call": 1278
+    }
+  },
+  "threshold_settings": {
+    "default": {
+      "stable_train_min": 50,
+      "stable_eval_min": 15,
+      "weak_train_min": 20
+    },
+    "strict": {
+      "stable_train_min": 75,
+      "stable_eval_min": 25,
+      "weak_train_min": 30
+    },
+    "lenient": {
+      "stable_train_min": 30,
+      "stable_eval_min": 10,
+      "weak_train_min": 10
+    }
+  },
+  "n_bootstrap": 200,
+  "discovered_channels": [
+    {
+      "channel_id": "rfi_tc",
+      "gold": "request_for_info",
+      "pred": "tool_call",
+      "count_all": 948,
+      "count_train": 662,
+      "count_val": 141,
+      "count_test": 145,
+      "pct_of_errors": 45.29,
+      "status_default": "stable",
+      "status_strict": "stable",
+      "status_lenient": "stable",
+      "bootstrap_stable_freq": 1.0,
+      "in_archived_set": true,
+      "channel_id_short": "rfi_tc",
+      "scope_pass": true,
+      "scope_reject_reason": ""
+    },
+    {
+      "channel_id": "ca_tc",
+      "gold": "cannot_answer",
+      "pred": "tool_call",
+      "count_all": 773,
+      "count_train": 541,
+      "count_val": 117,
+      "count_test": 115,
+      "pct_of_errors": 36.93,
+      "status_default": "stable",
+      "status_strict": "stable",
+      "status_lenient": "stable",
+      "bootstrap_stable_freq": 1.0,
+      "in_archived_set": true,
+      "channel_id_short": "ca_tc",
+      "scope_pass": true,
+      "scope_reject_reason": ""
+    },
+    {
+      "channel_id": "ca_direct",
+      "gold": "cannot_answer",
+      "pred": "direct",
+      "count_all": 291,
+      "count_train": 205,
+      "count_val": 43,
+      "count_test": 43,
+      "pct_of_errors": 13.9,
+      "status_default": "stable",
+      "status_strict": "stable",
+      "status_lenient": "stable",
+      "bootstrap_stable_freq": 1.0,
+      "in_archived_set": true,
+      "channel_id_short": "ca_direct",
+      "scope_pass": true,
+      "scope_reject_reason": ""
+    },
+    {
+      "channel_id": "cannot_answer__request_for_info",
+      "gold": "cannot_answer",
+      "pred": "request_for_info",
+      "count_all": 26,
+      "count_train": 18,
+      "count_val": 2,
+      "count_test": 6,
+      "pct_of_errors": 1.24,
+      "status_default": "insufficient",
+      "status_strict": "insufficient",
+      "status_lenient": "weak",
+      "bootstrap_stable_freq": 0.0,
+      "in_archived_set": false,
+      "channel_id_short": "ca_rfi",
+      "scope_pass": false,
+      "scope_reject_reason": "train<30; eval<8; status=insufficient"
+    },
+    {
+      "channel_id": "request_for_info__direct",
+      "gold": "request_for_info",
+      "pred": "direct",
+      "count_all": 21,
+      "count_train": 17,
+      "count_val": 2,
+      "count_test": 2,
+      "pct_of_errors": 1.0,
+      "status_default": "insufficient",
+      "status_strict": "insufficient",
+      "status_lenient": "weak",
+      "bootstrap_stable_freq": 0.0,
+      "in_archived_set": false,
+      "channel_id_short": "rfi_direct",
+      "scope_pass": false,
+      "scope_reject_reason": "train<30; eval<8; status=insufficient"
+    },
+    {
+      "channel_id": "request_for_info__cannot_answer",
+      "gold": "request_for_info",
+      "pred": "cannot_answer",
+      "count_all": 17,
+      "count_train": 15,
+      "count_val": 0,
+      "count_test": 2,
+      "pct_of_errors": 0.81,
+      "status_default": "insufficient",
+      "status_strict": "insufficient",
+      "status_lenient": "weak",
+      "bootstrap_stable_freq": 0.0,
+      "in_archived_set": false,
+      "channel_id_short": "rfi_ca",
+      "scope_pass": false,
+      "scope_reject_reason": "train<30; eval<8; status=insufficient"
+    },
+    {
+      "channel_id": "tool_call__direct",
+      "gold": "tool_call",
+      "pred": "direct",
+      "count_all": 15,
+      "count_train": 9,
+      "count_val": 4,
+      "count_test": 2,
+      "pct_of_errors": 0.72,
+      "status_default": "insufficient",
+      "status_strict": "insufficient",
+      "status_lenient": "insufficient",
+      "bootstrap_stable_freq": 0.0,
+      "in_archived_set": false,
+      "channel_id_short": "tc_direct",
+      "scope_pass": false,
+      "scope_reject_reason": "train<30; eval<8; status=insufficient"
+    },
+    {
+      "channel_id": "tool_call__cannot_answer",
+      "gold": "tool_call",
+      "pred": "cannot_answer",
+      "count_all": 1,
+      "count_train": 1,
+      "count_val": 0,
+      "count_test": 0,
+      "pct_of_errors": 0.05,
+      "status_default": "insufficient",
+      "status_strict": "insufficient",
+      "status_lenient": "insufficient",
+      "bootstrap_stable_freq": 0.0,
+      "in_archived_set": false,
+      "channel_id_short": "tc_ca",
+      "scope_pass": false,
+      "scope_reject_reason": "train<30; eval<8; status=insufficient"
+    },
+    {
+      "channel_id": "tool_call__request_for_info",
+      "gold": "tool_call",
+      "pred": "request_for_info",
+      "count_all": 1,
+      "count_train": 1,
+      "count_val": 0,
+      "count_test": 0,
+      "pct_of_errors": 0.05,
+      "status_default": "insufficient",
+      "status_strict": "insufficient",
+      "status_lenient": "insufficient",
+      "bootstrap_stable_freq": 0.0,
+      "in_archived_set": false,
+      "channel_id_short": "tc_rfi",
+      "scope_pass": false,
+      "scope_reject_reason": "train<30; eval<8; status=insufficient"
+    }
+  ],
+  "stable_channels_default": [
+    "rfi_tc",
+    "ca_tc",
+    "ca_direct"
+  ],
+  "n_stable_by_threshold_setting": {
+    "default": 3,
+    "strict": 3,
+    "lenient": 3
+  },
+  "scope_filter": {
+    "train_min": 30,
+    "eval_min": 8,
+    "gold_classes": [
+      "cannot_answer",
+      "request_for_info",
+      "tool_call"
+    ],
+    "scope_pass_channels": [
+      "rfi_tc",
+      "ca_tc",
+      "ca_direct"
+    ]
+  },
+  "vs_archived_manual_set": {
+    "manual": [
+      "rfi_tc",
+      "ca_tc",
+      "ca_direct"
+    ],
+    "auto_stable_extra": []
+  }
+}

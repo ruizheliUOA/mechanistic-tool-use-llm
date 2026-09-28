@@ -1,0 +1,80 @@
+{
+  "distribution": {
+    "n": 3652,
+    "render_errors": 0,
+    "min": 78,
+    "p50": 687,
+    "p90": 1566,
+    "p95": 1686,
+    "p99": 2352,
+    "max": 5247
+  },
+  "probes": [
+    {
+      "max_seq": 687,
+      "status": "OK",
+      "peak_gb": 19.019
+    },
+    {
+      "max_seq": 1103,
+      "status": "OK",
+      "peak_gb": 19.249
+    },
+    {
+      "max_seq": 1448,
+      "status": "OK",
+      "peak_gb": 19.523
+    },
+    {
+      "max_seq": 1661,
+      "status": "OK",
+      "peak_gb": 19.74
+    },
+    {
+      "max_seq": 1917,
+      "status": "OK",
+      "peak_gb": 20.104
+    },
+    {
+      "max_seq": 2339,
+      "status": "OK",
+      "peak_gb": 20.676
+    },
+    {
+      "max_seq": 2357,
+      "status": "OK",
+      "peak_gb": 20.698
+    },
+    {
+      "max_seq": 2449,
+      "status": "OK",
+      "peak_gb": 20.955
+    },
+    {
+      "max_seq": 3108,
+      "status": "OK",
+      "peak_gb": 22.203
+    },
+    {
+      "max_seq": 4651,
+      "status": "OOM",
+      "peak_gb": 24.327
+    },
+    {
+      "max_seq": 4572,
+      "status": "OOM",
+      "peak_gb": 24.147
+    },
+    {
+      "max_seq": 3169,
+      "status": "OK",
+      "peak_gb": 22.326
+    }
+  ],
+  "last_feasible_max_seq": 3169,
+  "first_infeasible_max_seq": 4572,
+  "rows_at_or_above_first_infeasible": 6,
+  "fraction_of_population": 0.001643,
+  "attention_implementation": "eager (frozen - NOT changed)",
+  "gradient_checkpointing": "enabled, validated bit-identical in VRAM_SMOKE_TEST_V4.json"
+}

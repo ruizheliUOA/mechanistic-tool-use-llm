@@ -1,0 +1,206 @@
+{
+  "arm_executed": false,
+  "branch": "exp/sakiko-followup-archive",
+  "checks": [
+    {
+      "check": "repository HEAD authorised",
+      "detail": "HEAD=fc4b66891ec9 branch=exp/sakiko-followup-archive divergence=0/0",
+      "n": 1,
+      "pass": true
+    },
+    {
+      "check": "worktree scientific files clean",
+      "detail": "tracked modifications=0 unexpected untracked=none",
+      "n": 2,
+      "pass": true
+    },
+    {
+      "check": "prerequisite packages hash-valid & committed",
+      "detail": "4 packages, 107 artifacts",
+      "n": 3,
+      "pass": true
+    },
+    {
+      "check": "model manifest exact",
+      "detail": "Qwen/Qwen3-4B@1cfa9a720891, 10 files, mismatch=none",
+      "n": 4,
+      "pass": true
+    },
+    {
+      "check": "tokenizer & chat template hashes exact",
+      "detail": "tokenizer=True chat_template=True",
+      "n": 5,
+      "pass": true
+    },
+    {
+      "check": "dataset & split manifests exact",
+      "detail": "total=3652 train+dev=3104 sealed=548",
+      "n": 6,
+      "pass": true
+    },
+    {
+      "check": "SEALED manifest hash exact (ID-only)",
+      "detail": "548 IDs, ordered sha256 ecdde9f01650bc29",
+      "n": 7,
+      "pass": true
+    },
+    {
+      "check": "selected channel exact",
+      "detail": "cannot_answer -> tool_call, single channel",
+      "n": 8,
+      "pass": true
+    },
+    {
+      "check": "Router artifact exact",
+      "detail": "sha f45d6b7f7a15, coef(1, 2560) intercept=-1.3428241035",
+      "n": 9,
+      "pass": true
+    },
+    {
+      "check": "Router threshold exact",
+      "detail": "tau=0.011564 (protocol == router block == Stage C audit)",
+      "n": 10,
+      "pass": true
+    },
+    {
+      "check": "observation layer exact",
+      "detail": "L_obs=26",
+      "n": 11,
+      "pass": true
+    },
+    {
+      "check": "direction tensors exact",
+      "detail": "d_grad sha 84c102946657 dim=2560 finite norm=0.999999999555",
+      "n": 12,
+      "pass": true
+    },
+    {
+      "check": "injection layer exact",
+      "detail": "L_inj=21, wrong-layer control=26",
+      "n": 13,
+      "pass": true
+    },
+    {
+      "check": "dose q exact",
+      "detail": "q=0.25 on frozen grid [0.0, 0.125, 0.25, 0.5, 1.0, 2.0]",
+      "n": 14,
+      "pass": true
+    },
+    {
+      "check": "absolute perturbation norm exact",
+      "detail": "q*s_c = 6.1748905405 (s_c=24.6995621618)",
+      "n": 15,
+      "pass": true
+    },
+    {
+      "check": "formal random seeds exact & disjoint",
+      "detail": "K=59, regenerated seeds identical, disjoint from DEV(8), historical(4), Qwen3-8B(59)",
+      "n": 16,
+      "pass": true
+    },
+    {
+      "check": "random matrix hash exact (byte-identical regen)",
+      "detail": "matrix sha 063bb9d23514, regen byte-identical=True, shape(59, 2560)",
+      "n": 17,
+      "pass": true
+    },
+    {
+      "check": "comparator definitions exact",
+      "detail": "b_c=1.4013434649 frozen from DEV; L26 DiffMean comparator present",
+      "n": 18,
+      "pass": true
+    },
+    {
+      "check": "success conjunction exact",
+      "detail": "10 conditions, intersection claim, no subset substitution",
+      "n": 19,
+      "pass": true
+    },
+    {
+      "check": "formal namespace clean",
+      "detail": "final/results/qwen3_4b_w2c_formal_v1 absent (phase=pre-access, unexpected=none)",
+      "n": 20,
+      "pass": true
+    },
+    {
+      "check": "no previous SEALED scientific access",
+      "detail": "139 text artifacts scanned, 0 identifier hits; 0 sealed rows in any record file",
+      "n": 21,
+      "pass": true
+    },
+    {
+      "check": "no prior formal run",
+      "detail": "access marker absent (required absent in phase=pre-access); ledger run_count=0 endpoint_observed=False",
+      "n": 22,
+      "pass": true
+    },
+    {
+      "check": "Qwen3.5 irrelevant to this experiment",
+      "detail": "protocol references only Qwen/Qwen3-4B; no Qwen3.5 artifact in the formal design",
+      "n": 23,
+      "pass": true
+    },
+    {
+      "check": "collateral claim-lock present & frozen",
+      "detail": "audit verdict=QWEN3_4B_ADVANCEMENT_CONFIRMED; lock anchors 3/3, audit anchors 3/3",
+      "n": 24,
+      "pass": true
+    },
+    {
+      "check": "runner hash frozen",
+      "detail": "runner sha256=0bb26989909a4494",
+      "n": 25,
+      "pass": true
+    }
+  ],
+  "endpoint_computed": false,
+  "gpu_used": false,
+  "inference_run": false,
+  "mode": "gate-only",
+  "model_loaded": false,
+  "n_checks": 25,
+  "n_passed": 25,
+  "prerequisite_packages": {
+    "qwen3_4b_collateral_integrity_audit_v1": {
+      "mismatch": [],
+      "n": 18,
+      "tracked": 19,
+      "uncommitted_changes": 0
+    },
+    "qwen3_4b_gradient_memory_amendment_v1": {
+      "mismatch": [],
+      "n": 17,
+      "tracked": 18,
+      "uncommitted_changes": 0
+    },
+    "qwen3_4b_stage_d_e_v1": {
+      "mismatch": [],
+      "n": 47,
+      "tracked": 48,
+      "uncommitted_changes": 0
+    },
+    "qwen3_4b_w2c_prospective_replication_v1": {
+      "mismatch": [],
+      "n": 25,
+      "tracked": 27,
+      "uncommitted_changes": 0
+    }
+  },
+  "protocol_sha256": "df85dac20e62ffc2cfa720786bb240906addab3b7116e3b5c50f8ccf357172a0",
+  "repository_head": "fc4b66891ec971380801ebd25c583a1c70be8089",
+  "runner_sha256": "0bb26989909a4494fd7770ff747c849c90bf46162ef7c947336eecb1ac3c2d1c",
+  "sealed": {
+    "count": 548,
+    "identity_verified_by": "hash only",
+    "ordered_uuid_sha256": "ecdde9f01650bc295c8781203be422ee1b96dd7678f5be4e75e9eb5358e248c8",
+    "payload_fields_read": [
+      "uuid"
+    ],
+    "prompts_rendered": 0,
+    "rows_loaded": 0,
+    "scored": 0,
+    "tokenised": 0
+  },
+  "utc": "2026-08-08T18:35:56Z",
+  "verdict": "QWEN3_4B_FORMAL_GATE_PASSED"
+}

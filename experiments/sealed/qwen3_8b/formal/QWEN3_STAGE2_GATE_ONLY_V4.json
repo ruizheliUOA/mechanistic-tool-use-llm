@@ -1,0 +1,130 @@
+{
+  "evaluation_payload_opened": false,
+  "failed_items": [],
+  "gate": {
+    "10_single_process_single_load": {
+      "no_resume": true,
+      "single_model_load": true,
+      "single_process": true
+    },
+    "11_zero_before_endpoints": true,
+    "12_formal_access_marker_logic": {
+      "evaluation_access_class_guarded_by_marker": true,
+      "marker": "FORMAL_ACCESS_STARTED.json",
+      "written_before_first_evaluation_read": true
+    },
+    "13_raw_record_schema": [
+      "immutable ID",
+      "gold",
+      "baseline four-mode scores",
+      "baseline prediction",
+      "Router probability and decision",
+      "arm identity",
+      "direction seed/hash",
+      "dose and achieved perturbation norm",
+      "intervention four-mode scores",
+      "intervention prediction",
+      "destination transition",
+      "batch index",
+      "global execution order"
+    ],
+    "14_atomic_output_logic": {
+      "promoted_only_after_all_arms": true,
+      "records_written_to_temp": true
+    },
+    "15_endpoint_hierarchy": {
+      "conjunction_conditions": 10,
+      "primary": "target_gain_rate = (gold_arrivals - wrong_to_wrong) / n_channel_error",
+      "secondary_count": 11,
+      "secondary_non_promotable": true
+    },
+    "16_bootstrap": {
+      "derived_seed": 3760584632839820046,
+      "draws": 10000,
+      "seed_salt": "SAKIKO_QWEN3_CA_TC_STAGE2_BOOTSTRAP_V1"
+    },
+    "17_support_branch": {
+      "if_n_channel_error_lt_30": "FORMAL_SUPPORT_INSUFFICIENT_NO_CONFIRMATORY_CLAIM",
+      "must_not_be_reinterpreted_as_intervention_failure": true,
+      "report_descriptives": true,
+      "run_remains_valid": true
+    },
+    "18_ten_condition_conjunction": true,
+    "19_frozen_interpretation_branches": [
+      "d_grad_significantly_exceeds_comparator",
+      "diffmean_ineffective",
+      "full_conjunction_passes",
+      "no_generalization",
+      "positive_behaviour_but_not_beating_random",
+      "real_beats_random_but_target_hit_or_collateral_fails",
+      "score_comparator_matches_or_exceeds"
+    ],
+    "1_all_hashes": 35,
+    "20_void_schema_and_no_retry": {
+      "no_automatic_retry": true,
+      "rules": 13,
+      "schema": "QWEN3_STAGE2_VOID_SCHEMA.json"
+    },
+    "21_formal_authorization_lock": {
+      "cli_flag": "--run-formal",
+      "env_var": "QWEN3_STAGE2_FORMAL_APPROVAL",
+      "requires_clean_worktree": true,
+      "requires_divergence_0_0": true,
+      "requires_empty_namespace": true,
+      "requires_hash_match": true,
+      "requires_head_match": true
+    },
+    "22_sealed_evaluation_firewall": {
+      "count": 548,
+      "identity_inherited_by_reference": true,
+      "ids_enumerated": false,
+      "payload_opened": false,
+      "source_manifest": "final/results/qwen3_stage0_1/QWEN3_8B_STAGE0_1_INPUT_MANIFEST.json"
+    },
+    "23_formal_output_namespace_empty": true,
+    "2_selected_channel": {
+      "channel": "cannot_answer__to__tool_call",
+      "gold": "cannot_answer",
+      "source": "tool_call"
+    },
+    "3_d_grad_identity": "0c9754e78b2d09d6175a83265ccd623b88e1e48c3854316fd6972201dbac6106",
+    "4_router_identity": {
+      "coef_sha256": "7905a64a929940faaa8b814699a9aeba9a82a93ba00f4598d3134972819e6949",
+      "tau": 0.4
+    },
+    "5_q_and_s_c": {
+      "absolute_norm": 41.56598488897048,
+      "q": 1.0,
+      "s_c": 41.56598488897048
+    },
+    "6_K": 59,
+    "7_random_identities_and_seed_order": {
+      "K": 59,
+      "hashes_match": true,
+      "seed_disjoint": true,
+      "seed_order_ok": true
+    },
+    "8_arm_completeness_and_order": {
+      "expanded_cells": 67,
+      "expected": 67,
+      "frozen_order": [
+        "baseline",
+        "zero",
+        "d_grad",
+        "d_L26_diffmean",
+        "reverse_d_grad",
+        "wrong_layer_d_grad",
+        "ungated_d_grad",
+        "formal_randoms",
+        "score_space_comparator"
+      ]
+    },
+    "9_batch_size": 1
+  },
+  "mode": "gate-only",
+  "runner": "v4",
+  "runner_sha256": "363418390cad649954861d43e16251709af973337de65f42336d2a8ecf1163e1",
+  "schema_version": 1,
+  "status": "PASS",
+  "utc": "2026-08-03T16:20:14Z"
+}

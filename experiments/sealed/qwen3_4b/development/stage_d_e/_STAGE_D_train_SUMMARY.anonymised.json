@@ -1,0 +1,80 @@
+{
+  "amendment_package_sha256": "3edaa119ef13a6167d2582673cb618cb33d5b520839d82d3bc92a99e4a4d5330",
+  "common_sha256": "3a37b1bb209e90d9500a07601d60e378d96e82963ad30fe25c5c69aff647f419",
+  "environment": {
+    "amendment_param_grads_disabled": true,
+    "attention_guard": {
+      "below_threshold_path": "unmodified upstream eager_attention_forward",
+      "head_chunk": 8,
+      "installed": true,
+      "scientific_definitions_changed": false,
+      "threshold_tokens": 4096
+    },
+    "chunk_checkpointed_attention": {
+      "below_threshold": "delegated unchanged to the frozen V1 guard",
+      "head_chunk": 8,
+      "installed": true,
+      "scientific_definitions_changed": false,
+      "shapes_and_kernels_unchanged": true,
+      "threshold_tokens": 4096
+    },
+    "gradient_checkpointing": {
+      "checkpointed_layers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "excluded_leaf_layer": 21,
+      "installed": true,
+      "rationale": "recompute instead of store; identical deterministic function",
+      "scientific_definitions_changed": false
+    },
+    "n_params_requiring_grad": 0
+  },
+  "frozen_module_sha256": "b1830b4be291c1adfe7e843e8de7fdea0ee1e4e1b6c10c25c6fc40465073f4ac",
+  "gradients_file": "/path/to/experiment-cache/QWEN3_4B_TRAIN_GRADIENTS.safetensors",
+  "gradients_sha256": "e1a4956313dcdaa6cfad977f90bea98bd85b2386224291c10b2bd29dd506b86d",
+  "peak_allocated_gib": 11.574477672576904,
+  "peak_reserved_gib": 12.09375,
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "chance_reference_one_over_sqrt_n": 0.07580980435789034,
+      "d_grad_norm": 0.9999999998441523,
+      "d_grad_sha256": "c9984064a1eadff974e6686f9a1a0a7eaae380e8a2f84b1ab3a386b84cc022e1",
+      "gold": "cannot_answer",
+      "n": 174,
+      "non_finite": 0,
+      "population_sha256": "3ab90e29cbafaf9cf14d21262e0a0a655383208fc035d81acb3f20993927d856",
+      "source": "direct",
+      "target_contrast_norm_median": 0.8530982670621257,
+      "wbar_norm": 0.4436340053899528
+    },
+    "cannot_answer__to__tool_call": {
+      "chance_reference_one_over_sqrt_n": 0.04789131426105757,
+      "d_grad_norm": 0.999999999554828,
+      "d_grad_sha256": "84c1029466571147813f6fe68ff77d185cef8d408e82d8c9a9805ec44d13fe84",
+      "gold": "cannot_answer",
+      "n": 436,
+      "non_finite": 0,
+      "population_sha256": "1fa3daf7345e027d514af558f95b3c020b80aec9d27aeda1ff9cce9800f3d350",
+      "source": "tool_call",
+      "target_contrast_norm_median": 0.7738155211391933,
+      "wbar_norm": 0.5785930565361586
+    }
+  },
+  "runner_sha256": "c395830f4fc6944e801a048f09b26099b3bb264cb3b0e0f50aa1ecfbd8a11a11",
+  "runtime_seconds": 518.6197563894093,
+  "sealed_evaluation_accessed": false,
+  "split": "train"
+}

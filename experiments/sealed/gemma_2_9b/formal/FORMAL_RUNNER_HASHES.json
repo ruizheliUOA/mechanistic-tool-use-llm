@@ -1,0 +1,17 @@
+{
+  "dev_stage_runners": {
+    "feasible_length_boundary.py": "8ccde8a5eda6ad6e011a77ce2acc336b84c3fadb4dee863015290c077280ddf6",
+    "run_baseline.py": "aabfe4b1a31597b0aad925d92fa41e33c5b83da17fb3cc712ef7e0a022a48f76",
+    "run_controls.py": "98a77ea14b82700aa861342e672a59e7407a6457f4d3437bc08479d96f4ffd21",
+    "run_dev_ladder.py": "d9b4204bb100940e08dfc89daff5800a91d7f74422b6b64bd912e75b4090a9a9",
+    "run_directions.py": "291632550cf43d9d36f21d0f338e8a50d6f05b12633e998b876e1815fc991f9e",
+    "run_router.py": "61ca6bfa571544b46036d29a29d8c46a6851ddbf6ff57065884ce83fa896c1c8",
+    "smoke_test_vram.py": "c88dbf7b7b3665f54634bdfc091a49f36b2bd14d51246504cf94f0c1c9116a34",
+    "smoke_test_vram_v2.py": "52825ed72828d77297d6525c2157e7c967dbec2428b91297539bf27570870d1c",
+    "smoke_test_vram_v3.py": "0bf36ae9433824860906181754d10c0952b01b91a6fe44f3aa7fb7e05e912d0a",
+    "smoke_test_vram_v4.py": "3768c162181179095d0e7a09784b8524af210255e5c8cacbad37fb55806092fa"
+  },
+  "policy": "re-frozen after mechanical incident 1; no code edits after this hash",
+  "run_gemma_formal.BEFORE.py": "1aa81b6eddb721651151e7ee50b51e07f2bf81924ccfedb6365d2067034c4d38",
+  "run_gemma_formal.py": "66d81956fb54fa85082a38a16987ce26c67dcf343c9844b7a3285ae18e798588"
+}

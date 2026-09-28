@@ -1,0 +1,5 @@
+channel,obs_layer,direction_norm,router_val_auc,best_inj,best_alpha,best_thr,val_net,val_fixed,val_broke,ca_direct_before,ca_direct_after,test_reduction,source_file
+ca_direct,16,2.123,0.9611,16,6.0,0.4,13,13,0,62,45,,partA_ca_direct_layer_scan.json
+ca_direct,18,5.878,0.9649,20,6.0,0.4,24,24,0,62,21,,partA_ca_direct_layer_scan.json
+ca_direct,20,10.408,0.9555,16,6.0,0.4,46,46,0,62,12,56,partA_ca_direct_layer_scan.json
+ca_direct,22,14.263,0.9621,16,6.0,0.4,42,42,0,62,16,,partA_ca_direct_layer_scan.json

@@ -1,0 +1,207 @@
+{
+  "sweep_on": "val",
+  "n_val": 548,
+  "grid": "threshold × ca_direct_alpha",
+  "thresholds": [
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "alphas": [
+    6.0,
+    8.0,
+    10.0,
+    12.0
+  ],
+  "selection_criterion": "max net_benefit, tiebreak by accuracy",
+  "best": {
+    "threshold": 0.4,
+    "ca_direct_alpha": 10.0,
+    "accuracy": 62.23,
+    "delta_acc": 14.05,
+    "macro_f1": 48.24,
+    "delta_f1": 15.37,
+    "fixed": 117,
+    "broke": 40,
+    "net": 77
+  },
+  "results": [
+    {
+      "threshold": 0.4,
+      "ca_direct_alpha": 6.0,
+      "accuracy": 61.31,
+      "delta_acc": 13.14,
+      "macro_f1": 47.56,
+      "delta_f1": 14.69,
+      "fixed": 112,
+      "broke": 40,
+      "net": 72
+    },
+    {
+      "threshold": 0.5,
+      "ca_direct_alpha": 6.0,
+      "accuracy": 60.77,
+      "delta_acc": 12.59,
+      "macro_f1": 46.98,
+      "delta_f1": 14.11,
+      "fixed": 105,
+      "broke": 36,
+      "net": 69
+    },
+    {
+      "threshold": 0.6,
+      "ca_direct_alpha": 6.0,
+      "accuracy": 60.22,
+      "delta_acc": 12.04,
+      "macro_f1": 46.45,
+      "delta_f1": 13.58,
+      "fixed": 98,
+      "broke": 32,
+      "net": 66
+    },
+    {
+      "threshold": 0.7,
+      "ca_direct_alpha": 6.0,
+      "accuracy": 59.85,
+      "delta_acc": 11.68,
+      "macro_f1": 46.07,
+      "delta_f1": 13.21,
+      "fixed": 93,
+      "broke": 29,
+      "net": 64
+    },
+    {
+      "threshold": 0.4,
+      "ca_direct_alpha": 8.0,
+      "accuracy": 62.04,
+      "delta_acc": 13.87,
+      "macro_f1": 48.12,
+      "delta_f1": 15.25,
+      "fixed": 116,
+      "broke": 40,
+      "net": 76
+    },
+    {
+      "threshold": 0.5,
+      "ca_direct_alpha": 8.0,
+      "accuracy": 61.5,
+      "delta_acc": 13.32,
+      "macro_f1": 47.55,
+      "delta_f1": 14.68,
+      "fixed": 109,
+      "broke": 36,
+      "net": 73
+    },
+    {
+      "threshold": 0.6,
+      "ca_direct_alpha": 8.0,
+      "accuracy": 60.95,
+      "delta_acc": 12.77,
+      "macro_f1": 47.08,
+      "delta_f1": 14.21,
+      "fixed": 102,
+      "broke": 32,
+      "net": 70
+    },
+    {
+      "threshold": 0.7,
+      "ca_direct_alpha": 8.0,
+      "accuracy": 60.58,
+      "delta_acc": 12.41,
+      "macro_f1": 46.71,
+      "delta_f1": 13.84,
+      "fixed": 97,
+      "broke": 29,
+      "net": 68
+    },
+    {
+      "threshold": 0.4,
+      "ca_direct_alpha": 10.0,
+      "accuracy": 62.23,
+      "delta_acc": 14.05,
+      "macro_f1": 48.24,
+      "delta_f1": 15.37,
+      "fixed": 117,
+      "broke": 40,
+      "net": 77
+    },
+    {
+      "threshold": 0.5,
+      "ca_direct_alpha": 10.0,
+      "accuracy": 61.68,
+      "delta_acc": 13.5,
+      "macro_f1": 47.67,
+      "delta_f1": 14.8,
+      "fixed": 110,
+      "broke": 36,
+      "net": 74
+    },
+    {
+      "threshold": 0.6,
+      "ca_direct_alpha": 10.0,
+      "accuracy": 61.13,
+      "delta_acc": 12.96,
+      "macro_f1": 47.2,
+      "delta_f1": 14.34,
+      "fixed": 103,
+      "broke": 32,
+      "net": 71
+    },
+    {
+      "threshold": 0.7,
+      "ca_direct_alpha": 10.0,
+      "accuracy": 60.77,
+      "delta_acc": 12.59,
+      "macro_f1": 46.84,
+      "delta_f1": 13.97,
+      "fixed": 98,
+      "broke": 29,
+      "net": 69
+    },
+    {
+      "threshold": 0.4,
+      "ca_direct_alpha": 12.0,
+      "accuracy": 61.86,
+      "delta_acc": 13.69,
+      "macro_f1": 48.09,
+      "delta_f1": 15.22,
+      "fixed": 116,
+      "broke": 41,
+      "net": 75
+    },
+    {
+      "threshold": 0.5,
+      "ca_direct_alpha": 12.0,
+      "accuracy": 61.31,
+      "delta_acc": 13.14,
+      "macro_f1": 47.51,
+      "delta_f1": 14.64,
+      "fixed": 109,
+      "broke": 37,
+      "net": 72
+    },
+    {
+      "threshold": 0.6,
+      "ca_direct_alpha": 12.0,
+      "accuracy": 60.77,
+      "delta_acc": 12.59,
+      "macro_f1": 46.99,
+      "delta_f1": 14.12,
+      "fixed": 102,
+      "broke": 33,
+      "net": 69
+    },
+    {
+      "threshold": 0.7,
+      "ca_direct_alpha": 12.0,
+      "accuracy": 60.58,
+      "delta_acc": 12.41,
+      "macro_f1": 46.75,
+      "delta_f1": 13.88,
+      "fixed": 98,
+      "broke": 30,
+      "net": 68
+    }
+  ]
+}

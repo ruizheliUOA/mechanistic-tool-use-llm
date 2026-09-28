@@ -1,0 +1,35 @@
+{
+  "per_channel": {
+    "cannot_answer__to__direct": {
+      "dev_pred_eq_source": 132,
+      "dev_rows_exposed_gated": 132,
+      "dev_rows_exposed_ungated": 132,
+      "gated_collateral_rate": 0.0,
+      "gated_eligible_collateral": 0,
+      "gated_target_gain_rate": 0.17543859649122806,
+      "router_effectively_ungated": true,
+      "router_selectivity_ratio": 1.0,
+      "selected_q": 0.25,
+      "tau": 0.0,
+      "ungated_collateral_rate": 0.0,
+      "ungated_eligible_collateral": 0,
+      "ungated_target_gain_rate": 0.17543859649122806
+    },
+    "cannot_answer__to__tool_call": {
+      "dev_pred_eq_source": 877,
+      "dev_rows_exposed_gated": 408,
+      "dev_rows_exposed_ungated": 877,
+      "gated_collateral_rate": 0.006593406593406593,
+      "gated_eligible_collateral": 106,
+      "gated_target_gain_rate": 0.12272727272727273,
+      "router_effectively_ungated": false,
+      "router_selectivity_ratio": 0.4652223489167617,
+      "selected_q": 0.25,
+      "tau": 0.011564,
+      "ungated_collateral_rate": 0.026373626373626374,
+      "ungated_eligible_collateral": 384,
+      "ungated_target_gain_rate": 0.15454545454545454
+    }
+  },
+  "semantics": "same q*s_c; only the Router gate is disabled"
+}

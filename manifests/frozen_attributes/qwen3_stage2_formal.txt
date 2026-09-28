@@ -1,0 +1,2 @@
+# Per-directory LFS rules; the frozen repository-root .gitattributes is untouched.
+*.safetensors filter=lfs diff=lfs merge=lfs -text

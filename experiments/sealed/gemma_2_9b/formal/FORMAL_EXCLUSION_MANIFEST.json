@@ -1,0 +1,25 @@
+{
+  "actual_dev": 1101,
+  "actual_train": 1997,
+  "dev_denominator_used_everywhere": 1101,
+  "mechanical_exclusions": {
+    "boundary": "last feasible max_seq 3169; first infeasible 4572; natural gap, no threshold chosen after seeing results",
+    "count": 6,
+    "dev": 3,
+    "raw_indices": [
+      217,
+      985,
+      1487,
+      2078,
+      2574,
+      3342
+    ],
+    "reason": "BF16 + eager-attention 4-mode gradient stack exceeds 24GB at these sequence lengths",
+    "sealed": 0,
+    "train": 3
+  },
+  "non_test": 3104,
+  "sealed": 548,
+  "sealed_excluded": 0,
+  "total_rows": 3652
+}

@@ -1,0 +1,57 @@
+{
+  "real": {
+    "fixed": 92,
+    "broke": 13,
+    "net": 79,
+    "chan_fixed": {
+      "rfi_tc": 42,
+      "ca_tc": 35,
+      "ca_direct": 15
+    },
+    "n_touched": 202
+  },
+  "reverse": {
+    "fixed": 17,
+    "broke": 1,
+    "net": 16,
+    "chan_fixed": {
+      "rfi_tc": 1,
+      "ca_tc": 16,
+      "ca_direct": 0
+    },
+    "n_touched": 202
+  },
+  "random_distribution": {
+    "n": 10,
+    "nets": [
+      29,
+      50,
+      31,
+      35,
+      22,
+      25,
+      4,
+      7,
+      18,
+      31
+    ],
+    "mean": 25.2,
+    "std": 12.79,
+    "max": 50,
+    "min": 4,
+    "real_net": 79,
+    "real_ge_all_random": true,
+    "n_random_ge_real": 0
+  },
+  "ungated": {
+    "fixed": 116,
+    "broke": 22,
+    "net": 94,
+    "chan_fixed": {
+      "rfi_tc": 42,
+      "ca_tc": 39,
+      "ca_direct": 24
+    },
+    "n_touched": 293
+  }
+}

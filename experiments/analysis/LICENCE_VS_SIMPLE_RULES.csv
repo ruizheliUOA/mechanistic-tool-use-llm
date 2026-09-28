@@ -1,0 +1,10 @@
+unit,Net,specificity,target_hit,target_gain,collateral,exposed,actual,R0 Net>0,R1 Net & spec,R2 spec & t-hit>.5,R3 spec & TG>0,R4 destination only,R5 spec+dest+coll,R5b +nonvacuous,R6 FULL SAKIKO
+Qwen3-8B ca->tc,40,PASS,0.7308,0.2759,0/211=0.0000,6,ADMIT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT
+Qwen3-4B ca->tc,39,PASS,0.5781,0.0806,1/214=0.0047,50,DECLINE,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,reject
+Gemma ca->tc,16,PASS,0.6296,0.0729,1/223=0.0045,11,DECLINE,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,reject
+Gemma ca->direct DEV,19,PASS,0.8636,0.186,0/471=0.0000,0,DECLINE(vacuous),ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,reject,reject
+Phi-3.5 cascade,55,PASS,0.6903,0.3806,52/264=0.1970,93,WOULD_DECLINE,ACCEPT,ACCEPT,ACCEPT,ACCEPT,ACCEPT,reject,reject,reject
+Mistral rfi_tc,12,FAIL,n/r,n/r,n/r,n/r,NON-SPECIFIC,ACCEPT,reject,reject,reject,reject,reject,reject,reject
+Mistral ca_tc,62,PASS,n/r,n/r,n/r,n/r,PARTIAL(reverse 88%),ACCEPT,ACCEPT,reject,reject,reject,reject,reject,reject
+Llama ca_tc TEST,16,FAIL,0.3016,-0.3968,n/r,n/r,REJECT,ACCEPT,reject,reject,reject,reject,reject,reject,reject
+Llama ca_direct TEST,19,FAIL,0.5625,0.125,n/r,n/r,REJECT,ACCEPT,reject,reject,reject,ACCEPT,reject,reject,reject

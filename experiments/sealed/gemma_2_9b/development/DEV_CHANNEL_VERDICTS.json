@@ -1,0 +1,60 @@
+{
+  "cannot_answer__to__direct": {
+    "conditions": {
+      "10_dose_admissibility_non_boundary": true,
+      "11_non_vacuous_collateral": false,
+      "12_exceeds_score_space": true,
+      "13_diffmean_does_not_reproduce": true,
+      "14_wrong_layer_does_not_reproduce": true,
+      "1_support": true,
+      "2_readability": true,
+      "3_direction_mechanics": true,
+      "4_beats_matched_random": true,
+      "5_reverse_does_not_reproduce": true,
+      "6_positive_destination_with_qualifying_TGR_interval": true,
+      "7_GOLD_ARRIVAL_gt_OTHER_WRONG": true,
+      "8_Fixed_gt_Broke": true,
+      "9_collateral_within_bound": true
+    },
+    "decision": "DECLINE_COLLATERAL",
+    "failed": [
+      "11_non_vacuous_collateral"
+    ],
+    "n_pass": 13,
+    "selected_q": 0.25
+  },
+  "cannot_answer__to__tool_call": {
+    "conditions": {
+      "10_dose_admissibility_non_boundary": true,
+      "11_non_vacuous_collateral": true,
+      "12_exceeds_score_space": true,
+      "13_diffmean_does_not_reproduce": true,
+      "14_wrong_layer_does_not_reproduce": true,
+      "1_support": true,
+      "2_readability": true,
+      "3_direction_mechanics": true,
+      "4_beats_matched_random": true,
+      "5_reverse_does_not_reproduce": true,
+      "6_positive_destination_with_qualifying_TGR_interval": true,
+      "7_GOLD_ARRIVAL_gt_OTHER_WRONG": true,
+      "8_Fixed_gt_Broke": true,
+      "9_collateral_within_bound": true
+    },
+    "decision": "FORMAL_ADVANCEMENT_ELIGIBLE",
+    "failed": [],
+    "n_pass": 14,
+    "selected_q": 0.125
+  },
+  "request_for_info__to__tool_call": {
+    "decision": "READABILITY_ROUTER_DECLINE",
+    "dev_roc_auc": 0.7067,
+    "dev_roc_auc_ci95": [
+      0.6666,
+      0.7456
+    ],
+    "failed": [
+      "2_readability"
+    ],
+    "note": "terminated before direction estimation; not reopened"
+  }
+}
