@@ -1,5 +1,18 @@
-# mechanistic-tool-use-llm
+<h2><p align="center">
 When Does Correction Become Repair? Mechanistic Auditing of Internal Interventions in Tool-Using LLMs
+</p></h2>
+
+<strong><p align="center">
+Jiayi Li<sup>♥</sup> &nbsp; Ruizhe Li<sup>♦</sup> &nbsp;
+</p></strong>
+
+<p align="center">University of the Chinese Academy of Sciences ♥ &nbsp; University of Birmingham ♦ &nbsp;</p>
+
+<p align="center"><a href="mailto:r.li.7@bham.ac.uk">r.li.7@bham.ac.uk</a> &nbsp;</p>
+
+---
+
+## Overview
 
 
 Experimental data, frozen configurations and the code for *When Does Correction
