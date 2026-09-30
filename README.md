@@ -63,3 +63,18 @@ This distribution focuses on experiments. Editorial drafts, internal handoffs,
 reviewer simulations, writing audits, obsolete plots and duplicate prose reports
 are not included. Retained scientific data and frozen protocols preserve their
 bytes; the separate path map records the new layout.
+
+## Citation
+
+If you use our repository, including code or datasets, in your research, please cite:
+```bibtex
+@misc{li2026doescorrectionrepairmechanistic,
+      title={When Does Correction Become Repair? Mechanistic Auditing of Internal Interventions in Tool-Using LLMs}, 
+      author={Jiayi Li and Ruizhe Li},
+      year={2026},
+      eprint={2609.36138},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2609.36138}, 
+}
+```
